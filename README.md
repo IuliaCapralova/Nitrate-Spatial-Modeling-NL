@@ -10,6 +10,8 @@ The data used in this project includes several types of environmental informatio
 
 ## Repository Structure
 
+```
+.
 ├── data
 │   ├── LGN7_land_use
 │   ├── soil_chem_data
@@ -23,6 +25,7 @@ The data used in this project includes several types of environmental informatio
 ├── README.md
 ├── results
 └── src
+```
 
 
 To run the notebooks, you’ll need the following Python packages:
