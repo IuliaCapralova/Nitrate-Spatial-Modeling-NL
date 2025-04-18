@@ -1,0 +1,18 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000033119","IMBRO/A","2023-01-13T19:25:02+01:00","1989-06-01T13:00:00+02:00","onderwaterpomp","3",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"chloride","508","Cl","1989-06-01","20.8","mg/l",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","1989-06-01","30.62","mS/m",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","1989-06-01","5.31","1",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","1989-06-01","9.1","mg/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","1989-06-01","0.06","mg/l",,,"<","goedgekeurd"
+"sulfaat","1508","SO4","1989-06-01","89.4","mg/l",,,,"goedgekeurd"
+"ijzer","879","Fe","1989-06-01","1940.0","ug/l",,,,"goedgekeurd"
+"kalium","920","K","1989-06-01","1.45","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1989-06-01","4.0","mg/l",,,,"goedgekeurd"
+"ammonium","289","NH4","1989-06-01","0.08","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","1989-06-01","7.72","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","1989-06-01","37.3","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","1989-06-01","0.28","mg/l",,,"<","goedgekeurd"
+,,,,,,,,,

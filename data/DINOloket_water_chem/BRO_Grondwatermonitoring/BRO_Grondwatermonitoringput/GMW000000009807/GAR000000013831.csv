@@ -1,0 +1,41 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000013831","IMBRO/A","2023-01-09T12:11:33+01:00","2014-07-24T12:00:00+02:00","onbekend","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Temperatuur","1522","T","16.0","Cel","goedgekeurd",,,,
+"Zuurgraad","1398","pH","6.98","1","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","140.4","mS/m","goedgekeurd",,,,
+"zuurstof","1701","O2","3.51","mg/l","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"nikkel","1267","Ni","2014-07-24","1.2","ug/l",,,,"goedgekeurd"
+"strontium","1501","Sr","2014-07-24","470.0","ug/l",,,,"goedgekeurd"
+"vanadium","1642","V","2014-07-24","0.3","ug/l",,,"<","goedgekeurd"
+"zink","1693","Zn","2014-07-24","24.0","ug/l",,,,"goedgekeurd"
+"molybdeen","1243","Mo","2014-07-24","2.0","ug/l",,,"<","goedgekeurd"
+"lood","1116","Pb","2014-07-24","0.12","ug/l",,,"<","goedgekeurd"
+"aluminium","284","Al","2014-07-24","12.0","ug/l",,,,"goedgekeurd"
+"nitriet","1273","NO2","2014-07-24","0.01","mg/l",,,"<","goedgekeurd"
+"nitraat","1270","NO3","2014-07-24","17.0","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","2014-07-24","96.0","mg/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","2014-07-24","0.02","mg/l",,,,"goedgekeurd"
+"fosfaat","1334","PO4","2014-07-24","0.04","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","2014-07-24","87.0","mg/l",,,,"goedgekeurd"
+"kalium","920","K","2014-07-24","11.0","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","2014-07-24","200.0","mg/l",,,,"goedgekeurd"
+"ammonium","289","NH4","2014-07-24","0.02","mg/l",,,"<","goedgekeurd"
+"ijzer","879","Fe","2014-07-24","5.0","ug/l",,,"<","goedgekeurd"
+"mangaan","1128","Mn","2014-07-24","2.8","ug/l",,,,"goedgekeurd"
+"arseen","310","As","2014-07-24","0.54","ug/l",,,,"goedgekeurd"
+"barium","333","Ba","2014-07-24","76.0","ug/l",,,,"goedgekeurd"
+"cadmium","441","Cd","2014-07-24","0.1","ug/l",,,"<","goedgekeurd"
+"chroom","517","Cr","2014-07-24","7.2","ug/l",,,,"goedgekeurd"
+"koper","971","Cu","2014-07-24","0.36","ug/l",,,,"goedgekeurd"
+"kwik","1097","Hg","2014-07-24","0.03","ug/l",,,"<","goedgekeurd"
+"lithium","1115","Li","2014-07-24","9.1","ug/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","2014-07-24","24.0","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","2014-07-24","150.0","mg/l",,,,"goedgekeurd"
+"koolstof organisch","1318","Corg","2014-07-24","0.81","mg/l",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","2014-07-24","7.2","1",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","2014-07-24","137.0","mS/m",,,,"goedgekeurd"
+,,,,,,,,,

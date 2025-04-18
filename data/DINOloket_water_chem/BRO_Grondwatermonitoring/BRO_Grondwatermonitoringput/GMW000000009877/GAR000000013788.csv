@@ -1,0 +1,33 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000013788","IMBRO/A","2023-01-09T12:09:34+01:00","2009-07-02T12:00:00+02:00","onbekend","3",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Zuurgraad","1398","pH","6.8","1","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","88.0","mS/m","goedgekeurd",,,,
+"Temperatuur","1522","T","15.0","Cel","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"chloride","508","Cl","2009-07-02","38.0","mg/l",,,,"goedgekeurd"
+"nitriet","1273","NO2","2009-07-02","0.08","mg/l",,,"<","goedgekeurd"
+"nitraat","1270","NO3","2009-07-02","7.0","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","2009-07-02","78.0","mg/l",,,,"goedgekeurd"
+"fosfaat","1334","PO4","2009-07-02","0.03","mg/l",,,"<","goedgekeurd"
+"natrium","1262","Na","2009-07-02","18.1","mg/l",,,,"goedgekeurd"
+"kalium","920","K","2009-07-02","1.46","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","2009-07-02","22.8","mg/l",,,,"goedgekeurd"
+"ijzer","879","Fe","2009-07-02","29.0","ug/l",,,,"goedgekeurd"
+"ammonium","289","NH4","2009-07-02","0.02","mg/l",,,"<","goedgekeurd"
+"vanadium","1642","V","2009-07-02","0.5","ug/l",,,"<","goedgekeurd"
+"mangaan","1128","Mn","2009-07-02","1.0","ug/l",,,,"goedgekeurd"
+"arseen","310","As","2009-07-02","6.0","ug/l",,,,"goedgekeurd"
+"barium","333","Ba","2009-07-02","55.0","ug/l",,,,"goedgekeurd"
+"cadmium","441","Cd","2009-07-02","0.5","ug/l",,,"<","goedgekeurd"
+"kobalt","527","Co","2009-07-02","1.2","ug/l",,,,"goedgekeurd"
+"chroom","517","Cr","2009-07-02","3.61","ug/l",,,,"goedgekeurd"
+"koper","971","Cu","2009-07-02","2.0","ug/l",,,"<","goedgekeurd"
+"lithium","1115","Li","2009-07-02","7.7","ug/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","2009-07-02","1.0","ug/l",,,"<","goedgekeurd"
+"strontium","1501","Sr","2009-07-02","367.0","ug/l",,,,"goedgekeurd"
+"aluminium","284","Al","2009-07-02","14.9","ug/l",,,,"goedgekeurd"
+"lood","1116","Pb","2009-07-02","15.0","ug/l",,,"<","goedgekeurd"
+,,,,,,,,,

@@ -1,0 +1,37 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000013778","IMBRO/A","2023-01-09T12:09:08+01:00","1997-07-01T12:00:00+02:00","onbekend","3",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Geleidendheid","3548","GELDHD","81.9","mS/m","goedgekeurd",,,,
+"Zuurgraad","1398","pH","7.3","1","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"zink","1693","Zn","1997-07-01","10.0","ug/l",,,,"goedgekeurd"
+"vanadium","1642","V","1997-07-01","0.33","ug/l",,,,"goedgekeurd"
+"strontium","1501","Sr","1997-07-01","245.0","ug/l",,,,"goedgekeurd"
+"lood","1116","Pb","1997-07-01","3.0","ug/l",,,"<","goedgekeurd"
+"nikkel","1267","Ni","1997-07-01","1.0","ug/l",,,,"goedgekeurd"
+"chroom","517","Cr","1997-07-01","1.0","ug/l",,,,"goedgekeurd"
+"lithium","1115","Li","1997-07-01","6.3","ug/l",,,,"goedgekeurd"
+"fosfaat","1334","PO4","1997-07-01","0.07","mg/l",,,"<","goedgekeurd"
+"kobalt","527","Co","1997-07-01","1.2","ug/l",,,,"goedgekeurd"
+"cadmium","441","Cd","1997-07-01","0.1","ug/l",,,,"goedgekeurd"
+"bromide","391","Br","1997-07-01","0.3","mg/l",,,"<","goedgekeurd"
+"barium","333","Ba","1997-07-01","36.0","ug/l",,,,"goedgekeurd"
+"arseen","310","As","1997-07-01","0.25","ug/l",,,"<","goedgekeurd"
+"ijzer","879","Fe","1997-07-01","11.0","ug/l",,,,"goedgekeurd"
+"aluminium","284","Al","1997-07-01","83.0","ug/l",,,,"goedgekeurd"
+"ammonium","289","NH4","1997-07-01","0.16","mg/l",,,"<","goedgekeurd"
+"magnesium","1125","Mg","1997-07-01","22.0","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","1997-07-01","152.0","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","1997-07-01","26.5","mg/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","1997-07-01","0.02","mg/l",,,,"goedgekeurd"
+"fluoride","1853","F","1997-07-01","0.1","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1997-07-01","78.0","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","1997-07-01","10.8","mg/l",,,,"goedgekeurd"
+"nitriet","1273","NO2","1997-07-01","0.03","mg/l",,,"<","goedgekeurd"
+"chloride","508","Cl","1997-07-01","38.0","mg/l",,,,"goedgekeurd"
+"koolstof organisch","1318","Corg","1997-07-01","0.45","mg/l",,,,"goedgekeurd"
+"koper","971","Cu","1997-07-01","0.94","ug/l",,,,"goedgekeurd"
+"kalium","920","K","1997-07-01","1.88","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

@@ -1,0 +1,33 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000043923","IMBRO","2024-07-02T12:01:37+02:00","2023-03-30T13:00:00+02:00","peristaltischePomp","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"zuurstof","1701","O2","0.8","mg/l","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","86.3","mS/m","goedgekeurd",,,,
+"Zuurgraad","1398","pH","6.87","1","goedgekeurd",,,,
+"Temperatuur","1522","T","10.2","Cel","goedgekeurd",,,,
+"waterstofcarbonaat","374","HCO3","374.955","mg/l","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"Zuurgraad","1398","pH","2023-03-30","6.96","1",,,,"goedgekeurd"
+"aluminium","284","Al","2023-03-30","10.0","ug/l","10.0","ug/l","<","goedgekeurd"
+"ammonium","289","NH4","2023-03-30","0.126","mg/l",,,,"goedgekeurd"
+"arseen","310","As","2023-03-30","4.27","ug/l",,,,"goedgekeurd"
+"barium","333","Ba","2023-03-30","64.458","ug/l",,,,"goedgekeurd"
+"cadmium","441","Cd","2023-03-30","0.099","ug/l",,,,"goedgekeurd"
+"calcium","447","Ca","2023-03-30","153.974","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","2023-03-30","37.119","mg/l",,,,"goedgekeurd"
+"chroom","517","Cr","2023-03-30","0.5","ug/l","0.5","ug/l","<","goedgekeurd"
+"ijzer","879","Fe","2023-03-30","4131.0","ug/l",,,,"goedgekeurd"
+"kalium","920","K","2023-03-30","1.161","mg/l",,,,"goedgekeurd"
+"koper","971","Cu","2023-03-30","0.5","ug/l","0.5","ug/l","<","goedgekeurd"
+"lood","1116","Pb","2023-03-30","0.2","ug/l","0.2","ug/l","<","goedgekeurd"
+"magnesium","1125","Mg","2023-03-30","6.895","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","2023-03-30","962.0","ug/l",,,,"goedgekeurd"
+"natrium","1262","Na","2023-03-30","18.739","mg/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","2023-03-30","2.068","ug/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","2023-03-30","0.029","mg/l","0.13","mg/l","<","goedgekeurd"
+"strontium","1501","Sr","2023-03-30","306.045","ug/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","2023-03-30","93.241","mg/l",,,,"goedgekeurd"
+"zink","1693","Zn","2023-03-30","47.517","ug/l",,,,"goedgekeurd"
+,,,,,,,,,

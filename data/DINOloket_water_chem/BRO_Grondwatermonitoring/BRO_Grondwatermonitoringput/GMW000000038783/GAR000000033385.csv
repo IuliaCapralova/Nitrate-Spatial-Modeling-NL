@@ -1,0 +1,18 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000033385","IMBRO/A","2023-01-13T19:39:16+01:00","1985-05-23T13:00:00+02:00","onderwaterpomp","2",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"chloride","508","Cl","1985-05-23","34.3","mg/l",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","1985-05-23","33.9","mS/m",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","1985-05-23","5.42","1",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","1985-05-23","15.3","mg/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","1985-05-23","0.4","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1985-05-23","83.2","mg/l",,,,"goedgekeurd"
+"kalium","920","K","1985-05-23","2.31","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1985-05-23","4.46","mg/l",,,,"goedgekeurd"
+"ammonium","289","NH4","1985-05-23","0.19","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","1985-05-23","14.1","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","1985-05-23","35.7","mg/l",,,,"goedgekeurd"
+"koolstof organisch","1318","Corg","1985-05-23","0.8","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","1985-05-23","0.3","mg/l",,,"<","goedgekeurd"
+,,,,,,,,,

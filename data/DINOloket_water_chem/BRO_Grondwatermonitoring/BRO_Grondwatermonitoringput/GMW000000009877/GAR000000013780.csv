@@ -1,0 +1,38 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000013780","IMBRO/A","2023-01-09T12:09:13+01:00","2000-07-01T12:00:00+02:00","onbekend","3",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Geleidendheid","3548","GELDHD","85.8","mS/m","goedgekeurd",,,,
+"Zuurgraad","1398","pH","7.38","1","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"vanadium","1642","V","2000-07-01","0.15","ug/l",,,,"goedgekeurd"
+"zink","1693","Zn","2000-07-01","5.0","ug/l",,,,"goedgekeurd"
+"strontium","1501","Sr","2000-07-01","351.0","ug/l",,,,"goedgekeurd"
+"lood","1116","Pb","2000-07-01","6.4","ug/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","2000-07-01","1.8","ug/l",,,,"goedgekeurd"
+"lithium","1115","Li","2000-07-01","8.1","ug/l",,,,"goedgekeurd"
+"koper","971","Cu","2000-07-01","0.81","ug/l",,,,"goedgekeurd"
+"chroom","517","Cr","2000-07-01","0.86","ug/l",,,,"goedgekeurd"
+"kobalt","527","Co","2000-07-01","1.0","ug/l",,,"<","goedgekeurd"
+"cadmium","441","Cd","2000-07-01","0.3","ug/l",,,"<","goedgekeurd"
+"bromide","391","Br","2000-07-01","0.2","mg/l",,,"<","goedgekeurd"
+"barium","333","Ba","2000-07-01","53.0","ug/l",,,,"goedgekeurd"
+"arseen","310","As","2000-07-01","3.3","ug/l",,,,"goedgekeurd"
+"chloride","508","Cl","2000-07-01","44.0","mg/l",,,,"goedgekeurd"
+"ijzer","879","Fe","2000-07-01","5.0","ug/l",,,,"goedgekeurd"
+"aluminium","284","Al","2000-07-01","6.4","ug/l",,,,"goedgekeurd"
+"ammonium","289","NH4","2000-07-01","0.01","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","2000-07-01","22.8","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","2000-07-01","156.0","mg/l",,,,"goedgekeurd"
+"kalium","920","K","2000-07-01","2.16","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","2000-07-01","21.6","mg/l",,,,"goedgekeurd"
+"fosfaat","1334","PO4","2000-07-01","0.16","mg/l",,,"<","goedgekeurd"
+"fosfor totaal","4188","Ptot","2000-07-01","0.02","mg/l",,,,"goedgekeurd"
+"fluoride","1853","F","2000-07-01","0.1","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","2000-07-01","82.0","mg/l",,,,"goedgekeurd"
+"nitriet","1273","NO2","2000-07-01","0.03","mg/l",,,"<","goedgekeurd"
+"koolstof organisch","1318","Corg","2000-07-01","2.99","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","2000-07-01","9.7","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","2000-07-01","1.0","ug/l",,,,"goedgekeurd"
+,,,,,,,,,
