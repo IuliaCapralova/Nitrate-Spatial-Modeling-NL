@@ -1,0 +1,27 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000059723","IMBRO/A","2025-04-11T00:41:44+02:00","1989-12-05T11:00:00+01:00","onbekend","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"zink","1693","Zn","1989-12-05","40.0","ug/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","1989-12-05","9.0","ug/l",,,,"goedgekeurd"
+"lood","1116","Pb","1989-12-05","4.1","ug/l",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","1989-12-05","451.0","mS/m",,,,"goedgekeurd"
+"kwik","1097","Hg","1989-12-05","0.05","ug/l",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","1989-12-05","7.33","1",,,,"goedgekeurd"
+"natrium","1262","Na","1989-12-05","2650.0","mg/l",,,,"goedgekeurd"
+"kalium","920","K","1989-12-05","117.0","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","1989-12-05","169.0","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1989-12-05","250.0","mg/l",,,,"goedgekeurd"
+"ijzer","879","Fe","1989-12-05","340.0","ug/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","1989-12-05","280.0","ug/l",,,,"goedgekeurd"
+"ammonium","289","NH4","1989-12-05","12.98","mg/l",,,,"goedgekeurd"
+"koper","971","Cu","1989-12-05","16.2","ug/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1989-12-05","103.0","mg/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","1989-12-05","1003.0","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","1989-12-05","17.27","mg/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","1989-12-05","12.18","mg/l",,,,"goedgekeurd"
+"fosfaat","1334","PO4","1989-12-05","7.36","mg/l",,,,"goedgekeurd"
+"arseen","310","As","1989-12-05","0.23","ug/l",,,,"goedgekeurd"
+"cadmium","441","Cd","1989-12-05","0.17","ug/l",,,,"goedgekeurd"
+"chloride","508","Cl","1989-12-05","4335.0","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

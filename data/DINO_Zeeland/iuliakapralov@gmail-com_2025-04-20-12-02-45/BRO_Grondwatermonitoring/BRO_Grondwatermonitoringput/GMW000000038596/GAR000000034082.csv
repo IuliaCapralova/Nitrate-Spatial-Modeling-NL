@@ -1,0 +1,28 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000034082","IMBRO/A","2023-01-13T20:23:31+01:00","1992-05-11T13:00:00+02:00","onderwaterpomp","3",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"aluminium","284","Al","1992-05-11","277.14","ug/l",,,,"goedgekeurd"
+"arseen","310","As","1992-05-11","0.07","ug/l",,,"<","goedgekeurd"
+"barium","333","Ba","1992-05-11","77.54","ug/l",,,,"goedgekeurd"
+"chloride","508","Cl","1992-05-11","10743.19","mg/l",,,,"goedgekeurd"
+"koper","971","Cu","1992-05-11","0.64","ug/l",,,"<","goedgekeurd"
+"Geleidendheid","3548","GELDHD","1992-05-11","3073.45","mS/m",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","1992-05-11","7.48","1",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","1992-05-11","223.33","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1992-05-11","1379.23","mg/l",,,,"goedgekeurd"
+"strontium","1501","Sr","1992-05-11","7854.94","ug/l",,,,"goedgekeurd"
+"ijzer","879","Fe","1992-05-11","1240.0","ug/l",,,,"goedgekeurd"
+"kalium","920","K","1992-05-11","211.19","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1992-05-11","705.81","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","1992-05-11","250.0","ug/l",,,,"goedgekeurd"
+"ammonium","289","NH4","1992-05-11","4.7","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","1992-05-11","5628.04","mg/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","1992-05-11","1.41","ug/l",,,,"goedgekeurd"
+"lood","1116","Pb","1992-05-11","6.01","ug/l",,,,"goedgekeurd"
+"zink","1693","Zn","1992-05-11","52.74","ug/l",,,,"goedgekeurd"
+"calcium","447","Ca","1992-05-11","569.79","mg/l",,,,"goedgekeurd"
+"koolstof organisch","1318","Corg","1992-05-11","1.39","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","1992-05-11","0.14","mg/l",,,,"goedgekeurd"
+"cadmium","441","Cd","1992-05-11","0.62","ug/l",,,,"goedgekeurd"
+,,,,,,,,,

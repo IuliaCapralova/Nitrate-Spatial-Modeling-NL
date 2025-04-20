@@ -1,0 +1,32 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000052250","IMBRO/A","2025-04-10T13:17:11+02:00","1995-12-19T11:00:00+01:00","onbekend","3",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Temperatuur","1522","T","10.0","Cel","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"ammonium","289","NH4","1995-12-19","12.07","mg/l",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","1995-12-19","6.4","1",,,,"goedgekeurd"
+"natrium","1262","Na","1995-12-19","5537.0","mg/l",,,,"goedgekeurd"
+"cadmium","441","Cd","1995-12-19","0.5","ug/l",,,"<","goedgekeurd"
+"stikstof Kjeldahl","4064","NKj","1995-12-19","13.0","mg/l",,,,"goedgekeurd"
+"zink","1693","Zn","1995-12-19","7.5","ug/l",,,"<","goedgekeurd"
+"lood","1116","Pb","1995-12-19","5.0","ug/l",,,"<","goedgekeurd"
+"nikkel","1267","Ni","1995-12-19","5.0","ug/l",,,"<","goedgekeurd"
+"chroom","517","Cr","1995-12-19","5.0","ug/l",,,"<","goedgekeurd"
+"arseen","310","As","1995-12-19","5.0","ug/l",,,"<","goedgekeurd"
+"aluminium","284","Al","1995-12-19","5.0","ug/l",,,"<","goedgekeurd"
+"nitraat","1270","NO3","1995-12-19","2.0","mg/l",,,"<","goedgekeurd"
+"waterstofcarbonaat","374","HCO3","1995-12-19","580.0","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1995-12-19","1690.0","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","1995-12-19","10500.0","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","1995-12-19","1400.0","ug/l",,,,"goedgekeurd"
+"ijzer","879","Fe","1995-12-19","4200.0","ug/l",,,,"onbeslist"
+"magnesium","1125","Mg","1995-12-19","567.0","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","1995-12-19","537.0","mg/l",,,,"goedgekeurd"
+"kalium","920","K","1995-12-19","100.0","mg/l",,,,"goedgekeurd"
+"koper","971","Cu","1995-12-19","5.0","ug/l",,,"<","goedgekeurd"
+"fosfor totaal","4188","Ptot","1995-12-19","0.54","mg/l",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","1995-12-19","3100.0","mS/m",,,,"goedgekeurd"
+"fosfaat","1334","PO4","1995-12-19","0.05","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

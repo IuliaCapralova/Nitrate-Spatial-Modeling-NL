@@ -1,0 +1,19 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000058158","IMBRO/A","2025-04-10T22:15:19+02:00","1991-11-06T11:00:00+01:00","onbekend","2",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"magnesium","1125","Mg","1991-11-06","110.0","mg/l",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","1991-11-06","302.0","mS/m",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","1991-11-06","6.6","1",,,,"goedgekeurd"
+"natrium","1262","Na","1991-11-06","395.0","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","1991-11-06","170.0","mg/l",,,,"goedgekeurd"
+"ijzer","879","Fe","1991-11-06","4900.0","ug/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","1991-11-06","600.0","ug/l",,,,"goedgekeurd"
+"ammonium","289","NH4","1991-11-06","13.08","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","1991-11-06","1090.0","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1991-11-06","35.0","mg/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","1991-11-06","860.0","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","1991-11-06","5.31","mg/l",,,"<","goedgekeurd"
+"kwik","1097","Hg","1991-11-06","0.05","ug/l",,,"<","goedgekeurd"
+"kalium","920","K","1991-11-06","41.0","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

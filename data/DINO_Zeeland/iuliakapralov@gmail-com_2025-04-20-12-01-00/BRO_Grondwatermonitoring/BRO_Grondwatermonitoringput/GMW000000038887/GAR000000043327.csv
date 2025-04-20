@@ -1,0 +1,33 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000043327","IMBRO","2024-07-02T11:32:06+02:00","2021-03-23T12:00:00+01:00","onderwaterpomp","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Temperatuur","1522","T","9.4","Cel","goedgekeurd",,,,
+"waterstofcarbonaat","374","HCO3","261.825","mg/l","goedgekeurd",,,,
+"zuurstof","1701","O2","0.6","mg/l","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","104.4","mS/m","goedgekeurd",,,,
+"Zuurgraad","1398","pH","7.2","1","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"Zuurgraad","1398","pH","2021-03-23","6.91","1",,,,"goedgekeurd"
+"aluminium","284","Al","2021-03-23","10.0","ug/l","10.0","ug/l","<","goedgekeurd"
+"ammonium","289","NH4","2021-03-23","0.047","mg/l","0.06","mg/l","<","goedgekeurd"
+"arseen","310","As","2021-03-23","0.571","ug/l",,,,"goedgekeurd"
+"barium","333","Ba","2021-03-23","37.464","ug/l",,,,"goedgekeurd"
+"cadmium","441","Cd","2021-03-23","0.05","ug/l","0.05","ug/l","<","goedgekeurd"
+"calcium","447","Ca","2021-03-23","126.023","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","2021-03-23","112.919","mg/l",,,,"goedgekeurd"
+"chroom","517","Cr","2021-03-23","0.5","ug/l","0.5","ug/l","<","goedgekeurd"
+"ijzer","879","Fe","2021-03-23","50.0","ug/l","0.05","ug/l","<","goedgekeurd"
+"kalium","920","K","2021-03-23","12.5","mg/l",,,,"goedgekeurd"
+"koper","971","Cu","2021-03-23","3.47","ug/l",,,,"goedgekeurd"
+"lood","1116","Pb","2021-03-23","0.2","ug/l","0.2","ug/l","<","goedgekeurd"
+"magnesium","1125","Mg","2021-03-23","8.527","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","2021-03-23","20.0","ug/l",,,,"goedgekeurd"
+"natrium","1262","Na","2021-03-23","76.814","mg/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","2021-03-23","4.679","ug/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","2021-03-23","2.812","mg/l",,,,"goedgekeurd"
+"strontium","1501","Sr","2021-03-23","331.451","ug/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","2021-03-23","135.873","mg/l",,,,"goedgekeurd"
+"zink","1693","Zn","2021-03-23","5.798","ug/l",,,,"goedgekeurd"
+,,,,,,,,,

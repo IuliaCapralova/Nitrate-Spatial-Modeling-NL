@@ -1,0 +1,14 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000052152","IMBRO/A","2025-04-10T13:07:44+02:00","1990-03-26T12:00:00+02:00","onbekend","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"nitraat","1270","NO3","1990-03-26","12.4","mg/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","1990-03-26","552.0","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1990-03-26","110.0","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","1990-03-26","135.0","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","1990-03-26","68.0","mg/l",,,,"goedgekeurd"
+"kalium","920","K","1990-03-26","186.0","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","1990-03-26","118.0","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1990-03-26","140.0","mg/l",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","1990-03-26","81.0","mS/m",,,,"goedgekeurd"
+,,,,,,,,,

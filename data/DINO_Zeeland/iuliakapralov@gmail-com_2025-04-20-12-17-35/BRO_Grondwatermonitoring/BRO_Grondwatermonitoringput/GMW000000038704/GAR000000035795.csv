@@ -1,0 +1,29 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000035795","IMBRO/A","2023-01-13T22:10:41+01:00","1994-02-03T12:00:00+01:00","onderwaterpomp","3",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Temperatuur","1522","T","11.6","Cel","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","4080.0","mS/m","goedgekeurd",,,,
+"Zuurgraad","1398","pH","7.01","1","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"aluminium","284","Al","1994-02-03","207.746","ug/l",,,,"goedgekeurd"
+"barium","333","Ba","1994-02-03","146.394","ug/l",,,,"goedgekeurd"
+"chloride","508","Cl","1994-02-03","13440.297","mg/l",,,,"goedgekeurd"
+"koper","971","Cu","1994-02-03","0.635","ug/l",,,"<","goedgekeurd"
+"fosfor totaal","4188","Ptot","1994-02-03","1.27","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1994-02-03","1977.683","mg/l",,,,"goedgekeurd"
+"strontium","1501","Sr","1994-02-03","6161.438","ug/l",,,,"goedgekeurd"
+"ijzer","879","Fe","1994-02-03","7210.0","ug/l",,,,"goedgekeurd"
+"kalium","920","K","1994-02-03","278.157","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1994-02-03","1014.991","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","1994-02-03","623.0","ug/l",,,,"goedgekeurd"
+"ammonium","289","NH4","1994-02-03","5.674","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","1994-02-03","8465.493","mg/l",,,,"goedgekeurd"
+"lood","1116","Pb","1994-02-03","1.678","ug/l",,,,"goedgekeurd"
+"zink","1693","Zn","1994-02-03","91.546","ug/l",,,,"goedgekeurd"
+"calcium","447","Ca","1994-02-03","377.598","mg/l",,,,"goedgekeurd"
+"koolstof organisch","1318","Corg","1994-02-03","3.207","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","1994-02-03","0.111","mg/l",,,,"goedgekeurd"
+"cadmium","441","Cd","1994-02-03","0.045","ug/l",,,"<","goedgekeurd"
+,,,,,,,,,

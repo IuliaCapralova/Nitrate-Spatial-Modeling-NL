@@ -1,0 +1,24 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000052634","IMBRO/A","2025-04-10T13:55:35+02:00","1988-10-26T11:00:00+01:00","onbekend","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"zink","1693","Zn","1988-10-26","150.0","ug/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","1988-10-26","28.6","ug/l",,,,"goedgekeurd"
+"kwik","1097","Hg","1988-10-26","0.05","ug/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","1988-10-26","1770.0","ug/l",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","1988-10-26","7.45","1",,,,"goedgekeurd"
+"natrium","1262","Na","1988-10-26","57.0","mg/l",,,,"goedgekeurd"
+"kalium","920","K","1988-10-26","7.0","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","1988-10-26","102.0","mg/l",,,,"goedgekeurd"
+"lood","1116","Pb","1988-10-26","35.7","ug/l",,,,"goedgekeurd"
+"ijzer","879","Fe","1988-10-26","34100.0","ug/l",,,,"goedgekeurd"
+"ammonium","289","NH4","1988-10-26","1.51","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","1988-10-26","85.0","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1988-10-26","28.82","mg/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","1988-10-26","454.0","mg/l",,,,"goedgekeurd"
+"arseen","310","As","1988-10-26","8.5","ug/l",,,,"goedgekeurd"
+"cadmium","441","Cd","1988-10-26","0.6","ug/l",,,,"goedgekeurd"
+"chroom","517","Cr","1988-10-26","15.3","ug/l",,,,"goedgekeurd"
+"koper","971","Cu","1988-10-26","73.3","ug/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1988-10-26","16.0","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

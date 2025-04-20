@@ -1,0 +1,32 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000054645","IMBRO/A","2025-04-10T17:03:39+02:00","2001-11-27T11:00:00+01:00","onbekend","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Temperatuur","1522","T","10.9","Cel","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"koper","971","Cu","2001-11-27","2.5","ug/l",,,"<","goedgekeurd"
+"nikkel","1267","Ni","2001-11-27","5.0","ug/l",,,"<","goedgekeurd"
+"chroom","517","Cr","2001-11-27","2.5","ug/l",,,"<","goedgekeurd"
+"cadmium","441","Cd","2001-11-27","0.4","ug/l",,,"<","goedgekeurd"
+"lood","1116","Pb","2001-11-27","5.0","ug/l",,,"<","goedgekeurd"
+"arseen","310","As","2001-11-27","9.0","ug/l",,,,"goedgekeurd"
+"aluminium","284","Al","2001-11-27","5.0","ug/l",,,"<","onbeslist"
+"waterstofcarbonaat","374","HCO3","2001-11-27","170.0","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","2001-11-27","21.0","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","2001-11-27","15.0","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","2001-11-27","4.9","mg/l",,,,"goedgekeurd"
+"ijzer","879","Fe","2001-11-27","28000.0","ug/l",,,,"onbeslist"
+"mangaan","1128","Mn","2001-11-27","660.0","ug/l",,,,"goedgekeurd"
+"ammonium","289","NH4","2001-11-27","0.13","mg/l",,,"<","goedgekeurd"
+"nitraat","1270","NO3","2001-11-27","17.0","mg/l",,,,"goedgekeurd"
+"zink","1693","Zn","2001-11-27","51.0","ug/l",,,,"goedgekeurd"
+"stikstof Kjeldahl","4064","NKj","2001-11-27","6.9","mg/l",,,,"goedgekeurd"
+"kalium","920","K","2001-11-27","11.0","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","2001-11-27","22.0","mg/l",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","2001-11-27","8.2","1",,,,"goedgekeurd"
+"calcium","447","Ca","2001-11-27","30.0","mg/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","2001-11-27","0.58","mg/l",,,,"goedgekeurd"
+"fosfaat","1334","PO4","2001-11-27","0.01","mg/l",,,"<","goedgekeurd"
+"Geleidendheid","3548","GELDHD","2001-11-27","26.0","mS/m",,,,"goedgekeurd"
+,,,,,,,,,

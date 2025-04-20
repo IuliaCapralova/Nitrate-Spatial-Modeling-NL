@@ -1,0 +1,16 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000059620","IMBRO/A","2025-04-11T00:29:58+02:00","1993-11-08T11:00:00+01:00","onbekend","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"Geleidendheid","3548","GELDHD","1993-11-08","140.0","mS/m",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","1993-11-08","7.2","1",,,,"goedgekeurd"
+"natrium","1262","Na","1993-11-08","76.0","mg/l",,,,"goedgekeurd"
+"kalium","920","K","1993-11-08","5.0","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","1993-11-08","270.0","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1993-11-08","34.0","mg/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","1993-11-08","770.0","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","1993-11-08","120.0","mg/l",,,,"goedgekeurd"
+"zink","1693","Zn","1993-11-08","60.0","ug/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1993-11-08","29.0","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","1993-11-08","100.0","ug/l",,,,"goedgekeurd"
+,,,,,,,,,

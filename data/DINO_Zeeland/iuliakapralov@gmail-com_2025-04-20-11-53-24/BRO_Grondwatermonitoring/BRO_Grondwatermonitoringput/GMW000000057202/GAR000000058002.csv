@@ -1,0 +1,18 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000058002","IMBRO/A","2025-04-10T22:02:13+02:00","1994-11-29T11:00:00+01:00","onbekend","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"calcium","447","Ca","1994-11-29","115.0","mg/l",,,,"goedgekeurd"
+"kalium","920","K","1994-11-29","54.0","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","1994-11-29","135.0","mg/l",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","1994-11-29","7.4","1",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","1994-11-29","139.0","mS/m",,,,"goedgekeurd"
+"ijzer","879","Fe","1994-11-29","500.0","ug/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","1994-11-29","200.0","ug/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1994-11-29","90.0","mg/l",,,,"goedgekeurd"
+"fosfaat","1334","PO4","1994-11-29","3.99","mg/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","1994-11-29","740.0","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1994-11-29","110.0","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","1994-11-29","160.0","mg/l",,,,"goedgekeurd"
+"ammonium","289","NH4","1994-11-29","6.04","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

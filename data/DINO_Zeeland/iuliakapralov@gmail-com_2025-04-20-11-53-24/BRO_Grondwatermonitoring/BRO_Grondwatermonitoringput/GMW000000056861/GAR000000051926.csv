@@ -1,0 +1,18 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000051926","IMBRO/A","2025-04-10T12:46:36+02:00","1951-11-13T11:00:00+01:00","onbekend","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"ijzer","879","Fe","1951-11-13","570.0","ug/l",,,,"goedgekeurd"
+"nitriet","1273","NO2","1951-11-13","0.01","mg/l",,,"<","goedgekeurd"
+"nitraat","1270","NO3","1951-11-13","0.01","mg/l",,,"<","goedgekeurd"
+"waterstofcarbonaat","374","HCO3","1951-11-13","1520.0","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1951-11-13","222.0","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","1951-11-13","4150.0","mg/l",,,,"goedgekeurd"
+"ammonium","289","NH4","1951-11-13","7.1","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1951-11-13","140.0","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","1951-11-13","112.0","mg/l",,,,"goedgekeurd"
+"kalium","920","K","1951-11-13","107.9","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","1951-11-13","2890.0","mg/l",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","1951-11-13","116.77","mS/m",,,,"goedgekeurd"
+"silicium","1479","Si","1951-11-13","11.76","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

@@ -1,0 +1,17 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000053116","IMBRO/A","2025-04-10T14:36:20+02:00","1992-10-21T11:00:00+01:00","onbekend","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"calcium","447","Ca","1992-10-21","340.0","mg/l",,,,"goedgekeurd"
+"fosfaat","1334","PO4","1992-10-21","22.41","mg/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","1992-10-21","550.0","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1992-10-21","1500.0","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","1992-10-21","16100.0","mg/l",,,,"goedgekeurd"
+"ammonium","289","NH4","1992-10-21","8.15","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1992-10-21","1000.0","mg/l",,,,"goedgekeurd"
+"kalium","920","K","1992-10-21","305.0","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","1992-10-21","9300.0","mg/l",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","1992-10-21","7.9","1",,,,"goedgekeurd"
+"mangaan","1128","Mn","1992-10-21","300.0","ug/l",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","1992-10-21","5938.0","mS/m",,,,"goedgekeurd"
+,,,,,,,,,

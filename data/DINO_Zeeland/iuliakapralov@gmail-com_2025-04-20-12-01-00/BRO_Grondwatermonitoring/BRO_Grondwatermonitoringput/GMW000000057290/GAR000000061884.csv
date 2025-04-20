@@ -1,0 +1,28 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000061884","IMBRO/A","2025-04-11T08:39:53+02:00","1990-06-19T12:00:00+02:00","onbekend","2",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"nikkel","1267","Ni","1990-06-19","19.0","ug/l",,,,"goedgekeurd"
+"kwik","1097","Hg","1990-06-19","0.05","ug/l",,,,"goedgekeurd"
+"lood","1116","Pb","1990-06-19","10.5","ug/l",,,,"goedgekeurd"
+"koper","971","Cu","1990-06-19","44.9","ug/l",,,,"goedgekeurd"
+"zink","1693","Zn","1990-06-19","50.0","ug/l",,,,"goedgekeurd"
+"arseen","310","As","1990-06-19","0.78","ug/l",,,,"goedgekeurd"
+"natrium","1262","Na","1990-06-19","6025.0","mg/l",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","1990-06-19","6.91","1",,,,"goedgekeurd"
+"kalium","920","K","1990-06-19","176.0","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","1990-06-19","446.0","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1990-06-19","755.0","mg/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","1990-06-19","0.09","mg/l",,,,"goedgekeurd"
+"cadmium","441","Cd","1990-06-19","0.33","ug/l",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","1990-06-19","2239.0","mS/m",,,,"goedgekeurd"
+"fosfaat","1334","PO4","1990-06-19","0.52","mg/l",,,,"goedgekeurd"
+"ijzer","879","Fe","1990-06-19","11700.0","ug/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","1990-06-19","0.88","mg/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","1990-06-19","1346.0","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1990-06-19","704.0","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","1990-06-19","11765.0","mg/l",,,,"goedgekeurd"
+"ammonium","289","NH4","1990-06-19","12.07","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","1990-06-19","380.0","ug/l",,,,"goedgekeurd"
+"chroom","517","Cr","1990-06-19","0.5","ug/l",,,,"goedgekeurd"
+,,,,,,,,,

@@ -1,0 +1,32 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000062995","IMBRO/A","2025-04-11T10:23:05+02:00","2003-01-13T11:00:00+01:00","onbekend","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Temperatuur","1522","T","8.5","Cel","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"fosfor totaal","4188","Ptot","2003-01-13","0.18","mg/l",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","2003-01-13","2700.0","mS/m",,,,"goedgekeurd"
+"fosfaat","1334","PO4","2003-01-13","0.05","mg/l",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","2003-01-13","7.6","1",,,,"onbeslist"
+"calcium","447","Ca","2003-01-13","442.0","mg/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","2003-01-13","920.0","mg/l",,,,"goedgekeurd"
+"kalium","920","K","2003-01-13","145.0","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","2003-01-13","567.0","mg/l",,,,"goedgekeurd"
+"ijzer","879","Fe","2003-01-13","670.0","ug/l",,,,"onbeslist"
+"mangaan","1128","Mn","2003-01-13","1400.0","ug/l",,,,"goedgekeurd"
+"ammonium","289","NH4","2003-01-13","3.9","mg/l",,,,"onbeslist"
+"chloride","508","Cl","2003-01-13","9430.0","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","2003-01-13","4860.0","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","2003-01-13","11.3","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","2003-01-13","680.0","mg/l",,,,"goedgekeurd"
+"stikstof Kjeldahl","4064","NKj","2003-01-13","3.4","mg/l",,,,"onbeslist"
+"aluminium","284","Al","2003-01-13","5.0","ug/l",,,"<","goedgekeurd"
+"arseen","310","As","2003-01-13","6.0","ug/l",,,,"goedgekeurd"
+"cadmium","441","Cd","2003-01-13","0.4","ug/l",,,"<","goedgekeurd"
+"chroom","517","Cr","2003-01-13","2.5","ug/l",,,"<","goedgekeurd"
+"koper","971","Cu","2003-01-13","2.5","ug/l",,,"<","goedgekeurd"
+"nikkel","1267","Ni","2003-01-13","5.0","ug/l",,,"<","goedgekeurd"
+"zink","1693","Zn","2003-01-13","22.0","ug/l",,,,"goedgekeurd"
+"lood","1116","Pb","2003-01-13","5.0","ug/l",,,"<","goedgekeurd"
+,,,,,,,,,

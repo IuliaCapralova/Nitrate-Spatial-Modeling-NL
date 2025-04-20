@@ -1,0 +1,32 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000058859","IMBRO/A","2025-04-10T23:20:59+02:00","1997-12-22T11:00:00+01:00","onbekend","2",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Temperatuur","1522","T","9.0","Cel","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"chloride","508","Cl","1997-12-22","6300.0","mg/l",,,,"goedgekeurd"
+"stikstof Kjeldahl","4064","NKj","1997-12-22","9.3","mg/l",,,,"goedgekeurd"
+"zink","1693","Zn","1997-12-22","13.0","ug/l",,,,"goedgekeurd"
+"lood","1116","Pb","1997-12-22","5.0","ug/l",,,"<","goedgekeurd"
+"nikkel","1267","Ni","1997-12-22","5.0","ug/l",,,"<","goedgekeurd"
+"koper","971","Cu","1997-12-22","2.5","ug/l",,,"<","goedgekeurd"
+"cadmium","441","Cd","1997-12-22","0.5","ug/l",,,"<","goedgekeurd"
+"arseen","310","As","1997-12-22","5.0","ug/l",,,"<","goedgekeurd"
+"nitraat","1270","NO3","1997-12-22","2.0","mg/l",,,"<","goedgekeurd"
+"waterstofcarbonaat","374","HCO3","1997-12-22","1770.0","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","1997-12-22","3950.0","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","1997-12-22","170.0","ug/l",,,,"goedgekeurd"
+"ijzer","879","Fe","1997-12-22","4600.0","ug/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1997-12-22","105.0","mg/l",,,,"goedgekeurd"
+"kalium","920","K","1997-12-22","375.0","mg/l",,,,"onbeslist"
+"Zuurgraad","1398","pH","1997-12-22","7.5","1",,,,"goedgekeurd"
+"chroom","517","Cr","1997-12-22","8.8","ug/l",,,,"goedgekeurd"
+"aluminium","284","Al","1997-12-22","14.0","ug/l",,,,"goedgekeurd"
+"ammonium","289","NH4","1997-12-22","12.07","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","1997-12-22","4.6","mg/l",,,,"onbeslist"
+"sulfaat","1508","SO4","1997-12-22","190.0","mg/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","1997-12-22","3.7","mg/l",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","1997-12-22","2050.0","mS/m",,,,"goedgekeurd"
+"fosfaat","1334","PO4","1997-12-22","2.8","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

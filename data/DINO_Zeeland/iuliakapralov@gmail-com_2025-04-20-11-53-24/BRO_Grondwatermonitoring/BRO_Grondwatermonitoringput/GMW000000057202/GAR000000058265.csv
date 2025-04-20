@@ -1,0 +1,33 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000058265","IMBRO/A","2025-04-10T22:26:29+02:00","2005-01-19T11:00:00+01:00","onbekend","2",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Temperatuur","1522","T","11.3","Cel","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"kalium","920","K","2005-01-19","280.0","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","2005-01-19","7500.0","mg/l",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","2005-01-19","7.3","1",,,,"goedgekeurd"
+"magnesium","1125","Mg","2005-01-19","800.0","mg/l",,,,"goedgekeurd"
+"ijzer","879","Fe","2005-01-19","4300.0","ug/l",,,,"goedgekeurd"
+"lood","1116","Pb","2005-01-19","10.0","ug/l",,,,"goedgekeurd"
+"calcium","447","Ca","2005-01-19","140.0","mg/l",,,,"goedgekeurd"
+"aluminium","284","Al","2005-01-19","25.0","ug/l",,,"<","goedgekeurd"
+"mangaan","1128","Mn","2005-01-19","340.0","ug/l",,,,"goedgekeurd"
+"ammonium","289","NH4","2005-01-19","60.8","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","2005-01-19","13000.0","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","2005-01-19","94.0","mg/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","2005-01-19","3590.0","mg/l",,,,"goedgekeurd"
+"stikstof Kjeldahl","4064","NKj","2005-01-19","75.7","mg/l",,,,"goedgekeurd"
+"nitriet","1273","NO2","2005-01-19","0.04","mg/l",,,,"goedgekeurd"
+"zink","1693","Zn","2005-01-19","13.0","ug/l",,,,"goedgekeurd"
+"arseen","310","As","2005-01-19","6.0","ug/l",,,,"goedgekeurd"
+"cadmium","441","Cd","2005-01-19","1.0","ug/l",,,,"goedgekeurd"
+"chroom","517","Cr","2005-01-19","5.0","ug/l",,,,"goedgekeurd"
+"koper","971","Cu","2005-01-19","10.0","ug/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","2005-01-19","4.0","ug/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","2005-01-19","0.05","mg/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","2005-01-19","19.0","mg/l",,,,"goedgekeurd"
+"fosfaat","1334","PO4","2005-01-19","14.86","mg/l",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","2005-01-19","3800.0","mS/m",,,,"goedgekeurd"
+,,,,,,,,,

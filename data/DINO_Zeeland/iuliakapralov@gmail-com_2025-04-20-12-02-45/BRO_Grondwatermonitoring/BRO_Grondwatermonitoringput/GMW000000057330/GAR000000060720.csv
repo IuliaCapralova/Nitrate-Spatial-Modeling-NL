@@ -1,0 +1,22 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000060720","IMBRO/A","2025-04-11T02:16:05+02:00","1988-11-15T11:00:00+01:00","onbekend","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"cadmium","441","Cd","1988-11-15","0.5","ug/l",,,,"goedgekeurd"
+"zink","1693","Zn","1988-11-15","50.0","ug/l",,,,"goedgekeurd"
+"lood","1116","Pb","1988-11-15","10.4","ug/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","1988-11-15","46.7","ug/l",,,,"onbeslist"
+"kwik","1097","Hg","1988-11-15","0.05","ug/l",,,,"goedgekeurd"
+"koper","971","Cu","1988-11-15","18.3","ug/l",,,,"goedgekeurd"
+"chroom","517","Cr","1988-11-15","2.7","ug/l",,,,"goedgekeurd"
+"arseen","310","As","1988-11-15","1.22","ug/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","1988-11-15","330.0","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1988-11-15","1080.68","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","1988-11-15","11005.0","mg/l",,,,"goedgekeurd"
+"ammonium","289","NH4","1988-11-15","1.51","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1988-11-15","738.0","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","1988-11-15","229.0","mg/l",,,,"goedgekeurd"
+"kalium","920","K","1988-11-15","241.0","mg/l",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","1988-11-15","6.98","1",,,,"goedgekeurd"
+"natrium","1262","Na","1988-11-15","5975.0","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

@@ -1,0 +1,36 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000033627","IMBRO/A","2023-01-13T19:53:09+01:00","2018-03-06T12:00:00+01:00","onderwaterpomp","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Geleidendheid","3548","GELDHD","4330.0","mS/m","goedgekeurd",,,,
+"waterstofcarbonaat","374","HCO3","461.245","mg/l","goedgekeurd",,,,
+"zuurstof","1701","O2","0.5","mg/l","goedgekeurd",,,,
+"Zuurgraad","1398","pH","7.13","1","goedgekeurd",,,,
+"Temperatuur","1522","T","10.5","Cel","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"aluminium","284","Al","2018-03-06","10.0","ug/l",,,"<","goedgekeurd"
+"arseen","310","As","2018-03-06","0.865","ug/l",,,,"goedgekeurd"
+"barium","333","Ba","2018-03-06","162.225","ug/l",,,,"goedgekeurd"
+"chloride","508","Cl","2018-03-06","16308.8","mg/l",,,,"goedgekeurd"
+"chroom","517","Cr","2018-03-06","1.982","ug/l",,,,"goedgekeurd"
+"koper","971","Cu","2018-03-06","1.055","ug/l",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","2018-03-06","4655.0","mS/m",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","2018-03-06","7.02","1",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","2018-03-06","3.565","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","2018-03-06","2047.43","mg/l",,,,"goedgekeurd"
+"strontium","1501","Sr","2018-03-06","6362.5","ug/l",,,,"goedgekeurd"
+"ijzer","879","Fe","2018-03-06","18580.0","ug/l",,,,"goedgekeurd"
+"kalium","920","K","2018-03-06","286.25","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","2018-03-06","1068.0","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","2018-03-06","1022.0","ug/l",,,,"goedgekeurd"
+"ammonium","289","NH4","2018-03-06","8.374","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","2018-03-06","9082.0","mg/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","2018-03-06","0.5","ug/l",,,"<","goedgekeurd"
+"lood","1116","Pb","2018-03-06","0.2","ug/l",,,"<","goedgekeurd"
+"zink","1693","Zn","2018-03-06","36.5","ug/l",,,,"goedgekeurd"
+"calcium","447","Ca","2018-03-06","459.75","mg/l",,,,"goedgekeurd"
+"koolstof organisch","1318","Corg","2018-03-06","6.23","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","2018-03-06","10.339","mg/l",,,,"goedgekeurd"
+"cadmium","441","Cd","2018-03-06","0.067","ug/l",,,,"goedgekeurd"
+,,,,,,,,,

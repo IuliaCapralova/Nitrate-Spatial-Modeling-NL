@@ -1,0 +1,20 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000063590","IMBRO/A","2025-04-11T11:16:27+02:00","1991-04-16T12:00:00+02:00","onbekend","3",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"nitriet","1273","NO2","1991-04-16","0.01","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","1991-04-16","0.79","mg/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","1991-04-16","830.0","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1991-04-16","67.0","mg/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","1991-04-16","3.6","mg/l",,,,"goedgekeurd"
+"ammonium","289","NH4","1991-04-16","0.18","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","1991-04-16","1500.0","ug/l",,,,"goedgekeurd"
+"chloride","508","Cl","1991-04-16","180.0","mg/l",,,,"goedgekeurd"
+"ijzer","879","Fe","1991-04-16","620.0","ug/l",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","1991-04-16","189.0","mS/m",,,,"goedgekeurd"
+"natrium","1262","Na","1991-04-16","360.0","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1991-04-16","18.0","mg/l",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","1991-04-16","7.9","1",,,,"goedgekeurd"
+"kalium","920","K","1991-04-16","16.0","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","1991-04-16","54.0","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

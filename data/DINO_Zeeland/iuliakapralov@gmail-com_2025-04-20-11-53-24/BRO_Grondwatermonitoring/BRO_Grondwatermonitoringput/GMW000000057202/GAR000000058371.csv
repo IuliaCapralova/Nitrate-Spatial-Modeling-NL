@@ -1,0 +1,32 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000058371","IMBRO/A","2025-04-10T22:37:17+02:00","1998-12-15T11:00:00+01:00","onbekend","3",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Temperatuur","1522","T","11.0","Cel","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"aluminium","284","Al","1998-12-15","25.0","ug/l",,,"<","goedgekeurd"
+"stikstof Kjeldahl","4064","NKj","1998-12-15","62.0","mg/l",,,,"goedgekeurd"
+"zink","1693","Zn","1998-12-15","76.0","ug/l",,,,"goedgekeurd"
+"lood","1116","Pb","1998-12-15","5.0","ug/l",,,"<","goedgekeurd"
+"nikkel","1267","Ni","1998-12-15","5.0","ug/l",,,"<","goedgekeurd"
+"koper","971","Cu","1998-12-15","2.5","ug/l",,,"<","goedgekeurd"
+"chroom","517","Cr","1998-12-15","2.5","ug/l",,,"<","goedgekeurd"
+"ammonium","289","NH4","1998-12-15","37.23","mg/l",,,,"goedgekeurd"
+"arseen","310","As","1998-12-15","47.0","ug/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","1998-12-15","0.1","mg/l",,,"<","goedgekeurd"
+"waterstofcarbonaat","374","HCO3","1998-12-15","3500.0","mg/l",,,,"goedgekeurd"
+"cadmium","441","Cd","1998-12-15","0.4","ug/l",,,"<","goedgekeurd"
+"chloride","508","Cl","1998-12-15","12600.0","mg/l",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","1998-12-15","8.0","1",,,,"goedgekeurd"
+"natrium","1262","Na","1998-12-15","7780.0","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","1998-12-15","140.0","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1998-12-15","417.86","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1998-12-15","795.0","mg/l",,,,"goedgekeurd"
+"ijzer","879","Fe","1998-12-15","1900.0","ug/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","1998-12-15","410.0","ug/l",,,,"goedgekeurd"
+"kalium","920","K","1998-12-15","335.0","mg/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","1998-12-15","16.0","mg/l",,,,"goedgekeurd"
+"fosfaat","1334","PO4","1998-12-15","4.56","mg/l",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","1998-12-15","3630.0","mS/m",,,,"goedgekeurd"
+,,,,,,,,,

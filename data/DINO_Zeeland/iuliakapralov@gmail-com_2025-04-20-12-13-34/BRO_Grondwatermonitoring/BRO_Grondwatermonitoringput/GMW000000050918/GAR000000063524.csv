@@ -1,0 +1,19 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000063524","IMBRO/A","2025-04-11T11:09:38+02:00","1998-02-19T11:00:00+01:00","onbekend","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Zuurgraad","1398","pH","7.6","1","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","1786.0","mS/m","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"kalium","920","K","1998-02-19","140.0","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","1998-02-19","0.1","mg/l",,,"<","goedgekeurd"
+"waterstofcarbonaat","374","HCO3","1998-02-19","1300.0","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1998-02-19","1200.0","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","1998-02-19","4900.0","mg/l",,,,"goedgekeurd"
+"ammonium","289","NH4","1998-02-19","1.4","mg/l",,,,"goedgekeurd"
+"ijzer","879","Fe","1998-02-19","240.0","ug/l",,,,"goedgekeurd"
+"natrium","1262","Na","1998-02-19","4000.0","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1998-02-19","340.0","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","1998-02-19","140.0","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

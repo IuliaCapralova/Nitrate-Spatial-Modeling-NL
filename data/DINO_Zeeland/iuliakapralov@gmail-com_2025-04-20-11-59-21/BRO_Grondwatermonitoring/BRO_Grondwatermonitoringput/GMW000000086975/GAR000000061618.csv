@@ -1,0 +1,25 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000061618","IMBRO/A","2025-04-11T03:42:01+02:00","1993-09-06T12:00:00+02:00","onbekend","2",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"zuurstof","1701","O2","2.6","mg/l","goedgekeurd",,,,
+"Temperatuur","1522","T","10.9","Cel","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"nitriet","1273","NO2","1993-09-06","0.01","mg/l","0.01","mg/l","<","goedgekeurd"
+"nitraat","1270","NO3","1993-09-06","1.17","mg/l","1.17","mg/l",,"goedgekeurd"
+"ammonium","289","NH4","1993-09-06","0.18","mg/l","0.18","mg/l",,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","1993-09-06","126.8","mS/m","126.8","mS/m",,"goedgekeurd"
+"fosfor totaal","4188","Ptot","1993-09-06","0.03","mg/l","0.03","mg/l",,"goedgekeurd"
+"sulfaat","1508","SO4","1993-09-06","146.12","mg/l","146.12","mg/l",,"goedgekeurd"
+"chroom","517","Cr","1993-09-06","10.0","ug/l","10.0","ug/l","<","goedgekeurd"
+"chloride","508","Cl","1993-09-06","70.27","mg/l","70.27","mg/l",,"goedgekeurd"
+"natrium","1262","Na","1993-09-06","59.75","mg/l","59.75","mg/l",,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","1993-09-06","574.62","mg/l","574.62","mg/l",,"goedgekeurd"
+"ijzer","879","Fe","1993-09-06","3550.0","ug/l","3550.0","ug/l",,"goedgekeurd"
+"magnesium","1125","Mg","1993-09-06","33.7","mg/l","33.7","mg/l",,"goedgekeurd"
+"mangaan","1128","Mn","1993-09-06","860.0","ug/l","860.0","ug/l",,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","1993-09-06","112.0","mS/m","112.0","mS/m",,"goedgekeurd"
+"calcium","447","Ca","1993-09-06","170.1","mg/l","170.1","mg/l",,"goedgekeurd"
+"kalium","920","K","1993-09-06","18.85","mg/l","18.85","mg/l",,"goedgekeurd"
+,,,,,,,,,

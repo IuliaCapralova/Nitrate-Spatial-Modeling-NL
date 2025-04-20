@@ -1,0 +1,13 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000063462","IMBRO/A","2025-04-11T11:03:44+02:00","2010-01-11T11:00:00+01:00","onbekend","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Zuurgraad","1398","pH","8.5","1","goedgekeurd",,,,
+"Temperatuur","1522","T","10.6","Cel","goedgekeurd",,,,
+"Redoxpotentiaal","1456","REDPTTAL","-54.95","mV","onbeslist",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"bentazon","340","bentzn","2010-01-11","0.01","ug/l",,,"<","goedgekeurd"
+"chloride","508","Cl","2010-01-11","110.0","mg/l",,,,"goedgekeurd"
+"zink","1693","Zn","2010-01-11","5.0","ug/l",,,"<","goedgekeurd"
+,,,,,,,,,

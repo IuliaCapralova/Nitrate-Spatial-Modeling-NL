@@ -1,0 +1,22 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000059549","IMBRO/A","2025-04-11T00:23:28+02:00","1990-04-24T12:00:00+02:00","onbekend","4",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Zuurgraad","1398","pH","7.32","1","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"Zuurgraad","1398","pH","1990-04-24","7.17","1",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","1990-04-24","410.0","mS/m",,,,"goedgekeurd"
+"natrium","1262","Na","1990-04-24","200.0","mg/l",,,,"goedgekeurd"
+"kalium","920","K","1990-04-24","78.0","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","1990-04-24","185.0","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1990-04-24","164.0","mg/l",,,,"goedgekeurd"
+"ijzer","879","Fe","1990-04-24","400.0","ug/l",,,,"goedgekeurd"
+"ammonium","289","NH4","1990-04-24","1.0","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","1990-04-24","900.0","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1990-04-24","545.0","mg/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","1990-04-24","695.0","mg/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","1990-04-24","0.1","mg/l",,,"<","goedgekeurd"
+"fosfaat","1334","PO4","1990-04-24","0.09","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","1990-04-24","2030.0","ug/l",,,,"goedgekeurd"
+,,,,,,,,,

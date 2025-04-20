@@ -1,0 +1,26 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000035818","IMBRO/A","2023-01-13T22:11:58+01:00","1993-03-17T12:00:00+01:00","onderwaterpomp","3",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Geleidendheid","3548","GELDHD","970.0","mS/m","goedgekeurd",,,,
+"Temperatuur","1522","T","10.8","Cel","goedgekeurd",,,,
+"Zuurgraad","1398","pH","7.81","1","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"aluminium","284","Al","1993-03-17","107.92","ug/l",,,,"goedgekeurd"
+"arseen","310","As","1993-03-17","0.824","ug/l",,,,"goedgekeurd"
+"barium","333","Ba","1993-03-17","13.458","ug/l",,,,"goedgekeurd"
+"chloride","508","Cl","1993-03-17","2579.129","mg/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","1993-03-17","15.795","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1993-03-17","14.726","mg/l",,,,"goedgekeurd"
+"strontium","1501","Sr","1993-03-17","485.415","ug/l",,,,"goedgekeurd"
+"ijzer","879","Fe","1993-03-17","1458.0","ug/l",,,,"goedgekeurd"
+"kalium","920","K","1993-03-17","74.603","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1993-03-17","93.788","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","1993-03-17","24.0","ug/l",,,,"goedgekeurd"
+"natrium","1262","Na","1993-03-17","1993.693","mg/l",,,,"goedgekeurd"
+"zink","1693","Zn","1993-03-17","6.539","ug/l",,,"<","goedgekeurd"
+"calcium","447","Ca","1993-03-17","35.182","mg/l",,,,"goedgekeurd"
+"koolstof organisch","1318","Corg","1993-03-17","42.828","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","1993-03-17","0.09","mg/l",,,,"goedgekeurd"
+,,,,,,,,,
