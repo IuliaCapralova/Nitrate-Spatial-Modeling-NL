@@ -20,8 +20,7 @@ class Dataset_Well(DataSet):
         groundwater_df = pd.DataFrame(columns=columns)
 
         for path in self._datafiles:
-            sample_csv_df = pd.read_csv(path)
-            extracted_row = self._filter_file(sample_csv_df, path) # from the csv we extract all needed info in one single row
+            extracted_row = self._filter_file(path) # from the csv we extract all needed info in one single row
             groundwater_df = pd.concat([groundwater_df, pd.DataFrame([extracted_row])], ignore_index=True) # save this row
 
         return groundwater_df
@@ -60,18 +59,20 @@ class Dataset_Well(DataSet):
             if row and row[0].strip().lower() == "parameter":
                 header_row = row
             
-            # find first real data row
-            first_data = self._find_first_data_row(rows, i + 1)
-            if first_data is None:
-                break
+                # find first real data row
+                first_data = self._find_first_data_row(rows, i + 1)
+                if first_data is None:
+                    break
 
-            val_col = self._detect_value_column(header_row, first_data)
-            if val_col is not None:
-                # pull out each wanted parameter from this block
-                output = self._popuplate_output_from_table(rows, first_data_idx=i+1, val_col=val_col, wanted=wanted, output=output)
+                val_col = self._detect_value_column(header_row, first_data)
+                if val_col is not None:
+                    # pull out each wanted parameter from this block
+                    output = self._popuplate_output_from_table(rows, first_data_idx=i+1, val_col=val_col, wanted=wanted, output=output)
 
-            # move past this table
-            i = self._skip_past_table(rows, i + 1)
+                # move past this table
+                i = self._skip_past_table(rows, i + 1)
+            else:
+                i = i + 1
 
         return output
 

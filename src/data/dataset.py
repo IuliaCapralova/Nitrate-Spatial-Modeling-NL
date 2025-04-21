@@ -30,10 +30,10 @@ class DataSet(ABC):
 
         # depeding on the type of data and the type of files, we need different
         # procedure of extracting paths
-        self._datafiles = self._file_finder() # containts all file paths
+        self._datafiles = self._paths_finder() # containts all file paths
 
 
-    def _file_finder(self):
+    def _paths_finder(self):
 
         if self.type_of_data == "well_chem_data":
             # Walk through the structured folders
@@ -83,11 +83,6 @@ class DataSet(ABC):
 
     def get_df(self) -> list:
         return self._datafiles
-
-
-    # @abstractmethod
-    # def _filter_data(self):
-    #     pass
 
 
 if __name__ == "__main__":
