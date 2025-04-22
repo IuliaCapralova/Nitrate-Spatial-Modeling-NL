@@ -1,0 +1,32 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000001534","IMBRO/A","2022-11-28T15:16:02+01:00","2003-08-29T12:00:00+02:00","onbekend","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Zuurgraad","1398","pH","7.09","1","goedgekeurd",,,,
+"Temperatuur","1522","T","17.4","Cel","goedgekeurd",,,,
+"waterstofcarbonaat","374","HCO3","550.88","mg/l","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","102.1","mS/m","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"ammonium","289","NH4","2003-08-29","2.08","mg/l",,,,"goedgekeurd"
+"koolstof organisch","1318","Corg","2003-08-29","7.54","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","2003-08-29","44.6","mg/l",,,,"goedgekeurd"
+"kalium","920","K","2003-08-29","6.7","mg/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","2003-08-29","0.65","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","2003-08-29","31.52","mg/l",,,,"goedgekeurd"
+"aluminium","284","Al","2003-08-29","10.0","ug/l",,,"<","goedgekeurd"
+"ijzer","879","Fe","2003-08-29","284.0","ug/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","2003-08-29","1152.0","ug/l",,,,"goedgekeurd"
+"chloride","508","Cl","2003-08-29","55.74","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","2003-08-29","0.07","mg/l",,,"<","goedgekeurd"
+"calcium","447","Ca","2003-08-29","131.18","mg/l",,,,"goedgekeurd"
+"arseen","310","As","2003-08-29","103.0","ug/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","2003-08-29","23.8","mg/l",,,,"goedgekeurd"
+"barium","333","Ba","2003-08-29","137.0","ug/l",,,,"goedgekeurd"
+"cadmium","441","Cd","2003-08-29","0.05","ug/l",,,"<","goedgekeurd"
+"chroom","517","Cr","2003-08-29","1.5","ug/l",,,,"onbeslist"
+"koper","971","Cu","2003-08-29","0.5","ug/l",,,"<","goedgekeurd"
+"nikkel","1267","Ni","2003-08-29","1.7","ug/l",,,,"goedgekeurd"
+"strontium","1501","Sr","2003-08-29","662.9","ug/l",,,,"goedgekeurd"
+"zink","1693","Zn","2003-08-29","4.0","ug/l",,,"<","goedgekeurd"
+,,,,,,,,,

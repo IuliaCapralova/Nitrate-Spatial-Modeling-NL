@@ -1,0 +1,21 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000012446","IMBRO/A","2023-01-09T10:13:35+01:00","1997-06-05T12:00:00+02:00","onbekend","3",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"silicium","1479","Si","1997-06-05","4.69","mg/l",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","1997-06-05","7.02","1",,,,"goedgekeurd"
+"magnesium","1125","Mg","1997-06-05","8.0","mg/l",,,,"goedgekeurd"
+"ammonium","289","NH4","1997-06-05","1.0","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1997-06-05","1.0","mg/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","1997-06-05","286.0","mg/l",,,,"onbeslist"
+"calcium","447","Ca","1997-06-05","84.0","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","1997-06-05","118.0","mg/l",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","1997-06-05","77.3","mS/m",,,,"onbeslist"
+"ijzer","879","Fe","1997-06-05","3740.0","ug/l",,,,"goedgekeurd"
+"kalium","920","K","1997-06-05","4.3","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","1997-06-05","140.0","ug/l",,,,"onbeslist"
+"fosfor totaal","4188","Ptot","1997-06-05","0.19","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","1997-06-05","0.01","mg/l",,,"<","onbeslist"
+"arseen","310","As","1997-06-05","24.1","ug/l",,,,"goedgekeurd"
+"natrium","1262","Na","1997-06-05","67.0","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

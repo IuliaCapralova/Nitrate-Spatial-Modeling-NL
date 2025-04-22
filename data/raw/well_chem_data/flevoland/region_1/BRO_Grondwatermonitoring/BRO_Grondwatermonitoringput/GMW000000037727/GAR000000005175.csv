@@ -1,0 +1,17 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000005175","IMBRO/A","2022-12-02T21:14:18+01:00","1964-04-03T11:00:00+01:00","onbekend","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"waterstofcarbonaat","374","HCO3","268.0","mg/l","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"ammonium","289","NH4","1964-04-03","9.95","mg/l",,,,"goedgekeurd"
+"fosfaat","1334","PO4","1964-04-03","0.2","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","1964-04-03","74.0","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1964-04-03","5.8","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1964-04-03","7.6","mg/l",,,,"goedgekeurd"
+"nitriet","1273","NO2","1964-04-03","0.006","mg/l",,,"<","goedgekeurd"
+"ijzer","879","Fe","1964-04-03","7800.0","ug/l",,,,"goedgekeurd"
+"calcium","447","Ca","1964-04-03","80.0","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","1964-04-03","132.0","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

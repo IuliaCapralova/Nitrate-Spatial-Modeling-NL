@@ -1,0 +1,35 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000012536","IMBRO/A","2023-01-09T10:17:13+01:00","1999-01-21T11:00:00+01:00","onbekend","2",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Temperatuur","1522","T","10.1","Cel","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","10.5","mS/m","goedgekeurd",,,,
+"Zuurgraad","1398","pH","4.7","1","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"koper","971","Cu","1999-01-21","9.1","ug/l",,,,"goedgekeurd"
+"natrium","1262","Na","1999-01-21","7.7","mg/l",,,,"goedgekeurd"
+"zink","1693","Zn","1999-01-21","9.6","ug/l",,,,"goedgekeurd"
+"chloride","508","Cl","1999-01-21","17.0","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1999-01-21","17.0","mg/l",,,,"goedgekeurd"
+"koolstof organisch","1318","Corg","1999-01-21","11.0","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1999-01-21","1.4","mg/l",,,,"goedgekeurd"
+"chroom","517","Cr","1999-01-21","1.0","ug/l",,,"<","goedgekeurd"
+"barium","333","Ba","1999-01-21","110.0","ug/l",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","1999-01-21","9.9","mS/m",,,,"goedgekeurd"
+"kalium","920","K","1999-01-21","1.9","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","1999-01-21","0.69","mg/l",,,,"goedgekeurd"
+"arseen","310","As","1999-01-21","2.0","ug/l",,,"<","goedgekeurd"
+"calcium","447","Ca","1999-01-21","2.3","mg/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","1999-01-21","4.7","mg/l",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","1999-01-21","4.9","1",,,,"goedgekeurd"
+"nikkel","1267","Ni","1999-01-21","5.0","ug/l",,,"<","goedgekeurd"
+"lood","1116","Pb","1999-01-21","5.0","ug/l",,,"<","goedgekeurd"
+"ijzer","879","Fe","1999-01-21","170.0","ug/l",,,,"goedgekeurd"
+"aluminium","284","Al","1999-01-21","1900.0","ug/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","1999-01-21","31.0","ug/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","1999-01-21","0.05","mg/l",,,"<","goedgekeurd"
+"cadmium","441","Cd","1999-01-21","0.4","ug/l",,,"<","goedgekeurd"
+"ammonium","289","NH4","1999-01-21","0.01","mg/l",,,"<","goedgekeurd"
+"strontium","1501","Sr","1999-01-21","46.0","ug/l",,,,"goedgekeurd"
+,,,,,,,,,

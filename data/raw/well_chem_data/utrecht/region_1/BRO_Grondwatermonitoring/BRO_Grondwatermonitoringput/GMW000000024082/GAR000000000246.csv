@@ -1,0 +1,26 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000000246","IMBRO/A","2022-11-25T10:27:57+01:00","1995-04-13T12:00:00+02:00","onbekend","2",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"waterstofcarbonaat","374","HCO3","1995-04-13","450.32","mg/l",,,,"goedgekeurd"
+"barium","333","Ba","1995-04-13","258.31","ug/l",,,,"goedgekeurd"
+"ammonium","289","NH4","1995-04-13","0.18","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","1995-04-13","20.09","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","1995-04-13","792.0","ug/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1995-04-13","19.05","mg/l",,,,"goedgekeurd"
+"kalium","920","K","1995-04-13","0.35","mg/l",,,,"goedgekeurd"
+"ijzer","879","Fe","1995-04-13","11276.0","ug/l",,,,"goedgekeurd"
+"chroom","517","Cr","1995-04-13","0.26","ug/l",,,"<","goedgekeurd"
+"chloride","508","Cl","1995-04-13","37.29","mg/l",,,,"goedgekeurd"
+"koper","971","Cu","1995-04-13","0.63","ug/l",,,"<","goedgekeurd"
+"calcium","447","Ca","1995-04-13","164.48","mg/l",,,,"goedgekeurd"
+"arseen","310","As","1995-04-13","1.94","ug/l",,,,"goedgekeurd"
+"aluminium","284","Al","1995-04-13","13.49","ug/l",,,"<","goedgekeurd"
+"cadmium","441","Cd","1995-04-13","0.04","ug/l",,,"<","goedgekeurd"
+"nikkel","1267","Ni","1995-04-13","0.88","ug/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","1995-04-13","0.04","mg/l",,,,"goedgekeurd"
+"zink","1693","Zn","1995-04-13","6.53","ug/l",,,"<","onbeslist"
+"strontium","1501","Sr","1995-04-13","445.98","ug/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1995-04-13","93.27","mg/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","1995-04-13","0.61","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

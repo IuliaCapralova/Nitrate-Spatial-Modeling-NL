@@ -1,0 +1,30 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000000767","IMBRO/A","2022-11-25T11:09:58+01:00","2003-01-01T11:00:00+01:00","onbekend","2",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Temperatuur","1522","T","10.3","Cel","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"magnesium","1125","Mg","2003-01-01","5.9","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","2003-01-01","3.79","ug/l",,,,"goedgekeurd"
+"natrium","1262","Na","2003-01-01","8.26","mg/l",,,,"goedgekeurd"
+"ammonium","289","NH4","2003-01-01","0.13","mg/l",,,,"onbeslist"
+"nikkel","1267","Ni","2003-01-01","3.67","ug/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","2003-01-01","2.43","mg/l",,,,"goedgekeurd"
+"zuurstof","1701","O2","2003-01-01","7.3","mg/l",,,,"goedgekeurd"
+"lood","1116","Pb","2003-01-01","0.01","ug/l",,,"<","onbeslist"
+"fosfor totaal","4188","Ptot","2003-01-01","0.02","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","2003-01-01","22.92","mg/l",,,,"goedgekeurd"
+"zink","1693","Zn","2003-01-01","56.34","ug/l",,,,"onbeslist"
+"kalium","920","K","2003-01-01","1.12","mg/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","2003-01-01","51.12","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","2003-01-01","15.57","mg/l",,,,"goedgekeurd"
+"ijzer","879","Fe","2003-01-01","5.0","ug/l",,,"<","goedgekeurd"
+"koper","971","Cu","2003-01-01","0.35","ug/l",,,,"goedgekeurd"
+"cadmium","441","Cd","2003-01-01","0.09","ug/l",,,,"goedgekeurd"
+"calcium","447","Ca","2003-01-01","25.74","mg/l",,,,"goedgekeurd"
+"arseen","310","As","2003-01-01","1.1","ug/l",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","2003-01-01","6.8","1",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","2003-01-01","22.5","mS/m",,,,"goedgekeurd"
+"aluminium","284","Al","2003-01-01","18.52","ug/l",,,,"goedgekeurd"
+,,,,,,,,,

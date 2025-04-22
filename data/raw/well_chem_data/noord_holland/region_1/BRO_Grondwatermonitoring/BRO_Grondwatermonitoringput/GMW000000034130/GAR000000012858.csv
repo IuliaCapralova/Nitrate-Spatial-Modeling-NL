@@ -1,0 +1,31 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000012858","IMBRO/A","2023-01-09T10:33:21+01:00","1995-10-23T11:00:00+01:00","onbekend","4",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Zuurgraad","1398","pH","7.35","1","goedgekeurd",,,,
+"Temperatuur","1522","T","10.6","Cel","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","216.0","mS/m","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"magnesium","1125","Mg","1995-10-23","16.0","mg/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","1995-10-23","0.88","ug/l",,,"<","goedgekeurd"
+"calcium","447","Ca","1995-10-23","124.9","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","1995-10-23","312.2","mg/l",,,,"goedgekeurd"
+"barium","333","Ba","1995-10-23","175.0","ug/l",,,,"goedgekeurd"
+"strontium","1501","Sr","1995-10-23","457.0","ug/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","1995-10-23","553.0","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","1995-10-23","419.0","mg/l",,,,"goedgekeurd"
+"ijzer","879","Fe","1995-10-23","4077.0","ug/l",,,,"goedgekeurd"
+"kalium","920","K","1995-10-23","2.2","mg/l",,,,"goedgekeurd"
+"zink","1693","Zn","1995-10-23","6.5","ug/l",,,"<","goedgekeurd"
+"arseen","310","As","1995-10-23","4.42","ug/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","1995-10-23","0.15","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","1995-10-23","0.04","mg/l",,,,"goedgekeurd"
+"cadmium","441","Cd","1995-10-23","0.04","ug/l",,,"<","goedgekeurd"
+"koper","971","Cu","1995-10-23","0.6","ug/l",,,"<","goedgekeurd"
+"ammonium","289","NH4","1995-10-23","0.67","mg/l",,,,"goedgekeurd"
+"chroom","517","Cr","1995-10-23","0.47","ug/l",,,,"goedgekeurd"
+"lood","1116","Pb","1995-10-23","0.2","ug/l",,,"<","goedgekeurd"
+"mangaan","1128","Mn","1995-10-23","374.0","ug/l",,,,"goedgekeurd"
+"aluminium","284","Al","1995-10-23","22.0","ug/l",,,,"goedgekeurd"
+,,,,,,,,,

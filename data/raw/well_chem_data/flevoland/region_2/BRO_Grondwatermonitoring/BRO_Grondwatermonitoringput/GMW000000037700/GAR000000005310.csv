@@ -1,0 +1,21 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000005310","IMBRO/A","2022-12-02T21:24:36+01:00","2003-01-15T11:00:00+01:00","onbekend","3",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"waterstofcarbonaat","374","HCO3","427.0","mg/l","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"natrium","1262","Na","2003-01-15","170.0","mg/l",,,,"goedgekeurd"
+"koolstof organisch","1318","Corg","2003-01-15","7.8","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","2003-01-15","8.8","mg/l",,,,"goedgekeurd"
+"kalium","920","K","2003-01-15","3.1","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","2003-01-15","400.0","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","2003-01-15","170.0","mg/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","2003-01-15","0.17","mg/l",,,,"onbeslist"
+"sulfaat","1508","SO4","2003-01-15","5.0","mg/l",,,"<","goedgekeurd"
+"ammonium","289","NH4","2003-01-15","6.14","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","2003-01-15","0.11","mg/l",,,"<","goedgekeurd"
+"fosfaat","1334","PO4","2003-01-15","0.07","mg/l",,,,"goedgekeurd"
+"ijzer","879","Fe","2003-01-15","19000.0","ug/l",,,,"goedgekeurd"
+"nitriet","1273","NO2","2003-01-15","0.006","mg/l",,,"<","goedgekeurd"
+,,,,,,,,,

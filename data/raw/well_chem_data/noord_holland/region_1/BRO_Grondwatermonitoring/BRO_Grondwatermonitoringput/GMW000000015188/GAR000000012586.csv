@@ -1,0 +1,35 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000012586","IMBRO/A","2023-01-09T10:20:06+01:00","2005-02-03T11:00:00+01:00","onbekend","2",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Zuurgraad","1398","pH","7.95","1","goedgekeurd",,,,
+"Temperatuur","1522","T","10.1","Cel","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","16.8","mS/m","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"Zuurgraad","1398","pH","2005-02-03","8.2","1",,,,"goedgekeurd"
+"natrium","1262","Na","2005-02-03","9.3","mg/l",,,,"goedgekeurd"
+"zink","1693","Zn","2005-02-03","8.4","ug/l",,,,"goedgekeurd"
+"silicium","1479","Si","2005-02-03","5.93","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","2005-02-03","16.0","mg/l",,,,"onbeslist"
+"calcium","447","Ca","2005-02-03","18.0","mg/l",,,,"goedgekeurd"
+"barium","333","Ba","2005-02-03","13.7","ug/l",,,,"goedgekeurd"
+"aluminium","284","Al","2005-02-03","11.0","ug/l",,,,"goedgekeurd"
+"koolstof organisch","1318","Corg","2005-02-03","0.92","mg/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","2005-02-03","1.0","ug/l",,,"<","goedgekeurd"
+"lood","1116","Pb","2005-02-03","1.0","ug/l",,,"<","goedgekeurd"
+"magnesium","1125","Mg","2005-02-03","1.5","mg/l",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","2005-02-03","14.8","mS/m",,,,"goedgekeurd"
+"arseen","310","As","2005-02-03","2.0","ug/l",,,,"goedgekeurd"
+"koper","971","Cu","2005-02-03","5.0","ug/l",,,"<","goedgekeurd"
+"fosfor totaal","4188","Ptot","2005-02-03","0.09","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","2005-02-03","0.18","mg/l",,,,"goedgekeurd"
+"kalium","920","K","2005-02-03","0.6","mg/l",,,,"goedgekeurd"
+"ijzer","879","Fe","2005-02-03","20.0","ug/l",,,,"goedgekeurd"
+"ammonium","289","NH4","2005-02-03","0.02","mg/l",,,"<","goedgekeurd"
+"kooldioxide","1803","CO2","2005-02-03","0.4","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","2005-02-03","10.0","ug/l",,,"<","goedgekeurd"
+"sulfaat","1508","SO4","2005-02-03","26.0","mg/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","2005-02-03","37.0","mg/l",,,,"goedgekeurd"
+"strontium","1501","Sr","2005-02-03","48.1","ug/l",,,,"goedgekeurd"
+,,,,,,,,,

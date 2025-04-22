@@ -8,29 +8,25 @@ class DataSet(ABC):
     Depending on the type of data (e.g. well data) user is interested in, we collect relevant files
     """
 
-    def __init__(self, type_of_data: str, type_of_file:str) -> None:
+    def __init__(self, province:str, type_of_data: str) -> None:
 
         # get current directory
-        # TODO: !! you should go a few folders back to reach "data" folder !!
         current_dir = os.getcwd()
 
         # go a few folders up
-        two_levels_up = os.path.abspath(os.path.join(current_dir, "..", ".."))
+        two_levels_up = os.path.abspath(os.path.join(current_dir))
 
-        dataset_dir = os.path.join(two_levels_up, 'data/raw', type_of_data)
+        dataset_dir = os.path.join(two_levels_up, 'data/raw', type_of_data, province)
         
         # e.g., chemical analysis from wells
         self.type_of_data = type_of_data
-
-        # e.g., .csv, .kml, .gpkg
-        self.type_of_file = type_of_file
         
         # save directory to the general type of the data (like well data)
         self._datasetdir = dataset_dir
 
         # depeding on the type of data and the type of files, we need different
         # procedure of extracting paths
-        self._datafiles = self._paths_finder() # containts all file paths
+        self._datafiles, self._location_files = self._paths_finder() # containts all csv file paths
 
 
     def _paths_finder(self):
@@ -44,12 +40,20 @@ class DataSet(ABC):
             # 4. Enter in each and separately store the path for each .csv
 
             files = []  # store all the file paths
+            location_paths = []
 
             for region_folder in os.listdir(self._datasetdir):
                 region_path = os.path.join(self._datasetdir, region_folder)
                 # skips the current item if it's not a folder
                 if not os.path.isdir(region_path):
                     continue
+
+                ###
+                kml_files = [f for f in os.listdir(region_path) if f.endswith(".kml")]
+                if kml_files:
+                    kml_path = os.path.join(region_path, kml_files[0])
+                    location_paths.append(kml_path)
+                ###
 
                 monitoring_path = os.path.join(region_path, "BRO_Grondwatermonitoring", "BRO_Grondwatermonitoringput")
                 if not os.path.isdir(monitoring_path):
@@ -61,11 +65,11 @@ class DataSet(ABC):
                         continue
 
                     for file in os.listdir(well_path):
-                        if file.endswith(self.type_of_file):  # e.g., '.csv'
+                        if file.endswith(".csv"):  # e.g., '.csv'
                             full_path = os.path.join(well_path, file)
                             files.append(full_path)
 
-        return sorted(files)
+        return sorted(files), sorted(location_paths)
     
     def __getitem__(self, index:int):
         """
@@ -86,7 +90,7 @@ class DataSet(ABC):
 
 
 if __name__ == "__main__":
-    instance = DataSet(type_of_data = "well_chem_data", type_of_file = ".csv")
+    instance = DataSet(type_of_data = "well_chem_data")
     path = instance[0]
     read_csv = pd.read_csv(path)
     print(read_csv.head())

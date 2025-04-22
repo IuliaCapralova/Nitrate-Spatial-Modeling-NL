@@ -1,0 +1,9 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000034370","IMBRO/A","2023-01-13T20:40:16+01:00","1982-08-24T13:00:00+02:00","onderwaterpomp","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"antimoon","301","Sb","1982-08-24","0.086","ug/l",,,,"goedgekeurd"
+"kobalt","527","Co","1982-08-24","0.34","ug/l",,,,"goedgekeurd"
+"vanadium","1642","V","1982-08-24","1.32","ug/l",,,,"goedgekeurd"
+"bromide","391","Br","1982-08-24","1.9","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

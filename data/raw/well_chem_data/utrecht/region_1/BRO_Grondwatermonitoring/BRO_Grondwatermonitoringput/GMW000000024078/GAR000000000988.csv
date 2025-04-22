@@ -1,0 +1,26 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000000988","IMBRO/A","2022-11-25T12:20:54+01:00","1995-04-25T12:00:00+02:00","onbekend","3",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"natrium","1262","Na","1995-04-25","7.01","mg/l",,,,"goedgekeurd"
+"arseen","310","As","1995-04-25","0.97","ug/l",,,,"goedgekeurd"
+"calcium","447","Ca","1995-04-25","43.27","mg/l",,,,"goedgekeurd"
+"cadmium","441","Cd","1995-04-25","0.04","ug/l",,,"<","goedgekeurd"
+"chloride","508","Cl","1995-04-25","7.76","mg/l",,,,"goedgekeurd"
+"chroom","517","Cr","1995-04-25","0.26","ug/l",,,"<","onbeslist"
+"koper","971","Cu","1995-04-25","0.63","ug/l",,,"<","goedgekeurd"
+"aluminium","284","Al","1995-04-25","18.88","ug/l",,,,"onbeslist"
+"ijzer","879","Fe","1995-04-25","257.0","ug/l",,,,"onbeslist"
+"waterstofcarbonaat","374","HCO3","1995-04-25","140.95","mg/l",,,,"goedgekeurd"
+"kalium","920","K","1995-04-25","0.93","mg/l",,,,"goedgekeurd"
+"barium","333","Ba","1995-04-25","24.71","ug/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","1995-04-25","142.0","ug/l",,,,"goedgekeurd"
+"ammonium","289","NH4","1995-04-25","0.05","mg/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","1995-04-25","1.11","ug/l",,,,"onbeslist"
+"nitraat","1270","NO3","1995-04-25","0.04","mg/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","1995-04-25","0.12","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1995-04-25","6.43","mg/l",,,,"goedgekeurd"
+"strontium","1501","Sr","1995-04-25","130.55","ug/l",,,,"goedgekeurd"
+"zink","1693","Zn","1995-04-25","6.53","ug/l",,,,"onbeslist"
+"magnesium","1125","Mg","1995-04-25","3.16","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

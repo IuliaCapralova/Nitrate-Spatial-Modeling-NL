@@ -1,0 +1,17 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000004155","IMBRO/A","2022-12-02T19:21:52+01:00","1957-01-10T11:00:00+01:00","onbekend","2",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"waterstofcarbonaat","374","HCO3","177.0","mg/l","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"nitriet","1273","NO2","1957-01-10","0.006","mg/l",,,"<","goedgekeurd"
+"natrium","1262","Na","1957-01-10","459.0","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","1957-01-10","972.0","mg/l",,,,"goedgekeurd"
+"fosfaat","1334","PO4","1957-01-10","0.05","mg/l",,,,"goedgekeurd"
+"ammonium","289","NH4","1957-01-10","0.17","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1957-01-10","48.4","mg/l",,,,"goedgekeurd"
+"ijzer","879","Fe","1957-01-10","18700.0","ug/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1957-01-10","78.7","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","1957-01-10","150.5","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

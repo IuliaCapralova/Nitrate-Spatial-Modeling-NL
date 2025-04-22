@@ -1,0 +1,31 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000034464","IMBRO/A","2023-01-13T20:46:26+01:00","2000-09-21T13:00:00+02:00","onderwaterpomp","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Geleidendheid","3548","GELDHD","24.0","mS/m","goedgekeurd",,,,
+"waterstofcarbonaat","374","HCO3","89.115","mg/l","goedgekeurd",,,,
+"Temperatuur","1522","T","10.8","Cel","goedgekeurd",,,,
+"Zuurgraad","1398","pH","6.48","1","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"aluminium","284","Al","2000-09-21","53.96","ug/l",,,"<","goedgekeurd"
+"arseen","310","As","2000-09-21","2.922","ug/l",,,,"goedgekeurd"
+"barium","333","Ba","2000-09-21","90.638","ug/l",,,,"goedgekeurd"
+"chloride","508","Cl","2000-09-21","18.328","mg/l",,,,"goedgekeurd"
+"chroom","517","Cr","2000-09-21","1.04","ug/l",,,"<","goedgekeurd"
+"koper","971","Cu","2000-09-21","1.271","ug/l",,,"<","goedgekeurd"
+"fosfor totaal","4188","Ptot","2000-09-21","0.062","mg/l",,,"<","goedgekeurd"
+"sulfaat","1508","SO4","2000-09-21","17.675","mg/l",,,,"goedgekeurd"
+"strontium","1501","Sr","2000-09-21","37.677","ug/l",,,,"goedgekeurd"
+"ijzer","879","Fe","2000-09-21","5820.0","ug/l",,,,"goedgekeurd"
+"kalium","920","K","2000-09-21","3.324","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","2000-09-21","1.629","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","2000-09-21","25765.0","ug/l",,,,"goedgekeurd"
+"ammonium","289","NH4","2000-09-21","0.07","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","2000-09-21","10.644","mg/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","2000-09-21","10.083","ug/l",,,,"goedgekeurd"
+"zink","1693","Zn","2000-09-21","13.078","ug/l",,,"<","goedgekeurd"
+"calcium","447","Ca","2000-09-21","10.621","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","2000-09-21","0.084","mg/l",,,,"goedgekeurd"
+"cadmium","441","Cd","2000-09-21","0.169","ug/l",,,,"goedgekeurd"
+,,,,,,,,,

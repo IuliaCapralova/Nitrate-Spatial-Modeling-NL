@@ -1,0 +1,35 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000034258","IMBRO/A","2023-01-13T20:33:15+01:00","2017-11-28T12:00:00+01:00","onderwaterpomp","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"zuurstof","1701","O2","2.5","mg/l","goedgekeurd",,,,
+"Zuurgraad","1398","pH","4.28","1","goedgekeurd",,,,
+"Temperatuur","1522","T","9.6","Cel","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","33.0","mS/m","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"aluminium","284","Al","2017-11-28","5457.0","ug/l",,,,"goedgekeurd"
+"arseen","310","As","2017-11-28","2.067","ug/l",,,,"goedgekeurd"
+"barium","333","Ba","2017-11-28","45.37","ug/l",,,,"goedgekeurd"
+"chloride","508","Cl","2017-11-28","52.029","mg/l",,,,"goedgekeurd"
+"chroom","517","Cr","2017-11-28","0.996","ug/l",,,,"goedgekeurd"
+"koper","971","Cu","2017-11-28","0.5","ug/l",,,"<","goedgekeurd"
+"Geleidendheid","3548","GELDHD","2017-11-28","35.0","mS/m",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","2017-11-28","4.34","1",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","2017-11-28","0.05","mg/l",,,"<","goedgekeurd"
+"sulfaat","1508","SO4","2017-11-28","51.409","mg/l",,,,"goedgekeurd"
+"strontium","1501","Sr","2017-11-28","75.86","ug/l",,,,"goedgekeurd"
+"ijzer","879","Fe","2017-11-28","50.0","ug/l",,,"<","goedgekeurd"
+"kalium","920","K","2017-11-28","3.461","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","2017-11-28","3.333","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","2017-11-28","67.0","ug/l",,,,"goedgekeurd"
+"ammonium","289","NH4","2017-11-28","0.05","mg/l",,,"<","goedgekeurd"
+"natrium","1262","Na","2017-11-28","23.94","mg/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","2017-11-28","1.861","ug/l",,,,"goedgekeurd"
+"lood","1116","Pb","2017-11-28","0.269","ug/l",,,,"goedgekeurd"
+"zink","1693","Zn","2017-11-28","4.0","ug/l",,,"<","goedgekeurd"
+"calcium","447","Ca","2017-11-28","16.13","mg/l",,,,"goedgekeurd"
+"koolstof organisch","1318","Corg","2017-11-28","2.62","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","2017-11-28","8.079","mg/l",,,,"goedgekeurd"
+"cadmium","441","Cd","2017-11-28","0.377","ug/l",,,,"goedgekeurd"
+,,,,,,,,,

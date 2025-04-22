@@ -1,0 +1,36 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000034432","IMBRO/A","2023-01-13T20:44:21+01:00","2020-05-12T13:00:00+02:00","onderwaterpomp","3",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"zuurstof","1701","O2","1.3","mg/l","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","68.4","mS/m","goedgekeurd",,,,
+"waterstofcarbonaat","374","HCO3","196.1","mg/l","goedgekeurd",,,,
+"Temperatuur","1522","T","10.9","Cel","goedgekeurd",,,,
+"Zuurgraad","1398","pH","7.52","1","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"kalium","920","K","2020-05-12","10.384","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","2020-05-12","12.092","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","2020-05-12","4.0","ug/l",,,"<","goedgekeurd"
+"ammonium","289","NH4","2020-05-12","0.047","mg/l",,,"<","goedgekeurd"
+"natrium","1262","Na","2020-05-12","41.81","mg/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","2020-05-12","0.6","ug/l",,,,"goedgekeurd"
+"lood","1116","Pb","2020-05-12","0.2","ug/l",,,"<","goedgekeurd"
+"zink","1693","Zn","2020-05-12","4.0","ug/l",,,"<","goedgekeurd"
+"calcium","447","Ca","2020-05-12","85.35","mg/l",,,,"goedgekeurd"
+"koolstof organisch","1318","Corg","2020-05-12","3.241","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","2020-05-12","11.969","mg/l",,,,"goedgekeurd"
+"cadmium","441","Cd","2020-05-12","0.05","ug/l",,,"<","goedgekeurd"
+"aluminium","284","Al","2020-05-12","10.0","ug/l",,,"<","goedgekeurd"
+"arseen","310","As","2020-05-12","0.2","ug/l",,,"<","goedgekeurd"
+"barium","333","Ba","2020-05-12","81.862","ug/l",,,,"goedgekeurd"
+"chloride","508","Cl","2020-05-12","41.886","mg/l",,,,"goedgekeurd"
+"chroom","517","Cr","2020-05-12","1.393","ug/l",,,,"goedgekeurd"
+"koper","971","Cu","2020-05-12","0.5","ug/l",,,"<","goedgekeurd"
+"Geleidendheid","3548","GELDHD","2020-05-12","67.0","mS/m",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","2020-05-12","7.5","1",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","2020-05-12","0.05","mg/l",,,"<","goedgekeurd"
+"sulfaat","1508","SO4","2020-05-12","54.124","mg/l",,,,"goedgekeurd"
+"strontium","1501","Sr","2020-05-12","380.761","ug/l",,,,"goedgekeurd"
+"ijzer","879","Fe","2020-05-12","50.0","ug/l",,,"<","goedgekeurd"
+,,,,,,,,,

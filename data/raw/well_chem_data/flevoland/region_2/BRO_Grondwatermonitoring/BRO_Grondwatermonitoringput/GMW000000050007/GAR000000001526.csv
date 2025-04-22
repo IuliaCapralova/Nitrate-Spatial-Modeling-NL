@@ -1,0 +1,31 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000001526","IMBRO/A","2022-11-28T15:15:23+01:00","1995-08-17T12:00:00+02:00","onbekend","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Temperatuur","1522","T","15.6","Cel","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","51.3","mS/m","goedgekeurd",,,,
+"Zuurgraad","1398","pH","6.94","1","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"nikkel","1267","Ni","1995-08-17","1.11","ug/l",,,,"goedgekeurd"
+"zink","1693","Zn","1995-08-17","6.53","ug/l",,,,"goedgekeurd"
+"koper","971","Cu","1995-08-17","0.63","ug/l",,,"<","goedgekeurd"
+"strontium","1501","Sr","1995-08-17","847.28","ug/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","1995-08-17","594.94","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","1995-08-17","182.38","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1995-08-17","38.99","mg/l",,,,"goedgekeurd"
+"ammonium","289","NH4","1995-08-17","2.76","mg/l",,,,"goedgekeurd"
+"aluminium","284","Al","1995-08-17","43.16","ug/l",,,,"goedgekeurd"
+"ijzer","879","Fe","1995-08-17","2279.0","ug/l",,,,"goedgekeurd"
+"natrium","1262","Na","1995-08-17","45.29","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","1995-08-17","48.46","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","1995-08-17","0.08","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1995-08-17","139.47","mg/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","1995-08-17","1.42","mg/l",,,,"goedgekeurd"
+"arseen","310","As","1995-08-17","2.32","ug/l",,,,"goedgekeurd"
+"barium","333","Ba","1995-08-17","137.19","ug/l",,,,"goedgekeurd"
+"cadmium","441","Cd","1995-08-17","0.04","ug/l",,,"<","goedgekeurd"
+"chroom","517","Cr","1995-08-17","0.57","ug/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","1995-08-17","1423.0","ug/l",,,,"goedgekeurd"
+"kalium","920","K","1995-08-17","8.87","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

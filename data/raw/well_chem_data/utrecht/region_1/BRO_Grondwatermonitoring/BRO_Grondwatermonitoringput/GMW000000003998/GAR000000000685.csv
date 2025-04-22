@@ -1,0 +1,35 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000000685","IMBRO/A","2022-11-25T11:07:35+01:00","2010-03-19T11:00:00+01:00","onbekend","3",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Temperatuur","1522","T","10.3","Cel","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","50.9","mS/m","goedgekeurd",,,,
+"zuurstof","1701","O2","0.66","mg/l","goedgekeurd",,,,
+"Zuurgraad","1398","pH","7.46","1","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"nikkel","1267","Ni","2010-03-19","2.6","ug/l",,,,"goedgekeurd"
+"Temperatuur","1522","T","2010-03-19","20.8","Cel",,,,"goedgekeurd"
+"zink","1693","Zn","2010-03-19","42.0","ug/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","2010-03-19","54.0","mg/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","2010-03-19","0.05","mg/l",,,"<","goedgekeurd"
+"lood","1116","Pb","2010-03-19","72.87","ug/l",,,,"onbeslist"
+"nitraat","1270","NO3","2010-03-19","7.61","mg/l",,,,"onbeslist"
+"ammonium","289","NH4","2010-03-19","0.02","mg/l",,,"<","goedgekeurd"
+"natrium","1262","Na","2010-03-19","21.97","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","2010-03-19","267.0","ug/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","2010-03-19","9.77","mg/l",,,,"goedgekeurd"
+"kalium","920","K","2010-03-19","4.47","mg/l",,,,"goedgekeurd"
+"kwik","1097","Hg","2010-03-19","0.03","ug/l",,,"<","goedgekeurd"
+"Geleidendheid","3548","GELDHD","2010-03-19","50.9","mS/m",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","2010-03-19","135.0","mg/l",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","2010-03-19","7.31","1",,,,"goedgekeurd"
+"aluminium","284","Al","2010-03-19","10.0","ug/l",,,"<","goedgekeurd"
+"arseen","310","As","2010-03-19","0.25","ug/l",,,,"onbeslist"
+"calcium","447","Ca","2010-03-19","56.58","mg/l",,,,"goedgekeurd"
+"cadmium","441","Cd","2010-03-19","0.1","ug/l",,,"<","goedgekeurd"
+"chloride","508","Cl","2010-03-19","37.7","mg/l",,,,"goedgekeurd"
+"chroom","517","Cr","2010-03-19","0.15","ug/l",,,"<","onbeslist"
+"koper","971","Cu","2010-03-19","0.47","ug/l",,,,"goedgekeurd"
+"ijzer","879","Fe","2010-03-19","20.0","ug/l",,,"<","goedgekeurd"
+,,,,,,,,,

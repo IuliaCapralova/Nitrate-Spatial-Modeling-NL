@@ -1,0 +1,30 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000000583","IMBRO/A","2022-11-25T10:48:36+01:00","2003-01-01T11:00:00+01:00","onbekend","2",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Temperatuur","1522","T","11.4","Cel","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"cadmium","441","Cd","2003-01-01","0.01","ug/l",,,"<","onbeslist"
+"calcium","447","Ca","2003-01-01","165.96","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","2003-01-01","41.65","mg/l",,,,"goedgekeurd"
+"koper","971","Cu","2003-01-01","0.65","ug/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","2003-01-01","421.42","mg/l",,,,"goedgekeurd"
+"kalium","920","K","2003-01-01","2.0","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","2003-01-01","18.13","mg/l",,,,"onbeslist"
+"mangaan","1128","Mn","2003-01-01","3980.81","ug/l",,,,"goedgekeurd"
+"ijzer","879","Fe","2003-01-01","8663.1","ug/l",,,,"goedgekeurd"
+"arseen","310","As","2003-01-01","0.69","ug/l",,,,"goedgekeurd"
+"aluminium","284","Al","2003-01-01","6.29","ug/l",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","2003-01-01","6.88","1",,,,"goedgekeurd"
+"natrium","1262","Na","2003-01-01","29.32","mg/l",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","2003-01-01","104.0","mS/m",,,,"goedgekeurd"
+"ammonium","289","NH4","2003-01-01","0.38","mg/l",,,,"goedgekeurd"
+"zink","1693","Zn","2003-01-01","17.69","ug/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","2003-01-01","107.03","mg/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","2003-01-01","0.36","mg/l",,,,"goedgekeurd"
+"lood","1116","Pb","2003-01-01","0.01","ug/l",,,"<","goedgekeurd"
+"zuurstof","1701","O2","2003-01-01","0.4","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","2003-01-01","0.0022","mg/l",,,"<","onbeslist"
+"nikkel","1267","Ni","2003-01-01","4.42","ug/l",,,,"goedgekeurd"
+,,,,,,,,,

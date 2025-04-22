@@ -1,0 +1,21 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000005004","IMBRO/A","2022-12-02T21:01:40+01:00","1990-10-23T11:00:00+01:00","onbekend","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"waterstofcarbonaat","374","HCO3","486.0","mg/l","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"fosfaat","1334","PO4","1990-10-23","0.02","mg/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","1990-10-23","0.12","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1990-10-23","3.0","mg/l",,,"<","goedgekeurd"
+"koolstof organisch","1318","Corg","1990-10-23","5.7","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","1990-10-23","0.0045","mg/l",,,"<","goedgekeurd"
+"ammonium","289","NH4","1990-10-23","6.22","mg/l",,,,"goedgekeurd"
+"ijzer","879","Fe","1990-10-23","31000.0","ug/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1990-10-23","34.0","mg/l",,,,"onbeslist"
+"calcium","447","Ca","1990-10-23","440.0","mg/l",,,,"goedgekeurd"
+"kalium","920","K","1990-10-23","6.0","mg/l",,,,"goedgekeurd"
+"nitriet","1273","NO2","1990-10-23","0.006","mg/l",,,"<","goedgekeurd"
+"natrium","1262","Na","1990-10-23","466.0","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","1990-10-23","1636.0","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

@@ -1,0 +1,20 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000001007","IMBRO/A","2022-11-25T12:21:33+01:00","1998-06-26T12:00:00+02:00","onbekend","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"arseen","310","As","1998-06-26","0.29","ug/l",,,,"goedgekeurd"
+"zink","1693","Zn","1998-06-26","10.0","ug/l",,,"<","goedgekeurd"
+"sulfaat","1508","SO4","1998-06-26","51.1","mg/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","1998-06-26","0.0088","mg/l",,,,"goedgekeurd"
+"lood","1116","Pb","1998-06-26","0.4","ug/l",,,"<","goedgekeurd"
+"nitraat","1270","NO3","1998-06-26","1.86","mg/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","1998-06-26","0.6","ug/l",,,,"goedgekeurd"
+"natrium","1262","Na","1998-06-26","35.5","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1998-06-26","8.68","mg/l",,,,"goedgekeurd"
+"koper","971","Cu","1998-06-26","5.0","ug/l",,,"<","goedgekeurd"
+"chloride","508","Cl","1998-06-26","52.4","mg/l",,,,"goedgekeurd"
+"cadmium","441","Cd","1998-06-26","0.06","ug/l",,,,"goedgekeurd"
+"barium","333","Ba","1998-06-26","80.0","ug/l",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","1998-06-26","7.36","1",,,,"goedgekeurd"
+"calcium","447","Ca","1998-06-26","67.7","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

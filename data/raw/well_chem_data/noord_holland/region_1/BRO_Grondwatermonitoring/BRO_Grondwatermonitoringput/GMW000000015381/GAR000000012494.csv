@@ -1,0 +1,32 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000012494","IMBRO/A","2023-01-09T10:15:30+01:00","1995-10-19T11:00:00+01:00","onbekend","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Temperatuur","1522","T","10.6","Cel","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","8.7","mS/m","goedgekeurd",,,,
+"Zuurgraad","1398","pH","4.47","1","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"nitraat","1270","NO3","1995-10-19","1.59","mg/l",,,,"goedgekeurd"
+"strontium","1501","Sr","1995-10-19","15.0","ug/l",,,,"goedgekeurd"
+"lood","1116","Pb","1995-10-19","1.1","ug/l",,,,"goedgekeurd"
+"koper","971","Cu","1995-10-19","1.3","ug/l",,,,"goedgekeurd"
+"kalium","920","K","1995-10-19","1.3","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","1995-10-19","3.0","ug/l",,,,"goedgekeurd"
+"barium","333","Ba","1995-10-19","110.0","ug/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","1995-10-19","2.0","mg/l",,,"<","goedgekeurd"
+"zink","1693","Zn","1995-10-19","6.5","ug/l",,,,"goedgekeurd"
+"natrium","1262","Na","1995-10-19","5.9","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","1995-10-19","6.0","mg/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","1995-10-19","4.87","ug/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","1995-10-19","0.06","mg/l",,,"<","goedgekeurd"
+"arseen","310","As","1995-10-19","0.15","ug/l",,,"<","goedgekeurd"
+"aluminium","284","Al","1995-10-19","2917.0","ug/l",,,,"goedgekeurd"
+"cadmium","441","Cd","1995-10-19","0.04","ug/l",,,"<","goedgekeurd"
+"calcium","447","Ca","1995-10-19","0.5","mg/l",,,,"goedgekeurd"
+"ammonium","289","NH4","1995-10-19","0.02","mg/l",,,"<","goedgekeurd"
+"chroom","517","Cr","1995-10-19","0.42","ug/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1995-10-19","0.3","mg/l",,,,"goedgekeurd"
+"ijzer","879","Fe","1995-10-19","11.0","ug/l",,,"<","goedgekeurd"
+"sulfaat","1508","SO4","1995-10-19","19.0","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

@@ -1,0 +1,21 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000050464","IMBRO/A","2025-03-14T13:11:28+01:00","1998-09-07T12:00:00+02:00","onbekend","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Zuurgraad","1398","pH","6.58","1","goedgekeurd",,,,
+"zuurstof","1701","O2","0.9","mg/l","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","531.0","mS/m","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"lood","1116","Pb","1998-09-07","5.0","ug/l","5.0","ug/l","<","goedgekeurd"
+"kobalt","527","Co","1998-09-07","5.0","ug/l","5.0","ug/l","<","goedgekeurd"
+"chroom","517","Cr","1998-09-07","1.0","ug/l","1.0","ug/l","<","goedgekeurd"
+"arseen","310","As","1998-09-07","12.0","ug/l","12.0","ug/l",,"goedgekeurd"
+"zink","1693","Zn","1998-09-07","45.0","ug/l","45.0","ug/l",,"goedgekeurd"
+"molybdeen","1243","Mo","1998-09-07","5.0","ug/l","5.0","ug/l","<","goedgekeurd"
+"barium","333","Ba","1998-09-07","130.0","ug/l","130.0","ug/l",,"goedgekeurd"
+"koper","971","Cu","1998-09-07","2.6","ug/l","2.6","ug/l",,"goedgekeurd"
+"kwik","1097","Hg","1998-09-07","0.03","ug/l","0.03","ug/l","<","goedgekeurd"
+"cadmium","441","Cd","1998-09-07","0.4","ug/l","0.4","ug/l","<","goedgekeurd"
+"nikkel","1267","Ni","1998-09-07","5.0","ug/l","5.0","ug/l","<","goedgekeurd"
+,,,,,,,,,

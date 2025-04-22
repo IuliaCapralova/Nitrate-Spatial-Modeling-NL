@@ -1,0 +1,20 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000000459","IMBRO/A","2022-11-25T10:44:34+01:00","1998-04-10T12:00:00+02:00","onbekend","2",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"nikkel","1267","Ni","1998-04-10","0.8","ug/l",,,,"goedgekeurd"
+"natrium","1262","Na","1998-04-10","19.4","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","1998-04-10","0.02","mg/l",,,"<","goedgekeurd"
+"koper","971","Cu","1998-04-10","5.0","ug/l",,,"<","goedgekeurd"
+"chloride","508","Cl","1998-04-10","44.1","mg/l",,,,"goedgekeurd"
+"cadmium","441","Cd","1998-04-10","0.02","ug/l",,,"<","goedgekeurd"
+"calcium","447","Ca","1998-04-10","131.0","mg/l",,,,"goedgekeurd"
+"barium","333","Ba","1998-04-10","181.0","ug/l",,,,"goedgekeurd"
+"arseen","310","As","1998-04-10","0.28","ug/l",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","1998-04-10","7.15","1",,,,"goedgekeurd"
+"magnesium","1125","Mg","1998-04-10","14.2","mg/l",,,,"goedgekeurd"
+"lood","1116","Pb","1998-04-10","0.4","ug/l",,,"<","goedgekeurd"
+"fosfor totaal","4188","Ptot","1998-04-10","0.02","mg/l",,,,"onbeslist"
+"zink","1693","Zn","1998-04-10","10.0","ug/l",,,"<","goedgekeurd"
+"sulfaat","1508","SO4","1998-04-10","89.0","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

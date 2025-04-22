@@ -1,0 +1,24 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000004396","IMBRO/A","2022-12-02T19:44:22+01:00","1996-11-28T11:00:00+01:00","onbekend","5",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Temperatuur","1522","T","12.5","Cel","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","386.0","mS/m","goedgekeurd",,,,
+"Zuurgraad","1398","pH","7.1","1","goedgekeurd",,,,
+"waterstofcarbonaat","374","HCO3","173.0","mg/l","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"ammonium","289","NH4","1996-11-28","0.54","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","1996-11-28","0.11","mg/l",,,"<","goedgekeurd"
+"fosfaat","1334","PO4","1996-11-28","0.03","mg/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","1996-11-28","0.03","mg/l",,,,"goedgekeurd"
+"nitriet","1273","NO2","1996-11-28","0.003","mg/l",,,"<","onbeslist"
+"koolstof organisch","1318","Corg","1996-11-28","2.2","mg/l",,,,"onbeslist"
+"natrium","1262","Na","1996-11-28","500.0","mg/l",,,,"onbeslist"
+"sulfaat","1508","SO4","1996-11-28","70.0","mg/l",,,,"onbeslist"
+"chloride","508","Cl","1996-11-28","1300.0","mg/l",,,,"onbeslist"
+"calcium","447","Ca","1996-11-28","480.0","mg/l",,,,"onbeslist"
+"kalium","920","K","1996-11-28","8.9","mg/l",,,,"goedgekeurd"
+"ijzer","879","Fe","1996-11-28","16000.0","ug/l",,,,"onbeslist"
+"magnesium","1125","Mg","1996-11-28","44.0","mg/l",,,,"onbeslist"
+,,,,,,,,,

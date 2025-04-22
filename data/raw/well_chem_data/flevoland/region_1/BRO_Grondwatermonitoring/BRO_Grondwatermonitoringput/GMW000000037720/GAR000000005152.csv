@@ -1,0 +1,13 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000005152","IMBRO/A","2022-12-02T21:12:34+01:00","1937-02-18T10:00:00Z","onbekend","5",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"waterstofcarbonaat","374","HCO3","377.0","mg/l","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"chloride","508","Cl","1937-02-18","2269.0","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1937-02-18","142.0","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1937-02-18","75.5","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","1937-02-18","422.0","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","1937-02-18","1052.0","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

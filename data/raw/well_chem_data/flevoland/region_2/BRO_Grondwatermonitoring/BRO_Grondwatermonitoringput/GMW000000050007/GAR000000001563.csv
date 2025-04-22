@@ -1,0 +1,24 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000001563","IMBRO/A","2022-11-28T15:18:54+01:00","2002-08-21T12:00:00+02:00","onbekend","2",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Zuurgraad","1398","pH","6.73","1","goedgekeurd",,,,
+"Temperatuur","1522","T","10.3","Cel","goedgekeurd",,,,
+"waterstofcarbonaat","374","HCO3","626.7","mg/l","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","161.0","mS/m","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"aluminium","284","Al","2002-08-21","80.94","ug/l",,,,"goedgekeurd"
+"koolstof organisch","1318","Corg","2002-08-21","20.63","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","2002-08-21","170.72","mg/l",,,,"goedgekeurd"
+"kalium","920","K","2002-08-21","5.0","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","2002-08-21","107.73","mg/l",,,,"goedgekeurd"
+"ammonium","289","NH4","2002-08-21","22.26","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","2002-08-21","350.0","ug/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","2002-08-21","0.04","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","2002-08-21","0.09","mg/l",,,"<","goedgekeurd"
+"fosfor totaal","4188","Ptot","2002-08-21","0.37","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","2002-08-21","17.33","mg/l",,,,"goedgekeurd"
+"ijzer","879","Fe","2002-08-21","5395.0","ug/l",,,,"goedgekeurd"
+"chloride","508","Cl","2002-08-21","206.7","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

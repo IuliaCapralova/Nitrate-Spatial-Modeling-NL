@@ -1,0 +1,17 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000012521","IMBRO/A","2023-01-09T10:16:37+01:00","1996-09-17T12:00:00+02:00","onbekend","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Temperatuur","1522","T","12.3","Cel","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","9.2","mS/m","goedgekeurd",,,,
+"Zuurgraad","1398","pH","5.24","1","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"sulfaat","1508","SO4","1996-09-17","17.4","mg/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","1996-09-17","5.53","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","1996-09-17","6.8","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","1996-09-17","1.06","mg/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","1996-09-17","0.06","mg/l",,,"<","goedgekeurd"
+"kalium","920","K","1996-09-17","0.7","mg/l",,,,"goedgekeurd"
+"ammonium","289","NH4","1996-09-17","0.01","mg/l",,,"<","goedgekeurd"
+,,,,,,,,,

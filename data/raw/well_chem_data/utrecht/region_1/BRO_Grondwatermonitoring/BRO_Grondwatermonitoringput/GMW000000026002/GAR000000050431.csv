@@ -1,0 +1,30 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000050431","IMBRO/A","2025-03-12T20:16:28+01:00","2003-01-01T11:00:00+01:00","onbekend","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Temperatuur","1522","T","10.2","Cel","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"lood","1116","Pb","2003-01-01","0.46","ug/l","0.46","ug/l",,"goedgekeurd"
+"nitraat","1270","NO3","2003-01-01","11.44","mg/l","11.44","mg/l",,"goedgekeurd"
+"aluminium","284","Al","2003-01-01","10.48","ug/l","10.48","ug/l",,"goedgekeurd"
+"ammonium","289","NH4","2003-01-01","0.13","mg/l","0.13","mg/l",,"goedgekeurd"
+"fosfor totaal","4188","Ptot","2003-01-01","0.15","mg/l","0.15","mg/l",,"goedgekeurd"
+"arseen","310","As","2003-01-01","0.59","ug/l","0.59","ug/l",,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","2003-01-01","43.5","mS/m","43.5","mS/m",,"goedgekeurd"
+"zuurstof","1701","O2","2003-01-01","6.9","mg/l","6.9","mg/l",,"goedgekeurd"
+"zink","1693","Zn","2003-01-01","46.18","ug/l","46.18","ug/l",,"goedgekeurd"
+"Zuurgraad","1398","pH","2003-01-01","6.65","1","6.65","1",,"goedgekeurd"
+"sulfaat","1508","SO4","2003-01-01","46.19","mg/l","46.19","mg/l",,"goedgekeurd"
+"calcium","447","Ca","2003-01-01","36.49","mg/l","36.49","mg/l",,"goedgekeurd"
+"chloride","508","Cl","2003-01-01","57.79","mg/l","57.79","mg/l",,"onbeslist"
+"waterstofcarbonaat","374","HCO3","2003-01-01","27.57","mg/l","27.57","mg/l",,"goedgekeurd"
+"magnesium","1125","Mg","2003-01-01","9.52","mg/l","9.52","mg/l",,"goedgekeurd"
+"mangaan","1128","Mn","2003-01-01","0.1","ug/l","0.1","ug/l","<","onbeslist"
+"koper","971","Cu","2003-01-01","24.54","ug/l","24.54","ug/l",,"onbeslist"
+"cadmium","441","Cd","2003-01-01","0.05","ug/l","0.05","ug/l",,"goedgekeurd"
+"ijzer","879","Fe","2003-01-01","5.0","ug/l","5.0","ug/l","<","goedgekeurd"
+"kalium","920","K","2003-01-01","1.6","mg/l","1.6","mg/l",,"onbeslist"
+"natrium","1262","Na","2003-01-01","24.4","mg/l","24.4","mg/l",,"goedgekeurd"
+"nikkel","1267","Ni","2003-01-01","4.39","ug/l","4.39","ug/l",,"goedgekeurd"
+,,,,,,,,,

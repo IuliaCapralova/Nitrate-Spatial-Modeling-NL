@@ -1,0 +1,35 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000001406","IMBRO/A","2022-11-28T15:04:00+01:00","2013-12-03T11:00:00+01:00","onbekend","2",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Zuurgraad","1398","pH","6.5","1","goedgekeurd",,,,
+"waterstofcarbonaat","374","HCO3","405.39","mg/l","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","164.0","mS/m","goedgekeurd",,,,
+"Temperatuur","1522","T","11.2","Cel","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"magnesium","1125","Mg","2013-12-03","12.67","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","2013-12-03","7.21","mg/l",,,,"goedgekeurd"
+"kalium","920","K","2013-12-03","13.5","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","2013-12-03","343.8","mg/l",,,,"goedgekeurd"
+"koolstof organisch","1318","Corg","2013-12-03","75.7","mg/l",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","2013-12-03","7.0","1",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","2013-12-03","163.0","mS/m",,,,"goedgekeurd"
+"ijzer","879","Fe","2013-12-03","820.0","ug/l",,,,"goedgekeurd"
+"ammonium","289","NH4","2013-12-03","0.56","mg/l",,,,"goedgekeurd"
+"barium","333","Ba","2013-12-03","54.0","ug/l",,,,"goedgekeurd"
+"zink","1693","Zn","2013-12-03","4.0","ug/l",,,"<","goedgekeurd"
+"nikkel","1267","Ni","2013-12-03","2.2","ug/l",,,,"goedgekeurd"
+"koper","971","Cu","2013-12-03","0.5","ug/l",,,"<","goedgekeurd"
+"cadmium","441","Cd","2013-12-03","0.05","ug/l",,,"<","goedgekeurd"
+"arseen","310","As","2013-12-03","1.6","ug/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","2013-12-03","0.37","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","2013-12-03","407.45","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","2013-12-03","0.07","mg/l",,,"<","goedgekeurd"
+"chloride","508","Cl","2013-12-03","52.95","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","2013-12-03","95.0","ug/l",,,,"goedgekeurd"
+"lood","1116","Pb","2013-12-03","0.3","ug/l",,,,"goedgekeurd"
+"chroom","517","Cr","2013-12-03","26.4","ug/l",,,,"goedgekeurd"
+"aluminium","284","Al","2013-12-03","190.0","ug/l",,,,"goedgekeurd"
+"strontium","1501","Sr","2013-12-03","87.0","ug/l",,,,"goedgekeurd"
+,,,,,,,,,

@@ -1,0 +1,26 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000001385","IMBRO/A","2022-11-28T15:02:08+01:00","2017-09-27T12:00:00+02:00","onbekend","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Temperatuur","1522","T","11.2","Cel","goedgekeurd",,,,
+"zuurstof","1701","O2","0.6","mg/l","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","123.0","mS/m","goedgekeurd",,,,
+"Zuurgraad","1398","pH","6.5","1","goedgekeurd",,,,
+"waterstofcarbonaat","374","HCO3","377.96","mg/l","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"calcium","447","Ca","2017-09-27","12.2","mg/l",,,,"goedgekeurd"
+"ijzer","879","Fe","2017-09-27","611.8","ug/l",,,,"goedgekeurd"
+"chloride","508","Cl","2017-09-27","30.42","mg/l",,,,"goedgekeurd"
+"koolstof organisch","1318","Corg","2017-09-27","116.22","mg/l",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","2017-09-27","128.0","mS/m",,,,"goedgekeurd"
+"kalium","920","K","2017-09-27","11.63","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","2017-09-27","0.17","ug/l",,,,"onbeslist"
+"nitraat","1270","NO3","2017-09-27","0.07","mg/l",,,"<","goedgekeurd"
+"natrium","1262","Na","2017-09-27","241.56","mg/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","2017-09-27","0.29","mg/l",,,,"goedgekeurd"
+"aluminium","284","Al","2017-09-27","542.0","ug/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","2017-09-27","18.27","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","2017-09-27","254.0","mg/l",,,,"goedgekeurd"
+"ammonium","289","NH4","2017-09-27","1.27","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

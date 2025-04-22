@@ -1,0 +1,28 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000001573","IMBRO/A","2022-11-28T15:19:58+01:00","2011-08-09T12:00:00+02:00","onbekend","2",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Geleidendheid","3548","GELDHD","122.6","mS/m","goedgekeurd",,,,
+"Zuurgraad","1398","pH","6.77","1","goedgekeurd",,,,
+"Temperatuur","1522","T","11.0","Cel","goedgekeurd",,,,
+"waterstofcarbonaat","374","HCO3","500.2","mg/l","goedgekeurd",,,,
+"zuurstof","1701","O2","0.03","mg/l","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"aluminium","284","Al","2011-08-09","60.0","ug/l",,,"<","goedgekeurd"
+"ijzer","879","Fe","2011-08-09","3800.0","ug/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","2011-08-09","290.0","ug/l",,,,"goedgekeurd"
+"chloride","508","Cl","2011-08-09","141.66","mg/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","2011-08-09","490.0","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","2011-08-09","0.01","mg/l",,,"<","goedgekeurd"
+"fosfor totaal","4188","Ptot","2011-08-09","0.33","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","2011-08-09","82.59","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","2011-08-09","20.46","mg/l",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","2011-08-09","6.93","1",,,,"goedgekeurd"
+"ammonium","289","NH4","2011-08-09","16.29","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","2011-08-09","13.98","mg/l",,,,"goedgekeurd"
+"koolstof organisch","1318","Corg","2011-08-09","17.4","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","2011-08-09","134.69","mg/l",,,,"goedgekeurd"
+"kalium","920","K","2011-08-09","4.0","mg/l",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","2011-08-09","124.2","mS/m",,,,"goedgekeurd"
+,,,,,,,,,

@@ -1,0 +1,31 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000012432","IMBRO/A","2023-01-09T10:13:05+01:00","1996-12-11T11:00:00+01:00","onbekend","4",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Zuurgraad","1398","pH","7.35","1","goedgekeurd",,,,
+"Temperatuur","1522","T","10.7","Cel","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","37.2","mS/m","onbeslist",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"ijzer","879","Fe","1996-12-11","7900.0","ug/l",,,,"goedgekeurd"
+"chloride","508","Cl","1996-12-11","16.0","mg/l",,,,"goedgekeurd"
+"aluminium","284","Al","1996-12-11","13.0","ug/l",,,"<","goedgekeurd"
+"natrium","1262","Na","1996-12-11","12.3","mg/l",,,,"goedgekeurd"
+"barium","333","Ba","1996-12-11","14.8","ug/l",,,,"goedgekeurd"
+"strontium","1501","Sr","1996-12-11","174.0","ug/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","1996-12-11","231.0","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","1996-12-11","0.35","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1996-12-11","2.4","mg/l",,,,"goedgekeurd"
+"zink","1693","Zn","1996-12-11","6.5","ug/l",,,,"onbeslist"
+"arseen","310","As","1996-12-11","5.1","ug/l",,,,"onbeslist"
+"fosfor totaal","4188","Ptot","1996-12-11","0.07","mg/l",,,,"onbeslist"
+"cadmium","441","Cd","1996-12-11","0.05","ug/l",,,"<","goedgekeurd"
+"sulfaat","1508","SO4","1996-12-11","0.1","mg/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","1996-12-11","0.8","ug/l",,,,"goedgekeurd"
+"chroom","517","Cr","1996-12-11","0.7","ug/l",,,"<","goedgekeurd"
+"koper","971","Cu","1996-12-11","0.7","ug/l",,,"<","goedgekeurd"
+"ammonium","289","NH4","1996-12-11","0.68","mg/l",,,,"goedgekeurd"
+"kalium","920","K","1996-12-11","0.5","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","1996-12-11","267.0","ug/l",,,,"goedgekeurd"
+"calcium","447","Ca","1996-12-11","69.0","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

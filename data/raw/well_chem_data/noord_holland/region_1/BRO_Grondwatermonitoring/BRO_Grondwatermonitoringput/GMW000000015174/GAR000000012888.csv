@@ -1,0 +1,30 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000012888","IMBRO/A","2023-01-09T10:35:00+01:00","2004-11-11T11:00:00+01:00","onbekend","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Zuurgraad","1398","pH","7.3","1","goedgekeurd",,,,
+"Temperatuur","1522","T","10.1","Cel","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","231.0","mS/m","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"sulfaat","1508","SO4","2004-11-11","15.0","mg/l",,,,"goedgekeurd"
+"lood","1116","Pb","2004-11-11","1.0","ug/l",,,"<","goedgekeurd"
+"ammonium","289","NH4","2004-11-11","1.0","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","2004-11-11","85.0","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","2004-11-11","250.0","mg/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","2004-11-11","500.0","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","2004-11-11","370.0","mg/l",,,,"goedgekeurd"
+"ijzer","879","Fe","2004-11-11","2500.0","ug/l",,,,"goedgekeurd"
+"koper","971","Cu","2004-11-11","3.2","ug/l",,,,"goedgekeurd"
+"kalium","920","K","2004-11-11","5.6","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","2004-11-11","87.0","ug/l",,,,"goedgekeurd"
+"cadmium","441","Cd","2004-11-11","0.05","ug/l",,,"<","goedgekeurd"
+"nikkel","1267","Ni","2004-11-11","0.5","ug/l",,,"<","goedgekeurd"
+"nitraat","1270","NO3","2004-11-11","0.04","mg/l",,,"<","goedgekeurd"
+"chroom","517","Cr","2004-11-11","0.3","ug/l",,,"<","goedgekeurd"
+"fosfor totaal","4188","Ptot","2004-11-11","0.47","mg/l",,,,"goedgekeurd"
+"aluminium","284","Al","2004-11-11","25.0","ug/l",,,"<","goedgekeurd"
+"zink","1693","Zn","2004-11-11","19.0","ug/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","2004-11-11","36.0","mg/l",,,,"goedgekeurd"
+"barium","333","Ba","2004-11-11","24.0","ug/l",,,,"goedgekeurd"
+,,,,,,,,,

@@ -1,0 +1,21 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000012921","IMBRO/A","2023-01-09T10:36:32+01:00","2001-11-22T11:00:00+01:00","onbekend","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Temperatuur","1522","T","10.5","Cel","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","88.3","mS/m","goedgekeurd",,,,
+"Zuurgraad","1398","pH","5.92","1","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"aminomethylfosfonzuur","292","AMPA","2001-11-22","0.84","ug/l",,,,"goedgekeurd"
+"glyfosaat","840","glyfst","2001-11-22","0.5","ug/l",,,"<","goedgekeurd"
+"carbendazim","460","carbdzm","2001-11-22","0.02","ug/l",,,"<","goedgekeurd"
+"desethylatrazine","571","desC2yatzne","2001-11-22","0.02","ug/l",,,"<","goedgekeurd"
+"metalaxyl","1149","mlxl","2001-11-22","0.02","ug/l",,,"<","goedgekeurd"
+"chloridazon","507","Clidzn","2001-11-22","0.02","ug/l",,,"<","goedgekeurd"
+"1,2,3-benzotriazool","2806","123benztazl","2001-11-22","0.3","ug/l",,,,"goedgekeurd"
+"procymidon","1417","procmdn","2001-11-22","0.01","ug/l",,,"<","goedgekeurd"
+"flutolanil","2305","flutlnl","2001-11-22","0.01","ug/l",,,"<","goedgekeurd"
+"diuron","683","Durn","2001-11-22","0.01","ug/l",,,"<","goedgekeurd"
+"profam","1418","profm","2001-11-22","0.03","ug/l",,,"<","goedgekeurd"
+,,,,,,,,,

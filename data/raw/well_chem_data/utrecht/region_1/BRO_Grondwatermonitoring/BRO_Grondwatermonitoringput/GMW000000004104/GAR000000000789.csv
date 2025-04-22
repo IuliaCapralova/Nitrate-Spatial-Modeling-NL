@@ -1,0 +1,34 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000000789","IMBRO/A","2022-11-25T11:10:38+01:00","2007-09-01T12:00:00+02:00","onbekend","2",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"zuurstof","1701","O2","6.42","mg/l","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","42.7","mS/m","goedgekeurd",,,,
+"Temperatuur","1522","T","11.5","Cel","goedgekeurd",,,,
+"waterstofcarbonaat","374","HCO3","36.28","mg/l","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"calcium","447","Ca","2007-09-01","51.0","mg/l",,,,"goedgekeurd"
+"lood","1116","Pb","2007-09-01","5.0","ug/l",,,"<","goedgekeurd"
+"zink","1693","Zn","2007-09-01","20.0","ug/l",,,"<","goedgekeurd"
+"sulfaat","1508","SO4","2007-09-01","39.0","mg/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","2007-09-01","1.0","mg/l",,,"<","onbeslist"
+"aluminium","284","Al","2007-09-01","10.0","ug/l",,,"<","goedgekeurd"
+"kalium","920","K","2007-09-01","8.6","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","2007-09-01","30.0","mg/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","2007-09-01","10.0","ug/l",,,"<","goedgekeurd"
+"ammonium","289","NH4","2007-09-01","0.01","mg/l",,,"<","goedgekeurd"
+"natrium","1262","Na","2007-09-01","9.0","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","2007-09-01","8.0","mg/l",,,,"goedgekeurd"
+"nitriet","1273","NO2","2007-09-01","0.01","mg/l",,,"<","goedgekeurd"
+"kwik","1097","Hg","2007-09-01","0.05","ug/l",,,"<","goedgekeurd"
+"waterstofcarbonaat","374","HCO3","2007-09-01","40.0","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","2007-09-01","10.0","ug/l",,,"<","goedgekeurd"
+"Geleidendheid","3548","GELDHD","2007-09-01","41.0","mS/m",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","2007-09-01","6.31","1",,,,"goedgekeurd"
+"arseen","310","As","2007-09-01","5.0","ug/l",,,"<","onbeslist"
+"chloride","508","Cl","2007-09-01","14.0","mg/l",,,,"goedgekeurd"
+"chroom","517","Cr","2007-09-01","5.0","ug/l",,,"<","goedgekeurd"
+"koper","971","Cu","2007-09-01","5.0","ug/l",,,"<","goedgekeurd"
+"ijzer","879","Fe","2007-09-01","10.0","ug/l",,,"<","goedgekeurd"
+,,,,,,,,,

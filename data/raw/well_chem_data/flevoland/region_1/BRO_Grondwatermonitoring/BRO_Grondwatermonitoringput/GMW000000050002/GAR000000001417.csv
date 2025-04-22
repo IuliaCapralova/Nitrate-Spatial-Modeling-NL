@@ -1,0 +1,35 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000001417","IMBRO/A","2022-11-28T15:05:22+01:00","2008-10-30T11:00:00+01:00","onbekend","4",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"waterstofcarbonaat","374","HCO3","422.2","mg/l","goedgekeurd",,,,
+"Temperatuur","1522","T","10.5","Cel","goedgekeurd",,,,
+"Zuurgraad","1398","pH","6.79","1","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","213.0","mS/m","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"nikkel","1267","Ni","2008-10-30","3.37","ug/l",,,,"goedgekeurd"
+"zink","1693","Zn","2008-10-30","2.94","ug/l",,,,"goedgekeurd"
+"strontium","1501","Sr","2008-10-30","380.0","ug/l",,,,"goedgekeurd"
+"koolstof organisch","1318","Corg","2008-10-30","53.1","mg/l",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","2008-10-30","6.88","1",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","2008-10-30","213.0","mS/m",,,,"goedgekeurd"
+"natrium","1262","Na","2008-10-30","358.0","mg/l",,,,"goedgekeurd"
+"barium","333","Ba","2008-10-30","170.0","ug/l",,,,"goedgekeurd"
+"kalium","920","K","2008-10-30","4.2","mg/l",,,,"goedgekeurd"
+"koper","971","Cu","2008-10-30","22.4","ug/l",,,,"onbeslist"
+"cadmium","441","Cd","2008-10-30","0.02","ug/l",,,,"goedgekeurd"
+"arseen","310","As","2008-10-30","1.86","ug/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","2008-10-30","0.37","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","2008-10-30","435.37","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","2008-10-30","0.05","mg/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","2008-10-30","369.72","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","2008-10-30","520.0","ug/l",,,,"goedgekeurd"
+"ijzer","879","Fe","2008-10-30","13492.0","ug/l",,,,"goedgekeurd"
+"aluminium","284","Al","2008-10-30","40.0","ug/l",,,,"goedgekeurd"
+"ammonium","289","NH4","2008-10-30","1.31","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","2008-10-30","16.41","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","2008-10-30","106.25","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","2008-10-30","267.85","mg/l",,,,"goedgekeurd"
+"chroom","517","Cr","2008-10-30","15.37","ug/l",,,,"goedgekeurd"
+,,,,,,,,,

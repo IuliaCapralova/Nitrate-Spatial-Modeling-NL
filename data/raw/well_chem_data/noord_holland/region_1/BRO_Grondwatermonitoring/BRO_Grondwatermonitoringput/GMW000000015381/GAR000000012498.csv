@@ -1,0 +1,34 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000012498","IMBRO/A","2023-01-09T10:15:40+01:00","2002-11-19T11:00:00+01:00","onbekend","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Zuurgraad","1398","pH","5.6","1","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","6.42","mS/m","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"strontium","1501","Sr","2002-11-19","8.5","ug/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","2002-11-19","13.0","mg/l",,,,"goedgekeurd"
+"zink","1693","Zn","2002-11-19","16.0","ug/l",,,,"goedgekeurd"
+"chroom","517","Cr","2002-11-19","1.0","ug/l",,,"<","goedgekeurd"
+"kalium","920","K","2002-11-19","1.1","mg/l",,,,"goedgekeurd"
+"arseen","310","As","2002-11-19","2.0","ug/l",,,"<","goedgekeurd"
+"ijzer","879","Fe","2002-11-19","2400.0","ug/l",,,,"onbeslist"
+"natrium","1262","Na","2002-11-19","4.0","mg/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","2002-11-19","3.2","mg/l",,,,"goedgekeurd"
+"koper","971","Cu","2002-11-19","2.9","ug/l",,,,"goedgekeurd"
+"chloride","508","Cl","2002-11-19","6.6","mg/l",,,,"goedgekeurd"
+"koolstof organisch","1318","Corg","2002-11-19","5.0","mg/l",,,"<","goedgekeurd"
+"lood","1116","Pb","2002-11-19","5.0","ug/l",,,"<","goedgekeurd"
+"Zuurgraad","1398","pH","2002-11-19","4.9","1",,,,"goedgekeurd"
+"nikkel","1267","Ni","2002-11-19","5.0","ug/l",,,"<","goedgekeurd"
+"fosfor totaal","4188","Ptot","2002-11-19","0.09","mg/l",,,,"onbeslist"
+"aluminium","284","Al","2002-11-19","4500.0","ug/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","2002-11-19","21.0","ug/l",,,,"goedgekeurd"
+"ammonium","289","NH4","2002-11-19","0.02","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","2002-11-19","0.39","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","2002-11-19","0.45","mg/l",,,,"goedgekeurd"
+"cadmium","441","Cd","2002-11-19","0.4","ug/l",,,"<","goedgekeurd"
+"nitraat","1270","NO3","2002-11-19","0.11","mg/l",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","2002-11-19","6.2","mS/m",,,,"goedgekeurd"
+"barium","333","Ba","2002-11-19","63.0","ug/l",,,,"goedgekeurd"
+,,,,,,,,,

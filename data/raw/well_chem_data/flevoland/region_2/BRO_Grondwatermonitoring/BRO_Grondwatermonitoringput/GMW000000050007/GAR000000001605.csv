@@ -1,0 +1,27 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000001605","IMBRO/A","2022-11-28T15:24:04+01:00","2020-10-08T12:00:00+02:00","onbekend","4",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"zuurstof","1701","O2","0.25","mg/l","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","822.0","mS/m","onbeslist",,,,
+"Troebelheid","2031","TROEBHD","2.14","[NTU]","goedgekeurd",,,,
+"Temperatuur","1522","T","12.17","Cel","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"Zuurgraad","1398","pH","2020-10-08","7.3","1",,,,"goedgekeurd"
+"calcium","447","Ca","2020-10-08","78.0","mg/l",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","2020-10-08","88.4","mS/m",,,,"goedgekeurd"
+"Temperatuur","1522","T","2020-10-08","9.5","Cel",,,,"goedgekeurd"
+"aluminium","284","Al","2020-10-08","50.0","ug/l",,,"<","goedgekeurd"
+"koolstof organisch","1318","Corg","2020-10-08","7.4","mg/l",,,,"goedgekeurd"
+"ijzer","879","Fe","2020-10-08","7500.0","ug/l",,,,"goedgekeurd"
+"chloride","508","Cl","2020-10-08","150.0","mg/l",,,,"goedgekeurd"
+"ammonium","289","NH4","2020-10-08","3.0","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","2020-10-08","290.0","ug/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","2020-10-08","0.05","mg/l",,,"<","goedgekeurd"
+"natrium","1262","Na","2020-10-08","81.0","mg/l",,,,"goedgekeurd"
+"kalium","920","K","2020-10-08","1.4","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","2020-10-08","71.0","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","2020-10-08","1.4","mg/l",,,,"onbeslist"
+"stikstof totaal","1496","Ntot","2020-10-08","3.3","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

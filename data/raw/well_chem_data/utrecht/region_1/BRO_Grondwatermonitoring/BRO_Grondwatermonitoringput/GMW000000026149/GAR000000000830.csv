@@ -1,0 +1,30 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000000830","IMBRO/A","2022-11-25T11:11:55+01:00","2003-01-01T11:00:00+01:00","onbekend","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Temperatuur","1522","T","11.1","Cel","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"nitraat","1270","NO3","2003-01-01","10.37","mg/l",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","2003-01-01","6.66","1",,,,"goedgekeurd"
+"ijzer","879","Fe","2003-01-01","5.0","ug/l",,,"<","goedgekeurd"
+"ammonium","289","NH4","2003-01-01","0.42","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","2003-01-01","3.57","ug/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","2003-01-01","8.92","mg/l",,,,"goedgekeurd"
+"kalium","920","K","2003-01-01","0.91","mg/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","2003-01-01","20.86","mg/l",,,,"goedgekeurd"
+"koper","971","Cu","2003-01-01","3.31","ug/l",,,,"goedgekeurd"
+"chloride","508","Cl","2003-01-01","18.04","mg/l",,,,"goedgekeurd"
+"cadmium","441","Cd","2003-01-01","0.12","ug/l",,,,"goedgekeurd"
+"calcium","447","Ca","2003-01-01","30.83","mg/l",,,,"goedgekeurd"
+"aluminium","284","Al","2003-01-01","7.66","ug/l",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","2003-01-01","5.4","mS/m",,,,"goedgekeurd"
+"nikkel","1267","Ni","2003-01-01","6.15","ug/l",,,,"goedgekeurd"
+"zuurstof","1701","O2","2003-01-01","12.2","mg/l",,,,"goedgekeurd"
+"arseen","310","As","2003-01-01","1.02","ug/l",,,,"goedgekeurd"
+"natrium","1262","Na","2003-01-01","10.88","mg/l",,,,"goedgekeurd"
+"lood","1116","Pb","2003-01-01","0.01","ug/l",,,"<","goedgekeurd"
+"fosfor totaal","4188","Ptot","2003-01-01","0.04","mg/l",,,,"goedgekeurd"
+"zink","1693","Zn","2003-01-01","97.94","ug/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","2003-01-01","51.97","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

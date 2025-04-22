@@ -1,0 +1,31 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000001367","IMBRO/A","2022-11-28T15:00:41+01:00","1999-10-12T12:00:00+02:00","onbekend","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Geleidendheid","3548","GELDHD","87.9","mS/m","goedgekeurd",,,,
+"Zuurgraad","1398","pH","6.46","1","goedgekeurd",,,,
+"Temperatuur","1522","T","12.0","Cel","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"chloride","508","Cl","1999-10-12","21.97","mg/l",,,,"goedgekeurd"
+"zink","1693","Zn","1999-10-12","6.53","ug/l",,,"<","goedgekeurd"
+"strontium","1501","Sr","1999-10-12","101.63","ug/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","1999-10-12","5.55","ug/l",,,,"goedgekeurd"
+"koper","971","Cu","1999-10-12","1.37","ug/l",,,,"goedgekeurd"
+"chroom","517","Cr","1999-10-12","30.91","ug/l",,,,"goedgekeurd"
+"cadmium","441","Cd","1999-10-12","0.1","ug/l",,,"<","goedgekeurd"
+"barium","333","Ba","1999-10-12","79.78","ug/l",,,,"goedgekeurd"
+"arseen","310","As","1999-10-12","0.97","ug/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","1999-10-12","0.51","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1999-10-12","119.01","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","1999-10-12","8.95","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","1999-10-12","0.02","mg/l",,,"<","goedgekeurd"
+"kalium","920","K","1999-10-12","9.3","mg/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","1999-10-12","352.69","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1999-10-12","10.72","mg/l",,,,"goedgekeurd"
+"ammonium","289","NH4","1999-10-12","0.5","mg/l",,,,"goedgekeurd"
+"aluminium","284","Al","1999-10-12","1648.47","ug/l",,,,"goedgekeurd"
+"ijzer","879","Fe","1999-10-12","2781.0","ug/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","1999-10-12","159.0","ug/l",,,,"goedgekeurd"
+"natrium","1262","Na","1999-10-12","199.41","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

@@ -1,0 +1,34 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000012465","IMBRO/A","2023-01-09T10:14:26+01:00","2009-06-22T12:00:00+02:00","onbekend","3",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Temperatuur","1522","T","10.1","Cel","goedgekeurd",,,,
+"Zuurgraad","1398","pH","6.32","1","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"silicium","1479","Si","2009-06-22","4.64","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","2009-06-22","8.7","mg/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","2009-06-22","15.0","ug/l",,,,"goedgekeurd"
+"calcium","447","Ca","2009-06-22","17.0","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","2009-06-22","11.0","mg/l",,,,"goedgekeurd"
+"koper","971","Cu","2009-06-22","1.0","ug/l",,,"<","goedgekeurd"
+"lood","1116","Pb","2009-06-22","1.0","ug/l",,,"<","goedgekeurd"
+"Geleidendheid","3548","GELDHD","2009-06-22","28.5","mS/m",,,,"goedgekeurd"
+"strontium","1501","Sr","2009-06-22","130.0","ug/l",,,,"goedgekeurd"
+"arseen","310","As","2009-06-22","2.0","ug/l",,,"<","goedgekeurd"
+"kalium","920","K","2009-06-22","2.0","mg/l",,,,"goedgekeurd"
+"zink","1693","Zn","2009-06-22","5.0","ug/l",,,"<","goedgekeurd"
+"Zuurgraad","1398","pH","2009-06-22","6.6","1",,,,"onbeslist"
+"ammonium","289","NH4","2009-06-22","0.06","mg/l",,,"<","goedgekeurd"
+"fosfaat","1334","PO4","2009-06-22","0.04","mg/l",,,"<","goedgekeurd"
+"chroom","517","Cr","2009-06-22","0.8","ug/l",,,"<","goedgekeurd"
+"mangaan","1128","Mn","2009-06-22","220.0","ug/l",,,,"goedgekeurd"
+"cadmium","441","Cd","2009-06-22","0.2","ug/l",,,,"goedgekeurd"
+"zuurstof","1701","O2","2009-06-22","0.49","mg/l",,,,"goedgekeurd"
+"ijzer","879","Fe","2009-06-22","10.0","ug/l",,,"<","goedgekeurd"
+"barium","333","Ba","2009-06-22","35.0","ug/l",,,,"goedgekeurd"
+"chloride","508","Cl","2009-06-22","21.0","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","2009-06-22","33.0","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","2009-06-22","8.0","mg/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","2009-06-22","48.0","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

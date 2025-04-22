@@ -1,0 +1,31 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000026897","IMBRO/A","2023-01-13T09:26:41+01:00","1995-03-30T13:00:00+02:00","onderwaterpomp","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Temperatuur","1522","T","10.2","Cel","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","111.0","mS/m","goedgekeurd",,,,
+"Zuurgraad","1398","pH","6.46","1","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"aluminium","284","Al","1995-03-30","21.584","ug/l",,,,"goedgekeurd"
+"arseen","310","As","1995-03-30","0.899","ug/l",,,,"goedgekeurd"
+"barium","333","Ba","1995-03-30","166.581","ug/l",,,,"goedgekeurd"
+"chloride","508","Cl","1995-03-30","171.014","mg/l",,,,"goedgekeurd"
+"chroom","517","Cr","1995-03-30","0.468","ug/l",,,,"goedgekeurd"
+"koper","971","Cu","1995-03-30","0.635","ug/l",,,"<","goedgekeurd"
+"waterstofcarbonaat","374","HCO3","1995-03-30","391.138","mg/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","1995-03-30","0.279","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1995-03-30","0.096","mg/l",,,"<","goedgekeurd"
+"strontium","1501","Sr","1995-03-30","474.024","ug/l",,,,"goedgekeurd"
+"ijzer","879","Fe","1995-03-30","13091.0","ug/l",,,,"goedgekeurd"
+"kalium","920","K","1995-03-30","2.346","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1995-03-30","9.943","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","1995-03-30","535.0","ug/l",,,,"goedgekeurd"
+"ammonium","289","NH4","1995-03-30","3.46","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","1995-03-30","65.062","mg/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","1995-03-30","0.88","ug/l",,,"<","goedgekeurd"
+"zink","1693","Zn","1995-03-30","13.078","ug/l",,,,"goedgekeurd"
+"calcium","447","Ca","1995-03-30","148.593","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","1995-03-30","0.059","mg/l",,,,"goedgekeurd"
+"cadmium","441","Cd","1995-03-30","0.045","ug/l",,,"<","goedgekeurd"
+,,,,,,,,,

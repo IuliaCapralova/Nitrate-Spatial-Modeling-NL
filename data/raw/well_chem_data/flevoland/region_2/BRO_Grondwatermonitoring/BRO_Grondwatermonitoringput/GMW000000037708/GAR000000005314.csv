@@ -1,0 +1,19 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000005314","IMBRO/A","2022-12-02T21:24:54+01:00","1987-10-16T11:00:00+01:00","onbekend","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"waterstofcarbonaat","374","HCO3","402.0","mg/l","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"kalium","920","K","1987-10-16","3.0","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","1987-10-16","150.0","mg/l",,,,"onbeslist"
+"nitriet","1273","NO2","1987-10-16","0.006","mg/l",,,"<","goedgekeurd"
+"chloride","508","Cl","1987-10-16","145.0","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","1987-10-16","0.22","mg/l",,,"<","goedgekeurd"
+"fosfaat","1334","PO4","1987-10-16","0.32","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1987-10-16","235.0","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","1987-10-16","170.0","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1987-10-16","11.0","mg/l",,,,"goedgekeurd"
+"ijzer","879","Fe","1987-10-16","12000.0","ug/l",,,,"goedgekeurd"
+"ammonium","289","NH4","1987-10-16","6.92","mg/l",,,,"onbeslist"
+,,,,,,,,,

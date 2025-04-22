@@ -1,0 +1,33 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000001393","IMBRO/A","2022-11-28T15:03:00+01:00","2000-08-28T12:00:00+02:00","onbekend","2",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Geleidendheid","3548","GELDHD","162.4","mS/m","goedgekeurd",,,,
+"Temperatuur","1522","T","10.7","Cel","goedgekeurd",,,,
+"Zuurgraad","1398","pH","6.78","1","goedgekeurd",,,,
+"waterstofcarbonaat","374","HCO3","312.97","mg/l","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"zink","1693","Zn","2000-08-28","13.07","ug/l",,,"<","goedgekeurd"
+"strontium","1501","Sr","2000-08-28","99.01","ug/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","2000-08-28","4.44","ug/l",,,,"goedgekeurd"
+"lood","1116","Pb","2000-08-28","1.11","ug/l",,,,"goedgekeurd"
+"barium","333","Ba","2000-08-28","74.15","ug/l",,,,"goedgekeurd"
+"chroom","517","Cr","2000-08-28","39.76","ug/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","2000-08-28","0.47","mg/l",,,,"goedgekeurd"
+"cadmium","441","Cd","2000-08-28","0.02","ug/l",,,"<","goedgekeurd"
+"arseen","310","As","2000-08-28","2.32","ug/l",,,,"goedgekeurd"
+"koper","971","Cu","2000-08-28","1.27","ug/l",,,"<","goedgekeurd"
+"sulfaat","1508","SO4","2000-08-28","322.47","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","2000-08-28","0.02","mg/l",,,,"goedgekeurd"
+"koolstof organisch","1318","Corg","2000-08-28","136.02","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","2000-08-28","338.45","mg/l",,,,"goedgekeurd"
+"kalium","920","K","2000-08-28","13.72","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","2000-08-28","8.85","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","2000-08-28","13.41","mg/l",,,,"goedgekeurd"
+"ammonium","289","NH4","2000-08-28","0.5","mg/l",,,,"goedgekeurd"
+"aluminium","284","Al","2000-08-28","431.68","ug/l",,,,"goedgekeurd"
+"ijzer","879","Fe","2000-08-28","3267.0","ug/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","2000-08-28","127.0","ug/l",,,,"goedgekeurd"
+"chloride","508","Cl","2000-08-28","37.01","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

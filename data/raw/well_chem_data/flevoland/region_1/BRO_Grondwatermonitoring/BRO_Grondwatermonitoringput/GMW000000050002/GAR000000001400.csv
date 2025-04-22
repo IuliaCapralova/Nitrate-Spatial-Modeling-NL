@@ -1,0 +1,28 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000001400","IMBRO/A","2022-11-28T15:03:32+01:00","2007-11-05T11:00:00+01:00","onbekend","2",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"waterstofcarbonaat","374","HCO3","514.86","mg/l","goedgekeurd",,,,
+"Zuurgraad","1398","pH","6.73","1","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","150.2","mS/m","goedgekeurd",,,,
+"zuurstof","1701","O2","0.2","mg/l","goedgekeurd",,,,
+"Temperatuur","1522","T","11.4","Cel","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"magnesium","1125","Mg","2007-11-05","12.99","mg/l",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","2007-11-05","149.3","mS/m",,,,"goedgekeurd"
+"calcium","447","Ca","2007-11-05","7.61","mg/l",,,,"goedgekeurd"
+"kalium","920","K","2007-11-05","12.78","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","2007-11-05","336.69","mg/l",,,,"goedgekeurd"
+"koolstof organisch","1318","Corg","2007-11-05","107.0","mg/l",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","2007-11-05","6.97","1",,,,"goedgekeurd"
+"ammonium","289","NH4","2007-11-05","0.62","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","2007-11-05","323.75","mg/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","2007-11-05","0.39","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","2007-11-05","0.01","mg/l",,,"<","goedgekeurd"
+"waterstofcarbonaat","374","HCO3","2007-11-05","459.81","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","2007-11-05","35.47","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","2007-11-05","100.0","ug/l",,,,"goedgekeurd"
+"ijzer","879","Fe","2007-11-05","1272.0","ug/l",,,,"goedgekeurd"
+"aluminium","284","Al","2007-11-05","217.0","ug/l",,,,"goedgekeurd"
+,,,,,,,,,

@@ -1,0 +1,33 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000000383","IMBRO/A","2022-11-25T10:42:02+01:00","2007-09-01T12:00:00+02:00","onbekend","3",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"waterstofcarbonaat","374","HCO3","112.01","mg/l","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","20.2","mS/m","goedgekeurd",,,,
+"Temperatuur","1522","T","11.6","Cel","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"zink","1693","Zn","2007-09-01","20.0","ug/l",,,"<","goedgekeurd"
+"sulfaat","1508","SO4","2007-09-01","3.1","mg/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","2007-09-01","0.12","mg/l",,,,"goedgekeurd"
+"lood","1116","Pb","2007-09-01","5.0","ug/l",,,"<","goedgekeurd"
+"nitraat","1270","NO3","2007-09-01","0.23","mg/l",,,,"goedgekeurd"
+"nitriet","1273","NO2","2007-09-01","0.01","mg/l",,,"<","goedgekeurd"
+"nikkel","1267","Ni","2007-09-01","10.0","ug/l",,,"<","onbeslist"
+"ammonium","289","NH4","2007-09-01","0.05","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","2007-09-01","5.8","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","2007-09-01","86.0","ug/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","2007-09-01","2.3","mg/l",,,,"goedgekeurd"
+"kalium","920","K","2007-09-01","0.68","mg/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","2007-09-01","120.0","mg/l",,,,"goedgekeurd"
+"ijzer","879","Fe","2007-09-01","400.0","ug/l",,,,"goedgekeurd"
+"koper","971","Cu","2007-09-01","5.0","ug/l",,,"<","goedgekeurd"
+"chroom","517","Cr","2007-09-01","5.0","ug/l",,,"<","goedgekeurd"
+"chloride","508","Cl","2007-09-01","8.0","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","2007-09-01","34.0","mg/l",,,,"goedgekeurd"
+"arseen","310","As","2007-09-01","5.0","ug/l",,,"<","goedgekeurd"
+"aluminium","284","Al","2007-09-01","10.0","ug/l",,,"<","goedgekeurd"
+"Zuurgraad","1398","pH","2007-09-01","8.03","1",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","2007-09-01","20.0","mS/m",,,,"goedgekeurd"
+"kwik","1097","Hg","2007-09-01","0.05","ug/l",,,"<","goedgekeurd"
+,,,,,,,,,

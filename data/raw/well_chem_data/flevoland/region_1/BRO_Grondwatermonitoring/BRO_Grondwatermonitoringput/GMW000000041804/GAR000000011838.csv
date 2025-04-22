@@ -1,0 +1,27 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000011838","IMBRO/A","2022-12-23T12:53:41+01:00","1999-09-20T12:00:00+02:00","onbekend","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Geleidendheid","3548","GELDHD","116.0","mS/m","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"sulfaat","1508","SO4","1999-09-20","0.1","mg/l",,,"<","goedgekeurd"
+"fosfor totaal","4188","Ptot","1999-09-20","0.21","mg/l",,,,"goedgekeurd"
+"arseen","310","As","1999-09-20","0.5","ug/l",,,"<","goedgekeurd"
+"ijzer","879","Fe","1999-09-20","6000.0","ug/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","1999-09-20","310.0","ug/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","1999-09-20","1.0","ug/l",,,"<","goedgekeurd"
+"zink","1693","Zn","1999-09-20","2.0","ug/l",,,"<","goedgekeurd"
+"koolstof organisch","1318","Corg","1999-09-20","38.0","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","1999-09-20","120.0","mg/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","1999-09-20","488.0","mg/l",,,,"goedgekeurd"
+"som extraheerbare organische halogeenverbindingen","708","sEOX","1999-09-20","1.0","ug/l",,,"<","goedgekeurd"
+"nitraat","1270","NO3","1999-09-20","0.02","mg/l",,,"<","goedgekeurd"
+"Zuurgraad","1398","pH","1999-09-20","6.8","1",,,,"goedgekeurd"
+"natrium","1262","Na","1999-09-20","120.0","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1999-09-20","13.0","mg/l",,,,"goedgekeurd"
+"kalium","920","K","1999-09-20","2.7","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","1999-09-20","90.0","mg/l",,,,"goedgekeurd"
+"ammonium","289","NH4","1999-09-20","4.8","mg/l",,,,"goedgekeurd"
+"aluminium","284","Al","1999-09-20","34.0","ug/l",,,,"goedgekeurd"
+,,,,,,,,,

@@ -1,0 +1,32 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000012842","IMBRO/A","2023-01-09T10:32:34+01:00","1994-10-05T11:00:00+01:00","onbekend","2",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Temperatuur","1522","T","10.5","Cel","goedgekeurd",,,,
+"Zuurgraad","1398","pH","6.46","1","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","148.5","mS/m","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"magnesium","1125","Mg","1994-10-05","10.6","mg/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","1994-10-05","0.88","ug/l",,,"<","goedgekeurd"
+"kalium","920","K","1994-10-05","1.0","mg/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","1994-10-05","190.0","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","1994-10-05","231.0","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","1994-10-05","146.8","mg/l",,,,"goedgekeurd"
+"barium","333","Ba","1994-10-05","160.0","ug/l",,,,"goedgekeurd"
+"strontium","1501","Sr","1994-10-05","519.0","ug/l",,,,"goedgekeurd"
+"chroom","517","Cr","1994-10-05","1.87","ug/l",,,,"goedgekeurd"
+"ijzer","879","Fe","1994-10-05","2971.0","ug/l",,,,"goedgekeurd"
+"ammonium","289","NH4","1994-10-05","3.16","mg/l",,,,"goedgekeurd"
+"zink","1693","Zn","1994-10-05","6.5","ug/l",,,"<","goedgekeurd"
+"nitraat","1270","NO3","1994-10-05","0.04","mg/l",,,,"goedgekeurd"
+"cadmium","441","Cd","1994-10-05","0.04","ug/l",,,"<","goedgekeurd"
+"koper","971","Cu","1994-10-05","0.6","ug/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","1994-10-05","641.0","ug/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","1994-10-05","0.31","mg/l",,,,"goedgekeurd"
+"lood","1116","Pb","1994-10-05","0.3","ug/l",,,,"goedgekeurd"
+"arseen","310","As","1994-10-05","0.23","ug/l",,,,"goedgekeurd"
+"natrium","1262","Na","1994-10-05","63.4","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1994-10-05","50.0","mg/l",,,,"goedgekeurd"
+"aluminium","284","Al","1994-10-05","57.0","ug/l",,,,"goedgekeurd"
+,,,,,,,,,

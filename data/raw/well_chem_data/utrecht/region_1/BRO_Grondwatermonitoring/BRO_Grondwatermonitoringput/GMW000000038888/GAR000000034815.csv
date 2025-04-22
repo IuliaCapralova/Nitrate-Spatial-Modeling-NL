@@ -1,0 +1,31 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000034815","IMBRO/A","2023-01-13T21:09:29+01:00","1998-06-03T13:00:00+02:00","onderwaterpomp","2",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Geleidendheid","3548","GELDHD","45.2","mS/m","goedgekeurd",,,,
+"waterstofcarbonaat","374","HCO3","117.945","mg/l","goedgekeurd",,,,
+"Temperatuur","1522","T","11.1","Cel","goedgekeurd",,,,
+"Zuurgraad","1398","pH","7.94","1","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"aluminium","284","Al","1998-06-03","13.49","ug/l",,,"<","goedgekeurd"
+"arseen","310","As","1998-06-03","2.248","ug/l",,,,"goedgekeurd"
+"barium","333","Ba","1998-06-03","28.839","ug/l",,,,"goedgekeurd"
+"chloride","508","Cl","1998-06-03","18.221","mg/l",,,,"goedgekeurd"
+"chroom","517","Cr","1998-06-03","0.728","ug/l",,,"<","goedgekeurd"
+"koper","971","Cu","1998-06-03","0.699","ug/l",,,"<","goedgekeurd"
+"fosfor totaal","4188","Ptot","1998-06-03","0.204","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1998-06-03","3.17","mg/l",,,,"goedgekeurd"
+"strontium","1501","Sr","1998-06-03","112.154","ug/l",,,,"goedgekeurd"
+"ijzer","879","Fe","1998-06-03","894.0","ug/l",,,,"goedgekeurd"
+"kalium","920","K","1998-06-03","1.329","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1998-06-03","1.653","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","1998-06-03","196.0","ug/l",,,,"goedgekeurd"
+"ammonium","289","NH4","1998-06-03","0.35","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","1998-06-03","9.771","mg/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","1998-06-03","0.704","ug/l",,,"<","goedgekeurd"
+"zink","1693","Zn","1998-06-03","6.539","ug/l",,,"<","goedgekeurd"
+"calcium","447","Ca","1998-06-03","39.15","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","1998-06-03","0.028","mg/l",,,"<","goedgekeurd"
+"cadmium","441","Cd","1998-06-03","0.045","ug/l",,,"<","goedgekeurd"
+,,,,,,,,,

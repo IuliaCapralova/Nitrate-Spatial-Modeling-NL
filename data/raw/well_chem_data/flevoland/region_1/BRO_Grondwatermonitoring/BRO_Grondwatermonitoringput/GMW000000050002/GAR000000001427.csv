@@ -1,0 +1,27 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000001427","IMBRO/A","2022-11-28T15:06:27+01:00","2019-10-08T12:00:00+02:00","onbekend","4",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Temperatuur","1522","T","11.82","Cel","goedgekeurd",,,,
+"Troebelheid","2031","TROEBHD","6.0","[NTU]","goedgekeurd",,,,
+"Zuurgraad","1398","pH","6.82","1","goedgekeurd",,,,
+"zuurstof","1701","O2","0.01","mg/l","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","419.5","mS/m","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"ijzer","879","Fe","2019-10-08","8141.0","ug/l",,,,"goedgekeurd"
+"koolstof organisch","1318","Corg","2019-10-08","96.46","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","2019-10-08","61.23","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","2019-10-08","605.58","mg/l",,,,"goedgekeurd"
+"kalium","920","K","2019-10-08","7.58","mg/l",,,,"goedgekeurd"
+"aluminium","284","Al","2019-10-08","66.25","ug/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","2019-10-08","0.31","mg/l",,,"<","goedgekeurd"
+"ammonium","289","NH4","2019-10-08","2.59","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","2019-10-08","572.0","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","2019-10-08","339.4","ug/l",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","2019-10-08","7.0","1",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","2019-10-08","0.38","mg/l",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","2019-10-08","282.0","mS/m",,,,"goedgekeurd"
+"sulfaat","1508","SO4","2019-10-08","306.77","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","2019-10-08","27.8","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

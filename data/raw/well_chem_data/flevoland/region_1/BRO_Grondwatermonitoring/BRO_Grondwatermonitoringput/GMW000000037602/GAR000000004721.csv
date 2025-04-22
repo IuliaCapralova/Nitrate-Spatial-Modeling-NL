@@ -1,0 +1,13 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000004721","IMBRO/A","2022-12-02T20:41:38+01:00","1990-11-01T11:00:00+01:00","onbekend","4",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"kalium","920","K","1990-11-01","2.9","mg/l",,,,"goedgekeurd"
+"ammonium","289","NH4","1990-11-01","3.42","mg/l",,,,"goedgekeurd"
+"fosfaat","1334","PO4","1990-11-01","0.02","mg/l",,,,"goedgekeurd"
+"ijzer","879","Fe","1990-11-01","16450.0","ug/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1990-11-01","27.2","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","1990-11-01","211.0","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","1990-11-01","384.0","mg/l",,,,"goedgekeurd"
+"koolstof organisch","1318","Corg","1990-11-01","6.9","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

@@ -1,0 +1,35 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000000791","IMBRO/A","2022-11-25T11:10:42+01:00","2010-03-24T11:00:00+01:00","onbekend","2",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Zuurgraad","1398","pH","6.5","1","goedgekeurd",,,,
+"Temperatuur","1522","T","10.9","Cel","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","45.9","mS/m","goedgekeurd",,,,
+"zuurstof","1701","O2","0.03","mg/l","onbeslist",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"aluminium","284","Al","2010-03-24","10.0","ug/l",,,"<","goedgekeurd"
+"arseen","310","As","2010-03-24","0.43","ug/l",,,,"goedgekeurd"
+"cadmium","441","Cd","2010-03-24","0.1","ug/l",,,"<","goedgekeurd"
+"chloride","508","Cl","2010-03-24","19.2","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","2010-03-24","47.44","mg/l",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","2010-03-24","6.4","1",,,,"goedgekeurd"
+"Temperatuur","1522","T","2010-03-24","22.7","Cel",,,,"goedgekeurd"
+"chroom","517","Cr","2010-03-24","0.69","ug/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","2010-03-24","32.59","mg/l",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","2010-03-24","44.8","mS/m",,,,"goedgekeurd"
+"lood","1116","Pb","2010-03-24","0.12","ug/l",,,"<","goedgekeurd"
+"zink","1693","Zn","2010-03-24","15.0","ug/l",,,,"goedgekeurd"
+"ammonium","289","NH4","2010-03-24","0.09","mg/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","2010-03-24","0.05","mg/l",,,"<","goedgekeurd"
+"koper","971","Cu","2010-03-24","3.69","ug/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","2010-03-24","7.1","ug/l",,,,"onbeslist"
+"natrium","1262","Na","2010-03-24","7.03","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","2010-03-24","3.0","ug/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","2010-03-24","8.26","mg/l",,,,"goedgekeurd"
+"kalium","920","K","2010-03-24","12.37","mg/l",,,,"goedgekeurd"
+"kwik","1097","Hg","2010-03-24","0.03","ug/l",,,"<","goedgekeurd"
+"waterstofcarbonaat","374","HCO3","2010-03-24","30.0","mg/l",,,,"goedgekeurd"
+"ijzer","879","Fe","2010-03-24","20.0","ug/l",,,"<","goedgekeurd"
+"sulfaat","1508","SO4","2010-03-24","34.0","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

@@ -1,0 +1,20 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000001157","IMBRO/A","2022-11-25T12:27:05+01:00","1998-03-31T12:00:00+02:00","onbekend","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"arseen","310","As","1998-03-31","0.57","ug/l",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","1998-03-31","5.74","1",,,,"goedgekeurd"
+"natrium","1262","Na","1998-03-31","5.7","mg/l",,,,"goedgekeurd"
+"barium","333","Ba","1998-03-31","28.0","ug/l",,,,"onbeslist"
+"zink","1693","Zn","1998-03-31","11.0","ug/l",,,,"goedgekeurd"
+"calcium","447","Ca","1998-03-31","7.7","mg/l",,,,"goedgekeurd"
+"cadmium","441","Cd","1998-03-31","0.09","ug/l",,,,"goedgekeurd"
+"chloride","508","Cl","1998-03-31","8.8","mg/l",,,,"goedgekeurd"
+"koper","971","Cu","1998-03-31","22.0","ug/l",,,,"onbeslist"
+"magnesium","1125","Mg","1998-03-31","2.02","mg/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","1998-03-31","2.8","ug/l",,,,"goedgekeurd"
+"lood","1116","Pb","1998-03-31","1.5","ug/l",,,,"onbeslist"
+"fosfor totaal","4188","Ptot","1998-03-31","0.01","mg/l",,,,"onbeslist"
+"sulfaat","1508","SO4","1998-03-31","11.2","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","1998-03-31","0.56","mg/l",,,,"onbeslist"
+,,,,,,,,,

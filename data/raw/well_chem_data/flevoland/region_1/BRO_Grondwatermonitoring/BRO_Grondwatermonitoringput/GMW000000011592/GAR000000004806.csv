@@ -1,0 +1,23 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000004806","IMBRO/A","2022-12-02T20:47:43+01:00","1996-10-28T11:00:00+01:00","onbekend","3",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Zuurgraad","1398","pH","6.9","1","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","69.0","mS/m","goedgekeurd",,,,
+"waterstofcarbonaat","374","HCO3","385.0","mg/l","onbeslist",,,,
+"Temperatuur","1522","T","11.5","Cel","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"chloride","508","Cl","1996-10-28","61.0","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1996-10-28","9.2","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1996-10-28","5.0","mg/l",,,"<","goedgekeurd"
+"calcium","447","Ca","1996-10-28","110.0","mg/l",,,,"goedgekeurd"
+"koolstof organisch","1318","Corg","1996-10-28","8.3","mg/l",,,,"onbeslist"
+"fosfor totaal","4188","Ptot","1996-10-28","0.12","mg/l",,,,"goedgekeurd"
+"nitriet","1273","NO2","1996-10-28","0.006","mg/l",,,,"goedgekeurd"
+"ijzer","879","Fe","1996-10-28","13000.0","ug/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","1996-10-28","0.11","mg/l",,,"<","goedgekeurd"
+"kalium","920","K","1996-10-28","1.5","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","1996-10-28","27.0","mg/l",,,,"goedgekeurd"
+"ammonium","289","NH4","1996-10-28","2.17","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

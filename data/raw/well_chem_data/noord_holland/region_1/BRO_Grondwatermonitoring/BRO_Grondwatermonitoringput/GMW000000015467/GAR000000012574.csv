@@ -1,0 +1,34 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000012574","IMBRO/A","2023-01-09T10:19:23+01:00","2004-11-24T11:00:00+01:00","onbekend","2",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Zuurgraad","1398","pH","7.23","1","goedgekeurd",,,,
+"Temperatuur","1522","T","11.0","Cel","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","90.59","mS/m","onbeslist",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"Zuurgraad","1398","pH","2004-11-24","7.4","1",,,,"goedgekeurd"
+"magnesium","1125","Mg","2004-11-24","12.0","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","2004-11-24","11.0","mg/l",,,,"goedgekeurd"
+"silicium","1479","Si","2004-11-24","6.84","mg/l",,,,"goedgekeurd"
+"arseen","310","As","2004-11-24","1.0","ug/l",,,,"goedgekeurd"
+"lood","1116","Pb","2004-11-24","1.0","ug/l",,,"<","goedgekeurd"
+"waterstofcarbonaat","374","HCO3","2004-11-24","246.0","mg/l",,,,"goedgekeurd"
+"barium","333","Ba","2004-11-24","185.0","ug/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","2004-11-24","36.41","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","2004-11-24","130.0","mg/l",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","2004-11-24","80.4","mS/m",,,,"goedgekeurd"
+"strontium","1501","Sr","2004-11-24","457.0","ug/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","2004-11-24","2.8","ug/l",,,,"goedgekeurd"
+"aluminium","284","Al","2004-11-24","3.0","ug/l",,,"<","goedgekeurd"
+"koper","971","Cu","2004-11-24","5.0","ug/l",,,"<","onbeslist"
+"fosfor totaal","4188","Ptot","2004-11-24","0.05","mg/l",,,,"goedgekeurd"
+"ammonium","289","NH4","2004-11-24","0.02","mg/l",,,"<","goedgekeurd"
+"mangaan","1128","Mn","2004-11-24","340.0","ug/l",,,,"goedgekeurd"
+"ijzer","879","Fe","2004-11-24","10.0","ug/l",,,,"goedgekeurd"
+"chloride","508","Cl","2004-11-24","19.0","mg/l",,,,"goedgekeurd"
+"zink","1693","Zn","2004-11-24","34.3","ug/l",,,,"goedgekeurd"
+"kalium","920","K","2004-11-24","30.0","mg/l",,,,"goedgekeurd"
+"kooldioxide","1803","CO2","2004-11-24","19.8","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","2004-11-24","51.0","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

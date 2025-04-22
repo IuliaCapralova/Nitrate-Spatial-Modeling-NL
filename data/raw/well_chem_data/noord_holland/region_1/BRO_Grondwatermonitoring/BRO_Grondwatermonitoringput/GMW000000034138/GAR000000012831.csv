@@ -1,0 +1,40 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000012831","IMBRO/A","2023-01-09T10:32:07+01:00","2001-11-15T11:00:00+01:00","onbekend","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Temperatuur","1522","T","10.4","Cel","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","86.8","mS/m","goedgekeurd",,,,
+"Zuurgraad","1398","pH","6.5","1","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"chroom","517","Cr","2001-11-15","1.0","ug/l",,,"<","goedgekeurd"
+"ammonium","289","NH4","2001-11-15","1.29","mg/l",,,,"goedgekeurd"
+"2-methoxy-2-methylbutaan","2956","2C1ox2C1yC4a","2001-11-15","1.0","ug/l",,,"<","goedgekeurd"
+"calcium","447","Ca","2001-11-15","100.0","mg/l",,,,"goedgekeurd"
+"zink","1693","Zn","2001-11-15","210.0","ug/l",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","2001-11-15","77.5","mS/m",,,,"goedgekeurd"
+"strontium","1501","Sr","2001-11-15","370.0","ug/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","2001-11-15","440.0","mg/l",,,,"goedgekeurd"
+"koper","971","Cu","2001-11-15","2.0","ug/l",,,"<","goedgekeurd"
+"ijzer","879","Fe","2001-11-15","2200.0","ug/l",,,,"goedgekeurd"
+"arseen","310","As","2001-11-15","2.8","ug/l",,,,"onbeslist"
+"nikkel","1267","Ni","2001-11-15","5.0","ug/l",,,"<","goedgekeurd"
+"Zuurgraad","1398","pH","2001-11-15","6.5","1",,,,"goedgekeurd"
+"lood","1116","Pb","2001-11-15","5.0","ug/l",,,"<","goedgekeurd"
+"mangaan","1128","Mn","2001-11-15","520.0","ug/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","2001-11-15","0.15","mg/l",,,,"goedgekeurd"
+"som xyleen-isomeren","1686","sxyln","2001-11-15","0.2","ug/l",,,"<","goedgekeurd"
+"benzeen","342","Ben","2001-11-15","0.2","ug/l",,,"<","goedgekeurd"
+"fosfor totaal","4188","Ptot","2001-11-15","0.43","mg/l",,,,"goedgekeurd"
+"ethylbenzeen","728","C2yBen","2001-11-15","0.2","ug/l",,,"<","goedgekeurd"
+"cadmium","441","Cd","2001-11-15","0.4","ug/l",,,"<","goedgekeurd"
+"tolueen","1568","Tol","2001-11-15","0.2","ug/l",,,"<","goedgekeurd"
+"chloride","508","Cl","2001-11-15","23.0","mg/l",,,,"goedgekeurd"
+"kalium","920","K","2001-11-15","23.0","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","2001-11-15","27.0","mg/l",,,,"goedgekeurd"
+"barium","333","Ba","2001-11-15","41.0","ug/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","2001-11-15","25.0","mg/l",,,,"goedgekeurd"
+"koolstof organisch","1318","Corg","2001-11-15","39.0","mg/l",,,,"goedgekeurd"
+"aluminium","284","Al","2001-11-15","53.0","ug/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","2001-11-15","56.0","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

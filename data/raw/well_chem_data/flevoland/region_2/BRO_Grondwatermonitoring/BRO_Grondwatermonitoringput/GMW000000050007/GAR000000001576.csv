@@ -1,0 +1,27 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000001576","IMBRO/A","2022-11-28T15:20:19+01:00","2014-08-12T12:00:00+02:00","onbekend","2",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"zuurstof","1701","O2","0.03","mg/l","goedgekeurd",,,,
+"waterstofcarbonaat","374","HCO3","451.0","mg/l","goedgekeurd",,,,
+"Temperatuur","1522","T","11.6","Cel","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","116.0","mS/m","goedgekeurd",,,,
+"Zuurgraad","1398","pH","6.91","1","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"ijzer","879","Fe","2014-08-12","3610.0","ug/l",,,,"goedgekeurd"
+"koolstof organisch","1318","Corg","2014-08-12","15.4","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","2014-08-12","115.9","mg/l",,,,"goedgekeurd"
+"kalium","920","K","2014-08-12","3.2","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","2014-08-12","81.69","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","2014-08-12","12.6","mg/l",,,,"goedgekeurd"
+"aluminium","284","Al","2014-08-12","30.0","ug/l",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","2014-08-12","6.81","1",,,,"goedgekeurd"
+"mangaan","1128","Mn","2014-08-12","254.0","ug/l",,,,"goedgekeurd"
+"chloride","508","Cl","2014-08-12","135.28","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","2014-08-12","0.07","mg/l",,,"<","goedgekeurd"
+"sulfaat","1508","SO4","2014-08-12","20.97","mg/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","2014-08-12","0.3","mg/l",,,,"goedgekeurd"
+"ammonium","289","NH4","2014-08-12","12.73","mg/l",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","2014-08-12","114.0","mS/m",,,,"goedgekeurd"
+,,,,,,,,,

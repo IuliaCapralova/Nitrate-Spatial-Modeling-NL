@@ -1,0 +1,34 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000000508","IMBRO/A","2022-11-25T10:46:07+01:00","2010-03-11T11:00:00+01:00","onbekend","3",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Zuurgraad","1398","pH","7.29","1","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","104.0","mS/m","goedgekeurd",,,,
+"Temperatuur","1522","T","11.9","Cel","goedgekeurd",,,,
+"zuurstof","1701","O2","0.2","mg/l","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"Geleidendheid","3548","GELDHD","2010-03-11","88.0","mS/m",,,,"goedgekeurd"
+"koper","971","Cu","2010-03-11","3.24","ug/l",,,,"goedgekeurd"
+"chroom","517","Cr","2010-03-11","0.57","ug/l",,,,"goedgekeurd"
+"cadmium","441","Cd","2010-03-11","0.14","ug/l",,,,"goedgekeurd"
+"calcium","447","Ca","2010-03-11","137.95","mg/l",,,,"onbeslist"
+"arseen","310","As","2010-03-11","0.15","ug/l",,,"<","goedgekeurd"
+"aluminium","284","Al","2010-03-11","16.8","ug/l",,,,"goedgekeurd"
+"Temperatuur","1522","T","2010-03-11","19.7","Cel",,,,"goedgekeurd"
+"chloride","508","Cl","2010-03-11","80.2","mg/l",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","2010-03-11","7.25","1",,,,"goedgekeurd"
+"ijzer","879","Fe","2010-03-11","4719.0","ug/l",,,,"onbeslist"
+"waterstofcarbonaat","374","HCO3","2010-03-11","254.0","mg/l",,,,"goedgekeurd"
+"lood","1116","Pb","2010-03-11","0.57","ug/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","2010-03-11","0.05","mg/l",,,"<","onbeslist"
+"magnesium","1125","Mg","2010-03-11","18.22","mg/l",,,,"onbeslist"
+"nitraat","1270","NO3","2010-03-11","0.05","mg/l",,,"<","goedgekeurd"
+"nikkel","1267","Ni","2010-03-11","0.8","ug/l",,,,"goedgekeurd"
+"ammonium","289","NH4","2010-03-11","0.39","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","2010-03-11","63.37","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","2010-03-11","1081.0","ug/l",,,,"onbeslist"
+"kalium","920","K","2010-03-11","2.97","mg/l",,,,"goedgekeurd"
+"zink","1693","Zn","2010-03-11","12.0","ug/l",,,,"goedgekeurd"
+"kwik","1097","Hg","2010-03-11","0.03","ug/l",,,"<","goedgekeurd"
+,,,,,,,,,

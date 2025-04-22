@@ -1,0 +1,20 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000005390","IMBRO/A","2022-12-02T21:31:11+01:00","1965-12-28T11:00:00+01:00","onbekend","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Zuurgraad","1398","pH","8.33","1","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","1015.0","mS/m","goedgekeurd",,,,
+"waterstofcarbonaat","374","HCO3","1025.0","mg/l","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"natrium","1262","Na","1965-12-28","2160.0","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","1965-12-28","3830.0","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1965-12-28","236.0","mg/l",,,,"goedgekeurd"
+"Kaliumpermanganaat verbruik","921","PMV","1965-12-28","75.0","mg/l",,,,"goedgekeurd"
+"nitriet","1273","NO2","1965-12-28","0.006","mg/l",,,"<","goedgekeurd"
+"calcium","447","Ca","1965-12-28","218.0","mg/l",,,,"goedgekeurd"
+"fosfaat","1334","PO4","1965-12-28","1.95","mg/l",,,,"goedgekeurd"
+"ijzer","879","Fe","1965-12-28","12900.0","ug/l",,,,"goedgekeurd"
+"ammonium","289","NH4","1965-12-28","9.41","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","1965-12-28","260.0","ug/l",,,,"goedgekeurd"
+,,,,,,,,,

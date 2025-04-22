@@ -1,0 +1,35 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000000715","IMBRO/A","2022-11-25T11:08:25+01:00","2012-03-28T12:00:00+02:00","onbekend","4",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Zuurgraad","1398","pH","7.53","1","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","40.4","mS/m","goedgekeurd",,,,
+"Temperatuur","1522","T","10.58","Cel","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"carbonaat","464","CO3","2012-03-28","6.0","mg/l",,,"<","goedgekeurd"
+"zink","1693","Zn","2012-03-28","2.22","ug/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","2012-03-28","0.29","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","2012-03-28","13.31","mg/l",,,,"goedgekeurd"
+"lood","1116","Pb","2012-03-28","0.12","ug/l",,,"<","goedgekeurd"
+"arseen","310","As","2012-03-28","1.7","ug/l",,,,"goedgekeurd"
+"cadmium","441","Cd","2012-03-28","0.1","ug/l",,,"<","goedgekeurd"
+"waterstofcarbonaat","374","HCO3","2012-03-28","219.72","mg/l",,,,"goedgekeurd"
+"aluminium","284","Al","2012-03-28","10.22","ug/l",,,,"goedgekeurd"
+"calcium","447","Ca","2012-03-28","65.85","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","2012-03-28","7.0","mg/l",,,,"goedgekeurd"
+"chroom","517","Cr","2012-03-28","0.15","ug/l",,,,"goedgekeurd"
+"ijzer","879","Fe","2012-03-28","2808.5","ug/l",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","2012-03-28","37.4","mS/m",,,,"goedgekeurd"
+"kwik","1097","Hg","2012-03-28","0.03","ug/l",,,"<","goedgekeurd"
+"kalium","920","K","2012-03-28","1.07","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","2012-03-28","6.81","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","2012-03-28","1149.23","ug/l",,,,"goedgekeurd"
+"natrium","1262","Na","2012-03-28","4.81","mg/l",,,,"goedgekeurd"
+"ammonium","289","NH4","2012-03-28","0.52","mg/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","2012-03-28","0.14","ug/l",,,,"goedgekeurd"
+"koper","971","Cu","2012-03-28","0.26","ug/l",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","2012-03-28","7.35","1",,,,"goedgekeurd"
+"nitraat","1270","NO3","2012-03-28","0.05","mg/l",,,"<","goedgekeurd"
+"Temperatuur","1522","T","2012-03-28","21.0","Cel",,,,"goedgekeurd"
+,,,,,,,,,

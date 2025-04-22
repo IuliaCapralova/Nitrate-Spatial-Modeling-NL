@@ -1,0 +1,37 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000034524","IMBRO/A","2023-01-13T20:50:11+01:00","2006-06-26T13:00:00+02:00","onderwaterpomp","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Temperatuur","1522","T","11.5","Cel","goedgekeurd",,,,
+"Zuurgraad","1398","pH","5.2","1","goedgekeurd",,,,
+"zuurstof","1701","O2","0.3","mg/l","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","36.5","mS/m","goedgekeurd",,,,
+"waterstofcarbonaat","374","HCO3","16.5","mg/l","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"aluminium","284","Al","2006-06-26","7.119","ug/l",,,,"goedgekeurd"
+"arseen","310","As","2006-06-26","0.198","ug/l",,,,"goedgekeurd"
+"barium","333","Ba","2006-06-26","38.466","ug/l",,,,"goedgekeurd"
+"chloride","508","Cl","2006-06-26","57.23","mg/l",,,,"goedgekeurd"
+"chroom","517","Cr","2006-06-26","0.213","ug/l",,,,"goedgekeurd"
+"koper","971","Cu","2006-06-26","0.867","ug/l",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","2006-06-26","37.1","mS/m",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","2006-06-26","5.4","1",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","2006-06-26","15.7","mg/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","2006-06-26","0.06","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","2006-06-26","54.4","mg/l",,,,"goedgekeurd"
+"strontium","1501","Sr","2006-06-26","62.169","ug/l",,,,"goedgekeurd"
+"ijzer","879","Fe","2006-06-26","3.0","ug/l",,,"<","goedgekeurd"
+"kalium","920","K","2006-06-26","13.18","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","2006-06-26","3.89","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","2006-06-26","334.29","ug/l",,,,"goedgekeurd"
+"ammonium","289","NH4","2006-06-26","0.353","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","2006-06-26","37.702","mg/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","2006-06-26","25.638","ug/l",,,,"goedgekeurd"
+"lood","1116","Pb","2006-06-26","0.101","ug/l",,,,"goedgekeurd"
+"zink","1693","Zn","2006-06-26","7.256","ug/l",,,,"goedgekeurd"
+"calcium","447","Ca","2006-06-26","12.258","mg/l",,,,"goedgekeurd"
+"koolstof organisch","1318","Corg","2006-06-26","2.978","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","2006-06-26","0.368","mg/l",,,,"goedgekeurd"
+"cadmium","441","Cd","2006-06-26","0.45","ug/l",,,,"goedgekeurd"
+,,,,,,,,,

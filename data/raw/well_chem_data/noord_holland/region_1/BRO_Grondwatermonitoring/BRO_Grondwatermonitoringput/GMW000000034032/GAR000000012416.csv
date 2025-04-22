@@ -1,0 +1,31 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000012416","IMBRO/A","2023-01-09T10:12:33+01:00","1994-12-21T11:00:00+01:00","onbekend","2",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Zuurgraad","1398","pH","7.1","1","goedgekeurd",,,,
+"Temperatuur","1522","T","11.1","Cel","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","44.0","mS/m","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"ijzer","879","Fe","1994-12-21","10572.0","ug/l",,,,"goedgekeurd"
+"chloride","508","Cl","1994-12-21","16.0","mg/l",,,,"goedgekeurd"
+"aluminium","284","Al","1994-12-21","13.0","ug/l",,,"<","goedgekeurd"
+"natrium","1262","Na","1994-12-21","10.9","mg/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","1994-12-21","0.88","ug/l",,,"<","goedgekeurd"
+"ammonium","289","NH4","1994-12-21","1.5","mg/l",,,,"goedgekeurd"
+"chroom","517","Cr","1994-12-21","1.25","ug/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","1994-12-21","218.0","mg/l",,,,"goedgekeurd"
+"strontium","1501","Sr","1994-12-21","167.0","ug/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1994-12-21","1.9","mg/l",,,,"goedgekeurd"
+"zink","1693","Zn","1994-12-21","6.5","ug/l",,,"<","goedgekeurd"
+"arseen","310","As","1994-12-21","5.39","ug/l",,,,"goedgekeurd"
+"cadmium","441","Cd","1994-12-21","0.04","ug/l",,,"<","goedgekeurd"
+"nitraat","1270","NO3","1994-12-21","0.19","mg/l",,,,"onbeslist"
+"koper","971","Cu","1994-12-21","0.6","ug/l",,,"<","goedgekeurd"
+"kalium","920","K","1994-12-21","0.5","mg/l",,,,"goedgekeurd"
+"lood","1116","Pb","1994-12-21","0.3","ug/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","1994-12-21","320.0","ug/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","1994-12-21","0.21","mg/l",,,,"goedgekeurd"
+"barium","333","Ba","1994-12-21","24.0","ug/l",,,,"goedgekeurd"
+"calcium","447","Ca","1994-12-21","70.4","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

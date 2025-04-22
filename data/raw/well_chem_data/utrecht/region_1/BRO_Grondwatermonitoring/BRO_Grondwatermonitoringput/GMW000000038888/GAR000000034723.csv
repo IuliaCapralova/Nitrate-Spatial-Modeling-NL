@@ -1,0 +1,32 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000034723","IMBRO/A","2023-01-13T21:03:31+01:00","1997-08-13T13:00:00+02:00","onderwaterpomp","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Zuurgraad","1398","pH","6.42","1","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","31.0","mS/m","goedgekeurd",,,,
+"waterstofcarbonaat","374","HCO3","67.35","mg/l","goedgekeurd",,,,
+"Temperatuur","1522","T","14.7","Cel","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"aluminium","284","Al","1997-08-13","35.074","ug/l",,,,"goedgekeurd"
+"arseen","310","As","1997-08-13","1.948","ug/l",,,,"goedgekeurd"
+"barium","333","Ba","1997-08-13","33.097","ug/l",,,,"goedgekeurd"
+"chloride","508","Cl","1997-08-13","28.608","mg/l",,,,"goedgekeurd"
+"chroom","517","Cr","1997-08-13","0.702","ug/l",,,"<","goedgekeurd"
+"koper","971","Cu","1997-08-13","0.699","ug/l",,,"<","goedgekeurd"
+"fosfor totaal","4188","Ptot","1997-08-13","0.062","mg/l",,,"<","goedgekeurd"
+"sulfaat","1508","SO4","1997-08-13","41.69","mg/l",,,,"goedgekeurd"
+"strontium","1501","Sr","1997-08-13","147.202","ug/l",,,,"goedgekeurd"
+"ijzer","879","Fe","1997-08-13","3401.0","ug/l",,,,"goedgekeurd"
+"kalium","920","K","1997-08-13","3.519","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","1997-08-13","6.928","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","1997-08-13","302.0","ug/l",,,,"goedgekeurd"
+"ammonium","289","NH4","1997-08-13","0.518","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","1997-08-13","17.978","mg/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","1997-08-13","1.004","ug/l",,,,"goedgekeurd"
+"zink","1693","Zn","1997-08-13","6.539","ug/l",,,"<","goedgekeurd"
+"boor","386","B","1997-08-13","17.296","ug/l",,,,"goedgekeurd"
+"calcium","447","Ca","1997-08-13","27.182","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","1997-08-13","0.028","mg/l",,,,"goedgekeurd"
+"cadmium","441","Cd","1997-08-13","0.045","ug/l",,,"<","goedgekeurd"
+,,,,,,,,,

@@ -1,0 +1,31 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000012467","IMBRO/A","2023-01-09T10:14:30+01:00","1996-09-18T12:00:00+02:00","onbekend","4",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Zuurgraad","1398","pH","8.15","1","goedgekeurd",,,,
+"Temperatuur","1522","T","9.6","Cel","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","19.8","mS/m","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"natrium","1262","Na","1996-09-18","8.0","mg/l",,,,"goedgekeurd"
+"barium","333","Ba","1996-09-18","9.8","ug/l",,,,"onbeslist"
+"aluminium","284","Al","1996-09-18","13.0","ug/l",,,"<","goedgekeurd"
+"chloride","508","Cl","1996-09-18","15.0","mg/l",,,,"goedgekeurd"
+"zink","1693","Zn","1996-09-18","6.53","ug/l",,,"<","goedgekeurd"
+"cadmium","441","Cd","1996-09-18","0.05","ug/l",,,"<","goedgekeurd"
+"fosfor totaal","4188","Ptot","1996-09-18","0.06","mg/l",,,"<","goedgekeurd"
+"nitraat","1270","NO3","1996-09-18","0.03","mg/l",,,"<","goedgekeurd"
+"arseen","310","As","1996-09-18","0.15","ug/l",,,,"onbeslist"
+"ijzer","879","Fe","1996-09-18","50.0","ug/l",,,,"goedgekeurd"
+"koper","971","Cu","1996-09-18","0.7","ug/l",,,"<","goedgekeurd"
+"kalium","920","K","1996-09-18","0.6","mg/l",,,,"goedgekeurd"
+"chroom","517","Cr","1996-09-18","0.7","ug/l",,,"<","goedgekeurd"
+"magnesium","1125","Mg","1996-09-18","0.5","mg/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","1996-09-18","0.7","ug/l",,,"<","goedgekeurd"
+"mangaan","1128","Mn","1996-09-18","430.0","ug/l",,,,"onbeslist"
+"ammonium","289","NH4","1996-09-18","0.01","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1996-09-18","22.0","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","1996-09-18","29.7","mg/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","1996-09-18","55.0","mg/l",,,,"onbeslist"
+"strontium","1501","Sr","1996-09-18","63.0","ug/l",,,,"onbeslist"
+,,,,,,,,,

@@ -1,0 +1,28 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000012550","IMBRO/A","2023-01-09T10:17:48+01:00","1992-10-20T11:00:00+01:00","onbekend","4",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"waterstofcarbonaat","374","HCO3","1992-10-20","15.0","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","1992-10-20","15.0","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","1992-10-20","11.0","mg/l",,,,"goedgekeurd"
+"aluminium","284","Al","1992-10-20","13.0","ug/l",,,"<","goedgekeurd"
+"ijzer","879","Fe","1992-10-20","10780.0","ug/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1992-10-20","14.0","mg/l",,,,"goedgekeurd"
+"koper","971","Cu","1992-10-20","0.95","ug/l",,,,"goedgekeurd"
+"koolstof organisch","1318","Corg","1992-10-20","0.88","mg/l",,,,"goedgekeurd"
+"kalium","920","K","1992-10-20","1.0","mg/l",,,,"goedgekeurd"
+"arseen","310","As","1992-10-20","1.0","ug/l",,,,"onbeslist"
+"zink","1693","Zn","1992-10-20","86.0","ug/l",,,,"onbeslist"
+"calcium","447","Ca","1992-10-20","4.6","mg/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","1992-10-20","5.69","ug/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","1992-10-20","0.06","mg/l",,,"<","goedgekeurd"
+"mangaan","1128","Mn","1992-10-20","140.0","ug/l",,,,"goedgekeurd"
+"cadmium","441","Cd","1992-10-20","0.04","ug/l",,,"<","goedgekeurd"
+"magnesium","1125","Mg","1992-10-20","0.79","mg/l",,,,"goedgekeurd"
+"chroom","517","Cr","1992-10-20","0.78","ug/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","1992-10-20","0.05","mg/l",,,,"goedgekeurd"
+"lood","1116","Pb","1992-10-20","0.21","ug/l",,,"<","goedgekeurd"
+"ammonium","289","NH4","1992-10-20","0.01","mg/l",,,"<","goedgekeurd"
+"barium","333","Ba","1992-10-20","26.0","ug/l",,,,"goedgekeurd"
+"strontium","1501","Sr","1992-10-20","22.0","ug/l",,,,"goedgekeurd"
+,,,,,,,,,

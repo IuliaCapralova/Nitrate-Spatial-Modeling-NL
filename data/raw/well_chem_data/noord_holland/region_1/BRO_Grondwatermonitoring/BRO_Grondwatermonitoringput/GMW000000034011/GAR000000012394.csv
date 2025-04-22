@@ -1,0 +1,35 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000012394","IMBRO/A","2023-01-09T10:11:48+01:00","1999-01-25T11:00:00+01:00","onbekend","3",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Temperatuur","1522","T","10.2","Cel","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","57.8","mS/m","goedgekeurd",,,,
+"Zuurgraad","1398","pH","6.3","1","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"zink","1693","Zn","1999-01-25","7.3","ug/l",,,,"goedgekeurd"
+"chroom","517","Cr","1999-01-25","7.9","ug/l",,,,"goedgekeurd"
+"koolstof organisch","1318","Corg","1999-01-25","14.0","mg/l",,,,"goedgekeurd"
+"arseen","310","As","1999-01-25","16.0","ug/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","1999-01-25","100.0","mg/l",,,,"goedgekeurd"
+"barium","333","Ba","1999-01-25","100.0","ug/l",,,,"goedgekeurd"
+"chloride","508","Cl","1999-01-25","120.0","mg/l",,,,"goedgekeurd"
+"strontium","1501","Sr","1999-01-25","150.0","ug/l",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","1999-01-25","58.8","mS/m",,,,"goedgekeurd"
+"koper","971","Cu","1999-01-25","2.0","ug/l",,,"<","goedgekeurd"
+"magnesium","1125","Mg","1999-01-25","6.0","mg/l",,,,"onbeslist"
+"lood","1116","Pb","1999-01-25","5.0","ug/l",,,"<","onbeslist"
+"Zuurgraad","1398","pH","1999-01-25","6.4","1",,,,"goedgekeurd"
+"ijzer","879","Fe","1999-01-25","5100.0","ug/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","1999-01-25","5.0","ug/l",,,"<","goedgekeurd"
+"kalium","920","K","1999-01-25","6.4","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","1999-01-25","130.0","ug/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","1999-01-25","0.04","mg/l",,,"<","goedgekeurd"
+"fosfor totaal","4188","Ptot","1999-01-25","0.57","mg/l",,,,"goedgekeurd"
+"cadmium","441","Cd","1999-01-25","0.4","ug/l",,,"<","goedgekeurd"
+"ammonium","289","NH4","1999-01-25","0.01","mg/l",,,"<","onbeslist"
+"sulfaat","1508","SO4","1999-01-25","39.0","mg/l",,,,"goedgekeurd"
+"calcium","447","Ca","1999-01-25","34.0","mg/l",,,,"goedgekeurd"
+"aluminium","284","Al","1999-01-25","71.0","ug/l",,,,"goedgekeurd"
+"natrium","1262","Na","1999-01-25","58.0","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

@@ -1,0 +1,31 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000005100","IMBRO/A","2022-12-02T21:08:47+01:00","2003-01-16T11:00:00+01:00","onbekend","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"waterstofcarbonaat","374","HCO3","502.0","mg/l","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"natrium","1262","Na","2003-01-16","550.0","mg/l",,,,"goedgekeurd"
+"ijzer","879","Fe","2003-01-16","6600.0","ug/l",,,,"goedgekeurd"
+"nitriet","1273","NO2","2003-01-16","0.006","mg/l",,,"<","goedgekeurd"
+"calcium","447","Ca","2003-01-16","330.0","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","2003-01-16","850.0","mg/l",,,,"goedgekeurd"
+"kalium","920","K","2003-01-16","22.0","mg/l",,,,"goedgekeurd"
+"kwik","1097","Hg","2003-01-16","0.05","ug/l",,,"<","goedgekeurd"
+"lood","1116","Pb","2003-01-16","1.5","ug/l",,,,"goedgekeurd"
+"koper","971","Cu","2003-01-16","1.0","ug/l",,,"<","goedgekeurd"
+"cadmium","441","Cd","2003-01-16","0.1","ug/l",,,"<","goedgekeurd"
+"koolstof organisch","1318","Corg","2003-01-16","8.3","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","2003-01-16","1100.0","mg/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","2003-01-16","0.48","mg/l",,,,"onbeslist"
+"barium","333","Ba","2003-01-16","146.0","ug/l",,,,"goedgekeurd"
+"chroom","517","Cr","2003-01-16","2.0","ug/l",,,"<","goedgekeurd"
+"magnesium","1125","Mg","2003-01-16","120.0","mg/l",,,,"goedgekeurd"
+"fosfaat","1334","PO4","2003-01-16","0.24","mg/l",,,,"goedgekeurd"
+"ammonium","289","NH4","2003-01-16","7.78","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","2003-01-16","0.11","mg/l",,,"<","goedgekeurd"
+"zink","1693","Zn","2003-01-16","2.0","ug/l",,,"<","goedgekeurd"
+"nikkel","1267","Ni","2003-01-16","2.0","ug/l",,,"<","goedgekeurd"
+"kobalt","527","Co","2003-01-16","2.0","ug/l",,,"<","goedgekeurd"
+"arseen","310","As","2003-01-16","2.0","ug/l",,,"<","goedgekeurd"
+,,,,,,,,,

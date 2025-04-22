@@ -1,0 +1,9 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000003851","IMBRO/A","2022-12-02T19:07:48+01:00","2000-01-01T11:00:00+01:00","onbekend","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"zink","1693","Zn","2000-01-01","19.0","ug/l",,,,"goedgekeurd"
+"chroom","517","Cr","2000-01-01","1.9","ug/l",,,,"goedgekeurd"
+"arseen","310","As","2000-01-01","13.0","ug/l",,,,"goedgekeurd"
+"barium","333","Ba","2000-01-01","840.0","ug/l",,,,"goedgekeurd"
+,,,,,,,,,

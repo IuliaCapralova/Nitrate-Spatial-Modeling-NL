@@ -1,0 +1,32 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000012384","IMBRO/A","2023-01-09T10:11:28+01:00","1993-11-09T11:00:00+01:00","onbekend","2",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Temperatuur","1522","T","10.5","Cel","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","62.0","mS/m","goedgekeurd",,,,
+"Zuurgraad","1398","pH","6.17","1","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"koper","971","Cu","1993-11-09","8.3","ug/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","1993-11-09","1.53","ug/l",,,,"goedgekeurd"
+"arseen","310","As","1993-11-09","1.5","ug/l",,,,"goedgekeurd"
+"natrium","1262","Na","1993-11-09","82.7","mg/l",,,,"goedgekeurd"
+"barium","333","Ba","1993-11-09","111.0","ug/l",,,,"goedgekeurd"
+"chloride","508","Cl","1993-11-09","129.0","mg/l",,,,"goedgekeurd"
+"aluminium","284","Al","1993-11-09","89.0","ug/l",,,,"goedgekeurd"
+"strontium","1501","Sr","1993-11-09","169.0","ug/l",,,,"goedgekeurd"
+"chroom","517","Cr","1993-11-09","2.03","ug/l",,,,"goedgekeurd"
+"kalium","920","K","1993-11-09","4.0","mg/l",,,,"goedgekeurd"
+"zink","1693","Zn","1993-11-09","6.5","ug/l",,,"<","goedgekeurd"
+"magnesium","1125","Mg","1993-11-09","4.9","mg/l",,,,"goedgekeurd"
+"ijzer","879","Fe","1993-11-09","67.0","ug/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","1993-11-09","0.06","mg/l",,,"<","goedgekeurd"
+"cadmium","441","Cd","1993-11-09","0.19","ug/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","1993-11-09","0.04","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","1993-11-09","149.0","ug/l",,,,"goedgekeurd"
+"lood","1116","Pb","1993-11-09","0.5","ug/l",,,,"goedgekeurd"
+"ammonium","289","NH4","1993-11-09","0.02","mg/l",,,"<","goedgekeurd"
+"calcium","447","Ca","1993-11-09","27.6","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","1993-11-09","33.0","mg/l",,,,"goedgekeurd"
+"waterstofcarbonaat","374","HCO3","1993-11-09","62.0","mg/l",,,,"goedgekeurd"
+,,,,,,,,,

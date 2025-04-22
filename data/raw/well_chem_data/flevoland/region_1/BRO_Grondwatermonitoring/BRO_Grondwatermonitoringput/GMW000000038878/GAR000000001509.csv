@@ -1,0 +1,42 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000001509","IMBRO/A","2022-11-28T15:14:06+01:00","2016-08-16T12:00:00+02:00","onbekend","1",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"zuurstof","1701","O2","0.01","mg/l","goedgekeurd",,,,
+"Zuurgraad","1398","pH","6.91","1","goedgekeurd",,,,
+"waterstofcarbonaat","374","HCO3","774.0","mg/l","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","187.0","mS/m","goedgekeurd",,,,
+"Temperatuur","1522","T","11.7","Cel","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"magnesium","1125","Mg","2016-08-16","47.21","mg/l",,,,"goedgekeurd"
+"fosfor totaal","4188","Ptot","2016-08-16","0.67","mg/l",,,,"goedgekeurd"
+"sulfaat","1508","SO4","2016-08-16","2.07","mg/l",,,,"goedgekeurd"
+"nitraat","1270","NO3","2016-08-16","0.04","mg/l",,,"<","goedgekeurd"
+"chloride","508","Cl","2016-08-16","216.54","mg/l",,,,"goedgekeurd"
+"mangaan","1128","Mn","2016-08-16","1430.0","ug/l",,,,"goedgekeurd"
+"ijzer","879","Fe","2016-08-16","23175.0","ug/l",,,,"goedgekeurd"
+"ammonium","289","NH4","2016-08-16","17.85","mg/l",,,,"goedgekeurd"
+"antimoon","301","Sb","2016-08-16","0.1","ug/l",,,"<","goedgekeurd"
+"lood","1116","Pb","2016-08-16","0.2","ug/l",,,"<","goedgekeurd"
+"kalium","920","K","2016-08-16","70.92","mg/l",,,,"goedgekeurd"
+"aluminium","284","Al","2016-08-16","14.0","ug/l",,,,"goedgekeurd"
+"arseen","310","As","2016-08-16","1.14","ug/l",,,,"goedgekeurd"
+"barium","333","Ba","2016-08-16","313.7","ug/l",,,,"goedgekeurd"
+"beryllium","362","Be","2016-08-16","0.1","ug/l",,,"<","goedgekeurd"
+"cadmium","441","Cd","2016-08-16","0.05","ug/l",,,"<","goedgekeurd"
+"chroom","517","Cr","2016-08-16","1.14","ug/l",,,,"goedgekeurd"
+"kobalt","527","Co","2016-08-16","0.32","ug/l",,,,"goedgekeurd"
+"zink","1693","Zn","2016-08-16","4.0","ug/l",,,"<","goedgekeurd"
+"lithium","1115","Li","2016-08-16","2.3","ug/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","2016-08-16","0.68","ug/l",,,,"goedgekeurd"
+"strontium","1501","Sr","2016-08-16","843.3","ug/l",,,,"goedgekeurd"
+"thallium","1553","Tl","2016-08-16","0.05","ug/l",,,"<","goedgekeurd"
+"vanadium","1642","V","2016-08-16","1.21","ug/l",,,,"goedgekeurd"
+"natrium","1262","Na","2016-08-16","94.14","mg/l",,,,"goedgekeurd"
+"koolstof organisch","1318","Corg","2016-08-16","17.6","mg/l",,,,"goedgekeurd"
+"koper","971","Cu","2016-08-16","0.5","ug/l",,,"<","goedgekeurd"
+"calcium","447","Ca","2016-08-16","151.8","mg/l",,,,"goedgekeurd"
+"Zuurgraad","1398","pH","2016-08-16","7.0","1",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","2016-08-16","181.0","mS/m",,,,"goedgekeurd"
+,,,,,,,,,

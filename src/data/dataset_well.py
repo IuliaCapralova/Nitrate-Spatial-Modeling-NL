@@ -3,37 +3,46 @@ import pandas as pd
 import numpy as np
 import csv
 import re
+import geopandas as gpd
+import fiona
 from dataset import DataSet
 
 
 class Dataset_Well(DataSet):
-    def __init__(self, type_of_data = "well_chem_data", type_of_file = ".csv") -> None:
-        super().__init__(type_of_data="well_chem_data", type_of_file=".csv")
+    def __init__(self, province, type_of_data = "well_chem_data") -> None:
+        super().__init__(province, type_of_data="well_chem_data")
 
         self._dataframe = self._extract_data()
     
     def _extract_data(self) -> pd.DataFrame:
         # define columns in new dataframe
-        columns = ["Well_ID", "BRO-ID", "Date", "Nitrate", "Chloride", "Oxygen", "Temperature", "Acidity"]
+        columns = ["Well_ID", "BRO-ID", "Filter", "Date", "Nitrate", "Chloride", "Oxygen", "Temperature", "Acidity"]
 
         # create DataFrame with columns above
         groundwater_df = pd.DataFrame(columns=columns)
 
+        # extract only water properties
         for path in self._datafiles:
             extracted_row = self._filter_file(path) # from the csv we extract all needed info in one single row
-            groundwater_df = pd.concat([groundwater_df, pd.DataFrame([extracted_row])], ignore_index=True) # save this row
+            if extracted_row:
+                groundwater_df = pd.concat([groundwater_df, pd.DataFrame([extracted_row])], ignore_index=True) # save this row
+
+        # extract and link locations
+        location_df = self._location_finder()
+        groundwater_df = groundwater_df.merge(location_df[['BRO-ID', 'geometry']], on='BRO-ID', how='left')
 
         return groundwater_df
 
     def _filter_file(self, file_path:str) -> dict:
         rows = self._read_csv_rows(file_path)
-        bro_id, date = self._extract_metadata(rows)
+        bro_id, date, buis = self._extract_metadata(rows)
         well_id = self._extract_well_id(file_path)
 
         # 3) set up the output
         output = {
             "Well_ID":    well_id,
             "BRO-ID":     bro_id,
+            "Filter":     buis,
             "Date":       date,
             "Nitrate":    np.nan,
             "Chloride":   np.nan,
@@ -86,7 +95,8 @@ class Dataset_Well(DataSet):
         meta_map = dict(zip(header0, meta))
         return (
             meta_map.get("BRO-ID",    np.nan),
-            meta_map.get("tijdstip veldonderzoek", np.nan)
+            meta_map.get("tijdstip veldonderzoek", np.nan),
+            meta_map.get("buis", np.nan),
         )
 
     def _extract_well_id(self, file_path):
@@ -144,6 +154,27 @@ class Dataset_Well(DataSet):
         while idx < len(rows) and rows[idx] and rows[idx][0].strip().lower() != "parameter":
             idx += 1
         return idx
+    
+    def _location_finder(self) -> gpd.GeoDataFrame:
+        # Go in each province folder
+        # Each region folder
+        # Find "locatie_levering.kml"
+        # Add all of them up
+        # Read one by one, add each feature in each layer in geo table
+        combined_loc = gpd.GeoDataFrame()
+
+        for path in self._location_files:
+            try:
+                layers = fiona.listlayers(path)
+                for layer in layers:
+                    gdf = gpd.read_file(path, driver="KML", layer=layer)
+                    gdf["source_layer"] = layer
+                    combined_loc = pd.concat([combined_loc, gdf], ignore_index=True)
+            except Exception as e:
+                print(f"Failed to load {path}: {e}")
+        #rename column
+        combined_loc['BRO-ID'] = combined_loc['Name'].str.replace('.csv', '', regex=False)
+        return combined_loc
 
     def get_df(self) -> pd.DataFrame:
         """
@@ -153,6 +184,6 @@ class Dataset_Well(DataSet):
     
 
 if __name__ == "__main__":
-    well_chem_data = Dataset_Well(type_of_data = "well_chem_data", type_of_file = ".csv")
-    data = well_chem_data.get_df()
-    print(data.head(15))
+    well_chem_data = Dataset_Well(province="utrecht", type_of_data = "well_chem_data")
+    full_df = well_chem_data._dataframe
+    print(full_df.head())

@@ -1,0 +1,36 @@
+"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
+"GAR000000000370","IMBRO/A","2022-11-25T10:41:35+01:00","2008-09-16T12:00:00+02:00","onbekend","2",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
+"Temperatuur","1522","T","11.9","Cel","goedgekeurd",,,,
+"Zuurgraad","1398","pH","7.28","1","goedgekeurd",,,,
+"Geleidendheid","3548","GELDHD","53.2","mS/m","goedgekeurd",,,,
+"waterstofcarbonaat","374","HCO3","327.69","mg/l","goedgekeurd",,,,
+,,,,,,,,,
+"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
+"Zuurgraad","1398","pH","2008-09-16","7.2","1",,,,"goedgekeurd"
+"Temperatuur","1522","T","2008-09-16","21.6","Cel",,,,"goedgekeurd"
+"Geleidendheid","3548","GELDHD","2008-09-16","61.0","mS/m",,,,"goedgekeurd"
+"aluminium","284","Al","2008-09-16","20.0","ug/l",,,"<","goedgekeurd"
+"calcium","447","Ca","2008-09-16","98.0","mg/l",,,,"goedgekeurd"
+"arseen","310","As","2008-09-16","3.0","ug/l",,,,"goedgekeurd"
+"cadmium","441","Cd","2008-09-16","0.05","ug/l",,,"<","goedgekeurd"
+"ammonium","289","NH4","2008-09-16","0.88","mg/l",,,,"goedgekeurd"
+"chroom","517","Cr","2008-09-16","3.5","ug/l",,,,"goedgekeurd"
+"koper","971","Cu","2008-09-16","0.3","ug/l",,,,"goedgekeurd"
+"ijzer","879","Fe","2008-09-16","1600.0","ug/l",,,,"goedgekeurd"
+"kwik","1097","Hg","2008-09-16","0.01","ug/l",,,"<","onbeslist"
+"kalium","920","K","2008-09-16","2.6","mg/l",,,,"goedgekeurd"
+"magnesium","1125","Mg","2008-09-16","9.1","mg/l",,,,"goedgekeurd"
+"natrium","1262","Na","2008-09-16","16.0","mg/l",,,,"goedgekeurd"
+"chloride","508","Cl","2008-09-16","36.0","mg/l",,,,"goedgekeurd"
+"nikkel","1267","Ni","2008-09-16","0.74","ug/l",,,,"goedgekeurd"
+"nitriet","1273","NO2","2008-09-16","0.01","mg/l",,,"<","goedgekeurd"
+"nitraat","1270","NO3","2008-09-16","0.1","mg/l",,,"<","goedgekeurd"
+"lood","1116","Pb","2008-09-16","0.1","ug/l",,,"<","goedgekeurd"
+"fosfor totaal","4188","Ptot","2008-09-16","0.19","mg/l",,,,"goedgekeurd"
+"fosfaat","1334","PO4","2008-09-16","0.05","mg/l",,,"<","goedgekeurd"
+"sulfaat","1508","SO4","2008-09-16","11.0","mg/l",,,,"goedgekeurd"
+"zink","1693","Zn","2008-09-16","5.0","ug/l",,,"<","goedgekeurd"
+"mangaan","1128","Mn","2008-09-16","450.0","ug/l",,,,"goedgekeurd"
+,,,,,,,,,
