@@ -1,17 +1,28 @@
 import pandas as pd
-from dataset_well import Dataset_Well
+from dataset_nitrate import Dataset_Nitrate
+from dataset_depth import Dataset_Depth
 from dataset_saver import Dataset_Saver
 
 def main():
-    
-    # Ask user to name the province
-    province = input("Please select one of the provinces: Zeeland, Flevoland, Noord-Holland, Utrecht: ").strip()
 
-    # Zeeland data
-    dataset = Dataset_Well(province = province, type_of_data = "well_chem_data")
+    # dataset = Dataset_Nitrate(province=province)
+    # saver = Dataset_Saver()
+    # saver(dataset, f"data/raw/well_chem_data/{province}_well_combined.csv")
+    # print(f"Data from {province} is saved successfuly!")
+
+    province = "flevoland"
+    n_files = None
+
+    dataset = Dataset_Depth(province=province, max_files=n_files)
+
+    if isinstance(dataset, Dataset_Nitrate):
+        variable = "chem"
+    if isinstance(dataset, Dataset_Depth):
+        variable = "depth"
+
     saver = Dataset_Saver()
-    saver(dataset, f"data/raw/well_chem_data/{province}_well_combined.csv")
-    print(f"Data from {province} is saved successfuly!")
+    saver(dataset, f"data/raw/well_depth_data/{province}_well_{variable}_combined.csv")
+    print(f"{variable.upper()} data from {province} is saved successfully!")
 
 
 if __name__ == "__main__":

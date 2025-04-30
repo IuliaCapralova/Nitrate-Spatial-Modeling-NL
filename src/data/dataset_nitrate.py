@@ -1,34 +1,32 @@
 import os
-import pandas as pd
-import numpy as np
-import csv
 import re
-import geopandas as gpd
+import csv
 import fiona
-from dataset import DataSet
+import numpy as np
+import pandas as pd
+import geopandas as gpd
+from dataset_bro import Dataset_BRO
 
 
-class Dataset_Well(DataSet):
-    def __init__(self, province, type_of_data = "well_chem_data") -> None:
+class Dataset_Nitrate(Dataset_BRO):
+    # define columns in new dataframe
+    COLUMNS = ["Well_ID", "BRO-ID", "Filter", "Date", "Nitrate", "Chloride", "Oxygen", "Temperature", "Acidity"]
+
+    def __init__(self, province) -> None:
         super().__init__(province, type_of_data="well_chem_data")
 
-        self._dataframe = self._extract_data()
-    
-    def _extract_data(self) -> pd.DataFrame:
-        # define columns in new dataframe
-        columns = ["Well_ID", "BRO-ID", "Filter", "Date", "Nitrate", "Chloride", "Oxygen", "Temperature", "Acidity"]
-
+    def _extract_data(self) -> pd.DataFrame:        
         # create DataFrame with columns above
-        groundwater_df = pd.DataFrame(columns=columns)
+        groundwater_df = pd.DataFrame(columns=self.COLUMNS)
 
         # extract only water properties
-        for path in self._datafiles:
+        for path in self._datapaths:
             extracted_row = self._filter_file(path) # from the csv we extract all needed info in one single row
             if extracted_row:
-                groundwater_df = pd.concat([groundwater_df, pd.DataFrame([extracted_row])], ignore_index=True) # save this row
+                groundwater_df = pd.concat([groundwater_df, pd.DataFrame([extracted_row])], ignore_index=True) # save this row/s
 
         # extract and link locations
-        location_df = self._location_finder()
+        location_df = self._location_df_creator()
         groundwater_df = groundwater_df.merge(location_df[['BRO-ID', 'geometry']], on='BRO-ID', how='left')
 
         return groundwater_df
@@ -85,25 +83,21 @@ class Dataset_Well(DataSet):
 
         return output
 
-    def _read_csv_rows(self, path):
-        with open(path, newline='', encoding='utf-8') as f:
-            return list(csv.reader(f))
-
     def _extract_metadata(self, rows):
         header0 = rows[0]
-        meta    = rows[1] if len(rows)>1 else []
+        meta = rows[1] if len(rows)>1 else []
         meta_map = dict(zip(header0, meta))
         return (
             meta_map.get("BRO-ID",    np.nan),
             meta_map.get("tijdstip veldonderzoek", np.nan),
             meta_map.get("buis", np.nan),
         )
-
+    
     def _extract_well_id(self, file_path):
         for part in os.path.normpath(file_path).split(os.sep):
-            m = re.match(r"GMW\w+", part)
-            if m:
-                return m.group(0)
+            match = re.match(r"GMW\w+", part)
+            if match:
+                return match.group(0)
         return None
 
     def _find_first_data_row(self, rows, start_idx):
@@ -155,7 +149,7 @@ class Dataset_Well(DataSet):
             idx += 1
         return idx
     
-    def _location_finder(self) -> gpd.GeoDataFrame:
+    def _location_df_creator(self) -> gpd.GeoDataFrame:
         # Go in each province folder
         # Each region folder
         # Find "locatie_levering.kml"
@@ -182,8 +176,22 @@ class Dataset_Well(DataSet):
         """
         return self._dataframe
     
+    # TODO
+    def __getitem__(self):
+        """
+        Access the file from df at a given index.
+        """
+        pass
+
+    # TODO
+    def __len__(self):
+        """
+        Return the number of collected CSV files.
+        """
+        pass
+    
 
 if __name__ == "__main__":
-    well_chem_data = Dataset_Well(province="utrecht", type_of_data = "well_chem_data")
+    well_chem_data = Dataset_Nitrate(province="utrecht", type_of_data = "well_chem_data")
     full_df = well_chem_data._dataframe
     print(full_df.head())
