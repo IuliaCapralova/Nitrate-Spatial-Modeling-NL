@@ -12,8 +12,8 @@ class Dataset_Nitrate(Dataset_BRO):
     # define columns in new dataframe
     COLUMNS = ["Well_ID", "BRO-ID", "Filter", "Date", "Nitrate", "Chloride", "Oxygen", "Temperature", "Acidity"]
 
-    def __init__(self, province) -> None:
-        super().__init__(province, type_of_data="well_chem_data")
+    def __init__(self, province, max_files=None) -> None:
+        super().__init__(province, type_of_data="well_chem_data", max_files=max_files)
 
     def _extract_data(self) -> pd.DataFrame:        
         # create DataFrame with columns above

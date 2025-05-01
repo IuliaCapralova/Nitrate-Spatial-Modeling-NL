@@ -57,8 +57,10 @@ class Dataset_BRO(DataSet):
 
             # in this folder we can find location
             # so before moving on, we save these location files
-            kml_path = self._location_paths_finder(region_path, location_paths)
-            location_paths.append(kml_path)
+            kml_path = self._location_paths_finder(region_path)
+            if kml_path:
+                location_paths.append(kml_path)
+
 
             #proceed with folders to find .csv paths
             monitoring_path = os.path.join(region_path, "BRO_Grondwatermonitoring", "BRO_Grondwatermonitoringput")
@@ -80,12 +82,11 @@ class Dataset_BRO(DataSet):
             
         return sorted(files), sorted(location_paths), sorted(xml_paths)
     
-    def _location_paths_finder(self, region_path, location_paths):
+    def _location_paths_finder(self, region_path):
         kml_files = [f for f in os.listdir(region_path) if f.endswith(".kml")]
         if kml_files:
-            kml_path = os.path.join(region_path, kml_files[0])
-            location_paths.append(kml_path)
-        return kml_path
+            return os.path.join(region_path, kml_files[0])
+        return None
     
     def _read_csv_rows(self, path):
         with open(path, newline='', encoding='utf-8') as f:

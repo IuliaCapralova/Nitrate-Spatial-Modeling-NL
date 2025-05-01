@@ -18,7 +18,13 @@ class Dataset_Depth(Dataset_BRO):
         super().__init__(province, type_of_data="well_depth_data", max_files=max_files)
 
         # parse all XML into a small lookup
-        xml_df = self._extract_xml_metadata().set_index("Well_ID") # may be problematic!!
+        xml_df = self._extract_xml_metadata().set_index("Well_ID")
+
+        xml_df = (
+            self._extract_xml_metadata()
+            .drop_duplicates(subset="Well_ID", keep="first")
+            .set_index("Well_ID")
+        )
 
         # build the CSV-timeseries + geometry
         raw = self._extract_data()
@@ -71,7 +77,7 @@ class Dataset_Depth(Dataset_BRO):
     def _filter_file(self, file_path: str):
         rows = self._read_csv_rows(file_path)
 
-        # --- 1) metadata check ---
+        # 1) metadata check
         bro_id, raw_date = self._extract_metadata(rows)
         if not bro_id or not raw_date:
             return None
@@ -86,50 +92,51 @@ class Dataset_Depth(Dataset_BRO):
         if date_to_check.year < 2000:
             return None
 
-        # --- 2) extract static fields ---
+        # 2) extract static fields
         well_id, filter_no = self._extract_well_and_filter(rows)
 
-        # --- 3) find the measurement table and collect all rows ---
+        # 3) find the measurement table and collect all rows
         recs = []
         for idx, row in enumerate(rows):
-            if row and row[0].strip().lower() == "tijdstip meting":
+            if not row or row[0].strip().lower() != "tijdstip meting":
+                continue
                 # determine which columns
-                hdr_lower = [c.strip().lower() for c in row]
-                di = hdr_lower.index("tijdstip meting")
-                wi = hdr_lower.index("waterstand")
+            hdr_lower = [c.strip().lower() for c in row]
+            di = hdr_lower.index("tijdstip meting")
+            wi = hdr_lower.index("waterstand")
 
-                # walk until blank
-                for data_row in rows[idx+1:]:
-                    if not data_row or not data_row[0].strip():
-                        break
+            # walk until blank
+            for data_row in rows[idx+1:]:
+                if not data_row or not any(cell.strip() for cell in data_row):
+                    break
 
-                    raw_date = data_row[di]
-                    raw_depth = data_row[wi]
+                raw_date = data_row[di]
+                raw_depth = data_row[wi]
 
-                    # parse ISO timestamp (with +HH:MM) if possible
-                    try:
-                        timestamp = datetime.fromisoformat(raw_date)
-                    except Exception:
-                        timestamp = raw_date
+                # parse ISO timestamp (with +HH:MM) if possible
+                try:
+                    timestamp = datetime.fromisoformat(raw_date)
+                except Exception:
+                    timestamp = raw_date
 
-                    try:
-                        depth = float(raw_depth)
-                    except Exception:
-                        depth = np.nan
+                try:
+                    depth = float(raw_depth)
+                except Exception:
+                    depth = np.nan
 
-                    recs.append({
-                        "Well_ID":       well_id,
-                        "BRO-ID":        bro_id,
-                        "Filter":        filter_no,
-                        "Date":          timestamp,
-                        "Depth":         depth,
-                        "Top Screen":    np.nan,
-                        "Bottom Screen": np.nan,
-                        "Elevation":     np.nan
-                    })
-                break
+                recs.append({
+                    "Well_ID":       well_id,
+                    "BRO-ID":        bro_id,
+                    "Filter":        filter_no,
+                    "Date":          timestamp,
+                    "Depth":         depth,
+                    "Top Screen":    np.nan,
+                    "Bottom Screen": np.nan,
+                    "Elevation":     np.nan
+                })
 
-        return recs if recs else None
+        return recs or None
+        # return recs if recs else None
     
     def _extract_metadata(self, rows):
         header0 = rows[0]
@@ -258,6 +265,7 @@ class Dataset_Depth(Dataset_BRO):
                 print(f"Failed to load {path}: {e}")
 
         return combined_loc
+
 
 if __name__ == "__main__":
     pass

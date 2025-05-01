@@ -2,26 +2,31 @@ import pandas as pd
 from dataset_nitrate import Dataset_Nitrate
 from dataset_depth import Dataset_Depth
 from dataset_saver import Dataset_Saver
+from nitrate_preprocess import Nitrate_Preprocess
+from depth_preprocess import Depth_Preprocess
 
 def main():
 
-    # dataset = Dataset_Nitrate(province=province)
-    # saver = Dataset_Saver()
-    # saver(dataset, f"data/raw/well_chem_data/{province}_well_combined.csv")
-    # print(f"Data from {province} is saved successfuly!")
-
-    province = "flevoland"
+    province = "utrecht"
     n_files = None
 
-    dataset = Dataset_Depth(province=province, max_files=n_files)
+    # dataset = Dataset_Depth(province=province, max_files=n_files)
+    # dataset = Dataset_Nitrate(province=province, max_files=n_files)
 
-    if isinstance(dataset, Dataset_Nitrate):
+    dataset = Nitrate_Preprocess(province=province)
+
+    if isinstance(dataset, Dataset_Nitrate) or isinstance(dataset, Nitrate_Preprocess):
         variable = "chem"
-    if isinstance(dataset, Dataset_Depth):
+    if isinstance(dataset, Dataset_Depth) or isinstance(dataset, Depth_Preprocess):
         variable = "depth"
 
+    if isinstance(dataset, Nitrate_Preprocess) or isinstance(dataset, Depth_Preprocess):
+        type = "clean"
+    else:
+        type = "raw"
+
     saver = Dataset_Saver()
-    saver(dataset, f"data/raw/well_depth_data/{province}_well_{variable}_combined.csv")
+    saver(dataset, f"data/{type}/well_{variable}_data/{province}_well_{variable}_combined.csv")
     print(f"{variable.upper()} data from {province} is saved successfully!")
 
 

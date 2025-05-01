@@ -19,9 +19,9 @@ class DataSet(ABC):
         # save directory to the general type of the data (like well data)
         self._datasetdir = dataset_dir
 
-    @abstractmethod
-    def _paths_finder(self):
-        pass
+    # @abstractmethod
+    # def _paths_finder(self):
+    #     pass
     
     @abstractmethod
     def __getitem__(self):
@@ -35,10 +35,6 @@ class DataSet(ABC):
         """
         Return the number of collected CSV files.
         """
-        pass
-
-    @abstractmethod
-    def get_paths(self):
         pass
 
 
