@@ -9,11 +9,13 @@ def main():
 
     province = "utrecht"
     n_files = None
+    filter = 3
 
     # dataset = Dataset_Depth(province=province, max_files=n_files)
     # dataset = Dataset_Nitrate(province=province, max_files=n_files)
 
-    dataset = Nitrate_Preprocess(province=province)
+    dataset = Nitrate_Preprocess(province=province, filter=filter)
+    #dataset = Depth_Preprocess(province=province, filter=filter)
 
     if isinstance(dataset, Dataset_Nitrate) or isinstance(dataset, Nitrate_Preprocess):
         variable = "chem"
@@ -26,7 +28,7 @@ def main():
         type = "raw"
 
     saver = Dataset_Saver()
-    saver(dataset, f"data/{type}/well_{variable}_data/{province}_well_{variable}_combined.csv")
+    saver(dataset, f"data/{type}/well_{variable}_data/{province}_well_{variable}_combined_{filter}.csv")
     print(f"{variable.upper()} data from {province} is saved successfully!")
 
 
