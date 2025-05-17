@@ -2,23 +2,26 @@ import os
 import re
 import csv
 import fiona
+import copy
 import pandas as pd
 import geopandas as gpd
-from dataset_preprocess import Dataset_Preprocess
+from timeseries_preprocess import TimeseriesPreprocess
 from abc import ABC, abstractmethod
 
 
-class Nitrate_Preprocess(Dataset_Preprocess):
+class Nitrate_Preprocess(TimeseriesPreprocess):
     
-    def __init__(self, province, filter) -> None:
-        super().__init__(province, filter, type_of_data="well_chem_data")
+    def __init__(self, province, filter, year_start=2012, year_end=2020) -> None:
+        super().__init__(province, filter, year_start, year_end,type_of_data="well_chem_data")
+
+    def _filter_columns(self):
+        columns = ["Well_ID", "BRO-ID", "Filter", "Date", "Nitrate", "geometry"]
+        self._dataframe = self._dataframe[columns].copy()
 
     def _handle_missing_values(self):
         # Drop rows with any NaNs in Niterate column
         self._dataframe = self._dataframe.dropna(subset=["Nitrate"])
 
-    def _filter_data(self):
-        pass
 
 
 if __name__ == "__main__":

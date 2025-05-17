@@ -1,17 +1,17 @@
 import os
-import re
-import csv
-import fiona
 import pandas as pd
 import geopandas as gpd
-from dataset import DataSet
+from shapely import wkt
+from dataset import Dataset_Preprocess
 from abc import ABC, abstractmethod
 
 
-class Dataset_Preprocess(DataSet):
+class TimeseriesPreprocess(Dataset_Preprocess):
     
-    def __init__(self, province, well_filter, type_of_data) -> None:
+    def __init__(self, province, well_filter, year_start, year_end, type_of_data) -> None:
         super().__init__(type_of_data)
+        self.year_start = year_start
+        self.year_end = year_end
         self.province = province
 
         if well_filter not in [1,2,3]:
@@ -33,10 +33,14 @@ class Dataset_Preprocess(DataSet):
         self._df_selection()
 
     def _df_selection(self):
+        self._filter_columns()
         self._time_standardization() # brind time to the same format - 'coerce'
         self._filter_and_year_selection() # select year 2000 onwards, select filters 1, 2, or 3 (user's choice)
         self._drop_dupes() # remove duplicates
         self._handle_missing_values()
+        self._to_gdf()
+        self._well_selection()
+        self._date_round()
 
     def _time_standardization(self):
         self._dataframe['Date'] = pd.to_datetime(self._dataframe['Date'], errors='coerce', utc=True)
@@ -45,13 +49,24 @@ class Dataset_Preprocess(DataSet):
     def _filter_and_year_selection(self):
         self._dataframe['Year'] = self._dataframe['Date'].dt.year
         self._dataframe = self._dataframe[
-            (self._dataframe['Year'] >= 2000) &
+            (self._dataframe['Year'] >= self.year_start) &
+            (self._dataframe['Year'] <= self.year_end) &
             (self._dataframe['Filter'] == self.filter)
         ]
+
+    def _well_selection(self):
+        pass
+
+    def _to_gdf(self):
+        self._dataframe['geometry'] = self._dataframe['geometry'].apply(wkt.loads)
+        self._dataframe = gpd.GeoDataFrame(self._dataframe, geometry='geometry', crs="EPSG:4326")
 
     def _drop_dupes(self):
         self._dataframe = self._dataframe.drop_duplicates().reset_index(drop=True)
 
+    def _date_round(self):
+        pass
+    
     def __len__(self):
         pass
 
@@ -59,11 +74,11 @@ class Dataset_Preprocess(DataSet):
         pass
 
     @abstractmethod
-    def _handle_missing_values():
+    def _filter_columns(self):
         pass
 
     @abstractmethod
-    def _filter_data(self):
+    def _handle_missing_values():
         pass
 
 

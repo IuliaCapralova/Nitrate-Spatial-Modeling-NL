@@ -1,18 +1,25 @@
 import os
-import re
 import csv
-import fiona
-import pandas as pd
-import geopandas as gpd
-from dataset import DataSet
 from abc import ABC, abstractmethod
 
 
-class Dataset_BRO(DataSet):
+class Dataset_BRO():
     COLUMNS = []
 
     def __init__(self, province, type_of_data, max_files=None):
         super().__init__(type_of_data)
+
+        # ---------
+        current_dir = os.getcwd()
+        dataset_dir = os.path.join(current_dir, 'data/raw', type_of_data)
+        
+        # e.g., chemical analysis from wells
+        self.type_of_data = type_of_data
+        
+        # save directory to the general type of the data (like well data)
+        self._datasetdir = dataset_dir
+        # ---------
+
         self.province = province
         self.max_files = max_files
 
