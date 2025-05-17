@@ -1,4 +1,4 @@
-# Bachelor-Thesis
+# Spatial Prediction of Nitrate Leaching in North Utrecht
 
 This project aims to analyze **nitrate leaching** in the Netherlands using **machine learning techniques**. At this stage, the focus is on **exploratory data analysis (EDA)**, bringing together various spatial and chemical datasets to understand the patterns and features relevant for predictive modeling.
 
