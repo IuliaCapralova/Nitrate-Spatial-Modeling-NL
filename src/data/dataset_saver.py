@@ -10,18 +10,19 @@ from timeseries_preprocess import TimeseriesPreprocess
 from soil_type_preprocess import SoilType_Preprocess
 from landuse_preprocess import LandUse_Preprocess
 from env_preprocess import Environmental_Preprocess
+from merged_dataset_builder import MergedDatasetBuilder
 
 
 class Dataset_Saver():
-    def __call__(self, dataset: Union[Dataset_BRO, Dataset_Preprocess, pd.DataFrame], path:str):
+    def __call__(self, dataset: Union[Dataset_BRO, Dataset_Preprocess, pd.DataFrame, MergedDatasetBuilder], path:str):
         
         file_path = os.path.join(os.getcwd(), path)
 
         if isinstance(dataset, Dataset_BRO) or isinstance(dataset, TimeseriesPreprocess) or isinstance(dataset, Environmental_Preprocess):
             dataset._dataframe.to_csv(file_path, index = False)
 
-        elif isinstance(dataset, pd.DataFrame):
-            dataset.to_csv(file_path, index = False)
+        elif isinstance(dataset, MergedDatasetBuilder):
+            dataset.merged_dataframes.to_csv(file_path, index = False)
 
         elif isinstance(dataset, Population_Prepocess) or isinstance(dataset, SoilType_Preprocess) or isinstance(dataset, LandUse_Preprocess):
             for file_name, gdf in dataset._dataframe.items():

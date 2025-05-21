@@ -1,5 +1,6 @@
 import pandas as pd
 import os
+import fiona
 import geopandas as gpd
 from align_data import BaseAligner
 
@@ -7,15 +8,17 @@ from align_data import BaseAligner
 class SoilTypeAligner(BaseAligner):
     def __init__(self, well_filter: int) -> None:
         super().__init__(well_filter)
-        soil_type_path = os.path.join(self.current_dir, "data", "raw", "type_of_soil_data", "LMM14_HGR.shp")
-        self.soil_type_df = gpd.read_file(soil_type_path)
-        joined = self._align()
+        soil_type_path = os.path.join(self.current_dir, "data", "clean", "type_of_soil", "LMM14_HGR_processed.gpkg")
+        layers = fiona.listlayers(soil_type_path)
+        self.soil_type_df = gpd.read_file(soil_type_path, layer=layers[0])
+
+        self._dataframe = self._align()
 
     def _align(self):
         self.soil_type_gdf = self.soil_type_df.to_crs("EPSG:4326") 
         nitrate_with_soil = gpd.sjoin(
             self.nitrate_gdf,
-            self.soil_type_gdf[["geometry", "groep"]],
+            self.soil_type_gdf[["geometry", "HGRnaam"]],
             how="left",
             predicate="within"
         )
@@ -24,5 +27,4 @@ class SoilTypeAligner(BaseAligner):
 
 if __name__ == "__main__":
     instance = SoilTypeAligner(well_filter=1)
-    joined = instance._align()
-    print(joined)
+    print(instance._dataframe.head(30))

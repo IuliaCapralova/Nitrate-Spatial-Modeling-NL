@@ -9,7 +9,7 @@ from align_data import BaseAligner
 
 
 class DepthAligner(BaseAligner):
-    def __init__(self, well_filter: int, days_window, radius) -> None:
+    def __init__(self, well_filter: int, days_window=72, radius=10000) -> None:
         super().__init__(well_filter)
         self.window = days_window
         self.radius = radius
@@ -27,10 +27,12 @@ class DepthAligner(BaseAligner):
         # Build spatial index for fast nearest-neighbor queries
         self.wells_sindex = self.wells_gdf.sindex
 
-        df_results = self.align()
-        joined = self.nitrate_gdf.merge(df_results, left_index=True, right_on='nitrate_index')
-        joined = joined[['Well_ID', 'BRO-ID', 'Filter', 'Date', 'Nitrate', 'geometry', 'distance_m', 'avg_depth_m']]
-        print(joined)
+        self._dataframe = self._align()
+        # joined = self.nitrate_gdf.merge(df_results, left_index=True, right_on='nitrate_index')
+        # joined = joined[['Well_ID', 'BRO-ID', 'Filter', 'Date', 'Nitrate', 'geometry', 'distance_m', 'avg_depth_m']]
+
+        # self._dataframe = joined
+        # print(joined)
 
     def _align(self):
         # iterate over each nitrate observation and assign averaged depth
@@ -70,9 +72,13 @@ class DepthAligner(BaseAligner):
                 'distance_m': dist,
                 'avg_depth_m': avg_depth
             })
-        # TODO
+
         df_results = pd.DataFrame(results)
-        joined = self._merge()
+
+        # TODO do a separte function
+        joined = self.nitrate_gdf.merge(df_results, left_index=True, right_on='nitrate_index')
+        joined = joined[['Well_ID', 'BRO-ID', 'Filter', 'Date', 'Nitrate', 'geometry', 'distance_m', 'avg_depth_m']]
+
         return joined
 
     def find_candidate_wells(self, point: Point, radius: float = 10000):
@@ -96,4 +102,4 @@ if __name__ == "__main__":
     radius = 10000
 
     instance = DepthAligner(well_filter, window, radius)
-    instance
+    print(instance._dataframe)
