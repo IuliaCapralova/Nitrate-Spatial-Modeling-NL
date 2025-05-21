@@ -1,9 +1,0 @@
-"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
-"GAR000000057663","IMBRO/A","2025-04-10T21:34:08+02:00","2009-12-02T11:00:00+01:00","onbekend","2",,,,
-,,,,,,,,,
-"parameter","sikb-id","aquo-code","analysemeetwaarde","eenheid meetwaarde","status kwaliteitscontrole",,,,
-"Redoxpotentiaal","1456","REDPTTAL","-193.76","mV","onbeslist",,,,
-,,,,,,,,,
-"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
-"nitriet","1273","NO2","2009-12-02","0.04","mg/l",,,,"goedgekeurd"
-,,,,,,,,,

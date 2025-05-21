@@ -1,8 +1,0 @@
-"BRO-ID","kwaliteitsregime","in registratie sinds","tijdstip veldonderzoek","pomptype","buis",,,,
-"GAR000000000417","IMBRO/A","2022-11-25T10:43:10+01:00","2009-11-05T11:00:00+01:00","onbekend","2",,,,
-,,,,,,,,,
-"parameter","sikb-id","aquo-code","analysedatum","analysemeetwaarde","eenheid meerwaarde","rapportagegrens","eenheid rapportagegres","limietsymbool","status kwaliteitscontrole"
-"Zuurgraad","1398","pH","2009-11-05","7.42","1",,,,"goedgekeurd"
-"Geleidendheid","3548","GELDHD","2009-11-05","27.4","mS/m",,,,"goedgekeurd"
-"zuurstof","1701","O2","2009-11-05","0.7","mg/l",,,,"goedgekeurd"
-,,,,,,,,,
