@@ -20,8 +20,7 @@ class SpatialData(Dataset_Preprocess):
         utrecht_polygon_path = os.path.join(self._datasetdir, "..", "utrecht polygon.csv")
         df = pd.read_csv(utrecht_polygon_path, sep=';')
 
-        #extract coordinates of the polygon
-        geo_shape_str = df.loc[0, "Geo Shape"]
+        geo_shape_str = df.loc[0, "Geo Shape"] #coordinates of the polygon
         geo_shape = json.loads(geo_shape_str)
         coords = geo_shape["coordinates"][0]  # outer ring of the polygon
 

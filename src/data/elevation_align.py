@@ -31,7 +31,6 @@ class ElevationAligner(BaseAligner):
         gdf["lon"] = gdf.geometry.x
         gdf["lat"] = gdf.geometry.y
 
-        # Optional: Deduplicate locations to save quota
         coord_to_elev = {}
         for lat, lon in zip(gdf["lat"], gdf["lon"]):
             key = (lat, lon)

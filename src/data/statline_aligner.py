@@ -5,7 +5,7 @@ from align_data import BaseAligner
 
 class StatLineAligner(BaseAligner):
     def __init__(self, well_filter=1, variables=['livestock', 'excretion_during_grazing', 'municipal_waste', 'nitrogen_losses_in_housing', 'use_of_livestock_manure_in_agriculture']):
-        # TODO: check and standardize variables user gave
+        # TODO: check and standardize variables names user gave
         super().__init__(well_filter)
         self.variables = variables
 
