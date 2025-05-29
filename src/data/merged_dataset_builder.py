@@ -6,11 +6,12 @@ from soil_type_align import SoilTypeAligner
 from depth_chem_align import DepthAligner
 from elevation_align import ElevationAligner
 from environment_chem_align import EnvironmentalAligner
+from n_deposition_align import NDepositionAlignment
 from functools import reduce
 import pandas as pd
 
 class MergedDatasetBuilder:
-    def __init__(self, variables: list[str], well_filter=2):
+    def __init__(self, variables: list[str], well_filter=1):
         self.variables = variables
         self.well_filter = well_filter
         self.available_builders = {
@@ -21,7 +22,8 @@ class MergedDatasetBuilder:
             "fertilizer": FertilizerAnigner,
             "elevation": ElevationAligner,
             "precipitation temperature": EnvironmentalAligner,
-            "environment": StatLineAligner
+            "manure_and_waste": StatLineAligner,
+            "n_deposition": NDepositionAlignment
         }
         dataframes = self._build_selected_dataframes()
         self._merged_dataframes = self._merge_all(dataframes)
@@ -57,7 +59,7 @@ class MergedDatasetBuilder:
 
 if __name__ == "__main__":
     variables_of_interest = ['groundwater depth', 'population', 'soil type', 'land use', \
-                 'precipitation temperature', 'environment', 'elevation', 'fertilizer']
+                 'precipitation temperature', 'manure_and_waste', 'elevation', 'n_deposition']
     
     merged_dataset = MergedDatasetBuilder(variables_of_interest)
     merged_dataset

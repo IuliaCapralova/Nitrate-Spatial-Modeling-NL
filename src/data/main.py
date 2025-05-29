@@ -10,6 +10,8 @@ from dataset import Dataset_Preprocess
 from landuse_preprocess import LandUse_Preprocess
 from env_preprocess import Environmental_Preprocess
 from merged_dataset_builder import MergedDatasetBuilder
+from n_deposition_preprocess import N_Deposition_Prepocess
+
 
 def main():
     province = "utrecht"
@@ -17,8 +19,8 @@ def main():
     filter = 3
     year_start = 2000
     year_end = 2022
-    # years = list(range(2000, 2024))
-    years = [2020]
+    years = list(range(2005, 2024))
+    # years = [2020]
     start_date = 20120101
     end_date = 20201231
 
@@ -28,14 +30,15 @@ def main():
 
     # DATA PREPROCESSING
     # dataset = Nitrate_Preprocess(province=province, filter=filter)
-    dataset = Depth_Preprocess(province=province, well_filter=filter, year_start=year_start, year_end=year_end)
+    # dataset = Depth_Preprocess(province=province, well_filter=filter, year_start=year_start, year_end=year_end)
     # dataset = Population_Prepocess(years)
     # dataset = SoilType_Preprocess()
     # dataset = LandUse_Preprocess(years)
     # dataset = Environmental_Preprocess()
-    # dataset = None
+    # dataset = N_Deposition_Prepocess(years)
+    dataset = None
 
-    if dataset:
+    if dataset is not None:
         if isinstance(dataset, Dataset_Preprocess) or isinstance(dataset, Environmental_Preprocess):
             type = "clean"
         else:
@@ -54,6 +57,8 @@ def main():
             variable = "land_use"
         if isinstance(dataset, Environmental_Preprocess):
             variable = "environment"
+        if isinstance(dataset, N_Deposition_Prepocess):
+            variable = "n_deposition"
 
 
         ###### CHEM or DEPTH ######
@@ -74,26 +79,30 @@ def main():
         if variable == "population_density":
             path = f"data/{type}/{variable}"
 
-        if variable == "type_of_soil":
+        elif variable == "type_of_soil":
             path = f"data/{type}/{variable}"
 
-        if variable == "land_use":
+        elif variable == "land_use":
             path = f"data/{type}/{variable}"
 
-        if variable == "environment":
+        elif variable == "environment":
             path = f"data/{type}/{variable}/environment.csv"
+
+        elif variable == "n_deposition":
+            path = f"data/{type}/{variable}"
 
         saver = Dataset_Saver()
         saver(dataset, path)
+        print(f"{variable.upper()} is successfully preprocessed and saved!")
 
 
     ###### MERGE DATASETS ######
 
     variables_of_interest = ['groundwater depth', 'population', 'soil type', 'land use', \
-                 'precipitation temperature', 'environment', 'elevation', 'fertilizer']
+                 'precipitation temperature', 'elevation', 'n_deposition']
 
     merged_dataset = MergedDatasetBuilder(variables_of_interest)
-    path = f"data/clean/merged_dataset_2.csv"
+    path = f"data/clean/merged_dataset_1.csv"
 
 
     ############## SAVER ###############

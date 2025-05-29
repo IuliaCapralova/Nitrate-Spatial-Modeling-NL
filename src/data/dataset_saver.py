@@ -2,13 +2,10 @@ import os
 import csv
 import pandas as pd
 from typing import Union
-from pathlib import Path
 from dataset import Dataset_Preprocess
-from population_preprocess import Population_Prepocess
 from dataset_bro import Dataset_BRO
+from spatial_data import SpatialData
 from timeseries_preprocess import TimeseriesPreprocess
-from soil_type_preprocess import SoilType_Preprocess
-from landuse_preprocess import LandUse_Preprocess
 from env_preprocess import Environmental_Preprocess
 from merged_dataset_builder import MergedDatasetBuilder
 
@@ -24,7 +21,7 @@ class Dataset_Saver():
         elif isinstance(dataset, MergedDatasetBuilder):
             dataset.merged_dataframes.to_csv(file_path, index = False)
 
-        elif isinstance(dataset, Population_Prepocess) or isinstance(dataset, SoilType_Preprocess) or isinstance(dataset, LandUse_Preprocess):
+        elif isinstance(dataset, SpatialData):
             for file_name, gdf in dataset._dataframe.items():
                 output_path = os.path.join(path, f"{file_name}_processed.gpkg")
                 gdf.to_file(output_path, driver="GPKG")

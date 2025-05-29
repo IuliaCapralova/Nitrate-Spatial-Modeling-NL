@@ -21,48 +21,53 @@ class SpatialBaseAligner(BaseAligner):
         # find overlap in years between nitrate and landuse datasets
         nitrate_gdf = self.nitrate_gdf
         nitrate_years = set(nitrate_gdf["Year"].unique())
-        landuse_years = set(self._extract_years_from_filenames(path))
-        overlap_years = nitrate_years.intersection(landuse_years)
+        dataframe_years = set(self._extract_years_from_filenames(path))
+        overlap_years = nitrate_years.intersection(dataframe_years)
         print(sorted(overlap_years))
 
         for year in sorted(overlap_years):
             # Get nitrate rows for this year
             nitrate_year = nitrate_gdf[nitrate_gdf["Year"] == year].copy()
 
-            lu_file = next(
-                (f for f in os.listdir(path) if str(year) in f and f.endswith(".gpkg")),
-                None
-            )
-            print(lu_file)
-            if not lu_file:
+            file = self._find_year_file(path, year)
+            if not file:
                 print(f"No file found for year {year}")
                 continue
 
-            lu_path = os.path.join(path, lu_file)
-            landuse_gdf = gpd.read_file(lu_path)
-            landuse_gdf = landuse_gdf.to_crs(nitrate_year.crs)
+            file_path = os.path.join(path, file)
+            gdf = gpd.read_file(file_path)
 
             # spatial join
-            joined = gpd.sjoin(
-                nitrate_year,
-                landuse_gdf[[column, "geometry"]],
-                how="left",
-                predicate=predicate
-            )
-            if column == 'aantal_inwoners':
-                nitrate_gdf.loc[
-                    nitrate_gdf["Well_ID"].isin(joined["Well_ID"]) &
-                    nitrate_gdf["Date"].isin(joined["Date"]),
-                    "Population"
-                ] = joined[column].values
-            else:
-                nitrate_gdf.loc[
-                    nitrate_gdf["Well_ID"].isin(joined["Well_ID"]) &
-                    nitrate_gdf["Date"].isin(joined["Date"]),
-                    "Landuse_Code"
-                ] = joined[column].values
+            joined = self._spatial_join_by_year(nitrate_year, gdf, column, predicate)
+
+            column_map = {
+                "aantal_inwoners": "Population",
+                "code": "Landuse_Code",
+                "deposition_kg": "N_deposition"
+                }
+            target_column = column_map.get(column)
+
+            nitrate_gdf.loc[
+                nitrate_gdf["Well_ID"].isin(joined["Well_ID"]) &
+                nitrate_gdf["Date"].isin(joined["Date"]),
+                target_column
+            ] = joined[column].values
 
         return nitrate_gdf
+    
+    def _find_year_file(self, path, year):
+        return next(
+            (f for f in os.listdir(path) if str(year) in f and f.endswith(".gpkg")),
+            None)
+    
+    def _spatial_join_by_year(self, nitrate_subset, gdf, column, predicate):
+        gdf = gdf.to_crs(nitrate_subset.crs)
+        return gpd.sjoin(
+            nitrate_subset,
+            gdf[[column, "geometry"]],
+            how="left",
+            predicate=predicate
+        )
 
 
 if __name__ == "__main__":
