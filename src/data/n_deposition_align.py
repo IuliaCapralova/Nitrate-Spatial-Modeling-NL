@@ -1,8 +1,8 @@
 import os
-from align_spatial import SpatialBaseAligner
+from align_spatial import SpatialTimeseriesBaseAligner
 
 
-class NDepositionAlignment(SpatialBaseAligner):
+class NDepositionAligner(SpatialTimeseriesBaseAligner):
     def __init__(self, well_filter=1):
         super().__init__(well_filter)
         path = os.path.join(self.current_dir, "data", "clean", "n_deposition")
@@ -10,5 +10,5 @@ class NDepositionAlignment(SpatialBaseAligner):
 
 
 if __name__ == "__main__":
-    instance = NDepositionAlignment()
+    instance = NDepositionAligner()
     print(instance._dataframe)
