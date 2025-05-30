@@ -14,9 +14,9 @@ from shapely.geometry import Polygon
 class Soil_Composition_Prepocess(SpatialData):
     LAYERS = ["soilarea", "soilarea_normalsoilprofile", "soilhorizon", "soilarea_soilunit"]
     MERGE_PLAN = [
-    ("soilarea", "soilarea_normalsoilprofile", "maparea_id"),
-    ("soilarea_normalsoilprofile", "soilhorizon", "normalsoilprofile_id"),
-    ("soilarea", "soilarea_soilunit", "maparea_id")
+    ("soilarea_soilunit", "maparea_id"),
+    ("soilarea_normalsoilprofile", "maparea_id"),
+    ("soilhorizon", "normalsoilprofile_id")
     ]
     COLUMN_SELECTION = ["maparea_collection", "beginlifespan", "endlifespan", "staringseriesblock", "inspireid", "validfrom", "beginlifespanversion", "soilunit_sequencenumber"]
 
@@ -39,13 +39,19 @@ class Soil_Composition_Prepocess(SpatialData):
     def _read_all_layers(self, file_path: str) -> dict:
         layers = {}
         for layer in self.LAYERS:
-            layers[layer] = gpd.read_file(file_path, layer=layer)
+            gdf = gpd.read_file(file_path, layer=layer)
+            
+            # select only 0th sequence number (as it describes main soil type)
+            if layer == "soilarea_soilunit":
+                gdf = gdf[gdf["soilunit_sequencenumber"] == 0].copy()
+            
+            layers[layer] = gdf
         return layers
     
     def _merge_layers(self, tables: dict) -> gpd.GeoDataFrame:
-        merged = tables["soilarea"] #base
+        merged = tables["soilarea"] # base
 
-        for _, right_name, on_key in self.MERGE_PLAN:
+        for right_name, on_key in self.MERGE_PLAN:
             right = tables[right_name]
             merged = pd.merge(merged, right, on=on_key, how="left")
 
@@ -84,6 +90,15 @@ class Soil_Composition_Prepocess(SpatialData):
         return dictionary_by_layer
 
 if __name__ == "__main__":
-    layer_list = [1, 4, 5]
+    layer_list = [1]
     instance = Soil_Composition_Prepocess(layer_list)
-    print(instance._dataframe)
+    df = instance._dataframe
+    print(df)
+
+    # check if we have duplicated geometries in each table
+    for layer_name, gdf in df.items():
+        geom_col = gdf.geometry.name  # gets the geometry column name
+        duplicated_mask = gdf[geom_col].apply(lambda g: g.wkt).duplicated(keep=False)
+        num_duplicates = duplicated_mask.sum()
+
+    print(f"Layer: {layer_name} → {num_duplicates} duplicated geometries")
