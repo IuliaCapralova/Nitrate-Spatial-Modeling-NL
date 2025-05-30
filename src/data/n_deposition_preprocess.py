@@ -39,7 +39,31 @@ class N_Deposition_Prepocess(SpatialData):
     def _unit_changer(self, gdf):
         gdf["deposition_kg"] = gdf["deposition"] * self.MOLAR_MASS_N / self.GRAMS_TO_KILOGRAMS
         return gdf
+
+    def _read_gpkg(self, file_path, layer):
+        # read file
+        gdf = gpd.read_file(file_path, layer=layer)
+        return gdf
+
+    # ------------------------------
+
+    def _paths_finder(self):
+        files_paths = []
+        for file_name in os.listdir(self._datasetdir):
+            if not file_name.endswith(".gpkg") or file_name.startswith("."):
+                continue
+            full_path = os.path.join(self._datasetdir, file_name)
+            files_paths.append(full_path)
+        return files_paths
     
+    def _populate_dataframe(self):
+        for file_path in self._datapaths:
+            # for each layer in file apply all the preprocessing steps
+            layers_gdf = self._layer_list_finder(file_path)
+            for layer in layers_gdf:
+                final_gdf = self._preprocess(file_path, layer)
+                self._dataframe[layer] = final_gdf
+
     def _layer_list_finder(self, file_path):
         needed_layers = []
         layers = fiona.listlayers(file_path)
@@ -52,30 +76,6 @@ class N_Deposition_Prepocess(SpatialData):
                 continue
             needed_layers.append(layer)
         return needed_layers
-
-    def _read_gpkg(self, file_path, layer):
-        # read file
-        gdf = gpd.read_file(file_path, layer=layer)
-        return gdf
-
-    # ------------------------------
-
-    def _paths_finder(self):
-        pop_files_paths = []
-        for file_name in os.listdir(self._datasetdir):
-            if not file_name.endswith(".gpkg") or file_name.startswith("."):
-                continue
-            full_path = os.path.join(self._datasetdir, file_name)
-            pop_files_paths.append(full_path)
-        return pop_files_paths
-    
-    def _populate_dataframe(self):
-        for file_path in self._datapaths:
-            # for each layer in file apply all the preprocessing steps
-            layers_gdf = self._layer_list_finder(file_path)
-            for layer in layers_gdf:
-                final_gdf = self._preprocess(file_path, layer)
-                self._dataframe[layer] = final_gdf
 
 
 if __name__ == "__main__":

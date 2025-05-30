@@ -11,6 +11,7 @@ from landuse_preprocess import LandUse_Preprocess
 from env_preprocess import Environmental_Preprocess
 from merged_dataset_builder import MergedDatasetBuilder
 from n_deposition_preprocess import N_Deposition_Prepocess
+from soil_comp_preprocess import Soil_Composition_Prepocess
 
 
 def main():
@@ -23,6 +24,7 @@ def main():
     # years = [2020]
     start_date = 20120101
     end_date = 20201231
+    layer_list = [1, 4, 5]
 
     # DATA EXTRACTION
     # dataset = Dataset_Depth(province=province, max_files=n_files)
@@ -36,6 +38,7 @@ def main():
     # dataset = LandUse_Preprocess(years)
     # dataset = Environmental_Preprocess()
     # dataset = N_Deposition_Prepocess(years)
+    # dataset = Soil_Composition_Prepocess(layer_list)
     dataset = None
 
     if dataset is not None:
@@ -59,6 +62,8 @@ def main():
             variable = "environment"
         if isinstance(dataset, N_Deposition_Prepocess):
             variable = "n_deposition"
+        if isinstance(dataset, Soil_Composition_Prepocess):
+            variable = "soil_composition"
 
 
         ###### CHEM or DEPTH ######
@@ -91,6 +96,9 @@ def main():
         elif variable == "n_deposition":
             path = f"data/{type}/{variable}"
 
+        elif variable == "soil_composition":
+            path = f"data/{type}/{variable}"
+
         saver = Dataset_Saver()
         saver(dataset, path)
         print(f"{variable.upper()} is successfully preprocessed and saved!")
@@ -99,7 +107,7 @@ def main():
     ###### MERGE DATASETS ######
 
     variables_of_interest = ['groundwater depth', 'population', 'soil type', 'land use', \
-                 'precipitation temperature', 'elevation', 'n_deposition']
+                 'precipitation temperature', 'elevation', 'n_deposition', 'soil_composition']
 
     merged_dataset = MergedDatasetBuilder(variables_of_interest)
     path = f"data/clean/merged_dataset_1.csv"
