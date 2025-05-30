@@ -23,20 +23,6 @@ class BaseAligner(ABC):
         df['geometry'] = df['geometry'].apply(wkt.loads)
         gdf = gpd.GeoDataFrame(df, geometry='geometry', crs="EPSG:4326")
         return gdf
-
-    def _to_geo_table(self, lgn):
-        band_float = lgn[0].values
-        mask = ~np.isnan(band_float) # create mask before converting to int
-        band = band_float.astype("int32")
-        # extract polygons
-        results = (
-            {"geometry": shape(geom), "code": int(value)}
-            for geom, value in shapes(band, mask=mask, transform=lgn.rio.transform())
-        )
-        gdf = gpd.GeoDataFrame.from_records(results)
-        gdf = gdf.set_geometry("geometry")
-        gdf.set_crs(lgn.rio.crs, inplace=True)
-        return gdf
     
     # @property
     # def dataframe(self):

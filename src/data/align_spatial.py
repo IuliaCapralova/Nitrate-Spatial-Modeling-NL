@@ -4,7 +4,7 @@ import geopandas as gpd
 from align_data import BaseAligner
 
 
-class SpatialBaseAligner(BaseAligner):
+class SpatialTimeseriesBaseAligner(BaseAligner):
     def __init__(self, well_filter=1):
         super().__init__(well_filter)
 

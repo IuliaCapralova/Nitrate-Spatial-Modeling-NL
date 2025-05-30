@@ -15,7 +15,7 @@ class SoilTypeAligner(BaseAligner):
         self._dataframe = self._align()
 
     def _align(self):
-        self.soil_type_gdf = self.soil_type_df.to_crs("EPSG:4326") 
+        self.soil_type_gdf = self.soil_type_df.to_crs(self.nitrate_gdf.crs)
         nitrate_with_soil = gpd.sjoin(
             self.nitrate_gdf,
             self.soil_type_gdf[["geometry", "HGRnaam"]],

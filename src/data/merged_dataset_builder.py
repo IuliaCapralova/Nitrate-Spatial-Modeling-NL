@@ -1,3 +1,5 @@
+from functools import reduce
+import pandas as pd
 from fertilizer_align import FertilizerAnigner
 from landuse_align import LanduseAligner
 from population_align import PopulationAlignment
@@ -6,27 +8,51 @@ from soil_type_align import SoilTypeAligner
 from depth_chem_align import DepthAligner
 from elevation_align import ElevationAligner
 from environment_chem_align import EnvironmentalAligner
-from n_deposition_align import NDepositionAlignment
-from functools import reduce
-import pandas as pd
+from n_deposition_align import NDepositionAligner
+from soil_comp_preprocess import Soil_Composition_Prepocess
+from soil_comp_aligner import Soil_Composition_Aligner
+
 
 class MergedDatasetBuilder:
     def __init__(self, variables: list[str], well_filter=1):
-        self.variables = variables
+        self.variables = [v.lower() for v in variables]  # make lowercase user's variable selection
         self.well_filter = well_filter
-        self.available_builders = {
-            "soil type": SoilTypeAligner,
-            "land use": LanduseAligner,
-            "population": PopulationAlignment,
-            "groundwater depth": DepthAligner,
-            "fertilizer": FertilizerAnigner,
-            "elevation": ElevationAligner,
-            "precipitation temperature": EnvironmentalAligner,
-            "manure_and_waste": StatLineAligner,
-            "n_deposition": NDepositionAlignment
+
+        self.builder_map = {
+            SoilTypeAligner: ["soil type"],
+            LanduseAligner: ["land use"],
+            PopulationAlignment: ["population"],
+            DepthAligner: ["groundwater depth"],
+            FertilizerAnigner: ["fertilizer"],
+            ElevationAligner: ["elevation"],
+            EnvironmentalAligner: ["precipitation", "temperature"],
+            StatLineAligner: ["fertiliser use", "number of livestock", "excretion during grazing", \
+                                "nitrogen losses in housing and storages", \
+                                "use of livestock manure in agriculture",
+                                "household organic waste"],
+            NDepositionAligner: ["n_deposition"],
+            Soil_Composition_Aligner:['maparea_id', 'soilslope', 'normalsoilprofile_id', 'layernumber',
+                                'faohorizonnotation', 'lowervalue', 'uppervalue',
+                                'organicmattercontent', 'minimumorganicmattercontent',
+                                'maximumorganicmattercontent', 'acidity', 'minimumacidity',
+                                'maximumacidity', 'cnratio', 'peattype', 'calciccontent', 'fedith',
+                                'loamcontent', 'minimumloamcontent', 'maximumloamcontent',
+                                'lutitecontent', 'minimumlutitecontent', 'maximumlutitecontent',
+                                'sandmedian', 'minimumsandmedian', 'maximumsandmedian', 'siltcontent',
+                                'density', 'soilunit_code']
         }
-        dataframes = self._build_selected_dataframes()
-        self._merged_dataframes = self._merge_all(dataframes)
+
+        self._merged_dataframes = self._build_and_merge()
+
+    def _build_and_merge(self):
+        dfs = []
+        for cls, supported_var in self.builder_map.items():
+            selected_vars = [v for v in self.variables if v in supported_var]
+            if not selected_vars:
+                continue
+
+            print(f"Initializing {cls.__name__} for {selected_vars}")
+            instance = cls(self.well_filter)
 
     def _build_selected_dataframes(self):
         dfs = []
@@ -59,7 +85,7 @@ class MergedDatasetBuilder:
 
 if __name__ == "__main__":
     variables_of_interest = ['groundwater depth', 'population', 'soil type', 'land use', \
-                 'precipitation temperature', 'manure_and_waste', 'elevation', 'n_deposition']
+                 'precipitation', 'temperature', 'manure_and_waste', 'elevation', 'n_deposition']
     
     merged_dataset = MergedDatasetBuilder(variables_of_interest)
     merged_dataset

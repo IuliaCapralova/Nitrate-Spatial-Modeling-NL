@@ -24,7 +24,7 @@ def main():
     # years = [2020]
     start_date = 20120101
     end_date = 20201231
-    layer_list = [1, 4, 5]
+    layer_list = [1]
 
     # DATA EXTRACTION
     # dataset = Dataset_Depth(province=province, max_files=n_files)
@@ -107,7 +107,8 @@ def main():
     ###### MERGE DATASETS ######
 
     variables_of_interest = ['groundwater depth', 'population', 'soil type', 'land use', \
-                 'precipitation temperature', 'elevation', 'n_deposition', 'soil_composition']
+                'precipitation', 'temperature', 'elevation', 'n_deposition', 'soilunit_code', \
+                'organicmattercontent', 'density']
 
     merged_dataset = MergedDatasetBuilder(variables_of_interest)
     path = f"data/clean/merged_dataset_1.csv"

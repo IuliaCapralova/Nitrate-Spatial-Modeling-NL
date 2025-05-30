@@ -1,8 +1,8 @@
 import os
-from align_spatial import SpatialBaseAligner
+from align_spatial import SpatialTimeseriesBaseAligner
 
 
-class LanduseAligner(SpatialBaseAligner):
+class LanduseAligner(SpatialTimeseriesBaseAligner):
     def __init__(self, well_filter=1):
         super().__init__(well_filter)
         path = os.path.join(self.current_dir, "data", "clean", "land_use")
