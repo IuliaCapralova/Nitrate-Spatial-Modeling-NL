@@ -1,5 +1,7 @@
 from functools import reduce
 import pandas as pd
+import os
+import geopandas as gpd
 from fertilizer_align import FertilizerAnigner
 from landuse_align import LanduseAligner
 from population_align import PopulationAlignment
@@ -9,7 +11,6 @@ from depth_chem_align import DepthAligner
 from elevation_align import ElevationAligner
 from environment_chem_align import EnvironmentalAligner
 from n_deposition_align import NDepositionAligner
-from soil_comp_preprocess import Soil_Composition_Prepocess
 from soil_comp_aligner import Soil_Composition_Aligner
 
 
@@ -17,6 +18,10 @@ class MergedDatasetBuilder:
     def __init__(self, variables: list[str], well_filter=1):
         self.variables = [v.lower() for v in variables]  # make lowercase user's variable selection
         self.well_filter = well_filter
+
+        self.current_dir = os.getcwd()
+        nitrate_dir = os.path.join(self.current_dir, 'data/clean', "well_chem_data", "for_Alignment", f"utrecht_well_chem_combined_{well_filter}.csv")
+        self.nitrate_df = pd.read_csv(nitrate_dir, parse_dates=['date'])
 
         self.builder_map = {
             SoilTypeAligner: ["soil region"],
@@ -45,38 +50,40 @@ class MergedDatasetBuilder:
         self._merged_dataframes = self._build_and_merge()
 
     def _build_and_merge(self):
-        dfs = []
+        nitrate_vars = ['nitrate', 'bro-id', 'geometry', 'date']
+        base_columns = [v for v in self.variables if v in nitrate_vars and v in self.nitrate_df.columns]
+
+        if base_columns:
+            final_df = self.nitrate_df[base_columns].copy()
+        else:
+            final_df = pd.DataFrame()
+
         for cls, supported_var in self.builder_map.items():
-            selected_vars = [v for v in self.variables if v in supported_var]
+            selected_vars = [v for v in self.variables 
+                                    for base_var in supported_var
+                                    if v.startswith(base_var)]
             if not selected_vars:
                 continue
 
             print(f"Initializing {cls.__name__} for {selected_vars}")
             instance = cls(self.well_filter)
 
-    def _build_selected_dataframes(self):
-        dfs = []
-        for var in self.variables:
-            print(f"Merging: {var}")
-            cls = self.available_builders.get(var.lower())
-            if cls is None:
-                raise ValueError(f"Unknown variable: {var}")
-            instance = cls(self.well_filter)
-            dfs.append(instance._dataframe)
-            print(dfs)
-        return dfs
+            for var in selected_vars:
+                if not hasattr(instance, "get_variable"):
+                    raise AttributeError(f"{cls.__name__} must implement 'get_variable' method.")
 
-    def _merge_all(self, dfs, on="BRO-ID"):
-        if not dfs:
-            raise ValueError("No dataframes to merge.")
+                var_df = instance.get_variable(var)
+                print(f"Type of df: {type(var_df)}")
 
-        base_df = dfs[0].copy()
-        for df in dfs[1:]:
-            # Only keep columns not already in base_df, excluding join key
-            new_cols = [col for col in df.columns if col != on and col not in base_df.columns]
-            df_subset = df[[on] + new_cols]
-            base_df = pd.merge(base_df, df_subset, on=on, how="outer")
-        return base_df
+                # add the variable as a new column, aligned by index
+                if isinstance(var_df, (pd.Series, gpd.GeoSeries)):
+                    final_df[var] = var_df
+                    print(final_df)
+                else:
+                    raise ValueError(f"{var} not found in returned DataFrame.")
+            print("\n")
+
+        return final_df
     
     @property
     def merged_dataframes(self):
@@ -84,10 +91,19 @@ class MergedDatasetBuilder:
 
 
 if __name__ == "__main__":
-    variables_of_interest = ['groundwater depth', 'population', 'soil type', 'landuse code', \
-                 'precipitation', 'temperature', 'manure_and_waste', 'elevation', 'lon', \
-                 'lat', 'n_deposition']
+    # variables_of_interest = ['bro-id', 'nitrate', 'geometry', 'date', 'groundwater depth', \
+    #                          'population', 'soil region', 'landuse code', 'precipitation', \
+    #                          'temperature', 'elevation', 'lon', 'lat', 'n deposition', \
+    #                          'soilunit_code_1', 'organicmattercontent_1', 'density_1']
     
-    merged_dataset = MergedDatasetBuilder(variables_of_interest)
-    merged_dataset
+    # variables_of_interest = ['bro-id', 'nitrate', 'geometry', 'date', 'groundwater depth', \
+    #                          'population', 'soil region', 'landuse code', 'precipitation', \
+    #                          'temperature', 'elevation', 'lon', 'lat', 'n deposition']
+
+    variables_of_interest = ['bro-id', 'nitrate', 'geometry', 'date', 'soilunit_code_1', 'organicmattercontent_1', 'density_1']
+
+    well_filter = 1
+    
+    merged_dataset = MergedDatasetBuilder(variables_of_interest, well_filter)
     print(merged_dataset.merged_dataframes)
+    # merged_dataset.merged_dataframes.to_csv("merged_temp.csv")

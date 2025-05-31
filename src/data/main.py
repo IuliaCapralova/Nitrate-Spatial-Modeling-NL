@@ -17,7 +17,7 @@ from soil_comp_preprocess import Soil_Composition_Prepocess
 def main():
     province = "utrecht"
     n_files = None
-    filter = 3
+    filter = 1
     year_start = 2000
     year_end = 2022
     years = list(range(2005, 2024))
@@ -31,7 +31,7 @@ def main():
     # dataset = Dataset_Nitrate(province=province, max_files=n_files)
 
     # DATA PREPROCESSING
-    # dataset = Nitrate_Preprocess(province=province, filter=filter)
+    # dataset = Nitrate_Preprocess(filter=filter, province=province)
     # dataset = Depth_Preprocess(province=province, well_filter=filter, year_start=year_start, year_end=year_end)
     # dataset = Population_Prepocess(years)
     # dataset = SoilType_Preprocess()
@@ -101,14 +101,15 @@ def main():
 
         saver = Dataset_Saver()
         saver(dataset, path)
-        print(f"{variable.upper()} is successfully preprocessed and saved!")
+        print(f"{variable.upper()} data is successfully preprocessed and saved!")
 
 
     ###### MERGE DATASETS ######
-
-    variables_of_interest = ['groundwater depth', 'population', 'soil region', 'landuse code', \
-                'precipitation', 'temperature', 'elevation', 'lon', 'lat', 'n deposition', 'soilunit_code', \
-                'organicmattercontent', 'density']
+    
+    variables_of_interest = ['bro-id', 'nitrate', 'geometry', 'date', 'groundwater depth', \
+                             'population', 'soil region', 'landuse code', 'precipitation', \
+                             'temperature', 'elevation', 'lon', 'lat', 'n deposition', \
+                             'soilunit_code_1', 'organicmattercontent_1', 'density_1']
 
     merged_dataset = MergedDatasetBuilder(variables_of_interest)
     path = f"data/clean/merged_dataset_1.csv"

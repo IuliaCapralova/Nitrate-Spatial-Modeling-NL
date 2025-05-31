@@ -28,18 +28,13 @@ class DepthAligner(BaseAligner):
         self.wells_sindex = self.wells_gdf.sindex
 
         self._dataframe = self._align()
-        # joined = self.nitrate_gdf.merge(df_results, left_index=True, right_on='nitrate_index')
-        # joined = joined[['Well_ID', 'BRO-ID', 'Filter', 'Date', 'Nitrate', 'geometry', 'distance_m', 'avg_depth_m']]
-
-        # self._dataframe = joined
-        # print(joined)
 
     def _align(self):
         # iterate over each nitrate observation and assign averaged depth
         results = []
         for idx, row in self.nitrate_gdf.iterrows():
             pt = row.geometry
-            sample_date = row.Date
+            sample_date = row.date
             matched_well = None
             avg_depth = None
             dist = None
@@ -77,7 +72,7 @@ class DepthAligner(BaseAligner):
 
         # TODO do a separte function
         joined = self.nitrate_gdf.merge(df_results, left_index=True, right_on='nitrate_index')
-        joined = joined[['Well_ID', 'BRO-ID', 'Filter', 'Date', 'Nitrate', 'geometry', 'distance_m', 'groundwater depth']]
+        joined = joined[['Well_ID', 'bro-id', 'Filter', 'date', 'nitrate', 'geometry', 'distance_m', 'groundwater depth']]
 
         return joined
 
@@ -103,5 +98,5 @@ if __name__ == "__main__":
 
     instance = DepthAligner(well_filter, window, radius)
     print(instance._dataframe)
-    print(instance.get_variable("groundwater depth"))
+    # print(instance.get_variable("groundwater depth"))
     # instance._dataframe.to_csv("depth_temp.csv")

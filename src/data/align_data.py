@@ -15,7 +15,7 @@ class BaseAligner(ABC):
         self.current_dir = os.getcwd()
 
         nitrate_dir = os.path.join(self.current_dir, 'data/clean', "well_chem_data", "for_Alignment", f"utrecht_well_chem_combined_{well_filter}.csv")
-        nitrate_df = pd.read_csv(nitrate_dir, parse_dates=['Date'])
+        nitrate_df = pd.read_csv(nitrate_dir, parse_dates=['date'])
         self.nitrate_gdf = self._to_gdf(nitrate_df)
 
         self._dataframe = None
@@ -32,9 +32,9 @@ class BaseAligner(ABC):
     def get_variable(self, name: Union[str, List[str]]):
         return self._dataframe[name]
     
-    @abstractmethod
-    def _align(self):
-        pass
+    # @abstractmethod
+    # def _align(self):
+    #     pass
 
     # @abstractmethod
     # def get_variable(self):

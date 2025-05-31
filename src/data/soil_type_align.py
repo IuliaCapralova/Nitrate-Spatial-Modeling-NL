@@ -29,4 +29,5 @@ class SoilTypeAligner(BaseAligner):
 
 if __name__ == "__main__":
     instance = SoilTypeAligner(well_filter=1)
-    print(instance.get_variable(name="soil region"))
+    print(instance._dataframe)
+    # print(instance.get_variable(name="soil region"))

@@ -18,7 +18,7 @@ class EnvironmentalAligner(BaseAligner):
         self.env_df['Date'] = self.env_df['Date'].dt.date  # strip time for matching
 
         for _, row in self.nitrate_gdf.iterrows():
-            measurement_date = row['Date'].date()
+            measurement_date = row['date'].date()
 
             #find the row index in env_df that matches the measurement date
             match_idx = self.env_df[self.env_df['Date'] == measurement_date].index
@@ -46,9 +46,9 @@ class EnvironmentalAligner(BaseAligner):
 
             aligned_data.append({
                 "Well_ID": row["Well_ID"],
-                "BRO-ID": row["BRO-ID"],
-                "Date": row["Date"],
-                "Nitrate": row["Nitrate"],
+                "BRO-ID": row["bro-id"],
+                "date": row["date"],
+                "Nitrate": row["nitrate"],
                 "geometry": row["geometry"],
                 "temperature": avg_temp,
                 "precipitation": avg_precip,
@@ -59,4 +59,5 @@ class EnvironmentalAligner(BaseAligner):
 
 if __name__ == "__main__":
     instance = EnvironmentalAligner()
-    print(instance.get_variable(["temperature", "precipitation"]))
+    print(instance._dataframe)
+    # print(instance.get_variable(["temperature", "precipitation"]))

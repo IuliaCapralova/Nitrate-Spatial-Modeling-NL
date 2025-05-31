@@ -49,7 +49,7 @@ class SpatialTimeseriesBaseAligner(BaseAligner):
 
             nitrate_gdf.loc[
                 nitrate_gdf["Well_ID"].isin(joined["Well_ID"]) &
-                nitrate_gdf["Date"].isin(joined["Date"]),
+                nitrate_gdf["date"].isin(joined["date"]),
                 target_column
             ] = joined[column].values
 

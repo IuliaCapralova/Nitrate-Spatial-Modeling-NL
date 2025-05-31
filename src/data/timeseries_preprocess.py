@@ -3,6 +3,7 @@ import pandas as pd
 import geopandas as gpd
 from shapely import wkt
 from dataset import Dataset_Preprocess
+from typing import Union, List
 from abc import ABC, abstractmethod
 
 
@@ -41,6 +42,7 @@ class TimeseriesPreprocess(Dataset_Preprocess):
         self._to_gdf()
         self._well_selection()
         self._date_round()
+        self._rename_cols()
 
     def _time_standardization(self):
         self._dataframe['Date'] = pd.to_datetime(self._dataframe['Date'], errors='coerce', utc=True)
@@ -66,12 +68,18 @@ class TimeseriesPreprocess(Dataset_Preprocess):
 
     def _date_round(self):
         pass
+
+    def _rename_cols(self):
+        pass
     
     def __len__(self):
         pass
 
     def __getitem__(self):
         pass
+
+    def get_variable(self, name: Union[str, List[str]]):
+        return self._dataframe[name]
 
     @abstractmethod
     def _filter_columns(self):

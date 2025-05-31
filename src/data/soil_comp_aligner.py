@@ -6,7 +6,7 @@ from align_data import BaseAligner
 
 
 class Soil_Composition_Aligner(BaseAligner):
-    def __init__(self, layer_list:list[int], well_filter=1):
+    def __init__(self, well_filter=1, layer_list=[1]):
         super().__init__(well_filter)
         self.layer_list = layer_list   # user's layer selection
         self._datasetdir = os.path.join(self.current_dir, "data", "clean", "soil_composition")
@@ -43,8 +43,6 @@ class Soil_Composition_Aligner(BaseAligner):
             merged = gpd.sjoin(merged, gdf, how="left", predicate="within")
             merged = merged.drop(columns=["index_right"])
 
-            merged = merged.drop_duplicates(subset=["BRO-ID", "Date", "Nitrate"])
-
         return merged
 
     def _path_finder(self):
@@ -70,8 +68,9 @@ if __name__ == "__main__":
 #        'density', 'soilunit_code', 'geometry']
 
     layer_list = [1]
+    well_filter = 1
     var_list = ["soilunit_code_1", "organicmattercontent_1", "density_1"]
-    instance = Soil_Composition_Aligner(layer_list)
-    # print(instance._dataframe)
-    print(instance.get_variable(name=var_list))
+    instance = Soil_Composition_Aligner(well_filter, layer_list)
+    print(instance._dataframe)
+    # print(type(instance.get_variable(name=var_list)))
     # instance._dataframe.to_csv("temp.csv")

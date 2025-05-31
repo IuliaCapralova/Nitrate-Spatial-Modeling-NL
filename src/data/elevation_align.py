@@ -47,5 +47,5 @@ class ElevationAligner(BaseAligner):
 if __name__ == "__main__":
     name = ["elevation", "lon", "lat"]
     instance = ElevationAligner(well_filter=1, api_key="AIzaSyBcDtNXhWW-NmOu3CYxs06-AqwfxhLS_OY")
-    print(instance.get_variable(name=name))
-    # print(instance._dataframe)
+    print(instance._dataframe)
+    # print(instance.get_variable(name=name))
