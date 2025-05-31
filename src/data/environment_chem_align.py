@@ -50,8 +50,8 @@ class EnvironmentalAligner(BaseAligner):
                 "Date": row["Date"],
                 "Nitrate": row["Nitrate"],
                 "geometry": row["geometry"],
-                "avg_temp_mean": avg_temp,
-                "avg_precip_sum": avg_precip,
+                "temperature": avg_temp,
+                "precipitation": avg_precip,
             })
 
         return gpd.GeoDataFrame(aligned_data, geometry="geometry", crs="EPSG:4326")
@@ -59,4 +59,4 @@ class EnvironmentalAligner(BaseAligner):
 
 if __name__ == "__main__":
     instance = EnvironmentalAligner()
-    print(instance._dataframe.head(30))
+    print(instance.get_variable(["temperature", "precipitation"]))

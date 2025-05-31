@@ -40,11 +40,12 @@ class ElevationAligner(BaseAligner):
 
         # Map back to original
         gdf["Elevation_m"] = gdf.apply(lambda row: coord_to_elev.get((row["lat"], row["lon"])), axis=1)
+        gdf = gdf.rename(columns={"Elevation_m": "elevation"})
         return gdf
 
 
 if __name__ == "__main__":
+    name = ["elevation", "lon", "lat"]
     instance = ElevationAligner(well_filter=1, api_key="AIzaSyBcDtNXhWW-NmOu3CYxs06-AqwfxhLS_OY")
-    print(instance._dataframe)
-    # aligner = ElevationAligner(well_filter=1, api_key="AIzaSyBcDtNXhWW-NmOu3CYxs06-AqwfxhLS_OY")
-    # print(aligner._get_google_elevation(52.092876, 5.104480))  # Use known coordinates in Utrecht
+    print(instance.get_variable(name=name))
+    # print(instance._dataframe)

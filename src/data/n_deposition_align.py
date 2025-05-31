@@ -12,3 +12,4 @@ class NDepositionAligner(SpatialTimeseriesBaseAligner):
 if __name__ == "__main__":
     instance = NDepositionAligner()
     print(instance._dataframe)
+    print(instance.get_variable(name="n deposition"))

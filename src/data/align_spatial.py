@@ -41,9 +41,9 @@ class SpatialTimeseriesBaseAligner(BaseAligner):
             joined = self._spatial_join_by_year(nitrate_year, gdf, column, predicate)
 
             column_map = {
-                "aantal_inwoners": "Population",
-                "code": "Landuse_Code",
-                "deposition_kg": "N_deposition"
+                "aantal_inwoners": "population",
+                "code": "landuse code",
+                "deposition_kg": "n deposition"
                 }
             target_column = column_map.get(column)
 

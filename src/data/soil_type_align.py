@@ -16,15 +16,17 @@ class SoilTypeAligner(BaseAligner):
 
     def _align(self):
         self.soil_type_gdf = self.soil_type_df.to_crs(self.nitrate_gdf.crs)
+        self.soil_type_gdf = self.soil_type_gdf.rename(columns={"HGRnaam":"soil region"})
         nitrate_with_soil = gpd.sjoin(
             self.nitrate_gdf,
-            self.soil_type_gdf[["geometry", "HGRnaam"]],
+            self.soil_type_gdf[["geometry", "soil region"]],
             how="left",
             predicate="within"
         )
         nitrate_with_soil = nitrate_with_soil.drop(columns=["index_right"])
         return nitrate_with_soil
 
+
 if __name__ == "__main__":
     instance = SoilTypeAligner(well_filter=1)
-    print(instance._dataframe.head(30))
+    print(instance.get_variable(name="soil region"))

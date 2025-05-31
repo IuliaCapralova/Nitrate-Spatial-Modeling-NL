@@ -6,9 +6,8 @@ from align_data import BaseAligner
 
 
 class Soil_Composition_Aligner(BaseAligner):
-    def __init__(self, var_list: list[str], layer_list:list[int], well_filter=1):
+    def __init__(self, layer_list:list[int], well_filter=1):
         super().__init__(well_filter)
-        self.var_list = var_list   # user's variable selection
         self.layer_list = layer_list   # user's layer selection
         self._datasetdir = os.path.join(self.current_dir, "data", "clean", "soil_composition")
         self._file_paths = self._path_finder()
@@ -36,16 +35,9 @@ class Soil_Composition_Aligner(BaseAligner):
             gdf = gpd.read_file(path, layer=layers[0])
             gdf = gdf.to_crs(self.nitrate_gdf.crs)
 
-            # check if all the variables really exist in the dataset
-            missing_vars = [var for var in self.var_list if var not in gdf.columns]
-            if missing_vars:
-                raise ValueError(
-                    f"The following variable(s) are missing in '{os.path.basename(path)}': {missing_vars}"
-                )
-
-            selected_cols = [col for col in self.var_list if col in gdf.columns]
-            renamed_cols = {col: f"{col}{suffix}" for col in selected_cols}
-            gdf = gdf[["geometry"] + selected_cols].rename(columns=renamed_cols)
+            excluded = {"geometry", "maparea id", "normalsoilprofile id", "layernumber"}
+            renamed_cols = {col: f"{col}{suffix}" for col in gdf.columns if col not in excluded}
+            gdf = gdf.rename(columns=renamed_cols)
 
             #spatial join
             merged = gpd.sjoin(merged, gdf, how="left", predicate="within")
@@ -77,8 +69,9 @@ if __name__ == "__main__":
 #        'sandmedian', 'minimumsandmedian', 'maximumsandmedian', 'siltcontent',
 #        'density', 'soilunit_code', 'geometry']
 
-    var_list = ["soilunit_code", "organicmattercontent", "density"]
     layer_list = [1]
-    instance = Soil_Composition_Aligner(var_list, layer_list)
-    print(instance._dataframe)
+    var_list = ["soilunit_code_1", "organicmattercontent_1", "density_1"]
+    instance = Soil_Composition_Aligner(layer_list)
+    # print(instance._dataframe)
+    print(instance.get_variable(name=var_list))
     # instance._dataframe.to_csv("temp.csv")

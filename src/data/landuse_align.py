@@ -12,6 +12,7 @@ class LanduseAligner(SpatialTimeseriesBaseAligner):
 if __name__ == "__main__":
     instance = LanduseAligner()
     gdf = instance._dataframe
-    print(f"Length: {gdf}")
+    # print(f"Length: {gdf}")
+    print(instance.get_variable(name="landuse code"))
     # landuse_counts = gdf['Landuse_Code'].value_counts(dropna=True).sort_index()
     # print(landuse_counts)

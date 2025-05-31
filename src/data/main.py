@@ -106,8 +106,8 @@ def main():
 
     ###### MERGE DATASETS ######
 
-    variables_of_interest = ['groundwater depth', 'population', 'soil type', 'land use', \
-                'precipitation', 'temperature', 'elevation', 'n_deposition', 'soilunit_code', \
+    variables_of_interest = ['groundwater depth', 'population', 'soil region', 'landuse code', \
+                'precipitation', 'temperature', 'elevation', 'lon', 'lat', 'n deposition', 'soilunit_code', \
                 'organicmattercontent', 'density']
 
     merged_dataset = MergedDatasetBuilder(variables_of_interest)

@@ -12,3 +12,4 @@ class PopulationAlignment(SpatialTimeseriesBaseAligner):
 if __name__ == "__main__":
     instance = PopulationAlignment()
     print(instance._dataframe)
+    print(instance.get_variable(name="population"))

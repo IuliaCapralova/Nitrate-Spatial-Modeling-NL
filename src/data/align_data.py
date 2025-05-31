@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 import geopandas as gpd
 from shapely import wkt
+from typing import Union, List
 from shapely.geometry import Point
 from shapely.geometry import shape
 from rasterio.features import shapes
@@ -27,10 +28,17 @@ class BaseAligner(ABC):
     # @property
     # def dataframe(self):
     #     return self._dataframe
+
+    def get_variable(self, name: Union[str, List[str]]):
+        return self._dataframe[name]
     
     @abstractmethod
     def _align(self):
         pass
+
+    # @abstractmethod
+    # def get_variable(self):
+    #     pass
 
 
 if __name__ == "__main__":

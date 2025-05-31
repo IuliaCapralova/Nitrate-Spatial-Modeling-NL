@@ -31,8 +31,12 @@ class Population_Prepocess(SpatialData):
         pop_gdf = self._read_gpkg(file_path)
         reduced_file = self._column_selection(pop_gdf, self.COLUMN_SELECTION)
         cropped_file = self._crop_file(reduced_file)
-        final_gdf = self._impute_values(cropped_file)
-        return final_gdf
+        imputed_file = self._impute_values(cropped_file)
+
+        #rename file
+        # final_gdf = imputed_file.rename(columns={"aantal_inwoners": "population"})
+
+        return imputed_file
 
     def _read_gpkg(self, file_path):
         # read file

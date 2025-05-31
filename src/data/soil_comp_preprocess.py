@@ -95,10 +95,10 @@ if __name__ == "__main__":
     df = instance._dataframe
     print(df)
 
-    # check if we have duplicated geometries in each table
-    for layer_name, gdf in df.items():
-        geom_col = gdf.geometry.name  # gets the geometry column name
-        duplicated_mask = gdf[geom_col].apply(lambda g: g.wkt).duplicated(keep=False)
-        num_duplicates = duplicated_mask.sum()
+    # # check if we have duplicated geometries in each table
+    # for layer_name, gdf in df.items():
+    #     geom_col = gdf.geometry.name  # gets the geometry column name
+    #     duplicated_mask = gdf[geom_col].apply(lambda g: g.wkt).duplicated(keep=False)
+    #     num_duplicates = duplicated_mask.sum()
 
-    print(f"Layer: {layer_name} → {num_duplicates} duplicated geometries")
+    # print(f"Layer: {layer_name} → {num_duplicates} duplicated geometries")

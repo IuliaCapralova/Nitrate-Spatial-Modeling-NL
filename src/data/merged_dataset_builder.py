@@ -19,18 +19,18 @@ class MergedDatasetBuilder:
         self.well_filter = well_filter
 
         self.builder_map = {
-            SoilTypeAligner: ["soil type"],
-            LanduseAligner: ["land use"],
+            SoilTypeAligner: ["soil region"],
+            LanduseAligner: ["landuse code"],
             PopulationAlignment: ["population"],
             DepthAligner: ["groundwater depth"],
             FertilizerAnigner: ["fertilizer"],
-            ElevationAligner: ["elevation"],
+            ElevationAligner: ["elevation", "lon", "lat"],
             EnvironmentalAligner: ["precipitation", "temperature"],
             StatLineAligner: ["fertiliser use", "number of livestock", "excretion during grazing", \
                                 "nitrogen losses in housing and storages", \
                                 "use of livestock manure in agriculture",
                                 "household organic waste"],
-            NDepositionAligner: ["n_deposition"],
+            NDepositionAligner: ["n deposition"],
             Soil_Composition_Aligner:['maparea_id', 'soilslope', 'normalsoilprofile_id', 'layernumber',
                                 'faohorizonnotation', 'lowervalue', 'uppervalue',
                                 'organicmattercontent', 'minimumorganicmattercontent',
@@ -84,8 +84,9 @@ class MergedDatasetBuilder:
 
 
 if __name__ == "__main__":
-    variables_of_interest = ['groundwater depth', 'population', 'soil type', 'land use', \
-                 'precipitation', 'temperature', 'manure_and_waste', 'elevation', 'n_deposition']
+    variables_of_interest = ['groundwater depth', 'population', 'soil type', 'landuse code', \
+                 'precipitation', 'temperature', 'manure_and_waste', 'elevation', 'lon', \
+                 'lat', 'n_deposition']
     
     merged_dataset = MergedDatasetBuilder(variables_of_interest)
     merged_dataset
