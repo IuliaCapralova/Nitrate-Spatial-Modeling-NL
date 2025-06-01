@@ -1,8 +1,7 @@
-import pandas as pd
 import os
 import fiona
 import geopandas as gpd
-from align_data import BaseAligner
+from .align_data import BaseAligner
 
 
 class SoilTypeAligner(BaseAligner):

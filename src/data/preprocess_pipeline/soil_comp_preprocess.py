@@ -2,13 +2,9 @@ import warnings
 warnings.filterwarnings("ignore", category=RuntimeWarning, module="pyogrio")
 
 import os
-import re
-import fiona
 import pandas as pd
-import json
 import geopandas as gpd
-from spatial_data import SpatialData
-from shapely.geometry import Polygon
+from .spatial_data import SpatialData
 
 
 class Soil_Composition_Prepocess(SpatialData):

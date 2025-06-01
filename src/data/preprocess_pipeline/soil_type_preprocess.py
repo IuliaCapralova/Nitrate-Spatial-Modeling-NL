@@ -1,9 +1,6 @@
 import os
-import copy
-import pandas as pd
 import geopandas as gpd
-import matplotlib.pyplot as plt
-from spatial_data import SpatialData
+from .spatial_data import SpatialData
 
 
 class SoilType_Preprocess(SpatialData):

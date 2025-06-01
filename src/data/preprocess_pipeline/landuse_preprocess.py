@@ -6,7 +6,7 @@ import rioxarray
 from rasterio.features import shapes
 from shapely.geometry import shape
 from shapely.geometry import mapping
-from spatial_data import SpatialData
+from .spatial_data import SpatialData
 
 ## !!! TODO: safe as tif file
 

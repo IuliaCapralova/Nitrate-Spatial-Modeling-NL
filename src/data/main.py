@@ -1,17 +1,16 @@
-import pandas as pd
-from dataset_nitrate import Dataset_Nitrate
-from dataset_depth import Dataset_Depth
+from bro_data_extraction_pipeline.dataset_nitrate import Dataset_Nitrate
+from bro_data_extraction_pipeline.dataset_depth import Dataset_Depth
+from preprocess_pipeline.nitrate_preprocess import Nitrate_Preprocess
+from preprocess_pipeline.depth_preprocess import Depth_Preprocess
+from preprocess_pipeline.population_preprocess import Population_Prepocess
+from preprocess_pipeline.soil_type_preprocess import SoilType_Preprocess
+from preprocess_pipeline.dataset import Dataset_Preprocess
+from preprocess_pipeline.landuse_preprocess import LandUse_Preprocess
+from preprocess_pipeline.env_preprocess import Environmental_Preprocess
+from preprocess_pipeline.n_deposition_preprocess import N_Deposition_Prepocess
+from preprocess_pipeline.soil_comp_preprocess import Soil_Composition_Prepocess
 from dataset_saver import Dataset_Saver
-from nitrate_preprocess import Nitrate_Preprocess
-from depth_preprocess import Depth_Preprocess
-from population_preprocess import Population_Prepocess
-from soil_type_preprocess import SoilType_Preprocess
-from dataset import Dataset_Preprocess
-from landuse_preprocess import LandUse_Preprocess
-from env_preprocess import Environmental_Preprocess
-from merged_dataset_builder import MergedDatasetBuilder
-from n_deposition_preprocess import N_Deposition_Prepocess
-from soil_comp_preprocess import Soil_Composition_Prepocess
+from align_pipeline.merged_dataset_builder import MergedDatasetBuilder
 
 
 def main():
@@ -105,11 +104,22 @@ def main():
 
 
     ###### MERGE DATASETS ######
+
+    # Variables to choose from:
+    #                             'maparea_id', 'soilslope', 'normalsoilprofile_id', 'layernumber',
+    #                             'faohorizonnotation', 'lowervalue', 'uppervalue',
+    #                             'organicmattercontent', 'minimumorganicmattercontent',
+    #                             'maximumorganicmattercontent', 'acidity', 'minimumacidity',
+    #                             'maximumacidity', 'cnratio', 'peattype', 'calciccontent', 'fedith',
+    #                             'loamcontent', 'minimumloamcontent', 'maximumloamcontent',
+    #                             'lutitecontent', 'minimumlutitecontent', 'maximumlutitecontent',
+    #                             'sandmedian', 'minimumsandmedian', 'maximumsandmedian', 'siltcontent',
+    #                             'density', 'soilunit_code'
     
     variables_of_interest = ['bro-id', 'nitrate', 'geometry', 'date', 'groundwater depth', \
                              'population', 'soil region', 'landuse code', 'precipitation', \
                              'temperature', 'elevation', 'lon', 'lat', 'n deposition', \
-                             'soilunit_code_1', 'organicmattercontent_1', 'density_1']
+                             'soilunit_code_1', 'organicmattercontent_1', 'density_1', 'acidity_1']
 
     merged_dataset = MergedDatasetBuilder(variables_of_interest, filter)
     path = f"data/clean/aligned_data/merged_dataset_{filter}.csv"

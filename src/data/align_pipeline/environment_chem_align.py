@@ -2,7 +2,7 @@ import os
 import numpy as np
 import pandas as pd
 import geopandas as gpd
-from align_data import BaseAligner
+from .align_data import BaseAligner
 
 
 class EnvironmentalAligner(BaseAligner):

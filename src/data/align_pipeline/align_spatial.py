@@ -1,7 +1,7 @@
 import os
 import re
 import geopandas as gpd
-from align_data import BaseAligner
+from .align_data import BaseAligner
 
 
 class SpatialTimeseriesBaseAligner(BaseAligner):

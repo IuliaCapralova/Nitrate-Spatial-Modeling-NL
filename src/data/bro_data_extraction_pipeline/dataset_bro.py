@@ -3,7 +3,7 @@ import csv
 from abc import ABC, abstractmethod
 
 
-class Dataset_BRO():
+class Dataset_BRO(ABC):
     COLUMNS = []
 
     def __init__(self, province, type_of_data, max_files=None):

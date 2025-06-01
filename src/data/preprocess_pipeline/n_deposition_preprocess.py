@@ -1,11 +1,9 @@
 import fiona
 import re
 import os
-import pandas as pd
-import numpy as np
 import geopandas as gpd
 import periodictable as pt
-from spatial_data import SpatialData
+from .spatial_data import SpatialData
 
 
 class N_Deposition_Prepocess(SpatialData):

@@ -2,9 +2,9 @@ import os
 import pandas as pd
 import geopandas as gpd
 from shapely import wkt
-from dataset import Dataset_Preprocess
 from typing import Union, List
-from abc import ABC, abstractmethod
+from abc import abstractmethod
+from .dataset import Dataset_Preprocess
 
 
 class TimeseriesPreprocess(Dataset_Preprocess):

@@ -3,7 +3,7 @@ import re
 import os
 import numpy as np
 import geopandas as gpd
-from spatial_data import SpatialData
+from .spatial_data import SpatialData
 
 
 class Population_Prepocess(SpatialData):

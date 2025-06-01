@@ -1,5 +1,5 @@
 import os
-from align_spatial import SpatialTimeseriesBaseAligner
+from .align_spatial import SpatialTimeseriesBaseAligner
 
 
 class LanduseAligner(SpatialTimeseriesBaseAligner):

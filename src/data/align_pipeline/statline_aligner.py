@@ -1,6 +1,6 @@
 import os
 import pandas as pd
-from align_data import BaseAligner
+from .align_data import BaseAligner
 
 
 class StatLineAligner(BaseAligner):

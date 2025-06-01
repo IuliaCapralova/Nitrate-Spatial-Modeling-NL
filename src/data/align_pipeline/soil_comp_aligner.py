@@ -2,7 +2,7 @@ import os
 import fiona
 import re
 import geopandas as gpd
-from align_data import BaseAligner
+from .align_data import BaseAligner
 
 
 class Soil_Composition_Aligner(BaseAligner):

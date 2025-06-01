@@ -1,17 +1,16 @@
-from functools import reduce
 import pandas as pd
 import os
 import geopandas as gpd
-from fertilizer_align import FertilizerAnigner
-from landuse_align import LanduseAligner
-from population_align import PopulationAlignment
-from statline_aligner import StatLineAligner
-from soil_type_align import SoilTypeAligner
-from depth_chem_align import DepthAligner
-from elevation_align import ElevationAligner
-from environment_chem_align import EnvironmentalAligner
-from n_deposition_align import NDepositionAligner
-from soil_comp_aligner import Soil_Composition_Aligner
+from .fertilizer_align import FertilizerAnigner
+from .landuse_align import LanduseAligner
+from .population_align import PopulationAlignment
+from .statline_aligner import StatLineAligner
+from .soil_type_align import SoilTypeAligner
+from .depth_chem_align import DepthAligner
+from .elevation_align import ElevationAligner
+from .environment_chem_align import EnvironmentalAligner
+from .n_deposition_align import NDepositionAligner
+from .soil_comp_aligner import Soil_Composition_Aligner
 
 
 class MergedDatasetBuilder:

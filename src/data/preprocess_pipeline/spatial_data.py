@@ -2,9 +2,9 @@ import os
 import json
 import pandas as pd
 import geopandas as gpd
-from dataset import Dataset_Preprocess
 from shapely.geometry import Polygon
 from abc import abstractmethod
+from .dataset import Dataset_Preprocess
 
 
 class SpatialData(Dataset_Preprocess):

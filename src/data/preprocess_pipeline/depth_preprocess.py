@@ -1,12 +1,4 @@
-import os
-import re
-import csv
-import fiona
-import copy
-import pandas as pd
-import geopandas as gpd
-from timeseries_preprocess import TimeseriesPreprocess
-from abc import ABC, abstractmethod
+from .timeseries_preprocess import TimeseriesPreprocess
 
 
 class Depth_Preprocess(TimeseriesPreprocess):
