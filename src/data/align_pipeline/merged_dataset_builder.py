@@ -43,7 +43,7 @@ class MergedDatasetBuilder:
                                 'loamcontent', 'minimumloamcontent', 'maximumloamcontent',
                                 'lutitecontent', 'minimumlutitecontent', 'maximumlutitecontent',
                                 'sandmedian', 'minimumsandmedian', 'maximumsandmedian', 'siltcontent',
-                                'density', 'soilunit_code']
+                                'density', 'soilunit_code', 'mainsoilclassification']
         }
 
         self._merged_dataframes = self._build_and_merge()
@@ -99,7 +99,7 @@ if __name__ == "__main__":
     #                          'population', 'soil region', 'landuse code', 'precipitation', \
     #                          'temperature', 'elevation', 'lon', 'lat', 'n deposition']
 
-    variables_of_interest = ['bro-id', 'nitrate', 'geometry', 'date', 'soilunit_code_1', 'organicmattercontent_1', 'density_1']
+    variables_of_interest = ['bro-id', 'nitrate', 'geometry', 'date', 'mainsoilclassification_1', 'organicmattercontent_1', 'density_1']
 
     well_filter = 1
     

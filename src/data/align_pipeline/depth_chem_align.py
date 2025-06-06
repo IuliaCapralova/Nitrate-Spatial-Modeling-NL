@@ -91,9 +91,9 @@ class DepthAligner(BaseAligner):
 if __name__ == "__main__":
     well_filter = 1
     window = 72
-    radius = 10000
+    radius = 8600
 
     instance = DepthAligner(well_filter, window, radius)
     print(instance._dataframe)
+    instance._dataframe.to_csv("depth_temp.csv")
     # print(instance.get_variable("groundwater depth"))
-    # instance._dataframe.to_csv("depth_temp.csv")

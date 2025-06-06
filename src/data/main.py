@@ -119,7 +119,8 @@ def main():
     variables_of_interest = ['bro-id', 'nitrate', 'geometry', 'date', 'groundwater depth', \
                              'population', 'soil region', 'landuse code', 'precipitation', \
                              'temperature', 'elevation', 'lon', 'lat', 'n deposition', \
-                             'soilunit_code_1', 'organicmattercontent_1', 'density_1', 'acidity_1']
+                             'mainsoilclassification_1', 'organicmattercontent_1', \
+                             'density_1', 'acidity_1']
 
     merged_dataset = MergedDatasetBuilder(variables_of_interest, filter)
     path = f"data/clean/aligned_data/merged_dataset_{filter}.csv"

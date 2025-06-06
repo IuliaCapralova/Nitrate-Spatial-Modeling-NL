@@ -15,6 +15,7 @@ class Soil_Composition_Aligner(BaseAligner):
 
     def _align(self):
         merged = self.nitrate_gdf
+        print(merged)
 
         for path in self._file_paths:
             # makes sure we assign layer number to features after alignment
@@ -69,7 +70,7 @@ if __name__ == "__main__":
 
     layer_list = [1]
     well_filter = 1
-    var_list = ["soilunit_code_1", "organicmattercontent_1", "density_1"]
+    var_list = ["soilunit_code_1", "organicmattercontent_1", "density_1", "mainsoilclassification_1"]
     instance = Soil_Composition_Aligner(well_filter, layer_list)
     print(instance._dataframe)
     # print(type(instance.get_variable(name=var_list)))

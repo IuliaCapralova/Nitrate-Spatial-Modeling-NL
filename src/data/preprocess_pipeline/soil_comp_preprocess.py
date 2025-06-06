@@ -8,13 +8,14 @@ from .spatial_data import SpatialData
 
 
 class Soil_Composition_Prepocess(SpatialData):
-    LAYERS = ["soilarea", "soilarea_normalsoilprofile", "soilhorizon", "soilarea_soilunit"]
+    LAYERS = ["soilarea", "soilarea_normalsoilprofile", "soilhorizon", "soilarea_soilunit", "soil_units"]
     MERGE_PLAN = [
     ("soilarea_soilunit", "maparea_id"),
+    ("soil_units", "soilunit_code"),
     ("soilarea_normalsoilprofile", "maparea_id"),
     ("soilhorizon", "normalsoilprofile_id")
     ]
-    COLUMN_SELECTION = ["maparea_collection", "beginlifespan", "endlifespan", "staringseriesblock", "inspireid", "validfrom", "beginlifespanversion", "soilunit_sequencenumber"]
+    COLUMN_SELECTION = ["maparea_collection", "beginlifespan", "endlifespan", "staringseriesblock", "inspireid", "validfrom", "beginlifespanversion", "soilunit_sequencenumber", "soilclassification", "url"]
 
     def __init__(self, layer_list):
         super().__init__(type_of_data="soil_composition")
@@ -40,6 +41,9 @@ class Soil_Composition_Prepocess(SpatialData):
             # select only 0th sequence number (as it describes main soil type)
             if layer == "soilarea_soilunit":
                 gdf = gdf[gdf["soilunit_sequencenumber"] == 0].copy()
+
+            if layer == "soil_units" and "code" in gdf.columns:
+                gdf = gdf.rename(columns={"code": "soilunit_code"})
             
             layers[layer] = gdf
         return layers
@@ -89,6 +93,7 @@ if __name__ == "__main__":
     layer_list = [1]
     instance = Soil_Composition_Prepocess(layer_list)
     df = instance._dataframe
+    # df.to_csv("blablabla.csv")
     print(df)
 
     # # check if we have duplicated geometries in each table
