@@ -123,7 +123,7 @@ def main():
                              'density_1', 'acidity_1']
 
     merged_dataset = MergedDatasetBuilder(variables_of_interest, filter)
-    path = f"data/clean/aligned_data/merged_dataset_{filter}.csv"
+    path = f"data//aligned/merged_dataset_{filter}.csv"
 
 
     ############## SAVER ###############
