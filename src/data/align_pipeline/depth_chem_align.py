@@ -2,7 +2,7 @@ import os
 import pandas as pd
 from datetime import timedelta
 from shapely.geometry import Point
-from .align_data import BaseAligner
+from align_data import BaseAligner
 
 
 class DepthAligner(BaseAligner):
@@ -91,7 +91,7 @@ class DepthAligner(BaseAligner):
 if __name__ == "__main__":
     well_filter = 1
     window = 72
-    radius = 8600
+    radius = 7000
 
     instance = DepthAligner(well_filter, window, radius)
     print(instance._dataframe)
