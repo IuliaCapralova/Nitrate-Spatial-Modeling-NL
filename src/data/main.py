@@ -17,12 +17,12 @@ def main():
     province = "utrecht"
     n_files = None
     filter = 1
-    year_start = 2000
-    year_end = 2022
+    year_start = 2008
+    year_end = 2023
     years = list(range(2005, 2024))
     # years = [2020]
-    start_date = 20120101
-    end_date = 20201231
+    start_date = "20080101"
+    end_date = "20211231"
     layer_list = [1]
 
     # DATA EXTRACTION
@@ -30,12 +30,12 @@ def main():
     # dataset = Dataset_Nitrate(province=province, max_files=n_files)
 
     # DATA PREPROCESSING
-    # dataset = Nitrate_Preprocess(filter=filter, province=province)
+    # dataset = Nitrate_Preprocess(province=province, well_filter=filter, year_start=year_start, year_end=year_end)
     # dataset = Depth_Preprocess(province=province, well_filter=filter, year_start=year_start, year_end=year_end)
     # dataset = Population_Prepocess(years)
     # dataset = SoilType_Preprocess()
     # dataset = LandUse_Preprocess(years)
-    # dataset = Environmental_Preprocess()
+    # dataset = Environmental_Preprocess(station_id=260, start_date=start_date, end_date=end_date, variables=['TEMP', 'PRCP'])
     # dataset = N_Deposition_Prepocess(years)
     # dataset = Soil_Composition_Prepocess(layer_list)
     dataset = None
@@ -69,7 +69,7 @@ def main():
 
         if variable == "chem" or variable == "depth":
             if type == "clean":
-                folder = "for_Alignment"
+                folder = "for_Alignment"             # "for_EDA"
                 add_filter = f"_{filter}"
             else:
                 folder = ""

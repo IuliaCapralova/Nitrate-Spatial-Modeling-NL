@@ -138,7 +138,7 @@ def main():
                 'acidity_1', 'lon', 'lat'] # 'soil region'        # do not use 'landuse code' (not defined for all years)
     holdout = ['lon', 'lat']
     pollutant = 'nitrate'
-    train_test_ratio = 0.7
+    train_test_ratio = 0.8
     models=["rf", "xgb", "simple_ols"]
     # models=["rf", "xgb"]
     # models = ["rf"]

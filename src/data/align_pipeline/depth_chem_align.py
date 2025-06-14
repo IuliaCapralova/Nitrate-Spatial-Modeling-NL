@@ -2,11 +2,11 @@ import os
 import pandas as pd
 from datetime import timedelta
 from shapely.geometry import Point
-from align_data import BaseAligner
+from .align_data import BaseAligner
 
 
 class DepthAligner(BaseAligner):
-    def __init__(self, well_filter: int, days_window=72, radius=10000) -> None:
+    def __init__(self, well_filter: int, days_window=72, radius=5000) -> None:
         super().__init__(well_filter)
         self.window = days_window
         self.radius = radius
@@ -73,7 +73,7 @@ class DepthAligner(BaseAligner):
 
         return joined
 
-    def find_candidate_wells(self, point: Point, radius: float = 10000):
+    def find_candidate_wells(self, point: Point, radius: float = 5000):
         # Query spatial index for candidate wells within point's bounding box
         possible_idx = list(self.wells_sindex.intersection(point.buffer(radius).bounds))
         if not possible_idx:
@@ -91,7 +91,7 @@ class DepthAligner(BaseAligner):
 if __name__ == "__main__":
     well_filter = 1
     window = 72
-    radius = 7000
+    radius = 5000
 
     instance = DepthAligner(well_filter, window, radius)
     print(instance._dataframe)
