@@ -3,8 +3,8 @@ from .timeseries_preprocess import TimeseriesPreprocess
 
 class Nitrate_Preprocess(TimeseriesPreprocess):
     
-    def __init__(self, filter, province="utrecht", year_start=2012, year_end=2020) -> None:
-        super().__init__(province, filter, year_start, year_end,type_of_data="well_chem_data")
+    def __init__(self, province, well_filter, year_start = 2012, year_end = 2020) -> None:
+        super().__init__(province, well_filter, year_start, year_end,type_of_data="well_chem_data")
 
     def _filter_columns(self):
         columns = ["Well_ID", "BRO-ID", "Filter", "Date", "Nitrate", "geometry"]

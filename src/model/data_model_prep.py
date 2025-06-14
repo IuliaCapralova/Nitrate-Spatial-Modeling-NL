@@ -46,7 +46,8 @@ class DataModelPrep():
         return data_split, preprocessor, coords.loc[data_split.X_test.index].reset_index(drop=True)
 
     def _filter_soil(self):
-        self._data = self._data[self._data["soil region"] != "veen"].copy()
+        # self._data = self._data[self._data["soil region"] != "veen"].copy()
+        pass
 
     def _select_columns(self, features, target):
         required = set(features + [target, 'date'])

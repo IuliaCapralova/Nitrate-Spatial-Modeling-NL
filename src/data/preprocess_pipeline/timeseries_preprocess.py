@@ -35,7 +35,7 @@ class TimeseriesPreprocess(Dataset_Preprocess):
 
     def _df_selection(self):
         self._filter_columns()
-        self._time_standardization() # brind time to the same format - 'coerce'
+        self._time_standardization() # bring time to the same format - 'coerce'
         self._filter_and_year_selection() # select year 2000 onwards, select filters 1, 2, or 3 (user's choice)
         self._drop_dupes() # remove duplicates
         self._handle_missing_values()
