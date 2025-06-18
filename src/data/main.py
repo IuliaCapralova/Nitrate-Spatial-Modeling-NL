@@ -17,12 +17,12 @@ def main():
     province = "utrecht"
     n_files = None
     filter = 1
-    year_start = 2008
+    year_start = 2005
     year_end = 2023
-    years = list(range(2005, 2024))
+    years = [2008]
     # years = [2020]
     start_date = "20080101"
-    end_date = "20211231"
+    end_date = "20231231"
     layer_list = [1]
 
     # DATA EXTRACTION
@@ -69,7 +69,7 @@ def main():
 
         if variable == "chem" or variable == "depth":
             if type == "clean":
-                folder = "for_Alignment"             # "for_EDA"
+                folder = "for_Alignment"             # "for_Alignment"
                 add_filter = f"_{filter}"
             else:
                 folder = ""
@@ -121,9 +121,14 @@ def main():
                              'temperature', 'elevation', 'lon', 'lat', 'n deposition', \
                              'mainsoilclassification_1', 'organicmattercontent_1', \
                              'density_1', 'acidity_1']
+    connect_to = "nitrate_data"
+    years = [2010]
 
-    merged_dataset = MergedDatasetBuilder(variables_of_interest, filter)
-    path = f"data//aligned/merged_dataset_{filter}.csv"
+    merged_dataset = MergedDatasetBuilder(variables_of_interest, filter, connect_to, years)
+    if connect_to == "grid_data":
+        path = f"data/aligned/grid_{years[0]}.csv"
+    elif connect_to == "nitrate_data":
+        path = f"data/aligned/merged_dataset_{filter}.csv"
 
 
     ############## SAVER ###############

@@ -7,12 +7,19 @@ from abc import ABC, abstractmethod
 
 
 class BaseAligner(ABC):
-    def __init__(self, well_filter=1) -> None:
+    def __init__(self, well_filter=1, connect_to='nitrate_data', years=[2010]) -> None:
         self.current_dir = os.getcwd()
+        self.connect_to = connect_to
 
-        nitrate_dir = os.path.join(self.current_dir, 'data/clean', "well_chem_data", "for_Alignment", f"utrecht_well_chem_combined_{well_filter}.csv")
-        nitrate_df = pd.read_csv(nitrate_dir, parse_dates=['date'])
-        self.nitrate_gdf = self._to_gdf(nitrate_df)
+        if self.connect_to == 'nitrate_data':
+            nitrate_dir = os.path.join(self.current_dir, 'data/clean', "well_chem_data", "for_Alignment", f"utrecht_well_chem_combined_{well_filter}.csv")
+            nitrate_df = pd.read_csv(nitrate_dir, parse_dates=['date'])
+            self.nitrate_gdf = self._to_gdf(nitrate_df)
+        elif self.connect_to == 'grid_data':
+            year = years[0]
+            nitrate_dir = os.path.join(self.current_dir, 'data/grids_for_prediction', f"grid_{year}.csv")
+            nitrate_df = pd.read_csv(nitrate_dir, parse_dates=['date'])
+            self.nitrate_gdf = self._to_gdf(nitrate_df)
 
         self._dataframe = None
     

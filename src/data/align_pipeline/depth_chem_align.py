@@ -68,8 +68,12 @@ class DepthAligner(BaseAligner):
         df_results = pd.DataFrame(results)
 
         # TODO do a separte function
-        joined = self.nitrate_gdf.merge(df_results, left_index=True, right_on='nitrate_index')
-        joined = joined[['Well_ID', 'bro-id', 'Filter', 'date', 'nitrate', 'geometry', 'distance_m', 'groundwater depth']]
+        if self.connect_to == "nitrate_data":
+            joined = self.nitrate_gdf.merge(df_results, left_index=True, right_on='nitrate_index')
+            joined = joined[['Well_ID', 'bro-id', 'Filter', 'date', 'nitrate', 'geometry', 'distance_m', 'groundwater depth']]
+        elif self.connect_to == "grid_data":
+            joined = self.nitrate_gdf.merge(df_results, left_index=True, right_on='nitrate_index')
+            joined = joined[['date', 'geometry', 'distance_m', 'groundwater depth']]
 
         return joined
 

@@ -44,15 +44,23 @@ class EnvironmentalAligner(BaseAligner):
                     else:
                         avg_temp, avg_precip = np.nan, np.nan
 
-            aligned_data.append({
-                "Well_ID": row["Well_ID"],
-                "BRO-ID": row["bro-id"],
-                "date": row["date"],
-                "Nitrate": row["nitrate"],
-                "geometry": row["geometry"],
-                "temperature": avg_temp,
-                "precipitation": avg_precip,
-            })
+            if self.connect_to == "nitrate_data":
+                aligned_data.append({
+                    "Well_ID": row["Well_ID"],
+                    "BRO-ID": row["bro-id"],
+                    "date": row["date"],
+                    "Nitrate": row["nitrate"],
+                    "geometry": row["geometry"],
+                    "temperature": avg_temp,
+                    "precipitation": avg_precip,
+                })
+            elif self.connect_to == "grid_data":
+                aligned_data.append({
+                    "date": row["date"],
+                    "geometry": row["geometry"],
+                    "temperature": avg_temp,
+                    "precipitation": avg_precip,
+                })
 
         return gpd.GeoDataFrame(aligned_data, geometry="geometry", crs="EPSG:4326")
 

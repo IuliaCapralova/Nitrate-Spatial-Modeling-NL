@@ -14,13 +14,22 @@ from .soil_comp_aligner import Soil_Composition_Aligner
 
 
 class MergedDatasetBuilder:
-    def __init__(self, variables: list[str], well_filter=1):
+    def __init__(self, variables: list[str], well_filter=1, connect_to="grid_data", years=[2021]):
         self.variables = [v.lower() for v in variables]  # make lowercase user's variable selection
         self.well_filter = well_filter
-
         self.current_dir = os.getcwd()
-        nitrate_dir = os.path.join(self.current_dir, 'data/clean', "well_chem_data", "for_Alignment", f"utrecht_well_chem_combined_{well_filter}.csv")
-        self.nitrate_df = pd.read_csv(nitrate_dir, parse_dates=['date'])
+        self.connect_to = connect_to
+        self.years = years
+
+        if self.connect_to == 'nitrate_data':
+            nitrate_dir = os.path.join(self.current_dir, 'data/clean', "well_chem_data", "for_Alignment", f"utrecht_well_chem_combined_{well_filter}.csv")
+            self.nitrate_df = pd.read_csv(nitrate_dir, parse_dates=['date'])
+        elif self.connect_to == 'grid_data':
+            year = self.years[0]
+            nitrate_dir = os.path.join(self.current_dir, 'data/grids_for_prediction', f"grid_{year}.csv")
+            self.nitrate_df = pd.read_csv(nitrate_dir, parse_dates=['date'])
+
+
 
         self.builder_map = {
             SoilTypeAligner: ["soil region"],
@@ -49,7 +58,11 @@ class MergedDatasetBuilder:
         self._merged_dataframes = self._build_and_merge()
 
     def _build_and_merge(self):
-        nitrate_vars = ['nitrate', 'bro-id', 'geometry', 'date']
+        if self.connect_to == 'nitrate_data':
+            nitrate_vars = ['nitrate', 'bro-id', 'geometry', 'date']
+        elif self.connect_to == 'grid_data':
+            nitrate_vars = ['geometry', 'date']
+
         base_columns = [v for v in self.variables if v in nitrate_vars and v in self.nitrate_df.columns]
 
         if base_columns:

@@ -1,4 +1,5 @@
 import os
+import joblib
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -25,7 +26,7 @@ class DataModelPrep():
         self._original_coords = None
         self._holdout_cols = None
 
-    def prepare(self, features: List[str], target: str, holdout_cols: Optional[List[str]]=None, train_test_ratio: float=0.7) -> Tuple[DatasetSplit, ColumnTransformer]:
+    def prepare(self, features: List[str], target: str, holdout_cols: Optional[List[str]]=None, train_years: List[int] = None, test_years: List[int] = None) -> Tuple[DatasetSplit, ColumnTransformer]:
         self._holdout_cols = holdout_cols
 
         # remove rows in "veen" soil region, we do this step regardless of
@@ -36,7 +37,7 @@ class DataModelPrep():
         self._drop_nans()                      # NOTE: should be changed
         self._fix_dtypes()
 
-        data_split = self._split(target, train_test_ratio)
+        data_split = self._split(target, train_years, test_years)
         preprocessor = self._build_column_transformer(data_split.X_train, holdout_cols)
 
         print(f"Train: {len(data_split.X_train)}")
@@ -53,10 +54,16 @@ class DataModelPrep():
         required = set(features + [target, 'date'])
         available = set(self._data.columns)
         selected = list(required & available)
+        
+        # print(f"required: {required}")
+        # print(f"available: {available}")
+        # print(f"selected: {selected}")
+
         self._data = self._data[selected].copy()
 
     def _sort_and_drop_date(self):
         self._data["date"] = pd.to_datetime(self._data["date"])
+        self._data["year"] = self._data["date"].dt.year
         self._data.sort_values("date", inplace=True)
         self._data.reset_index(drop=True, inplace=True)
         self._data.drop(columns="date", inplace=True)
@@ -70,16 +77,13 @@ class DataModelPrep():
         if 'landuse code' in self._data.columns:
             self._data['landuse code'] = self._data['landuse code'].astype('category')
 
-    def _split(self, target, train_test_ration):
+    def _split(self, target, train_years, test_years):
         self._original_coords = self._data[["lon", "lat"]].copy()
 
-        n = len(self._data)
-        split_idx = int(n * train_test_ration)
+        train_df = self._data[self._data["year"].isin(train_years)].copy()
+        test_df = self._data[self._data["year"].isin(test_years)].copy()
 
-        train_df = self._data.iloc[:split_idx]
-        test_df = self._data.iloc[split_idx:]
-
-        drop_cols = [target] + self._holdout_cols
+        drop_cols = [target] + self._holdout_cols + ["year"]
 
         X_train = train_df.drop(columns=drop_cols).copy()
         y_train = train_df[target]
@@ -102,7 +106,17 @@ class DataModelPrep():
             ("num_scaler", StandardScaler(), numerical)
         ], remainder="passthrough")
 
+        self._save_preprocessor(preprocessor)
+
         return preprocessor
+    
+    def _save_preprocessor(self, preprocessor):
+        current_dir = os.getcwd()
+        model_dir = os.path.join(current_dir, "trained_models")
+        save_path = os.path.join(model_dir, f"preprocessor.pkl")
+
+        # save
+        joblib.dump(preprocessor, save_path)
 
 
 if __name__ == "__main__":
