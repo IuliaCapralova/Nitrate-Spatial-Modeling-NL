@@ -38,7 +38,7 @@ class Simple_OLS(ModelBase):
 
             print(f"Length of subset before cv: {len(X_subset)}")
 
-            tscv = TimeSeriesSplit(n_splits=2, test_size=5)
+            tscv = TimeSeriesSplit(n_splits=2)
             fold_train_scores = []
             fold_val_scores = []
 
@@ -101,7 +101,8 @@ class Simple_OLS(ModelBase):
         self._model = model
 
         self.model_name = type(self._model).__name__
-        print(f"{self.model_name} was trained.")
+        self._save_model()
+        print(f"{self.model_name} was trained and saved.")
 
     def get_summary(self):
         print(self._model.summary)
@@ -111,8 +112,8 @@ class Simple_OLS(ModelBase):
         
         beta = self._model.betas.flatten()
         X_test_with_const = np.hstack([np.ones((X_test.shape[0], 1)), X_test])
-        y_pred = X_test_with_const @ beta
-        y_pred = np.expm1(y_pred)
+        y_pred = np.expm1(X_test_with_const @ beta)
+        y_pred = np.clip(y_pred, 0, None)
 
         print(f"Inspect performance:")
         print("Test R2:", r2_score(y_test, y_pred))

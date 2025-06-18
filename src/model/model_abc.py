@@ -1,8 +1,10 @@
+import os
 import numpy as np
 from abc import ABC, abstractmethod
 import matplotlib.pyplot as plt
 from numpy import sqrt
 from sklearn.base import clone
+import joblib
 from sklearn.model_selection import TimeSeriesSplit
 from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error, make_scorer
 
@@ -27,7 +29,7 @@ class ModelBase(ABC):
             X_subset = X_train.iloc[:split_idx]
             y_subset = y_train.iloc[:split_idx]
 
-            tscv = TimeSeriesSplit(n_splits=7)
+            tscv = TimeSeriesSplit(n_splits=5)
             fold_train_scores = []
             fold_val_scores = []
 
@@ -59,17 +61,26 @@ class ModelBase(ABC):
 
     def train(self, X_train, y_train):
         self._model.fit(X_train, y_train)
-
-        print(f"{self.model_name} was trained.")
+        self._save_model()
+        print(f"{self.model_name} was trained and saved.")
 
     def predict_pollutant(self, X_test, y_test):
         y_pred = self._model.predict(X_test)
+        y_pred = np.maximum(y_pred, 0)
 
         print(f"Inspect performance on Test set:")
         print("Test R2:", r2_score(y_test, y_pred))
         print("Test MAE:", mean_absolute_error(y_test, y_pred))
         print("Test RMSE:", sqrt(mean_squared_error(y_test, y_pred)))
         return y_pred
+    
+    def _save_model(self):
+        current_dir = os.getcwd()
+        model_dir = os.path.join(current_dir, "trained_models")
+        save_path = os.path.join(model_dir, f"{self.model_name}_trained.pkl")
+
+        # save
+        joblib.dump(self._model, save_path)
 
     def get_history(self):
         pass
