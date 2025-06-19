@@ -2,13 +2,17 @@ import os
 import requests
 import time
 import pandas as pd
-from .align_data import BaseAligner
+
+try:
+    from .align_data import BaseAligner
+except:
+    from align_data import BaseAligner
 
 
 class ElevationAligner(BaseAligner):
-    def __init__(self, well_filter=1, api_key="AIzaSyBcDtNXhWW-NmOu3CYxs06-AqwfxhLS_OY"):
+    def __init__(self, provinces, well_filter, connect_to, years, api_key="AIzaSyBcDtNXhWW-NmOu3CYxs06-AqwfxhLS_OY"):
         self.api_key = api_key or os.getenv("GOOGLE_API_KEY")  # allow API key as arg or env var
-        super().__init__(well_filter)
+        super().__init__(provinces, well_filter, connect_to, years=[2010])
         self._dataframe = self._align()
 
     def _get_google_elevation(self, lat, lon):
@@ -45,7 +49,13 @@ class ElevationAligner(BaseAligner):
 
 
 if __name__ == "__main__":
+    provinces = ["utrecht"]
+    well_filter = 1
+    connect_to = "nitrate_data"
+    years = [2010]
     name = ["elevation", "lon", "lat"]
-    instance = ElevationAligner(well_filter=1, api_key="AIzaSyBcDtNXhWW-NmOu3CYxs06-AqwfxhLS_OY")
-    print(instance._dataframe)
+    api_key="AIzaSyBcDtNXhWW-NmOu3CYxs06-AqwfxhLS_OY"
+
+    instance = ElevationAligner(provinces, well_filter, connect_to, years, api_key)
+    print(instance.dataframe)
     # print(instance.get_variable(name=name))

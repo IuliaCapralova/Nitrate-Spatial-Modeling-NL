@@ -10,14 +10,14 @@ class Population_Prepocess(SpatialData):
     COLUMN_SELECTION = ['aantal_inwoners', 'geometry']
     AVAILABLE_YEARS = set(range(2000, 2024)) # actually till 2023
 
-    def __init__(self, years:list[int]):
+    def __init__(self, years:list[int], provinces: list[str]):
         invalid_years = [year for year in years if year not in self.AVAILABLE_YEARS]
         if invalid_years:
             raise ValueError(
                 f"The following year(s) are unavailable: {invalid_years}. "
                 f"Available years are: {sorted(self.AVAILABLE_YEARS)}")
 
-        super().__init__(type_of_data="population_density")
+        super().__init__(provinces, type_of_data="population_density")
         self.year_list = years
         self._dataframe = {}
         self._datasetdir = os.path.join(self._datasetdir, "500m")

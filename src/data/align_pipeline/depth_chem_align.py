@@ -1,23 +1,37 @@
 import os
 import pandas as pd
+import geopandas as gpd
 from datetime import timedelta
 from shapely.geometry import Point
-from .align_data import BaseAligner
+
+try:
+    from .align_data import BaseAligner
+except ImportError:
+    from align_data import BaseAligner
 
 
 class DepthAligner(BaseAligner):
-    def __init__(self, well_filter: int, days_window=72, radius=5000) -> None:
-        super().__init__(well_filter)
+    def __init__(self, provinces, well_filter: int, connect_to, years, days_window=72, radius=5000) -> None:
+        super().__init__(provinces, well_filter, connect_to, years)
         self.window = days_window
         self.radius = radius
 
-        var_dir = os.path.join(self.current_dir, 'data/clean', "well_depth_data", "for_Alignment", f"utrecht_well_depth_combined_{well_filter}.csv")
-        depth_df = pd.read_csv(var_dir, parse_dates=['Date'])
-        self.depth_gdf = self._to_gdf(depth_df)
+        depth_dfs = []
+        for province in provinces:
+            var_dir = os.path.join(self.current_dir, '../data/clean', "well_depth_data", "for_Alignment", f"{province}_well_depth_combined_{well_filter}.csv")
+            if os.path.exists(var_dir):
+                df = pd.read_csv(var_dir, parse_dates=['Date'])
+                gdf = self._to_gdf(df)
+                depth_dfs.append(gdf)
+            else:
+                print(f"Warning: File not found for {province}")
+
+        # bring together data from all needed provinces
+        self.depth_gdf = gpd.GeoDataFrame(pd.concat(depth_dfs, ignore_index=True))
 
         ## distance calculations (Amersfoort RD New)
         self.nitrate_gdf = self.nitrate_gdf.to_crs(epsg=28992)
-        self.depth_gdf  = self.depth_gdf.to_crs(epsg=28992)
+        self.depth_gdf = self.depth_gdf.to_crs(epsg=28992)
 
         # unique wells from the depth dataset
         self.wells_gdf = self.depth_gdf[['Well_ID', 'geometry']].drop_duplicates().set_index('Well_ID')
@@ -95,9 +109,12 @@ class DepthAligner(BaseAligner):
 if __name__ == "__main__":
     well_filter = 1
     window = 72
-    radius = 5000
+    radius = 6000
+    connect_to = "nitrate_data"
+    provinces = ["utrecht", "flevoland"]
+    years = [2010]
 
-    instance = DepthAligner(well_filter, window, radius)
-    print(instance._dataframe)
+    instance = DepthAligner(provinces, well_filter, connect_to, years, window, radius)
+    print(instance.dataframe)
     instance._dataframe.to_csv("depth_temp.csv")
     # print(instance.get_variable("groundwater depth"))

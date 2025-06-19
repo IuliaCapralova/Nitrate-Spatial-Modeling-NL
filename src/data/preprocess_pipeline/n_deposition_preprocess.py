@@ -12,14 +12,14 @@ class N_Deposition_Prepocess(SpatialData):
     MOLAR_MASS_N = pt.elements.symbol('N').mass
     GRAMS_TO_KILOGRAMS = 1000
 
-    def __init__(self, years:list[int]):
+    def __init__(self, years:list[int], provinces):
         invalid_years = [year for year in years if year not in self.AVAILABLE_YEARS]
         if invalid_years:
             raise ValueError(
                 f"The following year(s) are unavailable: {invalid_years}. "
                 f"Available years are: {sorted(self.AVAILABLE_YEARS)}")
 
-        super().__init__(type_of_data="n_deposition")
+        super().__init__(provinces, type_of_data="n_deposition")
         self.year_list = years
         self._dataframe = {}
         self._datapaths = self._paths_finder()

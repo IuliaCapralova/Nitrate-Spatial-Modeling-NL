@@ -8,32 +8,39 @@ from .statline_aligner import StatLineAligner
 from .soil_type_align import SoilTypeAligner
 from .depth_chem_align import DepthAligner
 from .elevation_align import ElevationAligner
-from .environment_chem_align import EnvironmentalAligner
+# from .environment_chem_align import EnvironmentalAligner
+from align_pipeline.environment_chem_align import EnvironmentalAligner
 from .n_deposition_align import NDepositionAligner
 from .soil_comp_aligner import Soil_Composition_Aligner
 
 
 class MergedDatasetBuilder:
-    def __init__(self, variables: list[str], well_filter=1, connect_to="grid_data", years=[2021]):
+    def __init__(self, variables: list[str], provinces, well_filter, connect_to, years):
         self.variables = [v.lower() for v in variables]  # make lowercase user's variable selection
+        self.provinces = provinces
         self.well_filter = well_filter
-        self.current_dir = os.getcwd()
         self.connect_to = connect_to
         self.years = years
 
+        self.current_dir = os.getcwd()
+
         if self.connect_to == 'nitrate_data':
-            nitrate_dir = os.path.join(self.current_dir, 'data/clean', "well_chem_data", "for_Alignment", f"utrecht_well_chem_combined_{well_filter}.csv")
-            self.nitrate_df = pd.read_csv(nitrate_dir, parse_dates=['date'])
+            # combine nitrate data from all needed provinces
+            all_dfs = []
+            for province in provinces:
+                nitrate_dir = os.path.join(self.current_dir, '../data/clean', "well_chem_data", "for_Alignment", f"{province}_well_chem_combined_{well_filter}.csv")
+                if os.path.exists(nitrate_dir):
+                    df = pd.read_csv(nitrate_dir, parse_dates=['date'])
+                    all_dfs.append(df)
+                self.nitrate_df = pd.concat(all_dfs, ignore_index=True)
+
         elif self.connect_to == 'grid_data':
             year = self.years[0]
-            nitrate_dir = os.path.join(self.current_dir, 'data/grids_for_prediction', f"grid_{year}.csv")
+            nitrate_dir = os.path.join(self.current_dir, '../data/grids_for_prediction', f"grid_{year}.csv")
             self.nitrate_df = pd.read_csv(nitrate_dir, parse_dates=['date'])
-
-
 
         self.builder_map = {
             SoilTypeAligner: ["soil region"],
-            LanduseAligner: ["landuse code"],
             PopulationAlignment: ["population"],
             DepthAligner: ["groundwater depth"],
             FertilizerAnigner: ["fertilizer"],
@@ -52,7 +59,8 @@ class MergedDatasetBuilder:
                                 'loamcontent', 'minimumloamcontent', 'maximumloamcontent',
                                 'lutitecontent', 'minimumlutitecontent', 'maximumlutitecontent',
                                 'sandmedian', 'minimumsandmedian', 'maximumsandmedian', 'siltcontent',
-                                'density', 'soilunit_code', 'mainsoilclassification']
+                                'density', 'soilunit_code', 'mainsoilclassification'],
+            LanduseAligner: ["landuse code"],
         }
 
         self._merged_dataframes = self._build_and_merge()
@@ -78,7 +86,7 @@ class MergedDatasetBuilder:
                 continue
 
             print(f"Initializing {cls.__name__} for {selected_vars}")
-            instance = cls(self.well_filter)
+            instance = cls(self.provinces, self.well_filter, self.connect_to, self.years)
 
             for var in selected_vars:
                 if not hasattr(instance, "get_variable"):
@@ -114,8 +122,10 @@ if __name__ == "__main__":
 
     variables_of_interest = ['bro-id', 'nitrate', 'geometry', 'date', 'mainsoilclassification_1', 'organicmattercontent_1', 'density_1']
 
+    provinces = ["utrecht"]
+
     well_filter = 1
     
-    merged_dataset = MergedDatasetBuilder(variables_of_interest, well_filter)
+    merged_dataset = MergedDatasetBuilder(variables_of_interest, provinces, well_filter)
     print(merged_dataset.merged_dataframes)
     # merged_dataset.merged_dataframes.to_csv("merged_temp.csv")

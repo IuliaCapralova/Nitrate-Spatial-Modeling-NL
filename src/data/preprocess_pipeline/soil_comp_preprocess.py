@@ -17,8 +17,8 @@ class Soil_Composition_Prepocess(SpatialData):
     ]
     COLUMN_SELECTION = ["maparea_collection", "beginlifespan", "endlifespan", "staringseriesblock", "inspireid", "validfrom", "beginlifespanversion", "soilunit_sequencenumber", "soilclassification", "url"]
 
-    def __init__(self, layer_list):
-        super().__init__(type_of_data="soil_composition")
+    def __init__(self, layer_list, provinces):
+        super().__init__(provinces, type_of_data="soil_composition")
         self.layer_list = layer_list
         self._dataframe = {}
         self._datapaths = self._paths_finder()

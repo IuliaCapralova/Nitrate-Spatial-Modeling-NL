@@ -2,14 +2,18 @@ import os
 import fiona
 import re
 import geopandas as gpd
-from .align_data import BaseAligner
+
+try:
+    from .align_data import BaseAligner
+except ImportError:
+    from align_data import BaseAligner
 
 
 class Soil_Composition_Aligner(BaseAligner):
-    def __init__(self, well_filter=1, layer_list=[1]):
-        super().__init__(well_filter)
+    def __init__(self, provinces, well_filter, connect_to, years, layer_list=[1]):
+        super().__init__(provinces, well_filter, connect_to, years)
         self.layer_list = layer_list   # user's layer selection
-        self._datasetdir = os.path.join(self.current_dir, "data", "clean", "soil_composition")
+        self._datasetdir = os.path.join(self.current_dir, "../data", "clean", "soil_composition")
         self._file_paths = self._path_finder()
         self._dataframe = self._align()
 
@@ -71,7 +75,12 @@ if __name__ == "__main__":
     layer_list = [1]
     well_filter = 1
     var_list = ["soilunit_code_1", "organicmattercontent_1", "density_1", "mainsoilclassification_1"]
-    instance = Soil_Composition_Aligner(well_filter, layer_list)
-    print(instance._dataframe)
+    provinces = ["utrecht"]
+    connect_to = 'nitrate_data'
+    years = [2010]
+
+    instance = Soil_Composition_Aligner(provinces, well_filter, connect_to, years, layer_list)
+
+    print(instance.dataframe)
     # print(type(instance.get_variable(name=var_list)))
     # instance._dataframe.to_csv("temp.csv")

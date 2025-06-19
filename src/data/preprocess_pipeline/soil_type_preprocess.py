@@ -6,8 +6,8 @@ from .spatial_data import SpatialData
 class SoilType_Preprocess(SpatialData):
     COLUMN_SELECTION = ['HGRnaam', 'geometry']
 
-    def __init__(self):
-        super().__init__(type_of_data="type_of_soil")
+    def __init__(self, provinces):
+        super().__init__(provinces, type_of_data="type_of_soil")
         self._dataframe = {}
         self._datapaths = self._paths_finder()
         self._populate_dataframe()

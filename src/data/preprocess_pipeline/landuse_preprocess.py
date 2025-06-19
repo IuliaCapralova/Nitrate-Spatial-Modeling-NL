@@ -14,7 +14,7 @@ from .spatial_data import SpatialData
 class LandUse_Preprocess(SpatialData):
     AVAILABLE_YEARS = {2003, 2004, 2007, 2008, 2012, 2018, 2019, 2020, 2021, 2022, 2023}
 
-    def __init__(self, years: list[int]):
+    def __init__(self, years: list[int], provinces: list[str]):
         # year alias pairs (these refer to the same file)
         duplicate_pairs = [(2003, 2004), (2007, 2008)]
 
@@ -31,7 +31,7 @@ class LandUse_Preprocess(SpatialData):
                 f"The following year(s) are unavailable: {invalid_years}. "
                 f"Available years are: {sorted(self.AVAILABLE_YEARS)}")
 
-        super().__init__(type_of_data="land_use")
+        super().__init__(provinces, type_of_data="land_use")
         self.year_list = cleaned_years
         self._dataframe = {}
         self._datasetdir = os.path.join(self._datasetdir)

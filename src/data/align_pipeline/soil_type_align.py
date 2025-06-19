@@ -1,13 +1,17 @@
 import os
 import fiona
 import geopandas as gpd
-from .align_data import BaseAligner
+
+try:
+    from .align_data import BaseAligner
+except ImportError:
+    from align_data import BaseAligner
 
 
 class SoilTypeAligner(BaseAligner):
-    def __init__(self, well_filter: int) -> None:
-        super().__init__(well_filter)
-        soil_type_path = os.path.join(self.current_dir, "data", "clean", "type_of_soil", "LMM14_HGR_processed.gpkg")
+    def __init__(self, provinces, well_filter: int, connect_to, years) -> None:
+        super().__init__(provinces, well_filter)
+        soil_type_path = os.path.join(self.current_dir, "../data", "clean", "type_of_soil", "LMM14_HGR_processed.gpkg")
         layers = fiona.listlayers(soil_type_path)
         self.soil_type_df = gpd.read_file(soil_type_path, layer=layers[0])
 
@@ -27,6 +31,11 @@ class SoilTypeAligner(BaseAligner):
 
 
 if __name__ == "__main__":
-    instance = SoilTypeAligner(well_filter=1)
-    print(instance._dataframe)
+    provinces = ["utrecht"]
+    well_filter = 1
+    connect_to = "nitrate_data"
+    years = [2010]
+
+    instance = SoilTypeAligner(provinces, well_filter=1, connect_to=connect_to, years=years)
+    print(instance.dataframe)
     # print(instance.get_variable(name="soil region"))

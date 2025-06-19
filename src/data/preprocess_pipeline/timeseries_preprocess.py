@@ -4,16 +4,19 @@ import geopandas as gpd
 from shapely import wkt
 from typing import Union, List
 from abc import abstractmethod
-from .dataset import Dataset_Preprocess
+
+try:
+    from .dataset import Dataset_Preprocess
+except ImportError:
+    from dataset import Dataset_Preprocess
 
 
 class TimeseriesPreprocess(Dataset_Preprocess):
     
-    def __init__(self, province, well_filter, year_start, year_end, type_of_data) -> None:
-        super().__init__(type_of_data)
+    def __init__(self, provinces:list[str], well_filter, year_start, year_end, type_of_data) -> None:
+        super().__init__(provinces, type_of_data)
         self.year_start = year_start
         self.year_end = year_end
-        self.province = province
 
         if well_filter not in [1,2,3]:
             print("We are interested only in filter 1, 2, and 3.")
@@ -27,11 +30,14 @@ class TimeseriesPreprocess(Dataset_Preprocess):
         else:
             raise ValueError(f"Unknown type_of_data: {type_of_data}")
 
-        self._file_path = os.path.join(self._datasetdir, f"{self.province}_well_{variable}_combined.csv")
-        file = pd.read_csv(self._file_path)
-        self._dataframe = file
-
-        self._df_selection()
+        self._dataframe = {}
+        for province in self._provinces:
+            self._file_path = os.path.join(self._datasetdir, f"{province}_well_{variable}_combined.csv")
+            file = pd.read_csv(self._file_path)
+            self._data = file
+            self._df_selection()
+            name = f"{province}_well_{variable}_combined_{self.filter}"
+            self._dataframe[name] = self._data
 
     def _df_selection(self):
         self._filter_columns()
@@ -45,26 +51,26 @@ class TimeseriesPreprocess(Dataset_Preprocess):
         self._rename_cols()
 
     def _time_standardization(self):
-        self._dataframe['Date'] = pd.to_datetime(self._dataframe['Date'], errors='coerce', utc=True)
-        self._dataframe = self._dataframe.sort_values(by=['Well_ID', 'Date']).reset_index(drop=True)
+        self._data['Date'] = pd.to_datetime(self._data['Date'], errors='coerce', utc=True)
+        self._data = self._data.sort_values(by=['Well_ID', 'Date']).reset_index(drop=True)
     
     def _filter_and_year_selection(self):
-        self._dataframe['Year'] = self._dataframe['Date'].dt.year
-        self._dataframe = self._dataframe[
-            (self._dataframe['Year'] >= self.year_start) &
-            (self._dataframe['Year'] <= self.year_end) &
-            (self._dataframe['Filter'] == self.filter)
+        self._data['Year'] = self._data['Date'].dt.year
+        self._data = self._data[
+            (self._data['Year'] >= self.year_start) &
+            (self._data['Year'] <= self.year_end) &
+            (self._data['Filter'] == self.filter)
         ]
 
     def _well_selection(self):
         pass
 
     def _to_gdf(self):
-        self._dataframe['geometry'] = self._dataframe['geometry'].apply(wkt.loads)
-        self._dataframe = gpd.GeoDataFrame(self._dataframe, geometry='geometry', crs="EPSG:4326")
+        self._data['geometry'] = self._data['geometry'].apply(wkt.loads)
+        self._data = gpd.GeoDataFrame(self._data, geometry='geometry', crs="EPSG:4326")
 
     def _drop_dupes(self):
-        self._dataframe = self._dataframe.drop_duplicates().reset_index(drop=True)
+        self._data = self._data.drop_duplicates().reset_index(drop=True)
 
     def _date_round(self):
         pass
@@ -79,7 +85,12 @@ class TimeseriesPreprocess(Dataset_Preprocess):
         pass
 
     def get_variable(self, name: Union[str, List[str]]):
-        return self._dataframe[name]
+        return self._data[name]
+    
+    @property
+    def dataframe(self):
+        """Getter for the processed dataframes dictionary."""
+        return self._dataframe
 
     @abstractmethod
     def _filter_columns(self):

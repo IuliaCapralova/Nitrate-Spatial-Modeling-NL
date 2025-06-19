@@ -1,12 +1,16 @@
 import os
 import re
 import geopandas as gpd
-from .align_data import BaseAligner
+
+try:
+    from .align_data import BaseAligner
+except ImportError:
+    from align_data import BaseAligner
 
 
 class SpatialTimeseriesBaseAligner(BaseAligner):
-    def __init__(self, well_filter=1):
-        super().__init__(well_filter)
+    def __init__(self, provinces:list[str], well_filter=1, connect_to='nitrate_data', years=[2010]):
+        super().__init__(provinces, well_filter, connect_to, years)
 
     def _extract_years_from_filenames(self, path):
         """Get all available land use years from filenames."""
