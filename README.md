@@ -28,6 +28,8 @@ The data used in this project includes several types of environmental informatio
 ```
 
 
-To run the notebooks, you’ll need the following Python packages:
+All package dependencies can be found in the requirements.txt file
 
-pip install geopandas rioxarray rasterio contextily osmnx fiona shapely xarray seaborn datashader rasterstats
+To run code regarding data please ensure you are in src folder, then run the following:
+
+python data/main.py
