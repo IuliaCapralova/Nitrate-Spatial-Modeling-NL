@@ -30,6 +30,6 @@ The data used in this project includes several types of environmental informatio
 
 All package dependencies can be found in the requirements.txt file
 
-To run code regarding data please ensure you are in src folder, then run the following:
+To run code regarding data, please ensure you are in src folder, then run the following:
 
 python data/main.py
