@@ -76,7 +76,7 @@ class ModelBase(ABC):
     
     def _save_model(self):
         current_dir = os.getcwd()
-        model_dir = os.path.join(current_dir, "trained_models")
+        model_dir = os.path.join(current_dir, "../trained_models")
         save_path = os.path.join(model_dir, f"{self.model_name}_trained.pkl")
 
         # save

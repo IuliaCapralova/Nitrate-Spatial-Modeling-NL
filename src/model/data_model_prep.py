@@ -21,7 +21,7 @@ class DatasetSplit:
 class DataModelPrep():
     def __init__(self, file_name):
         curr_dir = os.getcwd()
-        dataset_path = f"data/aligned/{file_name}"
+        dataset_path = f"../data/aligned/{file_name}"
         self._data = pd.read_csv(dataset_path)
         self._original_coords = None
         self._holdout_cols = None
@@ -112,7 +112,7 @@ class DataModelPrep():
     
     def _save_preprocessor(self, preprocessor):
         current_dir = os.getcwd()
-        model_dir = os.path.join(current_dir, "trained_models")
+        model_dir = os.path.join(current_dir, "../trained_models")
         save_path = os.path.join(model_dir, f"preprocessor.pkl")
 
         # save
