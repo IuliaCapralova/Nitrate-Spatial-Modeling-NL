@@ -22,7 +22,7 @@ class RFmodel(ModelBase):
     def _create_model(self, preprocessor, grid_search, X_train, y_train, n_estimators, max_depth, min_samples_split, min_samples_leaf, max_features):
         # Find hyperparameters using grid search
         if grid_search:
-            rf_model = RandomForestRegressor(random_state=4, oob_score=False)
+            rf_model = RandomForestRegressor(random_state=42, oob_score=False)
 
             pipe = Pipeline([
                 ("prep", preprocessor),

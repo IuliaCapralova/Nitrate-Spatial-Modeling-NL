@@ -178,17 +178,18 @@ def plot_spatial_predictions(coords, y_true, y_pred, title="Nitrate Map"):
 
 
 def main():
-    features = ['population', 'groundwater depth', 'elevation', 'soil region',
+    features = ['population', 'groundwater depth', 'elevation', 'landuse code',
                 'precipitation', 'temperature', 'n deposition',
                 'mainsoilclassification_1', 'organicmattercontent_1', 'density_1',
                 'acidity_1', 'lon', 'lat'] # 'soil region', 'landuse code'
     holdout = ['lon', 'lat']
     pollutant = 'nitrate'
     train_years = list(range(2008, 2021))
-    test_years = [2021]
+    test_years = [2021, 2022, 2023]
 
     # Choose model:
     models=["rf", "xgb", "lr"]
+    # models=["lr"]
 
     # Prepare data:
     dataset_bundle = prepare_data(pollutant, features, holdout, train_years, test_years)

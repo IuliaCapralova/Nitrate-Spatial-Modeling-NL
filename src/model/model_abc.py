@@ -21,7 +21,7 @@ class ModelBase(ABC):
         train_errors = []
         val_errors = []
 
-        train_sizes = np.linspace(0.1, 1.0, 10)
+        train_sizes = np.linspace(0.3, 1.0, 10)
 
         for frac in train_sizes:
             split_idx = int(n * frac)

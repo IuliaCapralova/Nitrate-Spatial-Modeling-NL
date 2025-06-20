@@ -31,11 +31,22 @@ class DataModelPrep():
 
         # remove rows in "veen" soil region, we do this step regardless of
         # wether it is included or not in "selected_features"
-        self._filter_soil()
+        # self._filter_soil()
+        print(len(self._data))
         self._select_columns(features, target)
+        print(len(self._data))
+
         self._sort_and_drop_date()
+        print(len(self._data))
+
         self._drop_nans()                      # NOTE: should be changed
+        print(len(self._data))
+
+        self._remove_outliers(target_col=target, top_n=10)
+        print(len(self._data))
+
         self._fix_dtypes()
+        print(len(self._data))
 
         data_split = self._split(target, train_years, test_years)
         preprocessor = self._build_column_transformer(data_split.X_train, holdout_cols)
@@ -69,7 +80,17 @@ class DataModelPrep():
         self._data.drop(columns="date", inplace=True)
 
     def _drop_nans(self):
-        self._data.dropna(inplace=True)
+        # self._data.dropna(inplace=True)
+        self._data = self._data.dropna()
+
+    def _remove_outliers(self, *, target_col: str, top_n: int = 10):
+        df = self._data
+
+        top_nitrate_outliers = list(df[target_col].sort_values()[-10:].index)
+        df = df.drop(top_nitrate_outliers)
+        print(f"len(df): {len(df)}")
+
+        self._data = df
     
     def _fix_dtypes(self):
         for col in self._data.select_dtypes(include='object').columns:
