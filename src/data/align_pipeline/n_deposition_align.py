@@ -21,4 +21,5 @@ if __name__ == "__main__":
 
     instance = NDepositionAligner(provinces, well_filter, connect_to, years)
     print(instance.dataframe)
+    instance.dataframe.to_csv("n_deposition_align.csv", index=False)
     # print(instance.get_variable(name="n deposition"))

@@ -6,9 +6,13 @@ import rioxarray
 from rasterio.features import shapes
 from shapely.geometry import shape
 from shapely.geometry import mapping
-from .spatial_data import SpatialData
+from concurrent.futures import as_completed
+from concurrent.futures import ProcessPoolExecutor
 
-## !!! TODO: safe as tif file
+try:
+    from .spatial_data import SpatialData
+except ImportError:
+    from spatial_data import SpatialData
 
 
 class LandUse_Preprocess(SpatialData):
@@ -40,33 +44,33 @@ class LandUse_Preprocess(SpatialData):
 
     # --------- preprocess part -----------
 
-    def _preprocess(self, file_path: str):
-        # for each file apply all preprocessing steps
-        lgn_raw = rioxarray.open_rasterio(file_path, masked=False)
-        cropped_lgn = self._crop_file(lgn_raw)
-        final_gdf = self._to_geo_table(cropped_lgn)
-        return final_gdf
+    # def _preprocess(self, file_path: str):
+    #     # for each file apply all preprocessing steps
+    #     lgn_raw = rioxarray.open_rasterio(file_path, masked=False)
+    #     cropped_lgn = self._crop_file(lgn_raw)
+    #     final_gdf = self._to_geo_table(cropped_lgn)
+    #     return final_gdf
 
-    def _crop_file(self, file):
-        # crops pixel grid based on vector boundary
-        mask_proj = self._utrecht_mask.to_crs(file.rio.crs)  # match CRS to raster
-        aoi_geom = [mapping(mask_proj.iloc[0].geometry)]
-        lgn_cropped = file.rio.clip(aoi_geom, mask_proj.crs, drop=True)
-        return lgn_cropped
+    # def _crop_file(self, file):
+    #     # crops pixel grid based on vector boundary
+    #     mask_proj = self._utrecht_mask.to_crs(file.rio.crs)  # match CRS to raster
+    #     aoi_geom = [mapping(mask_proj.iloc[0].geometry)]
+    #     lgn_cropped = file.rio.clip(aoi_geom, mask_proj.crs, drop=True)
+    #     return lgn_cropped
     
-    def _to_geo_table(self, lgn):
-        band_float = lgn[0].values
-        mask = ~np.isnan(band_float) # create mask before converting to int
-        band = band_float.astype("int32")
-        # extract polygons
-        results = (
-            {"geometry": shape(geom), "code": int(value)}
-            for geom, value in shapes(band, mask=mask, transform=lgn.rio.transform())
-        )
-        gdf = gpd.GeoDataFrame.from_records(results)
-        gdf = gdf.set_geometry("geometry")
-        gdf.set_crs(lgn.rio.crs, inplace=True)
-        return gdf
+    # def _to_geo_table(self, lgn):
+    #     band_float = lgn[0].values
+    #     mask = ~np.isnan(band_float) # create mask before converting to int
+    #     band = band_float.astype("int32")
+    #     # extract polygons
+    #     results = (
+    #         {"geometry": shape(geom), "code": int(value)}
+    #         for geom, value in shapes(band, mask=mask, transform=lgn.rio.transform())
+    #     )
+    #     gdf = gpd.GeoDataFrame.from_records(results)
+    #     gdf = gdf.set_geometry("geometry")
+    #     gdf.set_crs(lgn.rio.crs, inplace=True)
+    #     return gdf
 
     # ---------------------------
 
@@ -92,15 +96,69 @@ class LandUse_Preprocess(SpatialData):
 
         return pop_files_paths
         
+    # def _populate_dataframe(self):
+    #     for file_path in self._datapaths:
+    #         final_gdf = self._preprocess(file_path)
+    #         file_name = os.path.splitext(os.path.basename(file_path))[0]  # no extension
+    #         self._dataframe[file_name] = final_gdf
+    #         print(f"Preprocessed file: {file_path}")
+
     def _populate_dataframe(self):
-        for file_path in self._datapaths:
-            final_gdf = self._preprocess(file_path)
-            file_name = os.path.splitext(os.path.basename(file_path))[0]  # no extension
-            self._dataframe[file_name] = final_gdf
-            print(f"Preprocessed file: {file_path}")
+        from shapely.geometry import mapping
+        import os
+
+        utrecht_mask_geom = self._utrecht_mask.iloc[0].geometry
+        utrecht_mask_wkt = utrecht_mask_geom.wkt
+
+        args_list = [(path, utrecht_mask_wkt) for path in self._datapaths]
+        self._dataframe = {}
+
+        with ProcessPoolExecutor(max_workers=6) as executor:
+            futures = [executor.submit(preprocess_landuse_file, path, utrecht_mask_wkt) for path in self._datapaths]
+
+            for future in as_completed(futures):
+                file_name, gdf = future.result()
+                self._dataframe[os.path.splitext(file_name)[0]] = gdf
+                print(f"Preprocessed file: {file_name}")
+
+
+def preprocess_landuse_file(file_path, utrecht_mask_wkt):
+    import rioxarray
+    import numpy as np
+    import geopandas as gpd
+    from rasterio.features import shapes
+    from shapely.geometry import shape
+    from shapely import wkt
+    from shapely.geometry import mapping
+
+    # Reload vector mask from WKT
+    utrecht_mask = gpd.GeoDataFrame(geometry=[wkt.loads(utrecht_mask_wkt)], crs="EPSG:4326")
+
+    # Open raster
+    lgn_raw = rioxarray.open_rasterio(file_path, masked=False)
+
+    # Crop raster
+    mask_proj = utrecht_mask.to_crs(lgn_raw.rio.crs)
+    aoi_geom = [mapping(mask_proj.iloc[0].geometry)]
+    lgn_cropped = lgn_raw.rio.clip(aoi_geom, mask_proj.crs, drop=True)
+
+    # Polygonize
+    band_float = lgn_cropped[0].values
+    mask = ~np.isnan(band_float)
+    band = band_float.astype("int32")
+    results = (
+        {"geometry": shape(geom), "code": int(value)}
+        for geom, value in shapes(band, mask=mask, transform=lgn_cropped.rio.transform())
+    )
+    gdf = gpd.GeoDataFrame.from_records(results)
+    gdf = gdf.set_geometry("geometry")
+    gdf.set_crs(lgn_cropped.rio.crs, inplace=True)
+
+    return os.path.basename(file_path), gdf
 
 
 if __name__ == "__main__":
-    years = [2012]
-    instance = LandUse_Preprocess(years)
-    print(instance._dataframe)
+    years = [2008]
+    provinces = ["utrecht"]
+    instance = LandUse_Preprocess(years, provinces)
+    print(instance.dataframe)

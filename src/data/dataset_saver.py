@@ -22,7 +22,7 @@ class Dataset_Saver():
                 data.to_csv(output_path, index = False)
 
         elif isinstance(dataset, Dataset_BRO):
-            dataset._dataframe.to_csv(file_path, index = False)
+            dataset._dataframe.to_csv(f"{file_path}_combined.csv", index = False)
 
         elif isinstance(dataset, merged_dataset_builder.MergedDatasetBuilder):
             dataset.merged_dataframes.to_csv(file_path, index = False)

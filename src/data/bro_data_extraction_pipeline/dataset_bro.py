@@ -7,11 +7,11 @@ class Dataset_BRO(ABC):
     COLUMNS = []
 
     def __init__(self, province, type_of_data, max_files=None):
-        super().__init__(type_of_data)
+        # super().__init__(type_of_data)
 
         # ---------
         current_dir = os.getcwd()
-        dataset_dir = os.path.join(current_dir, 'data/raw', type_of_data)
+        dataset_dir = os.path.join(current_dir, '../data/raw', type_of_data)
         
         # e.g., chemical analysis from wells
         self.type_of_data = type_of_data

@@ -1,4 +1,5 @@
 import os
+import pandas as pd
 
 try:
     from .align_spatial import SpatialTimeseriesBaseAligner
@@ -21,6 +22,7 @@ if __name__ == "__main__":
 
     instance = LanduseAligner(provinces, well_filter, connect_to, years)
     print(instance.dataframe)
+    instance.dataframe.to_csv("landuse_align.csv", index=False)
     # print(instance.get_variable(name="landuse code"))
     # landuse_counts = gdf['Landuse_Code'].value_counts(dropna=True).sort_index()
     # print(landuse_counts)

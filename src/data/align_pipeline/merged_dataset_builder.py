@@ -60,7 +60,7 @@ class MergedDatasetBuilder:
                                 'lutitecontent', 'minimumlutitecontent', 'maximumlutitecontent',
                                 'sandmedian', 'minimumsandmedian', 'maximumsandmedian', 'siltcontent',
                                 'density', 'soilunit_code', 'mainsoilclassification'],
-            LanduseAligner: ["landuse code"],
+            LanduseAligner: ["landuse code"]
         }
 
         self._merged_dataframes = self._build_and_merge()

@@ -21,4 +21,5 @@ if __name__ == "__main__":
 
     instance = PopulationAlignment(provinces, well_filter, connect_to, years)
     print(instance.dataframe)
+    instance.dataframe.to_csv("population_align.csv", index=False)
     # print(instance.get_variable(name="population"))

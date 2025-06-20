@@ -4,7 +4,11 @@ import pandas as pd
 import geopandas as gpd
 from shapely.geometry import Polygon, MultiPolygon
 from abc import abstractmethod
-from .dataset import Dataset_Preprocess
+
+try:
+    from .dataset import Dataset_Preprocess
+except ImportError:
+    from dataset import Dataset_Preprocess
 
 
 class SpatialData(Dataset_Preprocess):
@@ -87,7 +91,7 @@ class SpatialData(Dataset_Preprocess):
     def _paths_finder(self):
         pass
 
-    @abstractmethod
+    
     def _preprocess(self):
         pass
 
