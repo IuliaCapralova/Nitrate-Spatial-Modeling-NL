@@ -91,7 +91,6 @@ class SpatialData(Dataset_Preprocess):
     def _paths_finder(self):
         pass
 
-    
     def _preprocess(self):
         pass
 

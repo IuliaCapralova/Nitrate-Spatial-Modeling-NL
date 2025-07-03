@@ -40,6 +40,7 @@ class MergedDatasetBuilder:
             self.nitrate_df = pd.read_csv(nitrate_dir, parse_dates=['date'])
 
         self.builder_map = {
+            LanduseAligner: ["landuse code"],
             SoilTypeAligner: ["soil region"],
             PopulationAlignment: ["population"],
             DepthAligner: ["groundwater depth"],
@@ -59,8 +60,7 @@ class MergedDatasetBuilder:
                                 'loamcontent', 'minimumloamcontent', 'maximumloamcontent',
                                 'lutitecontent', 'minimumlutitecontent', 'maximumlutitecontent',
                                 'sandmedian', 'minimumsandmedian', 'maximumsandmedian', 'siltcontent',
-                                'density', 'soilunit_code', 'mainsoilclassification'],
-            LanduseAligner: ["landuse code"]
+                                'density', 'soilunit_code', 'mainsoilclassification']
         }
 
         self._merged_dataframes = self._build_and_merge()

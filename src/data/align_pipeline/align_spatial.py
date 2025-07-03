@@ -108,7 +108,7 @@ class SpatialTimeseriesBaseAligner(BaseAligner):
             file_path = os.path.join(path, file)
             jobs.append((year, nitrate_year_df, file_path, column, predicate, column_map))
 
-        with ProcessPoolExecutor(max_workers=multiprocessing.cpu_count()) as executor:
+        with ProcessPoolExecutor(max_workers=5) as executor:
             results = list(executor.map(run_process_year, jobs))
 
         # Drop None results
