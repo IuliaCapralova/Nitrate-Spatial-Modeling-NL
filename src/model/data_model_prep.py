@@ -6,9 +6,12 @@ import matplotlib.pyplot as plt
 from typing import List, Tuple, Optional
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.compose import ColumnTransformer
-from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import StandardScaler, MinMaxScaler
 from typing import List
 from dataclasses import dataclass
+
+import warnings
+warnings.filterwarnings("ignore", category=UserWarning, module="sklearn")
 
 
 @dataclass
@@ -86,7 +89,7 @@ class DataModelPrep():
     def _remove_outliers(self, *, target_col: str, top_n: int = 10):
         df = self._data
 
-        top_nitrate_outliers = list(df[target_col].sort_values()[-10:].index)
+        top_nitrate_outliers = list(df[target_col].sort_values()[-5:].index)
         df = df.drop(top_nitrate_outliers)
         print(f"len(df): {len(df)}")
 
@@ -124,7 +127,7 @@ class DataModelPrep():
 
         preprocessor = ColumnTransformer([
             ("cat_ohe", OneHotEncoder(handle_unknown="ignore", drop='first', sparse_output=False), categorical),
-            ("num_scaler", StandardScaler(), numerical)
+            ("num_scaler", MinMaxScaler(), numerical)
         ], remainder="passthrough")
 
         self._save_preprocessor(preprocessor)

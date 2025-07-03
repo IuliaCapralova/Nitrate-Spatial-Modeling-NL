@@ -21,7 +21,7 @@ class ModelBase(ABC):
         train_errors = []
         val_errors = []
 
-        train_sizes = np.linspace(0.3, 1.0, 10)
+        train_sizes = np.linspace(0.1, 1.0, 10)
 
         for frac in train_sizes:
             split_idx = int(n * frac)
@@ -43,6 +43,10 @@ class ModelBase(ABC):
 
                 y_tr_pred = curr_model.predict(X_tr)
                 y_val_pred = curr_model.predict(X_val)
+
+                # clip predictions
+                y_tr_pred = np.clip(y_tr_pred, 0, 10)
+                y_val_pred = np.clip(y_val_pred, 0, 10)
                 
                 fold_train_scores.append(mean_absolute_error(y_tr, y_tr_pred))
                 fold_val_scores.append(mean_absolute_error(y_val, y_val_pred))

@@ -8,6 +8,9 @@ from sklearn.model_selection import RandomizedSearchCV, TimeSeriesSplit
 from sklearn.metrics import make_scorer, mean_absolute_error
 from sklearn.compose import TransformedTargetRegressor
 
+import warnings
+warnings.filterwarnings("ignore", category=UserWarning, module="sklearn")
+
 
 class XGBmodel(ModelBase):
     def __init__(self, preprocessor, grid_search=False, X_train=None, y_train=None, n_estimators=50, max_depth=7, learning_rate=0.1, colsample_bytree=0.6):
@@ -61,12 +64,22 @@ class XGBmodel(ModelBase):
         model_name = type(full_pipeline.regressor.named_steps["xgb"]).__name__
         print(f"Searching for good hyperparameters for {model_name}...")
 
+        # param_grid = {
+        #         "regressor__xgb__n_estimators": [30, 50, 100],
+        #         "regressor__xgb__max_depth": [5, 7, 8],
+        #         "regressor__xgb__learning_rate": [0.05, 0.1, 0.15],
+        #         "regressor__xgb__subsample": [0.6, 0.8, 1.0],
+        #         "regressor__xgb__colsample_bytree": [0.3, 0.4, 0.6]
+        #     }
+
         param_grid = {
-                "regressor__xgb__n_estimators": [30, 50, 100],
-                "regressor__xgb__max_depth": [5, 7, 8],
-                "regressor__xgb__learning_rate": [0.05, 0.1, 0.15],
-                "regressor__xgb__subsample": [0.6, 0.8, 1.0],
-                "regressor__xgb__colsample_bytree": [0.3, 0.4, 0.6]
+                "regressor__xgb__n_estimators": [50, 75],
+                "regressor__xgb__max_depth": [3, 4],
+                "regressor__xgb__learning_rate": [ 0.05, 0.1],
+                "regressor__xgb__subsample": [0.4, 0.5, 0.6],
+                "regressor__xgb__colsample_bytree": [0.4, 0.6],
+                "regressor__xgb__reg_alpha": [0.1, 0.5],
+                "regressor__xgb__reg_lambda": [2, 3, 5]
             }
 
         tscv = TimeSeriesSplit(n_splits=cv)

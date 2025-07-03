@@ -10,6 +10,9 @@ from model_abc import ModelBase
 from sklearn.compose import TransformedTargetRegressor
 from sklearn.base import clone
 
+import warnings
+warnings.filterwarnings("ignore", category=UserWarning, module="sklearn")
+
 
 class RFmodel(ModelBase):
     def __init__(self, preprocessor, grid_search=False, X_train=None, y_train=None, n_estimators=200, max_depth=15, min_samples_split=2, min_samples_leaf=1, max_features=0.5):
@@ -90,7 +93,7 @@ class RFmodel(ModelBase):
         model = clone(best_model)
 
         return model
-    
+
     def get_summary(self):
 
         if isinstance(self._model, TransformedTargetRegressor):

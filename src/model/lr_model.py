@@ -11,6 +11,9 @@ from model_abc import ModelBase
 from sklearn.compose import TransformedTargetRegressor
 from sklearn.base import clone
 
+import warnings
+warnings.filterwarnings("ignore", category=UserWarning, module="sklearn")
+
 
 class LRmodel(ModelBase):
     def __init__(self, preprocessor, grid_search=False, X_train=None, y_train=None, alpha=0.01):
@@ -62,7 +65,8 @@ class LRmodel(ModelBase):
         model_name = type(full_pipeline.regressor.named_steps["lr"]).__name__
         print(f"Searching for good hyperparameters for {model_name}...")
 
-        alphas = np.logspace(-4, 4, 50)
+        # alphas = np.logspace(-4, 4, 50)
+        alphas = np.logspace(-3, 1, 10)
         tscv = TimeSeriesSplit(n_splits=5)
         param_grid = {
             "regressor__lr__alpha": alphas
