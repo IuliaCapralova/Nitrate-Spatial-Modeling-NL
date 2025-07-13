@@ -15,17 +15,14 @@ class ElevationAligner(BaseAligner):
         super().__init__(provinces, well_filter, connect_to, years=[2010])
         self._dataframe = self._align()
 
-    def _get_google_elevation(self, lat, lon):
-        url = f"https://maps.googleapis.com/maps/api/elevation/json?locations={lat},{lon}&key={self.api_key}"
+    def _get_open_elevation(self, lat, lon):
+        url = f"https://api.open-elevation.com/api/v1/lookup?locations={lat},{lon}"
         try:
             response = requests.get(url)
             data = response.json()
-            if response.status_code == 200:
-                results = response.json().get("results", [])
-                if results:
-                    return results[0]["elevation"]
-            else:
-                print(f"HTTP Error {response.status_code}: {data}")
+            results = data.get("results", [])
+            if results:
+                return results[0]["elevation"]
         except Exception as e:
             print(f"Error at ({lat}, {lon}): {e}")
         return None
@@ -39,7 +36,7 @@ class ElevationAligner(BaseAligner):
         for lat, lon in zip(gdf["lat"], gdf["lon"]):
             key = (lat, lon)
             if key not in coord_to_elev:
-                coord_to_elev[key] = self._get_google_elevation(lat, lon)
+                coord_to_elev[key] = self._get_open_elevation(lat, lon)
                 time.sleep(0.1)  # avoid quota issues
 
         # Map back to original
@@ -51,11 +48,12 @@ class ElevationAligner(BaseAligner):
 if __name__ == "__main__":
     provinces = ["utrecht"]
     well_filter = 1
-    connect_to = "nitrate_data"
+    connect_to = "grid_data"
     years = [2010]
     name = ["elevation", "lon", "lat"]
-    api_key="AIzaSyBcDtNXhWW-NmOu3CYxs06-AqwfxhLS_OY"
+    # api_key="AIzaSyBcDtNXhWW-NmOu3CYxs06-AqwfxhLS_OY"
 
-    instance = ElevationAligner(provinces, well_filter, connect_to, years, api_key)
+    instance = ElevationAligner(provinces, well_filter, connect_to, years)
     print(instance.dataframe)
+    instance.dataframe.to_csv("elevation_temp_utr_flevo.csv")
     # print(instance.get_variable(name=name))

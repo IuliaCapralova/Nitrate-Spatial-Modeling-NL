@@ -7,7 +7,7 @@ from abc import ABC, abstractmethod
 
 
 class BaseAligner(ABC):
-    def __init__(self, provinces, well_filter=1, connect_to='nitrate_data', years=[2010]) -> None:
+    def __init__(self, provinces, well_filter, connect_to, years) -> None:
         self.current_dir = os.getcwd()
         self.connect_to = connect_to
 
@@ -25,9 +25,17 @@ class BaseAligner(ABC):
             self.nitrate_gdf = self._to_gdf(self.nitrate_gdf)
 
         elif self.connect_to == 'grid_data':
+            all_dfs = []
             year = years[0]
-            nitrate_dir = os.path.join(self.current_dir, 'data/grids_for_prediction', f"grid_{year}.csv")
-            nitrate_df = pd.read_csv(nitrate_dir, parse_dates=['date'])
+            for province in provinces:
+                nitrate_dir = os.path.join(self.current_dir, '../data/grids_for_prediction', f"grid_{year}_{province}.csv")
+                if os.path.exists(nitrate_dir):
+                    df = pd.read_csv(nitrate_dir, parse_dates=['date'])
+                    all_dfs.append(df)
+                else:
+                    print(f"Warning: File not found for {province}")
+
+            nitrate_df = pd.concat(all_dfs, ignore_index=True)
             self.nitrate_gdf = self._to_gdf(nitrate_df)
 
         self._dataframe = None

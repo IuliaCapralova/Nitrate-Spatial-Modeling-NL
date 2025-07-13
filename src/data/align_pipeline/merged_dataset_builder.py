@@ -1,5 +1,7 @@
 import pandas as pd
 import os
+import time
+from datetime import timedelta
 import geopandas as gpd
 from .fertilizer_align import FertilizerAnigner
 from .landuse_align import LanduseAligner
@@ -7,8 +9,7 @@ from .population_align import PopulationAlignment
 from .statline_aligner import StatLineAligner
 from .soil_type_align import SoilTypeAligner
 from .depth_chem_align import DepthAligner
-from .elevation_align import ElevationAligner
-# from .environment_chem_align import EnvironmentalAligner
+from .elevation_align_a import ElevationAligner
 from align_pipeline.environment_chem_align import EnvironmentalAligner
 from .n_deposition_align import NDepositionAligner
 from .soil_comp_aligner import Soil_Composition_Aligner
@@ -28,22 +29,26 @@ class MergedDatasetBuilder:
             # combine nitrate data from all needed provinces
             all_dfs = []
             for province in provinces:
-                nitrate_dir = os.path.join(self.current_dir, '../data/clean', "well_chem_data", "for_Alignment", f"{province}_well_chem_combined_{well_filter}.csv")
-                if os.path.exists(nitrate_dir):
-                    df = pd.read_csv(nitrate_dir, parse_dates=['date'])
+                dir = os.path.join(self.current_dir, '../data/clean', "well_chem_data", "for_Alignment", f"{province}_well_chem_combined_{well_filter}.csv")
+                if os.path.exists(dir):
+                    df = pd.read_csv(dir, parse_dates=['date'])
                     all_dfs.append(df)
-                self.nitrate_df = pd.concat(all_dfs, ignore_index=True)
+                self.df_connect_to = pd.concat(all_dfs, ignore_index=True)
 
         elif self.connect_to == 'grid_data':
+            all_dfs = []
             year = self.years[0]
-            nitrate_dir = os.path.join(self.current_dir, '../data/grids_for_prediction', f"grid_{year}.csv")
-            self.nitrate_df = pd.read_csv(nitrate_dir, parse_dates=['date'])
+            for province in provinces:
+                dir = os.path.join(self.current_dir, '../data/grids_for_prediction', f"grid_{year}_{province}.csv")
+                if os.path.exists(dir):
+                    df = pd.read_csv(dir, parse_dates=['date'])
+                    all_dfs.append(df)
+                self.df_connect_to = pd.concat(all_dfs, ignore_index=True)
 
         self.builder_map = {
             LanduseAligner: ["landuse code"],
             SoilTypeAligner: ["soil region"],
             PopulationAlignment: ["population"],
-            DepthAligner: ["groundwater depth"],
             FertilizerAnigner: ["fertilizer"],
             ElevationAligner: ["elevation", "lon", "lat"],
             EnvironmentalAligner: ["precipitation", "temperature"],
@@ -60,21 +65,25 @@ class MergedDatasetBuilder:
                                 'loamcontent', 'minimumloamcontent', 'maximumloamcontent',
                                 'lutitecontent', 'minimumlutitecontent', 'maximumlutitecontent',
                                 'sandmedian', 'minimumsandmedian', 'maximumsandmedian', 'siltcontent',
-                                'density', 'soilunit_code', 'mainsoilclassification']
+                                'density', 'soilunit_code', 'mainsoilclassification'],
+            DepthAligner: ["groundwater_depth"]
         }
 
         self._merged_dataframes = self._build_and_merge()
 
     def _build_and_merge(self):
+        # keep track of time
+        start_time = time.time()
+
         if self.connect_to == 'nitrate_data':
             nitrate_vars = ['nitrate', 'bro-id', 'geometry', 'date']
         elif self.connect_to == 'grid_data':
             nitrate_vars = ['geometry', 'date']
 
-        base_columns = [v for v in self.variables if v in nitrate_vars and v in self.nitrate_df.columns]
+        base_columns = [v for v in self.variables if v in nitrate_vars and v in self.df_connect_to.columns]
 
         if base_columns:
-            final_df = self.nitrate_df[base_columns].copy()
+            final_df = self.df_connect_to[base_columns].copy()
         else:
             final_df = pd.DataFrame()
 
@@ -103,6 +112,11 @@ class MergedDatasetBuilder:
                     raise ValueError(f"{var} not found in returned DataFrame.")
             print("\n")
 
+        end_time = time.time()
+        duration = timedelta(seconds=end_time - start_time)
+
+        print(f"Alignment time: {duration}")
+
         return final_df
     
     @property
@@ -111,12 +125,12 @@ class MergedDatasetBuilder:
 
 
 if __name__ == "__main__":
-    # variables_of_interest = ['bro-id', 'nitrate', 'geometry', 'date', 'groundwater depth', \
+    # variables_of_interest = ['bro-id', 'nitrate', 'geometry', 'date', 'groundwater_depth', \
     #                          'population', 'soil region', 'landuse code', 'precipitation', \
     #                          'temperature', 'elevation', 'lon', 'lat', 'n deposition', \
     #                          'soilunit_code_1', 'organicmattercontent_1', 'density_1']
     
-    # variables_of_interest = ['bro-id', 'nitrate', 'geometry', 'date', 'groundwater depth', \
+    # variables_of_interest = ['bro-id', 'nitrate', 'geometry', 'date', 'groundwater_depth', \
     #                          'population', 'soil region', 'landuse code', 'precipitation', \
     #                          'temperature', 'elevation', 'lon', 'lat', 'n deposition']
 

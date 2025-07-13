@@ -66,6 +66,7 @@ class TimeseriesPreprocess(Dataset_Preprocess):
         pass
 
     def _to_gdf(self):
+        self._data = self._data.dropna(subset=['geometry'])
         self._data['geometry'] = self._data['geometry'].apply(wkt.loads)
         self._data = gpd.GeoDataFrame(self._data, geometry='geometry', crs="EPSG:4326")
 
