@@ -9,7 +9,12 @@ from sklearn.metrics import make_scorer, mean_absolute_error
 from sklearn.compose import TransformedTargetRegressor
 
 import warnings
-warnings.filterwarnings("ignore", category=UserWarning, module="sklearn")
+warnings.filterwarnings(
+    "ignore",
+    message="Found unknown categories in columns",  # exact phrase start
+    category=UserWarning,
+    module="sklearn.preprocessing._encoders",
+)
 
 
 class XGBmodel(ModelBase):
@@ -23,7 +28,7 @@ class XGBmodel(ModelBase):
     def _create_model(self, preprocessor, grid_search, X_train, y_train, n_estimators, max_depth, learning_rate, colsample_bytree):
         # Find hyperparameters using grid search
         if grid_search:
-            xgb_model = xgb.XGBRegressor(objective="reg:squarederror", n_jobs=-1, random_state=4)
+            xgb_model = xgb.XGBRegressor(objective="reg:squarederror", n_jobs=-1, random_state=123)
     
             pipe = Pipeline([
                 ("prep", preprocessor),
@@ -73,13 +78,13 @@ class XGBmodel(ModelBase):
         #     }
 
         param_grid = {
-                "regressor__xgb__n_estimators": [50, 75],
-                "regressor__xgb__max_depth": [3, 4],
-                "regressor__xgb__learning_rate": [ 0.05, 0.1],
-                "regressor__xgb__subsample": [0.4, 0.5, 0.6],
-                "regressor__xgb__colsample_bytree": [0.4, 0.6],
-                "regressor__xgb__reg_alpha": [0.1, 0.5],
-                "regressor__xgb__reg_lambda": [2, 3, 5]
+                "regressor__xgb__n_estimators": [50, 100, 150, 200, 250],
+                "regressor__xgb__max_depth": [3, 4, 6, 10],
+                "regressor__xgb__learning_rate": [0.05, 0.01, 0.1],
+                "regressor__xgb__subsample": [0.4, 0.5, 0.6, 0.8],
+                "regressor__xgb__colsample_bytree": [0.4, 0.6, 0.8],
+                "regressor__xgb__reg_alpha": [0.1, 0.5, 0.7],
+                "regressor__xgb__reg_lambda": [2, 3, 5, 8]
             }
 
         tscv = TimeSeriesSplit(n_splits=cv)
@@ -87,7 +92,7 @@ class XGBmodel(ModelBase):
         search = RandomizedSearchCV(
             full_pipeline,
             param_distributions=param_grid,
-            n_iter=60,
+            n_iter=100,
             cv=tscv,
             scoring=make_scorer(mean_absolute_error, greater_is_better=False),
             n_jobs=-1,

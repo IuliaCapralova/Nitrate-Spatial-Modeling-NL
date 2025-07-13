@@ -8,6 +8,13 @@ import joblib
 from sklearn.model_selection import TimeSeriesSplit
 from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error, make_scorer
 
+import warnings
+warnings.filterwarnings(
+    "ignore",
+    message="Found unknown categories in columns",  # exact phrase start
+    category=UserWarning,
+    module="sklearn.preprocessing._encoders",
+)
 
 class ModelBase(ABC):
     def __init__(self):
@@ -16,7 +23,7 @@ class ModelBase(ABC):
     def learning_curve(self, X_train, y_train):
         print("Creating learning curve...")
 
-        n = len(X_train)
+        n_samples = len(X_train)
 
         train_errors = []
         val_errors = []
@@ -24,7 +31,7 @@ class ModelBase(ABC):
         train_sizes = np.linspace(0.1, 1.0, 10)
 
         for frac in train_sizes:
-            split_idx = int(n * frac)
+            split_idx = int(n_samples * frac)
 
             X_subset = X_train.iloc[:split_idx]
             y_subset = y_train.iloc[:split_idx]
@@ -54,14 +61,23 @@ class ModelBase(ABC):
             train_errors.append(np.mean(fold_train_scores))
             val_errors.append(np.mean(fold_val_scores))
 
-        plt.plot(train_sizes * len(X_train), train_errors, label="Train MAE")
-        plt.plot(train_sizes * len(X_train), val_errors, label="Validation MAE")
-        plt.xlabel("Training Set Size")
-        plt.ylabel("Train MAE")
-        plt.title("learning curve")
-        plt.legend()
-        plt.grid(True)
-        plt.show()
+        fig, ax = plt.subplots(figsize=(6, 4))
+        ax.plot(train_sizes * n_samples, train_errors, label="Train MAE")
+        ax.plot(train_sizes * n_samples, val_errors,  label="Val MAE")
+        ax.set_xlabel("Training set size")
+        ax.set_ylabel("MAE")
+        ax.set_title(f"{self.model_name} – learning curve")
+        ax.legend()
+        ax.grid(True)
+
+        # save in plot in folder
+        curr_dir = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(curr_dir, "..", "..", "plots", "learning_curves")
+        out_dir = os.path.abspath(out_dir)        # normalise to an absolute path
+        os.makedirs(out_dir, exist_ok=True)       # create the folders if missing
+        file_path = os.path.join(out_dir, f"{self.model_name}_curve.png")
+        fig.savefig(file_path, dpi=300)
+        plt.close(fig)
 
     def train(self, X_train, y_train):
         self._model.fit(X_train, y_train)

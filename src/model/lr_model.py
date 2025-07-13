@@ -12,7 +12,12 @@ from sklearn.compose import TransformedTargetRegressor
 from sklearn.base import clone
 
 import warnings
-warnings.filterwarnings("ignore", category=UserWarning, module="sklearn")
+warnings.filterwarnings(
+    "ignore",
+    message="Found unknown categories in columns",  # exact phrase start
+    category=UserWarning,
+    module="sklearn.preprocessing._encoders",
+)
 
 
 class LRmodel(ModelBase):
@@ -26,7 +31,7 @@ class LRmodel(ModelBase):
     def _create_model(self, preprocessor, grid_search, X_train, y_train, alpha):
         # Find hyperparameters using grid search
         if grid_search:
-            lr_model = Ridge(random_state=4)
+            lr_model = Ridge(random_state=123)
 
             pipe = Pipeline([
                 ("prep", preprocessor),
@@ -65,8 +70,8 @@ class LRmodel(ModelBase):
         model_name = type(full_pipeline.regressor.named_steps["lr"]).__name__
         print(f"Searching for good hyperparameters for {model_name}...")
 
-        # alphas = np.logspace(-4, 4, 50)
-        alphas = np.logspace(-3, 1, 10)
+        alphas = np.logspace(-4, 4, 50)
+        # alphas = np.logspace(-3, 1, 10)
         tscv = TimeSeriesSplit(n_splits=5)
         param_grid = {
             "regressor__lr__alpha": alphas

@@ -11,7 +11,12 @@ from typing import List
 from dataclasses import dataclass
 
 import warnings
-warnings.filterwarnings("ignore", category=UserWarning, module="sklearn")
+warnings.filterwarnings(
+    "ignore",
+    message="Found unknown categories in columns",  # exact phrase start
+    category=UserWarning,
+    module="sklearn.preprocessing._encoders",
+)
 
 
 @dataclass

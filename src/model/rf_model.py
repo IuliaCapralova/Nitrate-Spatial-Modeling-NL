@@ -11,8 +11,12 @@ from sklearn.compose import TransformedTargetRegressor
 from sklearn.base import clone
 
 import warnings
-warnings.filterwarnings("ignore", category=UserWarning, module="sklearn")
-
+warnings.filterwarnings(
+    "ignore",
+    message="Found unknown categories in columns",  # exact phrase start
+    category=UserWarning,
+    module="sklearn.preprocessing._encoders",
+)
 
 class RFmodel(ModelBase):
     def __init__(self, preprocessor, grid_search=False, X_train=None, y_train=None, n_estimators=200, max_depth=15, min_samples_split=2, min_samples_leaf=1, max_features=0.5):
@@ -25,7 +29,7 @@ class RFmodel(ModelBase):
     def _create_model(self, preprocessor, grid_search, X_train, y_train, n_estimators, max_depth, min_samples_split, min_samples_leaf, max_features):
         # Find hyperparameters using grid search
         if grid_search:
-            rf_model = RandomForestRegressor(random_state=42, oob_score=False)
+            rf_model = RandomForestRegressor(random_state=123, oob_score=False)
 
             pipe = Pipeline([
                 ("prep", preprocessor),
@@ -66,18 +70,18 @@ class RFmodel(ModelBase):
         print(f"Searching for good hyperparameters for {model_name}...")
 
         param_grid = {
-                "regressor__rf__n_estimators": [50, 100, 150, 200],
+                "regressor__rf__n_estimators": [100, 150, 200, 250],
                 "regressor__rf__max_features": ["sqrt", 0.5, 1],
                 "regressor__rf__max_depth": [None, 5, 10, 15],
-                "regressor__rf__min_samples_split": [2, 4, 6],
-                "regressor__rf__min_samples_leaf": [1, 2, 3]
+                "regressor__rf__min_samples_split": [4, 6, 8, 10],
+                "regressor__rf__min_samples_leaf": [2, 3, 4, 6]
             }
 
         tscv = TimeSeriesSplit(n_splits=cv)
         search = RandomizedSearchCV(
             full_pipeline,
             param_distributions=param_grid,
-            n_iter=60,
+            n_iter=100,
             cv=tscv,
             scoring=make_scorer(mean_absolute_error, greater_is_better=False),
             n_jobs=-1,
