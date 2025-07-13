@@ -1,0 +1,2921 @@
+[
+  {
+    "model": "Random Forest",
+    "timestamp": "2025-07-06T16:32:13.379813",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 400,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": 0.5,
+      "regressor__rf__max_depth": null
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.9099042310030353,
+      "MAE": 0.0789770974374039,
+      "RMSE": 0.25146984069337897
+    },
+    "test_score": {
+      "R2": 0.5823389415770481,
+      "MAE": 0.2307438471688929,
+      "RMSE": 0.5373210119500483
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "timestamp": "2025-07-06T16:34:05.486147",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 200,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": 0.5,
+      "regressor__rf__max_depth": null
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.907230116685819,
+      "MAE": 0.07951283193551548,
+      "RMSE": 0.25517446540928346
+    },
+    "test_score": {
+      "R2": 0.5826527574867162,
+      "MAE": 0.23039909588430493,
+      "RMSE": 0.5371191119112216
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "timestamp": "2025-07-06T16:55:19.667446",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 200,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": 0.5,
+      "regressor__rf__max_depth": null
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.907230116685819,
+      "MAE": 0.07951283193551548,
+      "RMSE": 0.25517446540928346
+    },
+    "test_score": {
+      "R2": 0.5826527574867162,
+      "MAE": 0.23039909588430493,
+      "RMSE": 0.5371191119112216
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "timestamp": "2025-07-06T16:59:17.614172",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 170,
+      "regressor__rf__min_samples_split": 4,
+      "regressor__rf__min_samples_leaf": 2,
+      "regressor__rf__max_features": 0.5,
+      "regressor__rf__max_depth": null
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.818278307197018,
+      "MAE": 0.1145658990869808,
+      "RMSE": 0.3571388495594443
+    },
+    "test_score": {
+      "R2": 0.5605751512204944,
+      "MAE": 0.23437844908736494,
+      "RMSE": 0.5511427991652454
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "timestamp": "2025-07-06T17:00:38.945302",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 1.0,
+      "regressor__xgb__reg_lambda": 1,
+      "regressor__xgb__reg_alpha": 0,
+      "regressor__xgb__n_estimators": 500,
+      "regressor__xgb__min_child_weight": 1,
+      "regressor__xgb__max_depth": 10,
+      "regressor__xgb__learning_rate": 0.1,
+      "regressor__xgb__gamma": 0.1,
+      "regressor__xgb__colsample_bytree": 1.0
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.8409024757872076,
+      "MAE": 0.11894006492408367,
+      "RMSE": 0.3341684306887019
+    },
+    "test_score": {
+      "R2": 0.6226033134596604,
+      "MAE": 0.21709140046312417,
+      "RMSE": 0.5107646981311621
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "timestamp": "2025-07-06T17:32:16.977034",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 1.0,
+      "regressor__xgb__reg_lambda": 2,
+      "regressor__xgb__reg_alpha": 0.01,
+      "regressor__xgb__n_estimators": 300,
+      "regressor__xgb__min_child_weight": 3,
+      "regressor__xgb__max_depth": 12,
+      "regressor__xgb__learning_rate": 0.01,
+      "regressor__xgb__gamma": 0.1,
+      "regressor__xgb__colsample_bytree": 1.0
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.8019657421187495,
+      "MAE": 0.1318170516902912,
+      "RMSE": 0.37282400805330546
+    },
+    "test_score": {
+      "R2": 0.5726513649500466,
+      "MAE": 0.22656030357619178,
+      "RMSE": 0.5435168245643446
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "timestamp": "2025-07-06T17:37:27.899552",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 100,
+      "regressor__rf__min_samples_split": 4,
+      "regressor__rf__min_samples_leaf": 2,
+      "regressor__rf__max_features": 1.0,
+      "regressor__rf__max_depth": null
+    },
+    "outlier_method": "domain",
+    "train_score": {
+      "R2": 0.8741315475990719,
+      "MAE": 0.8525713526471658,
+      "RMSE": 2.830061732408896
+    },
+    "test_score": {
+      "R2": 0.48538427404044227,
+      "MAE": 1.727620563161536,
+      "RMSE": 5.426462219606606
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "timestamp": "2025-07-06T17:42:34.216996",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 100,
+      "regressor__rf__min_samples_split": 4,
+      "regressor__rf__min_samples_leaf": 2,
+      "regressor__rf__max_features": 1.0,
+      "regressor__rf__max_depth": null
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.8287940352445885,
+      "MAE": 0.10980213257130288,
+      "RMSE": 0.34572469880223894
+    },
+    "test_score": {
+      "R2": 0.5796172188708301,
+      "MAE": 0.23066005914308377,
+      "RMSE": 0.5390689173090214
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "timestamp": "2025-07-06T17:45:12.356015",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.8,
+      "regressor__xgb__reg_lambda": 5,
+      "regressor__xgb__reg_alpha": 0.1,
+      "regressor__xgb__n_estimators": 500,
+      "regressor__xgb__min_child_weight": 1,
+      "regressor__xgb__max_depth": 7,
+      "regressor__xgb__learning_rate": 0.05,
+      "regressor__xgb__gamma": 0,
+      "regressor__xgb__colsample_bytree": 0.7
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.9632523780443037,
+      "MAE": 0.05220584264986269,
+      "RMSE": 0.16060103077953053
+    },
+    "test_score": {
+      "R2": 0.5713307780493224,
+      "MAE": 0.22756079243709376,
+      "RMSE": 0.5443559609171622
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "timestamp": "2025-07-06T17:49:34.089585",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.8,
+      "regressor__xgb__reg_lambda": 5,
+      "regressor__xgb__reg_alpha": 0.1,
+      "regressor__xgb__n_estimators": 500,
+      "regressor__xgb__min_child_weight": 1,
+      "regressor__xgb__max_depth": 7,
+      "regressor__xgb__learning_rate": 0.05,
+      "regressor__xgb__gamma": 0,
+      "regressor__xgb__colsample_bytree": 0.7
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.9632523780443037,
+      "MAE": 0.05220584264986269,
+      "RMSE": 0.16060103077953053
+    },
+    "test_score": {
+      "R2": 0.5713307780493224,
+      "MAE": 0.22756079243709376,
+      "RMSE": 0.5443559609171622
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "timestamp": "2025-07-06T17:51:39.648669",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.8,
+      "regressor__xgb__reg_lambda": 7,
+      "regressor__xgb__reg_alpha": 0.1,
+      "regressor__xgb__n_estimators": 300,
+      "regressor__xgb__min_child_weight": 1,
+      "regressor__xgb__max_depth": 9,
+      "regressor__xgb__learning_rate": 0.03,
+      "regressor__xgb__gamma": 0,
+      "regressor__xgb__colsample_bytree": 0.8
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.9017078746163811,
+      "MAE": 0.081298224172878,
+      "RMSE": 0.2626594747258132
+    },
+    "test_score": {
+      "R2": 0.5608143901018156,
+      "MAE": 0.2296440598683967,
+      "RMSE": 0.5509927476392449
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "timestamp": "2025-07-06T17:53:44.632376",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.8,
+      "regressor__xgb__reg_lambda": 7,
+      "regressor__xgb__reg_alpha": 0.1,
+      "regressor__xgb__n_estimators": 250,
+      "regressor__xgb__min_child_weight": 1,
+      "regressor__xgb__max_depth": 9,
+      "regressor__xgb__learning_rate": 0.03,
+      "regressor__xgb__gamma": 0,
+      "regressor__xgb__colsample_bytree": 0.8
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.8780445039068513,
+      "MAE": 0.09158226200567217,
+      "RMSE": 0.29257310246031626
+    },
+    "test_score": {
+      "R2": 0.5561165291319026,
+      "MAE": 0.2304288141876459,
+      "RMSE": 0.553931826172535
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "timestamp": "2025-07-06T17:55:27.518878",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.6,
+      "regressor__xgb__reg_lambda": 6.0,
+      "regressor__xgb__n_estimators": 250,
+      "regressor__xgb__min_child_weight": 0.5,
+      "regressor__xgb__max_depth": 12,
+      "regressor__xgb__learning_rate": 0.03,
+      "regressor__xgb__gamma": 0.1,
+      "regressor__xgb__colsample_bytree": 1.0
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.7925751984354501,
+      "MAE": 0.13204244933724238,
+      "RMSE": 0.38156106303699777
+    },
+    "test_score": {
+      "R2": 0.5295088996225311,
+      "MAE": 0.2398686018049796,
+      "RMSE": 0.570292339708002
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "timestamp": "2025-07-06T17:56:28.721677",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.6,
+      "regressor__xgb__reg_lambda": 1.0,
+      "regressor__xgb__n_estimators": 250,
+      "regressor__xgb__min_child_weight": 0.3,
+      "regressor__xgb__max_depth": 10,
+      "regressor__xgb__learning_rate": 0.05,
+      "regressor__xgb__gamma": 0.1,
+      "regressor__xgb__colsample_bytree": 1.0
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.842019968793132,
+      "MAE": 0.12132314170924455,
+      "RMSE": 0.3329927714853799
+    },
+    "test_score": {
+      "R2": 0.5736498136252517,
+      "MAE": 0.22931983699683173,
+      "RMSE": 0.5428815224331851
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "timestamp": "2025-07-06T17:57:36.153798",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 70,
+      "regressor__rf__min_samples_split": 4,
+      "regressor__rf__min_samples_leaf": 2,
+      "regressor__rf__max_features": 0.5,
+      "regressor__rf__max_depth": null
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.8307183551331287,
+      "MAE": 0.11044752653058659,
+      "RMSE": 0.34469790477027445
+    },
+    "test_score": {
+      "R2": 0.595749657005211,
+      "MAE": 0.22366245835002196,
+      "RMSE": 0.5286241869244882
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "timestamp": "2025-07-06T18:00:54.825774",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.6,
+      "regressor__xgb__reg_lambda": 1.0,
+      "regressor__xgb__n_estimators": 250,
+      "regressor__xgb__min_child_weight": 0.3,
+      "regressor__xgb__max_depth": 10,
+      "regressor__xgb__learning_rate": 0.05,
+      "regressor__xgb__gamma": 0.1,
+      "regressor__xgb__colsample_bytree": 1.0
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.842019968793132,
+      "MAE": 0.12132314170924455,
+      "RMSE": 0.3329927714853799
+    },
+    "test_score": {
+      "R2": 0.5736498136252517,
+      "MAE": 0.22931983699683173,
+      "RMSE": 0.5428815224331851
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "timestamp": "2025-07-06T18:09:23.627053",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.6,
+      "regressor__xgb__reg_lambda": 1.0,
+      "regressor__xgb__n_estimators": 250,
+      "regressor__xgb__min_child_weight": 0.3,
+      "regressor__xgb__max_depth": 10,
+      "regressor__xgb__learning_rate": 0.05,
+      "regressor__xgb__gamma": 0.1,
+      "regressor__xgb__colsample_bytree": 1.0
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.9023981023252062,
+      "MAE": 0.20042008799493677,
+      "RMSE": 0.5354029237360002
+    },
+    "test_score": {
+      "R2": 0.4732801387456944,
+      "MAE": 0.35797506995219497,
+      "RMSE": 0.9778921809467065
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "timestamp": "2025-07-06T18:10:45.139860",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.6,
+      "regressor__xgb__reg_lambda": 1.0,
+      "regressor__xgb__n_estimators": 250,
+      "regressor__xgb__min_child_weight": 0.3,
+      "regressor__xgb__max_depth": 10,
+      "regressor__xgb__learning_rate": 0.05,
+      "regressor__xgb__gamma": 0.1,
+      "regressor__xgb__colsample_bytree": 1.0
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.9052100352206842,
+      "MAE": 0.24495690375116047,
+      "RMSE": 0.6705246747683715
+    },
+    "test_score": {
+      "R2": 0.38856454182381295,
+      "MAE": 0.5185092654571162,
+      "RMSE": 1.5141144833827584
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "timestamp": "2025-07-06T18:11:46.219431",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.6,
+      "regressor__xgb__reg_lambda": 6.0,
+      "regressor__xgb__n_estimators": 250,
+      "regressor__xgb__min_child_weight": 0.5,
+      "regressor__xgb__max_depth": 12,
+      "regressor__xgb__learning_rate": 0.03,
+      "regressor__xgb__gamma": 0.1,
+      "regressor__xgb__colsample_bytree": 1.0
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.793613330118121,
+      "MAE": 0.13839081610232293,
+      "RMSE": 0.39285391682168735
+    },
+    "test_score": {
+      "R2": 0.5702218716933374,
+      "MAE": 0.2323077009157809,
+      "RMSE": 0.545059591917036
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "timestamp": "2025-07-06T18:19:17.725918",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 70,
+      "regressor__rf__min_samples_split": 4,
+      "regressor__rf__min_samples_leaf": 2,
+      "regressor__rf__max_features": 0.5,
+      "regressor__rf__max_depth": null
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.8307183551331287,
+      "MAE": 0.11044752653058659,
+      "RMSE": 0.34469790477027445
+    },
+    "test_score": {
+      "R2": 0.49228855192822574,
+      "MAE": 0.2507025299687909,
+      "RMSE": 0.5834808012153601
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "timestamp": "2025-07-06T18:24:22.541780",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 70,
+      "regressor__rf__min_samples_split": 4,
+      "regressor__rf__min_samples_leaf": 2,
+      "regressor__rf__max_features": 0.5,
+      "regressor__rf__max_depth": null
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.8307183551331287,
+      "MAE": 0.11044752653058659,
+      "RMSE": 0.34469790477027445
+    },
+    "test_score": {
+      "R2": 0.574643550370008,
+      "MAE": 0.22005767869844003,
+      "RMSE": 0.5068044937006767
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "timestamp": "2025-07-06T18:32:42.255344",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 70,
+      "regressor__rf__min_samples_split": 4,
+      "regressor__rf__min_samples_leaf": 2,
+      "regressor__rf__max_features": 0.5,
+      "regressor__rf__max_depth": null
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.8307183551331287,
+      "MAE": 0.11044752653058659,
+      "RMSE": 0.34469790477027445
+    },
+    "test_score": {
+      "R2": 0.595749657005211,
+      "MAE": 0.22366245835002196,
+      "RMSE": 0.5286241869244882
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "timestamp": "2025-07-06T18:36:29.660979",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 70,
+      "regressor__rf__min_samples_split": 4,
+      "regressor__rf__min_samples_leaf": 2,
+      "regressor__rf__max_features": 0.5,
+      "regressor__rf__max_depth": null
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.7629353187686327,
+      "MAE": 1.0766997368236328,
+      "RMSE": 5.429695157793303
+    },
+    "test_score": {
+      "R2": 0.32621096519019344,
+      "MAE": 2.1115524732021362,
+      "RMSE": 9.658036288162961
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "timestamp": "2025-07-06T19:28:10.003651",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 100,
+      "regressor__rf__min_samples_split": 8,
+      "regressor__rf__min_samples_leaf": 2,
+      "regressor__rf__max_features": "sqrt",
+      "regressor__rf__max_depth": 5
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.3571095864027447,
+      "MAE": 0.015439545335997625,
+      "RMSE": 0.01932234206244693
+    },
+    "test_score": {
+      "R2": -0.2694033879231874,
+      "MAE": 0.0160545789749202,
+      "RMSE": 0.020336454905259694
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "timestamp": "2025-07-06T19:34:10.277893",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 70,
+      "regressor__rf__min_samples_split": 4,
+      "regressor__rf__min_samples_leaf": 2,
+      "regressor__rf__max_features": 0.5,
+      "regressor__rf__max_depth": null
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.8324041462912589,
+      "MAE": 0.11040417499362692,
+      "RMSE": 0.34297727338712125
+    },
+    "test_score": {
+      "R2": 0.5948506665488702,
+      "MAE": 0.2243198890477112,
+      "RMSE": 0.5292116498569593
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "timestamp": "2025-07-06T19:40:54.384483",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 70,
+      "regressor__rf__min_samples_split": 4,
+      "regressor__rf__min_samples_leaf": 2,
+      "regressor__rf__max_features": 0.5,
+      "regressor__rf__max_depth": null
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.8347023131804906,
+      "MAE": 0.10943886464471544,
+      "RMSE": 0.34061760933110125
+    },
+    "test_score": {
+      "R2": 0.6057621828275617,
+      "MAE": 0.21885801331497715,
+      "RMSE": 0.5220366239668237
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "timestamp": "2025-07-06T19:41:50.590445",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.6,
+      "regressor__xgb__reg_lambda": 1.0,
+      "regressor__xgb__n_estimators": 250,
+      "regressor__xgb__min_child_weight": 1,
+      "regressor__xgb__max_depth": 12,
+      "regressor__xgb__learning_rate": 0.05,
+      "regressor__xgb__gamma": 0.1,
+      "regressor__xgb__colsample_bytree": 0.6
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.8433774100940927,
+      "MAE": 0.12543829735283032,
+      "RMSE": 0.342229518518341
+    },
+    "test_score": {
+      "R2": 0.6003785204870771,
+      "MAE": 0.23114233585516242,
+      "RMSE": 0.5255889709221083
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "timestamp": "2025-07-06T19:47:03.703525",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 100,
+      "regressor__rf__min_samples_split": 4,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": 0.5,
+      "regressor__rf__max_depth": 15
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.8565577954641914,
+      "MAE": 0.10523645253972432,
+      "RMSE": 0.3173015429955447
+    },
+    "test_score": {
+      "R2": 0.6037934715458779,
+      "MAE": 0.22009441845091135,
+      "RMSE": 0.5233384517984097
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "timestamp": "2025-07-06T19:49:00.461218",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.8,
+      "regressor__xgb__reg_lambda": 3,
+      "regressor__xgb__reg_alpha": 0.1,
+      "regressor__xgb__n_estimators": 350,
+      "regressor__xgb__min_child_weight": 2,
+      "regressor__xgb__max_depth": 7,
+      "regressor__xgb__learning_rate": 0.03,
+      "regressor__xgb__gamma": 0,
+      "regressor__xgb__colsample_bytree": 0.6
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.8640234402401645,
+      "MAE": 0.10847718804420006,
+      "RMSE": 0.31887633534352
+    },
+    "test_score": {
+      "R2": 0.6170103633868184,
+      "MAE": 0.2191086560645715,
+      "RMSE": 0.5145354987093841
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "timestamp": "2025-07-06T19:50:41.004206",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.6,
+      "regressor__xgb__reg_lambda": 1.0,
+      "regressor__xgb__n_estimators": 200,
+      "regressor__xgb__min_child_weight": 0.5,
+      "regressor__xgb__max_depth": 10,
+      "regressor__xgb__learning_rate": 0.05,
+      "regressor__xgb__gamma": 0.1,
+      "regressor__xgb__colsample_bytree": 0.6
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.828000679836429,
+      "MAE": 0.13060497225221568,
+      "RMSE": 0.35863579257634387
+    },
+    "test_score": {
+      "R2": 0.6116849368451942,
+      "MAE": 0.2268320855061951,
+      "RMSE": 0.518100427271383
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "timestamp": "2025-07-06T19:51:46.307972",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.6,
+      "regressor__xgb__reg_lambda": 1.0,
+      "regressor__xgb__n_estimators": 200,
+      "regressor__xgb__min_child_weight": 0.5,
+      "regressor__xgb__max_depth": 10,
+      "regressor__xgb__learning_rate": 0.05,
+      "regressor__xgb__gamma": 0.1,
+      "regressor__xgb__colsample_bytree": 0.6
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.8341318406390843,
+      "MAE": 0.12560482106481227,
+      "RMSE": 0.35218574887252885
+    },
+    "test_score": {
+      "R2": 0.5855223253926063,
+      "MAE": 0.22785327787574786,
+      "RMSE": 0.5352693832600853
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "timestamp": "2025-07-06T19:53:05.665331",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.6,
+      "regressor__xgb__reg_lambda": 1.0,
+      "regressor__xgb__n_estimators": 125,
+      "regressor__xgb__min_child_weight": 0.5,
+      "regressor__xgb__max_depth": 10,
+      "regressor__xgb__learning_rate": 0.03,
+      "regressor__xgb__gamma": 0.1,
+      "regressor__xgb__colsample_bytree": 0.6
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.7990916364628959,
+      "MAE": 0.13912465164447846,
+      "RMSE": 0.3876049135091896
+    },
+    "test_score": {
+      "R2": 0.5954421052944454,
+      "MAE": 0.23081367150648682,
+      "RMSE": 0.5288252360580673
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "timestamp": "2025-07-06T20:08:11.757247",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 100,
+      "regressor__rf__min_samples_split": 4,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": 0.5,
+      "regressor__rf__max_depth": 15
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.7713669498088653,
+      "MAE": 1.0929304000274889,
+      "RMSE": 5.332262544290679
+    },
+    "test_score": {
+      "R2": 0.3294883807725877,
+      "MAE": 2.042677815039051,
+      "RMSE": 9.634518552889919
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "timestamp": "2025-07-06T20:15:28.585918",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 100,
+      "regressor__rf__min_samples_split": 4,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": 0.5,
+      "regressor__rf__max_depth": 15
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.8853978221879775,
+      "MAE": 0.7986504598089696,
+      "RMSE": 2.6503941551007295
+    },
+    "test_score": {
+      "R2": 0.503154035488847,
+      "MAE": 1.680724327575318,
+      "RMSE": 5.3319508851959405
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "timestamp": "2025-07-12T12:34:08.423512",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 100,
+      "regressor__rf__min_samples_split": 4,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": 0.5,
+      "regressor__rf__max_depth": 15
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.8607481514567193,
+      "MAE": 0.09631121200835645,
+      "RMSE": 0.28018274031508483
+    },
+    "test_score": {
+      "R2": 0.5704400618011175,
+      "MAE": 0.22673889750800524,
+      "RMSE": 0.5049278217169388
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "timestamp": "2025-07-12T12:37:18.202870",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 150,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": 0.3,
+      "regressor__rf__max_depth": null
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.9139836106224993,
+      "MAE": 0.07762625888221147,
+      "RMSE": 0.24571083780971234
+    },
+    "test_score": {
+      "R2": 0.5617294732371638,
+      "MAE": 0.23982803383425566,
+      "RMSE": 0.5504184265862876
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "timestamp": "2025-07-12T13:43:10.400363",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 200,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": 0.5,
+      "regressor__rf__max_depth": 15
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.9064112474577013,
+      "MAE": 0.23182381486085768,
+      "RMSE": 0.9360131769331433
+    },
+    "test_score": {
+      "R2": 0.7250286620151087,
+      "MAE": 0.3033854664443988,
+      "RMSE": 1.1056077461644358
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": [
+      "bro-id",
+      "nitrate",
+      "geometry",
+      "date",
+      "landuse code",
+      "population",
+      "elevation",
+      "lon",
+      "lat",
+      "precipitation",
+      "temperature",
+      "n deposition",
+      "mainsoilclassification_1",
+      "organicmattercontent_1",
+      "density_1",
+      "acidity_1",
+      "minimumacidity_1",
+      "maximumacidity_1",
+      "cnratio_1",
+      "calciccontent_1",
+      "fedith_1",
+      "loamcontent_1",
+      "minimumloamcontent_1",
+      "maximumloamcontent_1",
+      "sandmedian_1",
+      "minimumsandmedian_1",
+      "maximumsandmedian_1",
+      "siltcontent_1",
+      "groundwater_depth",
+      "month",
+      "year"
+    ],
+    "timestamp": "2025-07-12T17:36:04.123808",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 150,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": 0.3,
+      "regressor__rf__max_depth": null
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.9257641613803845,
+      "MAE": 0.3637605443762718,
+      "RMSE": 1.1788066941404844
+    },
+    "test_score": {
+      "R2": 0.5989704269424397,
+      "MAE": 0.9411836700682767,
+      "RMSE": 2.4572262157240186
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": [
+      "bro-id",
+      "nitrate",
+      "geometry",
+      "date",
+      "landuse code",
+      "population",
+      "elevation",
+      "lon",
+      "lat",
+      "precipitation",
+      "temperature",
+      "n deposition",
+      "mainsoilclassification_1",
+      "organicmattercontent_1",
+      "density_1",
+      "acidity_1",
+      "minimumacidity_1",
+      "maximumacidity_1",
+      "cnratio_1",
+      "calciccontent_1",
+      "fedith_1",
+      "loamcontent_1",
+      "minimumloamcontent_1",
+      "maximumloamcontent_1",
+      "sandmedian_1",
+      "minimumsandmedian_1",
+      "maximumsandmedian_1",
+      "siltcontent_1",
+      "groundwater_depth",
+      "month",
+      "year"
+    ],
+    "timestamp": "2025-07-12T17:38:17.644052",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 150,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": 0.3,
+      "regressor__rf__max_depth": null
+    },
+    "outlier_method": "manual_removal",
+    "train_score": {
+      "R2": 0.9265691481312712,
+      "MAE": 0.3637579525622078,
+      "RMSE": 1.1723979953367847
+    },
+    "test_score": {
+      "R2": 0.5895362875402002,
+      "MAE": 0.9559398127059423,
+      "RMSE": 2.4859610769282514
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 8,
+    "timestamp": "2025-07-12T17:55:03.453943",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 200,
+      "regressor__rf__min_samples_split": 4,
+      "regressor__rf__min_samples_leaf": 2,
+      "regressor__rf__max_features": 0.5,
+      "regressor__rf__max_depth": null
+    },
+    "outlier_method": "manual_removal",
+    "train_score": {
+      "R2": 0.8583866373890221,
+      "MAE": 0.5220823990337984,
+      "RMSE": 1.6281255869883333
+    },
+    "test_score": {
+      "R2": 0.5692773064504562,
+      "MAE": 0.9700101090692548,
+      "RMSE": 2.5465711647626987
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 8,
+    "timestamp": "2025-07-12T17:57:15.996512",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 250,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": 0.3,
+      "regressor__rf__max_depth": null
+    },
+    "outlier_method": "manual_removal",
+    "train_score": {
+      "R2": 0.9267938400611431,
+      "MAE": 0.3620691644380721,
+      "RMSE": 1.1706029038511439
+    },
+    "test_score": {
+      "R2": 0.5867389951035824,
+      "MAE": 0.9556909469056079,
+      "RMSE": 2.4944175523400016
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T17:59:37.328223",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 250,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": 0.3,
+      "regressor__rf__max_depth": null
+    },
+    "outlier_method": "manual_removal",
+    "train_score": {
+      "R2": 0.926143669220749,
+      "MAE": 0.3631327513372393,
+      "RMSE": 1.1757896904071192
+    },
+    "test_score": {
+      "R2": 0.5989160102926097,
+      "MAE": 0.9409293568149992,
+      "RMSE": 2.4573929234830367
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T18:02:41.624037",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 1.0,
+      "regressor__xgb__reg_lambda": 2,
+      "regressor__xgb__reg_alpha": 0.01,
+      "regressor__xgb__n_estimators": 300,
+      "regressor__xgb__min_child_weight": 3,
+      "regressor__xgb__max_depth": 12,
+      "regressor__xgb__learning_rate": 0.01,
+      "regressor__xgb__gamma": 0.1,
+      "regressor__xgb__colsample_bytree": 1.0
+    },
+    "outlier_method": null,
+    "train_score": {
+      "R2": 0.7866257838609199,
+      "MAE": 0.13617071645776554,
+      "RMSE": 0.38699439746711706
+    },
+    "test_score": {
+      "R2": 0.5852755442826694,
+      "MAE": 0.22822510754860523,
+      "RMSE": 0.5354287099550121
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T18:06:34.082589",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 1.0,
+      "regressor__xgb__reg_lambda": 2,
+      "regressor__xgb__reg_alpha": 0.01,
+      "regressor__xgb__n_estimators": 300,
+      "regressor__xgb__min_child_weight": 3,
+      "regressor__xgb__max_depth": 12,
+      "regressor__xgb__learning_rate": 0.01,
+      "regressor__xgb__gamma": 0.1,
+      "regressor__xgb__colsample_bytree": 1.0
+    },
+    "outlier_method": null,
+    "train_score": {
+      "R2": 0.7776081266711838,
+      "MAE": 0.1394109778406232,
+      "RMSE": 0.3950873867920313
+    },
+    "test_score": {
+      "R2": 0.5782282100191842,
+      "MAE": 0.23137534057473474,
+      "RMSE": 0.5399587658438343
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T18:08:57.507880",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 250,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": 0.3,
+      "regressor__rf__max_depth": null
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.9148288656391562,
+      "MAE": 0.07761982729558874,
+      "RMSE": 0.24450059715933087
+    },
+    "test_score": {
+      "R2": 0.5761224911473606,
+      "MAE": 0.2397249804511019,
+      "RMSE": 0.5413049746068326
+    },
+    "note": "Removed soil region"
+  },
+  {},
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T18:16:48.152127",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 250,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": 0.3,
+      "regressor__rf__max_depth": null
+    },
+    "outlier_method": "manual_removal",
+    "train_score": {
+      "R2": 0.9291849488261279,
+      "MAE": 0.6141166760461996,
+      "RMSE": 2.0834199402118667
+    },
+    "test_score": {
+      "R2": 0.5086260162796445,
+      "MAE": 1.6920848974468121,
+      "RMSE": 5.302508046507014
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T18:18:25.378070",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 250,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": 0.3,
+      "regressor__rf__max_depth": null
+    },
+    "outlier_method": "manual_removal",
+    "train_score": {
+      "R2": 0.8499528137780231,
+      "MAE": 0.8188876235779935,
+      "RMSE": 4.319723482284023
+    },
+    "test_score": {
+      "R2": 0.3685296320893737,
+      "MAE": 2.0331193992499785,
+      "RMSE": 9.349822179122246
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T18:20:44.553099",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.8,
+      "regressor__xgb__reg_lambda": 5,
+      "regressor__xgb__reg_alpha": 0.1,
+      "regressor__xgb__n_estimators": 300,
+      "regressor__xgb__min_child_weight": 3,
+      "regressor__xgb__max_depth": 12,
+      "regressor__xgb__learning_rate": 0.1,
+      "regressor__xgb__gamma": 0,
+      "regressor__xgb__colsample_bytree": 0.5
+    },
+    "outlier_method": null,
+    "train_score": {
+      "R2": 0.9735434465891181,
+      "MAE": 0.32835784755819997,
+      "RMSE": 1.2734463794405708
+    },
+    "test_score": {
+      "R2": 0.5289355565587462,
+      "MAE": 1.6644169341511226,
+      "RMSE": 5.191769695360933
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T18:23:07.863327",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 250,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": 0.3,
+      "regressor__rf__max_depth": null
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.9029333529772968,
+      "MAE": 0.08267930771544792,
+      "RMSE": 0.2603190647582793
+    },
+    "test_score": {
+      "R2": 0.5412841348971575,
+      "MAE": 0.24602866127569242,
+      "RMSE": 0.5631106122961093
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T18:25:10.999418",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 170,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": 0.3,
+      "regressor__rf__max_depth": 15
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.890926588576272,
+      "MAE": 0.08482555018371056,
+      "RMSE": 0.24816595675716427
+    },
+    "test_score": {
+      "R2": 0.5944045314090283,
+      "MAE": 0.2150752154962688,
+      "RMSE": 0.49064114218206634
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T18:27:16.052559",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 170,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": 0.3,
+      "regressor__rf__max_depth": 15
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.8674217197779863,
+      "MAE": 0.06643964442173826,
+      "RMSE": 0.19334966738538936
+    },
+    "test_score": {
+      "R2": 0.4964373365663952,
+      "MAE": 0.18815592394706632,
+      "RMSE": 0.4268572357016242
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T18:28:59.685798",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 170,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": 0.3,
+      "regressor__rf__max_depth": 15
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.8830807513310699,
+      "MAE": 0.0802417634733151,
+      "RMSE": 0.2337625919312457
+    },
+    "test_score": {
+      "R2": 0.9157253619358827,
+      "MAE": 0.08494561937349068,
+      "RMSE": 0.2089148404313996
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T18:31:41.695517",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 170,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": 0.3,
+      "regressor__rf__max_depth": 20
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.9479338661102447,
+      "MAE": 0.07849225429737204,
+      "RMSE": 0.19116631731045086
+    },
+    "test_score": {
+      "R2": 0.5893857108620884,
+      "MAE": 0.2651470618478954,
+      "RMSE": 0.5327688946105307
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T18:33:38.349327",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 100,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": 0.5,
+      "regressor__rf__max_depth": 15
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.927440296495492,
+      "MAE": 0.07848612784789122,
+      "RMSE": 0.18401934339742887
+    },
+    "test_score": {
+      "R2": 0.9465791282569663,
+      "MAE": 0.08238269933416598,
+      "RMSE": 0.16633219889340492
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T18:35:24.424291",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 75,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": 0.3,
+      "regressor__rf__max_depth": null
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.9530984786874412,
+      "MAE": 0.05911329203079482,
+      "RMSE": 0.14794803179735633
+    },
+    "test_score": {
+      "R2": 0.9629795434978721,
+      "MAE": 0.059363361755619404,
+      "RMSE": 0.13846554786735038
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T18:37:52.518862",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 100,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": 0.15,
+      "regressor__rf__max_depth": 20
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.9434109893876275,
+      "MAE": 0.08036364785192403,
+      "RMSE": 0.199296539967065
+    },
+    "test_score": {
+      "R2": 0.5818268634965661,
+      "MAE": 0.2693219969292278,
+      "RMSE": 0.5376503053097309
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T18:39:11.570684",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 50,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": 0.3,
+      "regressor__rf__max_depth": 15
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.9248262927581729,
+      "MAE": 0.07999348744952348,
+      "RMSE": 0.18730471553129457
+    },
+    "test_score": {
+      "R2": 0.9436954931878151,
+      "MAE": 0.08437718501159011,
+      "RMSE": 0.17076246796597644
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T18:42:01.864836",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 100,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": "sqrt",
+      "regressor__rf__max_depth": 20
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.9420964126462856,
+      "MAE": 0.08359567005317035,
+      "RMSE": 0.20159810423603797
+    },
+    "test_score": {
+      "R2": 0.5935870810671324,
+      "MAE": 0.27314388554408053,
+      "RMSE": 0.5300362637990743
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T18:43:08.847498",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 100,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": "sqrt",
+      "regressor__rf__max_depth": 20
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.9429833145346217,
+      "MAE": 0.08036260308517323,
+      "RMSE": 0.20004822021997007
+    },
+    "test_score": {
+      "R2": 0.5867637929982303,
+      "MAE": 0.26851894671870463,
+      "RMSE": 0.5344671471097588
+    },
+    "note": "NO LOG TRANSFORM"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T18:44:09.996045",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 100,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": "sqrt",
+      "regressor__rf__max_depth": 20
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.9263068808982767,
+      "MAE": 0.06504600997397006,
+      "RMSE": 0.15429828918029373
+    },
+    "test_score": {
+      "R2": 0.49919186244610536,
+      "MAE": 0.20229295465779104,
+      "RMSE": 0.4265130827951781
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T18:46:41.746449",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 100,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": "sqrt",
+      "regressor__rf__max_depth": 20
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.9379945001189798,
+      "MAE": 0.04962052637677736,
+      "RMSE": 0.11853570664046499
+    },
+    "test_score": {
+      "R2": 0.5422843124104485,
+      "MAE": 0.1677219074044878,
+      "RMSE": 0.3578546897615387
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T18:47:50.134612",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 100,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": "sqrt",
+      "regressor__rf__max_depth": 20
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.9040863617116901,
+      "MAE": 0.05170787257078576,
+      "RMSE": 0.14742606344469567
+    },
+    "test_score": {
+      "R2": 0.5192485691873998,
+      "MAE": 0.15873398494389074,
+      "RMSE": 0.36674914248272455
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T18:48:49.393398",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 100,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": "sqrt",
+      "regressor__rf__max_depth": 20
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.9021900451134675,
+      "MAE": 0.08403453356652305,
+      "RMSE": 0.26201444671917706
+    },
+    "test_score": {
+      "R2": 0.5541262162886527,
+      "MAE": 0.24786451088148306,
+      "RMSE": 0.5551723144999708
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T18:51:46.207863",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 100,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": 0.15,
+      "regressor__rf__max_depth": 20
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.9001278015157552,
+      "MAE": 0.08464174530065048,
+      "RMSE": 0.2647622197155279
+    },
+    "test_score": {
+      "R2": 0.5437932249459401,
+      "MAE": 0.250674615156629,
+      "RMSE": 0.5615684456612868
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T18:52:28.504451",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 100,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": 0.15,
+      "regressor__rf__max_depth": 20
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.9434109893876275,
+      "MAE": 0.08036364785192403,
+      "RMSE": 0.199296539967065
+    },
+    "test_score": {
+      "R2": 0.5818268634965661,
+      "MAE": 0.2693219969292278,
+      "RMSE": 0.5376503053097309
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T18:54:52.533483",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 1.0,
+      "regressor__xgb__reg_lambda": 2,
+      "regressor__xgb__reg_alpha": 0.01,
+      "regressor__xgb__n_estimators": 300,
+      "regressor__xgb__min_child_weight": 3,
+      "regressor__xgb__max_depth": 12,
+      "regressor__xgb__learning_rate": 0.01,
+      "regressor__xgb__gamma": 0.1,
+      "regressor__xgb__colsample_bytree": 1.0
+    },
+    "outlier_method": null,
+    "train_score": {
+      "R2": 0.8591227283769233,
+      "MAE": 0.13114333258211788,
+      "RMSE": 0.314451864703862
+    },
+    "test_score": {
+      "R2": 0.5693570246413634,
+      "MAE": 0.2570264409530503,
+      "RMSE": 0.5456077308765709
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T18:56:11.946247",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.8,
+      "regressor__xgb__reg_lambda": 7,
+      "regressor__xgb__reg_alpha": 0.1,
+      "regressor__xgb__n_estimators": 150,
+      "regressor__xgb__min_child_weight": 1,
+      "regressor__xgb__max_depth": 9,
+      "regressor__xgb__learning_rate": 0.03,
+      "regressor__xgb__gamma": 0,
+      "regressor__xgb__colsample_bytree": 0.8
+    },
+    "outlier_method": null,
+    "train_score": {
+      "R2": 0.8345023451377375,
+      "MAE": 0.1358910183822796,
+      "RMSE": 0.3408235772750468
+    },
+    "test_score": {
+      "R2": 0.5593921940809288,
+      "MAE": 0.2621934697159643,
+      "RMSE": 0.5518841547233058
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_google_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T19:02:48.240906",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 100,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": 0.15,
+      "regressor__rf__max_depth": 20
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.9485088094893891,
+      "MAE": 0.07580451469142092,
+      "RMSE": 0.19010790459046947
+    },
+    "test_score": {
+      "R2": 0.6065415709607338,
+      "MAE": 0.25076799382166665,
+      "RMSE": 0.5215203487377655
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_google_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T19:05:56.692122",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 1.0,
+      "regressor__xgb__reg_lambda": 2,
+      "regressor__xgb__reg_alpha": 0.01,
+      "regressor__xgb__n_estimators": 300,
+      "regressor__xgb__min_child_weight": 3,
+      "regressor__xgb__max_depth": 12,
+      "regressor__xgb__learning_rate": 0.01,
+      "regressor__xgb__gamma": 0.1,
+      "regressor__xgb__colsample_bytree": 1.0
+    },
+    "outlier_method": null,
+    "train_score": {
+      "R2": 0.8993246683225051,
+      "MAE": 0.1083122148745048,
+      "RMSE": 0.26582464524467775
+    },
+    "test_score": {
+      "R2": 0.5814355462440106,
+      "MAE": 0.23176849547921824,
+      "RMSE": 0.5379018071697815
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_google_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T22:26:33.702665",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.8,
+      "regressor__xgb__reg_lambda": 2,
+      "regressor__xgb__reg_alpha": 1,
+      "regressor__xgb__n_estimators": 300,
+      "regressor__xgb__min_child_weight": 1,
+      "regressor__xgb__max_depth": 7,
+      "regressor__xgb__learning_rate": 0.05,
+      "regressor__xgb__gamma": 0,
+      "regressor__xgb__colsample_bytree": 0.7
+    },
+    "outlier_method": null,
+    "train_score": {
+      "R2": 0.9535004813776863,
+      "MAE": 0.08507270260422131,
+      "RMSE": 0.18065830736847377
+    },
+    "test_score": {
+      "R2": 0.6259267533660576,
+      "MAE": 0.24251600898246703,
+      "RMSE": 0.5085107707391763
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_google_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T22:27:38.946079",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 100,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": 0.15,
+      "regressor__rf__max_depth": 20
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.9485088094893891,
+      "MAE": 0.07580451469142092,
+      "RMSE": 0.19010790459046947
+    },
+    "test_score": {
+      "R2": 0.6065415709607338,
+      "MAE": 0.25076799382166665,
+      "RMSE": 0.5215203487377655
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T22:28:12.711073",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 100,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": 0.15,
+      "regressor__rf__max_depth": 20
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.9434109893876275,
+      "MAE": 0.08036364785192403,
+      "RMSE": 0.199296539967065
+    },
+    "test_score": {
+      "R2": 0.5818268634965661,
+      "MAE": 0.2693219969292278,
+      "RMSE": 0.5376503053097309
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T22:29:33.165224",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.8,
+      "regressor__xgb__reg_lambda": 2,
+      "regressor__xgb__reg_alpha": 1,
+      "regressor__xgb__n_estimators": 300,
+      "regressor__xgb__min_child_weight": 1,
+      "regressor__xgb__max_depth": 7,
+      "regressor__xgb__learning_rate": 0.05,
+      "regressor__xgb__gamma": 0,
+      "regressor__xgb__colsample_bytree": 0.7
+    },
+    "outlier_method": null,
+    "train_score": {
+      "R2": 0.9307802278486627,
+      "MAE": 0.09932143445263296,
+      "RMSE": 0.22041887990885664
+    },
+    "test_score": {
+      "R2": 0.5954132725464871,
+      "MAE": 0.26065912271227004,
+      "RMSE": 0.5288440803486907
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T22:35:00.705983",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.75,
+      "regressor__xgb__reg_lambda": 5,
+      "regressor__xgb__reg_alpha": 0.05,
+      "regressor__xgb__n_estimators": 300,
+      "regressor__xgb__min_child_weight": 2,
+      "regressor__xgb__max_depth": 9,
+      "regressor__xgb__learning_rate": 0.03,
+      "regressor__xgb__gamma": 0.05,
+      "regressor__xgb__colsample_bytree": 0.8
+    },
+    "outlier_method": null,
+    "train_score": {
+      "R2": 0.9137962803095219,
+      "MAE": 0.10373455203048124,
+      "RMSE": 0.24597825227971115
+    },
+    "test_score": {
+      "R2": 0.5765302652704244,
+      "MAE": 0.2575816918041901,
+      "RMSE": 0.5410445417360285
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T22:36:53.196517",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.75,
+      "regressor__xgb__reg_lambda": 5,
+      "regressor__xgb__reg_alpha": 0.2,
+      "regressor__xgb__n_estimators": 250,
+      "regressor__xgb__min_child_weight": 1,
+      "regressor__xgb__max_depth": 9,
+      "regressor__xgb__learning_rate": 0.05,
+      "regressor__xgb__gamma": 0,
+      "regressor__xgb__colsample_bytree": 0.8
+    },
+    "outlier_method": null,
+    "train_score": {
+      "R2": 0.9190108318020049,
+      "MAE": 0.08204927778861282,
+      "RMSE": 0.23842246717271
+    },
+    "test_score": {
+      "R2": 0.6046338646774867,
+      "MAE": 0.22439812901655562,
+      "RMSE": 0.5227831309283758
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Boosted Regression Tree",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T22:46:16.431019",
+    "hyperparameters": {
+      "regressor__gbt__subsample": 1.0,
+      "regressor__gbt__n_estimators": 400,
+      "regressor__gbt__min_samples_split": 2,
+      "regressor__gbt__min_samples_leaf": 1,
+      "regressor__gbt__max_features": null,
+      "regressor__gbt__max_depth": 8,
+      "regressor__gbt__learning_rate": 0.01
+    },
+    "outlier_method": null,
+    "train_score": {
+      "R2": 0.9230845915360782,
+      "MAE": 0.10918023339759071,
+      "RMSE": 0.23234877322249392
+    },
+    "test_score": {
+      "R2": 0.5862890900825708,
+      "MAE": 0.2619100759135746,
+      "RMSE": 0.5347740421587399
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Boosted Regression Tree",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T22:48:03.493592",
+    "hyperparameters": {
+      "regressor__gbt__subsample": 0.7,
+      "regressor__gbt__n_estimators": 350,
+      "regressor__gbt__min_samples_split": 2,
+      "regressor__gbt__min_samples_leaf": 1,
+      "regressor__gbt__max_features": "sqrt",
+      "regressor__gbt__max_depth": 15,
+      "regressor__gbt__learning_rate": 0.01
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.9904047978226617,
+      "MAE": 0.03881148937098384,
+      "RMSE": 0.08206552902134394
+    },
+    "test_score": {
+      "R2": 0.613932523350212,
+      "MAE": 0.2522432861035222,
+      "RMSE": 0.5165988560684122
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T23:00:50.703697",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.75,
+      "regressor__xgb__reg_lambda": 5,
+      "regressor__xgb__reg_alpha": 0.05,
+      "regressor__xgb__n_estimators": 300,
+      "regressor__xgb__min_child_weight": 2,
+      "regressor__xgb__max_depth": 9,
+      "regressor__xgb__learning_rate": 0.03,
+      "regressor__xgb__gamma": 0.05,
+      "regressor__xgb__colsample_bytree": 0.8
+    },
+    "outlier_method": null,
+    "train_score": {
+      "R2": 0.9137962803095219,
+      "MAE": 0.10373455203048124,
+      "RMSE": 0.24597825227971115
+    },
+    "test_score": {
+      "R2": 0.5765302652704244,
+      "MAE": 0.2575816918041901,
+      "RMSE": 0.5410445417360285
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T23:03:13.466401",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.8,
+      "regressor__xgb__reg_lambda": 7,
+      "regressor__xgb__reg_alpha": 0.1,
+      "regressor__xgb__n_estimators": 150,
+      "regressor__xgb__min_child_weight": 1,
+      "regressor__xgb__max_depth": 9,
+      "regressor__xgb__learning_rate": 0.03,
+      "regressor__xgb__gamma": 0,
+      "regressor__xgb__colsample_bytree": 0.8
+    },
+    "outlier_method": null,
+    "train_score": {
+      "R2": 0.8345023451377375,
+      "MAE": 0.1358910183822796,
+      "RMSE": 0.3408235772750468
+    },
+    "test_score": {
+      "R2": 0.5593921940809288,
+      "MAE": 0.2621934697159643,
+      "RMSE": 0.5518841547233058
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T23:05:43.153373",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 100,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": 0.15,
+      "regressor__rf__max_depth": 20
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.9434109893876275,
+      "MAE": 0.08036364785192403,
+      "RMSE": 0.199296539967065
+    },
+    "test_score": {
+      "R2": 0.5818268634965661,
+      "MAE": 0.2693219969292278,
+      "RMSE": 0.5376503053097309
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T23:10:59.334053",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 1.0,
+      "regressor__xgb__n_estimators": 100,
+      "regressor__xgb__min_child_weight": 1,
+      "regressor__xgb__max_depth": 10,
+      "regressor__xgb__lambda": 5,
+      "regressor__xgb__grow_policy": "depthwise",
+      "regressor__xgb__gamma": 0.1,
+      "regressor__xgb__colsample_bytree": 0.8,
+      "regressor__xgb__alpha": 0.01
+    },
+    "outlier_method": null,
+    "train_score": {
+      "R2": 0.8972305105206844,
+      "MAE": 0.11236425159172944,
+      "RMSE": 0.26857513826642
+    },
+    "test_score": {
+      "R2": 0.5818303424797306,
+      "MAE": 0.25474958533162023,
+      "RMSE": 0.5376480688195218
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T23:15:40.276278",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.8,
+      "regressor__xgb__n_estimators": 400,
+      "regressor__xgb__min_child_weight": 1,
+      "regressor__xgb__max_depth": 10,
+      "regressor__xgb__lambda": 10,
+      "regressor__xgb__grow_policy": "lossguide",
+      "regressor__xgb__gamma": 0.05,
+      "regressor__xgb__colsample_bytree": 0.8,
+      "regressor__xgb__alpha": 0
+    },
+    "outlier_method": null,
+    "train_score": {
+      "R2": 0.9541765198178247,
+      "MAE": 0.07933193366982558,
+      "RMSE": 0.17934023862553206
+    },
+    "test_score": {
+      "R2": 0.5813202922912637,
+      "MAE": 0.25812344182178193,
+      "RMSE": 0.5379758591369428
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T23:31:19.360681",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.6,
+      "regressor__xgb__n_estimators": 400,
+      "regressor__xgb__min_child_weight": 1,
+      "regressor__xgb__max_depth": null,
+      "regressor__xgb__lambda": 1,
+      "regressor__xgb__grow_policy": "lossguide",
+      "regressor__xgb__gamma": 0,
+      "regressor__xgb__colsample_bytree": 0.8,
+      "regressor__xgb__alpha": 0.1
+    },
+    "outlier_method": null,
+    "train_score": {
+      "R2": 0.9110454190251918,
+      "MAE": 0.09281514356629453,
+      "RMSE": 0.24987215799025317
+    },
+    "test_score": {
+      "R2": 0.5963860495103084,
+      "MAE": 0.23207479856330324,
+      "RMSE": 0.528207928805792
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 15,
+    "timestamp": "2025-07-12T23:35:47.012238",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.8,
+      "regressor__xgb__n_estimators": 500,
+      "regressor__xgb__min_child_weight": 0.25,
+      "regressor__xgb__max_depth": 30,
+      "regressor__xgb__lambda": 1,
+      "regressor__xgb__grow_policy": "depthwise",
+      "regressor__xgb__gamma": 0,
+      "regressor__xgb__colsample_bytree": 0.7,
+      "regressor__xgb__alpha": 0.1
+    },
+    "outlier_method": null,
+    "train_score": {
+      "R2": 0.9943223564407593,
+      "MAE": 0.02103137454384106,
+      "RMSE": 0.06312738079936848
+    },
+    "test_score": {
+      "R2": 0.6084799035320292,
+      "MAE": 0.22606012045567248,
+      "RMSE": 0.5202341544679254
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Boosted Regression Tree",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 10,
+    "timestamp": "2025-07-12T23:36:57.505769",
+    "hyperparameters": {
+      "regressor__gbt__subsample": 0.7,
+      "regressor__gbt__n_estimators": 200,
+      "regressor__gbt__min_samples_split": 8,
+      "regressor__gbt__min_samples_leaf": 4,
+      "regressor__gbt__max_features": "log2",
+      "regressor__gbt__max_depth": 8,
+      "regressor__gbt__learning_rate": 0.1
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.8841837083172813,
+      "MAE": 0.1002753224110076,
+      "RMSE": 0.2851139953646234
+    },
+    "test_score": {
+      "R2": 0.6002050155000697,
+      "MAE": 0.2308349548615699,
+      "RMSE": 0.5257030568960575
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 15,
+    "timestamp": "2025-07-12T23:46:27.851698",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 100,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": 0.15,
+      "regressor__rf__max_depth": 20
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.9427960923045797,
+      "MAE": 0.0809181730096459,
+      "RMSE": 0.20037639414003494
+    },
+    "test_score": {
+      "R2": 0.5768448447295529,
+      "MAE": 0.26493092572810023,
+      "RMSE": 0.5408435437589197
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 15,
+    "timestamp": "2025-07-12T23:47:16.402955",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 100,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": "sqrt",
+      "regressor__rf__max_depth": 20
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.9456107293060589,
+      "MAE": 0.07862469432328043,
+      "RMSE": 0.19538459820356932
+    },
+    "test_score": {
+      "R2": 0.5820821489462547,
+      "MAE": 0.2620859504129478,
+      "RMSE": 0.537486168446243
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 20,
+    "timestamp": "2025-07-12T23:49:04.726412",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 100,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": "sqrt",
+      "regressor__rf__max_depth": 20
+    },
+    "outlier_method": "iqr",
+    "train_score": {
+      "R2": 0.9452461093484652,
+      "MAE": 0.0796953212588016,
+      "RMSE": 0.1960384231519349
+    },
+    "test_score": {
+      "R2": 0.5950131644253289,
+      "MAE": 0.26376405610461906,
+      "RMSE": 0.5291055107290449
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 20,
+    "timestamp": "2025-07-13T00:38:21.146147",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 100,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": "sqrt",
+      "regressor__rf__max_depth": 20
+    },
+    "outlier_method": "manual_removal",
+    "train_score": {
+      "R2": 0.9667066214496226,
+      "MAE": 0.6007600637261321,
+      "RMSE": 1.4285418379736325
+    },
+    "test_score": {
+      "R2": 0.590642338412765,
+      "MAE": 1.9526889309066098,
+      "RMSE": 4.839792235491411
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 20,
+    "timestamp": "2025-07-13T00:43:21.280780",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 100,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": "sqrt",
+      "regressor__rf__max_depth": 20
+    },
+    "outlier_method": "manual_removal",
+    "train_score": {
+      "R2": 0.9426318659098322,
+      "MAE": 0.7792555414748821,
+      "RMSE": 2.671021487217158
+    },
+    "test_score": {
+      "R2": 0.3960919236801762,
+      "MAE": 2.4830289054137356,
+      "RMSE": 9.143496061450506
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 20,
+    "timestamp": "2025-07-13T00:44:16.813239",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 100,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": "sqrt",
+      "regressor__rf__max_depth": 20
+    },
+    "outlier_method": "manual_removal",
+    "train_score": {
+      "R2": 0.918237765862243,
+      "MAE": 0.6686149399820092,
+      "RMSE": 2.238671677116321
+    },
+    "test_score": {
+      "R2": 0.5093855942132204,
+      "MAE": 1.6850271698717354,
+      "RMSE": 5.298408088064533
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 20,
+    "timestamp": "2025-07-13T00:45:28.732754",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 100,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": "sqrt",
+      "regressor__rf__max_depth": 20
+    },
+    "outlier_method": "manual_removal",
+    "train_score": {
+      "R2": 0.9667066214496226,
+      "MAE": 0.6007600637261321,
+      "RMSE": 1.4285418379736325
+    },
+    "test_score": {
+      "R2": 0.590642338412765,
+      "MAE": 1.9526889309066098,
+      "RMSE": 4.839792235491411
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 20,
+    "timestamp": "2025-07-13T00:47:28.391976",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 100,
+      "regressor__rf__min_samples_split": 4,
+      "regressor__rf__min_samples_leaf": 2,
+      "regressor__rf__max_features": "sqrt",
+      "regressor__rf__max_depth": 20
+    },
+    "outlier_method": "manual_removal",
+    "train_score": {
+      "R2": 0.33152401068418336,
+      "MAE": 3.5097348774765407,
+      "RMSE": 6.401134256146015
+    },
+    "test_score": {
+      "R2": 0.18587517105501028,
+      "MAE": 3.2614052633118624,
+      "RMSE": 6.825284468547087
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 20,
+    "timestamp": "2025-07-13T00:50:34.585868",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 100,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": "sqrt",
+      "regressor__rf__max_depth": 20
+    },
+    "outlier_method": "manual_removal",
+    "train_score": {
+      "R2": 0.9666534238534231,
+      "MAE": 0.6012550655082656,
+      "RMSE": 1.4296826753167915
+    },
+    "test_score": {
+      "R2": 0.5915916935533416,
+      "MAE": 1.949391882845135,
+      "RMSE": 4.834176915340844
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 15,
+    "timestamp": "2025-07-13T00:56:59.949404",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.8,
+      "regressor__xgb__n_estimators": 550,
+      "regressor__xgb__min_child_weight": 0.03,
+      "regressor__xgb__max_depth": 6,
+      "regressor__xgb__lambda": 1,
+      "regressor__xgb__grow_policy": "lossguide",
+      "regressor__xgb__gamma": 0,
+      "regressor__xgb__colsample_bytree": 0.6,
+      "regressor__xgb__alpha": 0.01
+    },
+    "outlier_method": null,
+    "train_score": {
+      "R2": 0.922601922977403,
+      "MAE": 0.6860123375252788,
+      "RMSE": 2.1781065202256595
+    },
+    "test_score": {
+      "R2": 0.4813536845116534,
+      "MAE": 1.7412281728071823,
+      "RMSE": 5.447671426072256
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 15,
+    "timestamp": "2025-07-13T01:06:22.930822",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.8,
+      "regressor__xgb__n_estimators": 550,
+      "regressor__xgb__min_child_weight": 0.03,
+      "regressor__xgb__max_depth": 6,
+      "regressor__xgb__lambda": 1,
+      "regressor__xgb__grow_policy": "lossguide",
+      "regressor__xgb__gamma": 0,
+      "regressor__xgb__colsample_bytree": 0.6,
+      "regressor__xgb__alpha": 0.01
+    },
+    "outlier_method": null,
+    "train_score": {
+      "R2": 0.922601922977403,
+      "MAE": 0.6860123375252788,
+      "RMSE": 2.1781065202256595
+    },
+    "test_score": {
+      "R2": 0.4813536845116534,
+      "MAE": 1.7412281728071823,
+      "RMSE": 5.447671426072256
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 15,
+    "timestamp": "2025-07-13T01:15:27.088908",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.8,
+      "regressor__xgb__n_estimators": 550,
+      "regressor__xgb__min_child_weight": 0.03,
+      "regressor__xgb__max_depth": 6,
+      "regressor__xgb__lambda": 1,
+      "regressor__xgb__grow_policy": "lossguide",
+      "regressor__xgb__gamma": 0,
+      "regressor__xgb__colsample_bytree": 0.6,
+      "regressor__xgb__alpha": 0.01
+    },
+    "outlier_method": null,
+    "train_score": {
+      "R2": 0.922601922977403,
+      "MAE": 0.6860123375252788,
+      "RMSE": 2.1781065202256595
+    },
+    "test_score": {
+      "R2": 0.4813536845116534,
+      "MAE": 1.7412281728071823,
+      "RMSE": 5.447671426072256
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 15,
+    "timestamp": "2025-07-13T01:30:44.105852",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.8,
+      "regressor__xgb__n_estimators": 500,
+      "regressor__xgb__min_child_weight": 0.1,
+      "regressor__xgb__max_depth": 8,
+      "regressor__xgb__lambda": 5,
+      "regressor__xgb__grow_policy": "depthwise",
+      "regressor__xgb__gamma": 0.3,
+      "regressor__xgb__colsample_bytree": 0.5,
+      "regressor__xgb__alpha": 0.1
+    },
+    "outlier_method": null,
+    "train_score": {
+      "R2": 0.9866239137919716,
+      "MAE": 0.43176422360607697,
+      "RMSE": 0.9054793685737361
+    },
+    "test_score": {
+      "R2": 0.5757999520487005,
+      "MAE": 2.0529950200663976,
+      "RMSE": 4.92675100172306
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 15,
+    "timestamp": "2025-07-13T01:57:36.435243",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.8,
+      "regressor__xgb__n_estimators": 500,
+      "regressor__xgb__min_child_weight": 0.1,
+      "regressor__xgb__max_depth": 8,
+      "regressor__xgb__lambda": 5,
+      "regressor__xgb__grow_policy": "depthwise",
+      "regressor__xgb__gamma": 0.3,
+      "regressor__xgb__colsample_bytree": 0.5,
+      "regressor__xgb__alpha": 0.1
+    },
+    "outlier_method": null,
+    "train_score": {
+      "R2": 0.9866239137919716,
+      "MAE": 0.43176422360607697,
+      "RMSE": 0.9054793685737361
+    },
+    "test_score": {
+      "R2": 0.5757999520487005,
+      "MAE": 2.0529950200663976,
+      "RMSE": 4.92675100172306
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 15,
+    "timestamp": "2025-07-13T02:00:10.764755",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.8,
+      "regressor__xgb__n_estimators": 400,
+      "regressor__xgb__min_child_weight": 0.1,
+      "regressor__xgb__max_depth": 4,
+      "regressor__xgb__lambda": 5,
+      "regressor__xgb__grow_policy": "lossguide",
+      "regressor__xgb__gamma": 0.2,
+      "regressor__xgb__colsample_bytree": 0.5,
+      "regressor__xgb__alpha": 0.05
+    },
+    "outlier_method": null,
+    "train_score": {
+      "R2": 0.8138752324271172,
+      "MAE": 1.7759944845571247,
+      "RMSE": 3.377661425150498
+    },
+    "test_score": {
+      "R2": 0.4839689993584809,
+      "MAE": 2.536518656910422,
+      "RMSE": 5.43391891126442
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 15,
+    "timestamp": "2025-07-13T10:31:07.173524",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.8,
+      "regressor__xgb__n_estimators": 400,
+      "regressor__xgb__min_child_weight": 0.1,
+      "regressor__xgb__max_depth": 4,
+      "regressor__xgb__lambda": 5,
+      "regressor__xgb__grow_policy": "lossguide",
+      "regressor__xgb__gamma": 0.2,
+      "regressor__xgb__colsample_bytree": 0.6,
+      "regressor__xgb__alpha": 0.1
+    },
+    "outlier_method": null,
+    "train_score": {
+      "R2": 0.8290305673500442,
+      "MAE": 1.7905755233181642,
+      "RMSE": 3.3569834488985335
+    },
+    "test_score": {
+      "R2": 0.5118207045633614,
+      "MAE": 2.582480605278463,
+      "RMSE": 5.403808619102875
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 15,
+    "timestamp": "2025-07-13T10:34:01.061288",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.8,
+      "regressor__xgb__n_estimators": 300,
+      "regressor__xgb__min_child_weight": 0.1,
+      "regressor__xgb__max_depth": 8,
+      "regressor__xgb__lambda": 5,
+      "regressor__xgb__grow_policy": "depthwise",
+      "regressor__xgb__gamma": 0.1,
+      "regressor__xgb__colsample_bytree": 0.6,
+      "regressor__xgb__alpha": 0.01
+    },
+    "outlier_method": null,
+    "train_score": {
+      "R2": 0.9762542752996087,
+      "MAE": 0.5983117327228464,
+      "RMSE": 1.2510730792507696
+    },
+    "test_score": {
+      "R2": 0.5641294724268435,
+      "MAE": 2.1656233183315656,
+      "RMSE": 5.106096680575645
+    },
+    "note": "ZAND"
+  },
+  {
+    "model": "XGBoost",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 15,
+    "timestamp": "2025-07-13T10:36:11.549815",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.8,
+      "regressor__xgb__n_estimators": 400,
+      "regressor__xgb__min_child_weight": 0.05,
+      "regressor__xgb__max_depth": 8,
+      "regressor__xgb__lambda": 10,
+      "regressor__xgb__grow_policy": "depthwise",
+      "regressor__xgb__gamma": 0.2,
+      "regressor__xgb__colsample_bytree": 0.5,
+      "regressor__xgb__alpha": 0
+    },
+    "outlier_method": null,
+    "train_score": {
+      "R2": 0.9664162059441714,
+      "MAE": 0.7654250108918558,
+      "RMSE": 1.6087423836778367
+    },
+    "test_score": {
+      "R2": 0.5680933143489155,
+      "MAE": 2.6351313053409813,
+      "RMSE": 5.599287083440437
+    },
+    "note": "ZAND"
+  },
+  {
+    "model": "XGBoost",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 20,
+    "timestamp": "2025-07-13T10:46:16.588961",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.8,
+      "regressor__xgb__n_estimators": 500,
+      "regressor__xgb__min_child_weight": 0.1,
+      "regressor__xgb__max_depth": 8,
+      "regressor__xgb__lambda": 5,
+      "regressor__xgb__grow_policy": "depthwise",
+      "regressor__xgb__gamma": 0.3,
+      "regressor__xgb__colsample_bytree": 0.5,
+      "regressor__xgb__alpha": 0.1
+    },
+    "outlier_method": null,
+    "train_score": {
+      "R2": 0.9881871188947035,
+      "MAE": 0.4157242144456593,
+      "RMSE": 0.8509262988165123
+    },
+    "test_score": {
+      "R2": 0.568870279251803,
+      "MAE": 2.043321732208944,
+      "RMSE": 4.966829344701082
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 15,
+    "timestamp": "2025-07-13T10:58:09.384039",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.8,
+      "regressor__xgb__n_estimators": 500,
+      "regressor__xgb__min_child_weight": 0.1,
+      "regressor__xgb__max_depth": 8,
+      "regressor__xgb__lambda": 5,
+      "regressor__xgb__grow_policy": "depthwise",
+      "regressor__xgb__gamma": 0.3,
+      "regressor__xgb__colsample_bytree": 0.5,
+      "regressor__xgb__alpha": 0.1
+    },
+    "outlier_method": null,
+    "train_score": {
+      "R2": 0.9866239137919716,
+      "MAE": 0.43176422360607697,
+      "RMSE": 0.9054793685737361
+    },
+    "test_score": {
+      "R2": 0.5757999520487005,
+      "MAE": 2.0529950200663976,
+      "RMSE": 4.92675100172306
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 20,
+    "timestamp": "2025-07-13T12:23:49.223856",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 100,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": "sqrt",
+      "regressor__rf__max_depth": 20
+    },
+    "outlier_method": "manual_removal",
+    "train_score": {
+      "R2": 0.9654814867872331,
+      "MAE": 0.6536464873540748,
+      "RMSE": 1.6927904341652862
+    },
+    "test_score": {
+      "R2": 0.6289452981177182,
+      "MAE": 2.1320974908778685,
+      "RMSE": 5.276916950615629
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 20,
+    "timestamp": "2025-07-13T12:27:32.532922",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 100,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": "sqrt",
+      "regressor__rf__max_depth": 20
+    },
+    "outlier_method": "manual_removal",
+    "train_score": {
+      "R2": 0.9675238613183454,
+      "MAE": 0.6264152616829938,
+      "RMSE": 1.5501669361977908
+    },
+    "test_score": {
+      "R2": 0.6375255553701848,
+      "MAE": 2.1258771347615477,
+      "RMSE": 5.21554847417465
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Boosted Regression Tree",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 20,
+    "timestamp": "2025-07-13T13:07:59.453983",
+    "hyperparameters": {
+      "regressor__gbt__subsample": 0.8,
+      "regressor__gbt__n_estimators": 250,
+      "regressor__gbt__min_samples_split": 8,
+      "regressor__gbt__min_samples_leaf": 2,
+      "regressor__gbt__max_features": "log2",
+      "regressor__gbt__max_depth": 10,
+      "regressor__gbt__learning_rate": 0.05
+    },
+    "outlier_method": "manual_removal",
+    "train_score": {
+      "R2": 0.957921410825267,
+      "MAE": 0.5267490800751229,
+      "RMSE": 1.7645211202398714
+    },
+    "test_score": {
+      "R2": 0.5307452587196537,
+      "MAE": 1.8315036776744393,
+      "RMSE": 5.934247073411166
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 20,
+    "timestamp": "2025-07-13T13:10:12.120738",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.8,
+      "regressor__xgb__n_estimators": 550,
+      "regressor__xgb__min_child_weight": 0.05,
+      "regressor__xgb__max_depth": 8,
+      "regressor__xgb__lambda": 10,
+      "regressor__xgb__grow_policy": "depthwise",
+      "regressor__xgb__gamma": 0.2,
+      "regressor__xgb__colsample_bytree": 0.7,
+      "regressor__xgb__alpha": 0
+    },
+    "outlier_method": null,
+    "train_score": {
+      "R2": 0.9838547183970834,
+      "MAE": 0.48146359099201264,
+      "RMSE": 1.0929972971888566
+    },
+    "test_score": {
+      "R2": 0.640892103939339,
+      "MAE": 2.053356234155017,
+      "RMSE": 5.191271787689792
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 20,
+    "timestamp": "2025-07-13T13:26:02.147993",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 100,
+      "regressor__rf__min_samples_split": 4,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": "sqrt",
+      "regressor__rf__max_depth": null
+    },
+    "outlier_method": "manual_removal",
+    "train_score": {
+      "R2": 0.9406315219006034,
+      "MAE": 0.8432335871732832,
+      "RMSE": 2.0959177413740693
+    },
+    "test_score": {
+      "R2": 0.6392691424652693,
+      "MAE": 2.140123093560005,
+      "RMSE": 5.202989347162144
+    },
+    "note": "Removed soil region"
+  }
+]
