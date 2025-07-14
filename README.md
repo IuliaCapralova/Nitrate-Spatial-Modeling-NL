@@ -15,11 +15,8 @@
     - [Repository Structure](#repository_structure)
     - [Data Folder setup](#folder_setup)
 3. [Usage](#usage)
-4. [Roadmap](#roadmap)
-5. [Contributing](#contributing)
-6. [License](#license)
-7. [Authors](#authors)
-8. [Acknowledgements](#acknowledgements)
+4. [Authors](#authors)
+5. [Acknowledgements](#acknowledgements)
 
 ---
 
@@ -132,15 +129,27 @@ data/
 
 ## Usage
 
-To run a preprocessing pypeling run the following:
+To run a preprocessing pipeline run the following:
 
 ```bash
 python3 src/data/main.py
 ```
 In the `main.py` follow the instractions regarding provinces, features, and years of interest. Adjust it for your needs.
 
-To run a preprocessing pypeling run the following:
+To run a model setup and training pipeline run the following:
 
 ```bash
 python3 src/model/main.py
 ```
+
+## Authors
+
+Supervisor: Juan Diego Cárdenas-Cartagena
+Student: Iulia Capralova
+
+
+## Acknowledgements
+
+I would like to thank to my supervisor, Juan Diego, for his support, continous feedback, and endless enthusiasm in the topic that encouraged me throught the entire project.
+
+I also wish to thank University of Groningen for giving access Hábrók High Performance Computing (HPC) cluster, which made it possible to bring this project to reality.
