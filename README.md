@@ -48,8 +48,10 @@ python data/main.py
 
 1. [About The Project](#about-the-project)
 2. [Getting Started](#getting-started)
-    - [Dependencies](#dependencies)
     - [Installation](#installation)
+    - [Dependencies](#dependencies)
+    - [Repository Structure](#repository_structure)
+    - [Data Folder setup](#folder_setup)
 3. [Usage](#usage)
 4. [Roadmap](#roadmap)
 5. [Contributing](#contributing)
@@ -73,9 +75,16 @@ The resulting maps visualize how nitrate pollution has changed between 2010 and 
 
 The following sections explain how to set up the project and run it locally.
 
+### Installation
+
+Clone the repo:
+```bash
+https://github.com/IuliaCapralova/Bachelor-Thesis.git
+```
+
 ### Dependencies
 
-Before getting started, make sure you right Python version:
+Before getting started, make sure you have right Python version:
 
 * Python 3.9.6
 
@@ -103,11 +112,72 @@ pip install -r requirements.txt
 ```
 This will install all necessary packages for running the spatial modeling and prediction pipeline.
 
-### Installation
+### Repository Structure
+
+Bachelor-Thesis/
+├── data/                 # Raw, cleaned, and aligned spatial and environmental datasets
+├── logging/              # Logging configuration and saved logs for pipeline runs
+├── notebooks/            # Jupyter notebooks for exploratory analysis and model experimentation
+├── plots/                # Final visualizations used in the thesis and report
+├── r_scrips_plots/       # R scripts used for generating plots
+├── requirements.txt      # List of all Python packages required to run the project
+├── src/                  # Source code: preprocessing, training, prediction, evaluation modules
+├── trained_models/       # Saved machine learning models (.pkl)
+├── README.md             # Project overview and setup instructions
+
+
+
+### Data Folder setup
+
+Next, a `data` folder should be created separately in the root of the repository `Bachelor-Thesis`.
+It contains all raw, clean, and aligned input datasets used in the modeling pipeline. The folder
+set up should be as follows:
 
 ```bash
-# Step 1
-command_to_install
+data/
+├── aligned/
+│   ├── aligned_grid_2023/
+│   ├── aligned_grid_2021/
+│   ├── aligned_grid_2017/
+│   └── aligned_grid_2010/
+│
+├── clean/
+│   ├── elevation/
+│   ├── environment/
+│   ├── land_use/
+│   ├── n_deposition/
+│   ├── population_density/
+│   ├── soil_composition/
+│   ├── type_of_soil/
+│   ├── well_chem_data/
+│   └── well_depth_data/
+│
+├── grids_for_prediction/
+│
+├── raw/
+│   ├── well_depth_data/
+│   ├── population_density/
+│   ├── well_chem_data/
+│   ├── provinces_nl/
+│   ├── soil_composition/
+│   ├── soil_chem_data/
+│   ├── n_deposition/
+│   ├── type_of_soil_data/
+│   ├── land_use/
+│   └── type_of_soil/
+```
 
-# Step 2
-another_command
+## Usage
+
+To run a preprocessing pypeling run the following:
+
+```bash
+python3 src/data/main.py
+```
+In the `main.py` follow the instractions regarding provinces, features, and years of interest. Adjust it for your needs.
+
+To run a preprocessing pypeling run the following:
+
+```bash
+python3 src/model/main.py
+```
