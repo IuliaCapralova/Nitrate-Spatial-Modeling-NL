@@ -90,12 +90,13 @@ class DataModelPrep():
     def _drop_nans(self):
         # self._data.dropna(inplace=True)
         self._data = self._data.dropna()
+        # self._data = self._data.dropna(subset=["acidity_1", "precipitation"])
 
     def _remove_outliers(self, *, target_col: str, top_n: int = 10):
         df = self._data
 
-        top_nitrate_outliers = list(df[target_col].sort_values()[-5:].index)
-        df = df.drop(top_nitrate_outliers)
+        # top_nitrate_outliers = list(df[target_col].sort_values()[-20:].index)
+        # df = df.drop(top_nitrate_outliers)
         print(f"len(df): {len(df)}")
 
         self._data = df

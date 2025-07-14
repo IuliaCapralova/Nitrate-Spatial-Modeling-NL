@@ -9,6 +9,7 @@ from sklearn.metrics import make_scorer, mean_squared_error
 from model_abc import ModelBase
 from sklearn.compose import TransformedTargetRegressor
 from sklearn.base import clone
+from sklearn.feature_selection import SelectFromModel
 
 import warnings
 warnings.filterwarnings(
@@ -38,8 +39,8 @@ class RFmodel(ModelBase):
 
             full_pipeline = TransformedTargetRegressor(
                 regressor=pipe,
-                func=np.log1p,
-                inverse_func=np.expm1
+                # func=np.log1p,
+                # inverse_func=np.expm1
             )
 
             best_model = self.grid_search(full_pipeline, X_train, y_train, cv=5)
@@ -53,13 +54,19 @@ class RFmodel(ModelBase):
                                             min_samples_leaf=min_samples_leaf,
                                             max_features=max_features,
                                             random_state=4)
+            
+            number_of_features = 8
+            selector = SelectFromModel(RandomForestRegressor(n_estimators=number_of_features, random_state=4), threshold="median")
+
             pipe = Pipeline([("prep", preprocessor),
+                            #  ("feature_select", selector),
                             ("rf", rf_model)])
 
             full_pipeline = TransformedTargetRegressor(
                 regressor=pipe,
-                func=np.log1p,
-                inverse_func=np.expm1)
+                # func=np.log1p,
+                # inverse_func=np.expm1
+            )
 
             self._model = full_pipeline
 
@@ -69,12 +76,20 @@ class RFmodel(ModelBase):
         model_name = type(full_pipeline.regressor.named_steps["rf"]).__name__
         print(f"Searching for good hyperparameters for {model_name}...")
 
+        # param_grid = {
+        #         "regressor__rf__n_estimators": [100, 150, 200, 250],
+        #         "regressor__rf__max_features": ["sqrt", 0.5, 1],
+        #         "regressor__rf__max_depth": [None, 5, 10, 15],
+        #         "regressor__rf__min_samples_split": [2, 4, 6, 8],
+        #         "regressor__rf__min_samples_leaf": [1, 2, 3, 4]
+        #     }
+        
         param_grid = {
-                "regressor__rf__n_estimators": [100, 150, 200, 250],
-                "regressor__rf__max_features": ["sqrt", 0.5, 1],
-                "regressor__rf__max_depth": [None, 5, 10, 15],
-                "regressor__rf__min_samples_split": [4, 6, 8, 10],
-                "regressor__rf__min_samples_leaf": [2, 3, 4, 6]
+                'regressor__rf__n_estimators': [30, 50, 75, 100, 150],
+                'regressor__rf__max_depth': [10, 15, 20, None],
+                'regressor__rf__min_samples_split': [4, 6, 8, 10],
+                'regressor__rf__min_samples_leaf': [3, 4, 6],
+                'regressor__rf__max_features': ['sqrt', 0.15, 0.3, 0.5, 0.8]
             }
 
         tscv = TimeSeriesSplit(n_splits=cv)
@@ -83,7 +98,7 @@ class RFmodel(ModelBase):
             param_distributions=param_grid,
             n_iter=100,
             cv=tscv,
-            scoring=make_scorer(mean_absolute_error, greater_is_better=False),
+            scoring="r2",  # make_scorer(mean_absolute_error, greater_is_better=False)
             n_jobs=-1,
             random_state=9,
             verbose=1

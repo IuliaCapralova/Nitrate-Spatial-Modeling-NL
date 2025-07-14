@@ -37,8 +37,8 @@ class XGBmodel(ModelBase):
             
             full_pipeline = TransformedTargetRegressor(
                 regressor=pipe,
-                func=np.log1p,
-                inverse_func=np.expm1
+                # func=np.log1p,
+                # inverse_func=np.expm1
             )
 
             best_model = self.grid_search(full_pipeline, X_train, y_train, cv=5)
@@ -60,8 +60,9 @@ class XGBmodel(ModelBase):
             
             full_pipeline = TransformedTargetRegressor(
                 regressor=pipe,
-                func=np.log1p,
-                inverse_func=np.expm1)
+                # func=np.log1p,
+                # inverse_func=np.expm1
+            )
 
             self._model = full_pipeline
 
@@ -79,7 +80,7 @@ class XGBmodel(ModelBase):
 
         param_grid = {
                 "regressor__xgb__n_estimators": [50, 100, 150, 200, 250],
-                "regressor__xgb__max_depth": [3, 4, 6, 10],
+                "regressor__xgb__max_depth": [3, 4, 6, 10, 15, 20],
                 "regressor__xgb__learning_rate": [0.05, 0.01, 0.1],
                 "regressor__xgb__subsample": [0.4, 0.5, 0.6, 0.8],
                 "regressor__xgb__colsample_bytree": [0.4, 0.6, 0.8],
@@ -94,7 +95,7 @@ class XGBmodel(ModelBase):
             param_distributions=param_grid,
             n_iter=100,
             cv=tscv,
-            scoring=make_scorer(mean_absolute_error, greater_is_better=False),
+            scoring="r2",   # make_scorer(mean_absolute_error, greater_is_better=False)
             n_jobs=-1,
             random_state=9,
             verbose=1

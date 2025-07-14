@@ -36,7 +36,7 @@ from plotting        import (
 # 1)  DATA PREP
 # ───────────────────────────────────────────────────────────────────────────────
 def prepare_data(pollutant: str, selected_features, holdout_cols, train_years, test_years):
-    prep = DataModelPrep("merged_dataset_1.csv")
+    prep = DataModelPrep("merged_dataset_1_ahn_elevation.csv")
     dataset_split, col_transformer, test_coords = prep.prepare(
         features=selected_features,
         target=pollutant,
@@ -88,11 +88,34 @@ def train_models( dataset_bundle, model_keys: List[str]) -> tuple[dict[str, np.n
 # 3)  MAIN
 # ───────────────────────────────────────────────────────────────────────────────
 def main() -> None:
+    # FEATURES = [
+    #     "population",
+    #     "groundwater_depth",
+    #     "elevation",
+    #     "landuse code",
+    #     "precipitation",
+    #     "temperature",
+    #     "n deposition",
+    #     "mainsoilclassification_1",
+    #     "organicmattercontent_1",
+    #     "density_1",
+    #     "acidity_1",
+    #     "fedith_1", # new
+    #     "cnratio_1", # new
+    #     "minimumacidity_1", # new
+    #     "sandmedian_1", # new
+    #     "loamcontent_1", # new
+    #     "lon",
+    #     "lat",
+    # ]
+
     FEATURES = [
-        "population",
-        "groundwater depth",
-        "elevation",
         "landuse code",
+        "soil region",
+        "population",
+        "elevation",
+        "lon",
+        "lat",
         "precipitation",
         "temperature",
         "n deposition",
@@ -100,13 +123,26 @@ def main() -> None:
         "organicmattercontent_1",
         "density_1",
         "acidity_1",
-        "lon",
-        "lat",
+        "minimumacidity_1",
+        "maximumacidity_1",
+        "cnratio_1",
+        "calciccontent_1",
+        "fedith_1",
+        "loamcontent_1",
+        "minimumloamcontent_1",
+        "maximumloamcontent_1",
+        "sandmedian_1",
+        "minimumsandmedian_1",
+        "maximumsandmedian_1",
+        "siltcontent_1",
+        # "groundwater_depth",
     ]
+
     HOLDOUT    = ["lon", "lat"]
     TRAIN_YRS  = list(range(2008, 2021))
     TEST_YRS   = [2021, 2022, 2023]
-    MODELS     = ["rf", "xgb", "lr"]
+    # MODELS     = ["rf", "xgb", "lr"]
+    MODELS     = ["rf", "xgb"]
     ENS_MODELS = ["RandomForestRegressor", "XGBRegressor"]
 
 
