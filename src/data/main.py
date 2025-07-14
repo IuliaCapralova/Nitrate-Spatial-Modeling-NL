@@ -17,7 +17,7 @@ from generate_empty_grid import generate_empty_grid
 def main():
     province = "overijssel"
     # provinces = ['drenthe', 'flevoland', 'fryslân', 'gelderland', 'groningen', 'limburg', 'noord-brabant', 'noord-holland', 'overijssel', 'utrecht', 'zeeland', 'zuid-holland']
-    provinces = ["noord-brabant"]
+    provinces = ["zuid-holland"]
     n_files = None
     filter = 1
     year_start = 2008
@@ -122,17 +122,19 @@ def main():
                                 # 'sandmedian', 'minimumsandmedian', 'maximumsandmedian', 'siltcontent',
                                 # 'density', 'soilunit_code'
 
-    # # FOR NITRATE DATA
-    # variables_of_interest = ['bro-id', 'nitrate', 'geometry', 'date', 'groundwater_depth', \
-    #                          'population', 'soil region', 'precipitation', \
-    #                          'temperature', 'n deposition', 'landuse code',\
-    #                          'mainsoilclassification_1', 'organicmattercontent_1', \
-    #                          'density_1', 'acidity_1', 'minimumacidity_1', 'maximumacidity_1', 'cnratio_1',\
-    #                          'peattype_1', 'calciccontent_1', 'fedith_1', 'loamcontent_1', 'minimumloamcontent_1',\
-    #                          'maximumloamcontent_1', 'sandmedian_1', 'minimumsandmedian_1', 'maximumsandmedian_1',\
-    #                          'siltcontent_1', "elevation", "lon", "lat"]
+    # FOR NITRATE DATA
+    variables_of_interest = ['bro-id', 'nitrate', 'geometry', 'date', 'groundwater_depth', \
+                             'population', 'soil region', 'precipitation', \
+                             'temperature', 'n deposition', 'landuse code',\
+                             'mainsoilclassification_1', 'organicmattercontent_1', \
+                             'density_1', 'acidity_1', 'minimumacidity_1', 'maximumacidity_1', 'cnratio_1',\
+                             'peattype_1', 'calciccontent_1', 'fedith_1', 'loamcontent_1', 'minimumloamcontent_1',\
+                             'maximumloamcontent_1', 'sandmedian_1', 'minimumsandmedian_1', 'maximumsandmedian_1',\
+                             'siltcontent_1', "elevation", "lon", "lat"]
 
-    # FOR GRID DATA
+    # variables_of_interest = ['bro-id', 'nitrate', 'geometry', 'date', 'elevation']
+
+    # # FOR GRID DATA
     # variables_of_interest = ['geometry', 'date', 'groundwater_depth', \
     #                          'population', 'soil region', 'precipitation', \
     #                          'temperature', 'n deposition', 'landuse code',\
@@ -142,18 +144,18 @@ def main():
     #                          'maximumloamcontent_1', 'sandmedian_1', 'minimumsandmedian_1', 'maximumsandmedian_1',\
     #                          'siltcontent_1', "elevation", "lon", "lat"]
     
-    variables_of_interest = ['geometry', 'date', 'groundwater_depth']
+    # variables_of_interest = ['geometry', 'date', 'groundwater_depth']
 
     # variables_of_interest = ['bro-id', 'nitrate', 'geometry', 'date', 'minimumacidity_1', 'maximumacidity_1', 'cnratio_1',\
     #                          'peattype_1', 'calciccontent_1', 'fedith_1', 'loamcontent_1', 'minimumloamcontent_1',\
     #                          'maximumloamcontent_1', 'sandmedian_1', 'minimumsandmedian_1', 'maximumsandmedian_1',\
     #                          'siltcontent_1']
 
-    # provinces = ['drenthe', 'flevoland', 'fryslân', 'gelderland', 'groningen', 'limburg', 'noord-brabant', 'noord-holland', 'overijssel', 'utrecht', 'zeeland', 'zuid-holland']
-    provinces = ['fryslân']
+    # provinces = ['utrecht', 'drenthe', 'flevoland', 'fryslân', 'gelderland', 'groningen', 'limburg', 'noord-brabant', 'noord-holland', 'overijssel', 'zeeland', 'zuid-holland']
+    provinces = ['zeeland']
 
-    connect_to = "grid_data"
-    years = [2022]
+    connect_to = "nitrate_data"
+    years = [2023]
     month = "07"
     day = "01"
     saver = Dataset_Saver()
@@ -175,7 +177,7 @@ def main():
     if connect_to == "grid_data":
         path = f"../data/aligned/grid_{filter}_{years[0]}_{province_str}.csv"
     elif connect_to == "nitrate_data":
-        path = f"../data/aligned/merged_dataset_{filter}.csv"
+        path = f"../data/aligned/merged_dataset_{filter}_groundwater_zeeland.csv"
 
 
     ############## SAVER ###############
