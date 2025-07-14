@@ -145,6 +145,7 @@ python3 src/model/main.py
 ## Authors
 
 Supervisor: Juan Diego Cárdenas-Cartagena
+
 Student: Iulia Capralova
 
 
@@ -152,4 +153,4 @@ Student: Iulia Capralova
 
 I would like to thank to my supervisor, Juan Diego, for his support, continous feedback, and endless enthusiasm in the topic that encouraged me throught the entire project.
 
-I also wish to thank University of Groningen for giving access Hábrók High Performance Computing (HPC) cluster, which made it possible to bring this project to reality.
+I also wish to thank University of Groningen for giving me access to Hábrók High Performance Computing (HPC) cluster, which made it possible to bring this project to reality.
