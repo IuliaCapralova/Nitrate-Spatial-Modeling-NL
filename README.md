@@ -28,6 +28,8 @@ Here, an explainable spatial regression model is developed using spatial and env
 
 The resulting maps visualize how nitrate pollution has changed between 2010 and 2023, and help identify regions where concentrations remain high. This project is designed to support decision-making for localized policies aimed at reducing nitrate leaching.
 
+![Spatial model for year 2023](plots/predicted_maps/nitrate_map_2020.png)
+
 ---
 
 ## Getting Started
