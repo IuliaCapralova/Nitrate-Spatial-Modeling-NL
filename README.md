@@ -2,7 +2,7 @@
 ---
 
 
-# Explainable Spatial Modeling of Groundwater Nitrate Leaching in the Netherlands
+# Explainable Spatial Modeling of Nitrate Leaching in the Netherlands
 
 ---
 
