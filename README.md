@@ -1,6 +1,6 @@
 # Spatial Prediction of Nitrate Leaching in North Utrecht
 
-This project aims to analyze **nitrate leaching** in the Netherlands using **machine learning techniques**. At this stage, the focus is on **exploratory data analysis (EDA)**, bringing together various spatial and chemical datasets to understand the patterns and features relevant for predictive modeling.
+This project analyze **nitrate leaching** in the Netherlands using **machine learning techniques**. At this stage, the focus is on **exploratory data analysis (EDA)**, bringing together various spatial and chemical datasets to understand the patterns and features relevant for predictive modeling.
 
 ---
 
@@ -40,16 +40,13 @@ python data/main.py
 ---
 
 
-# Project Name
-
-A brief description of your project and its purpose.
+# Explainable Spatial Modeling of Groundwater Nitrate Concentrations in the Netherlands
 
 ---
 
 ## ▼ Table of Contents
 
 1. [About The Project](#about-the-project)
-    - [Built With](#built-with)
 2. [Getting Started](#getting-started)
     - [Dependencies](#dependencies)
     - [Installation](#installation)
@@ -64,24 +61,47 @@ A brief description of your project and its purpose.
 
 ## About The Project
 
-Describe what your project does and why it exists.
+This project creates a spatial regression map for nitrate leaching across the entire territory of the Netherlands. Nitrate leaching from agricultural soils is a major driver of groundwater pollution, especially in regions with intensive farming. Since nitrate measurements are limited to a few monitoring sites, there’s a need for interpretable, data-driven models that can predict nitrate concentrations nationwide.
 
-### Built With
+Here, an explainable spatial regression model is developed using spatial and environmental data from Dutch agricultural soils. The approach benchmarks Ridge Regression, Random Forest, and XGBoost models, ultimately combining Random Forest and XGBoost in an ensemble. The workflow also applies model-specific and model-agnostic interpretability methods (SHAP, LIME Permutation) to reveal key factors behind nitrate leaching.
 
-- [Tech1](#)
-- [Tech2](#)
-- [Tech3](#)
+The resulting maps visualize how nitrate pollution has changed between 2010 and 2023, and help identify regions where concentrations remain high. This project is designed to support decision-making for localized policies aimed at reducing nitrate leaching.
 
 ---
 
 ## Getting Started
 
-Simple instructions to get your project up and running.
+The following sections explain how to set up the project and run it locally.
 
 ### Dependencies
 
-- Dependency 1
-- Dependency 2
+Before getting started, make sure you right Python version:
+
+* Python 3.9.6
+
+Next, a project environment should be created. Follow the steps:
+
+1. Navigate to the project root directory:
+
+```bash
+cd Bachelor-Thesis
+```
+
+2. Create a virtual environment:
+```bash
+python3 -m venv spatial_env
+```
+
+3. Activate the virtual environment:
+```bash
+source spatial_env/bin/activate
+```
+
+4. Install all required dependencies:
+```bash
+pip install -r requirements.txt
+```
+This will install all necessary packages for running the spatial modeling and prediction pipeline.
 
 ### Installation
 
