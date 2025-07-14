@@ -76,6 +76,7 @@ This will install all necessary packages for running the spatial modeling and pr
 
 ### Repository Structure
 
+```
 Bachelor-Thesis/
 ├── data/                 # Raw, cleaned, and aligned spatial and environmental datasets
 ├── logging/              # Logging configuration and saved logs for pipeline runs
@@ -86,7 +87,7 @@ Bachelor-Thesis/
 ├── src/                  # Source code: preprocessing, training, prediction, evaluation modules
 ├── trained_models/       # Saved machine learning models (.pkl)
 ├── README.md             # Project overview and setup instructions
-
+```
 
 
 ### Data Folder setup
