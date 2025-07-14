@@ -2917,5 +2917,132 @@
       "RMSE": 5.202989347162144
     },
     "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 20,
+    "timestamp": "2025-07-13T20:32:02.684501",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 100,
+      "regressor__rf__min_samples_split": 4,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": "sqrt",
+      "regressor__rf__max_depth": null
+    },
+    "outlier_method": "manual_removal",
+    "train_score": {
+      "R2": 0.9035610969648523,
+      "MAE": 1.177674847484863,
+      "RMSE": 3.7190918473157533
+    },
+    "test_score": {
+      "R2": 0.5686774448756393,
+      "MAE": 2.4825096843104366,
+      "RMSE": 5.594448108795778
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 20,
+    "timestamp": "2025-07-13T22:04:24.042745",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 30,
+      "regressor__rf__min_samples_split": 4,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": 0.5,
+      "regressor__rf__max_depth": 15
+    },
+    "outlier_method": "manual_removal",
+    "train_score": {
+      "R2": 0.940545305171631,
+      "MAE": 1.1657357096054617,
+      "RMSE": 3.7508629539364255
+    },
+    "test_score": {
+      "R2": 0.8634002583317903,
+      "MAE": 2.3400679249695973,
+      "RMSE": 5.737315577118507
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "XGBoost",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 20,
+    "timestamp": "2025-07-13T22:11:21.857825",
+    "hyperparameters": {
+      "regressor__xgb__subsample": 0.4,
+      "regressor__xgb__reg_lambda": 2,
+      "regressor__xgb__reg_alpha": 0.1,
+      "regressor__xgb__n_estimators": 100,
+      "regressor__xgb__max_depth": 15,
+      "regressor__xgb__learning_rate": 0.1,
+      "regressor__xgb__colsample_bytree": 0.8
+    },
+    "outlier_method": null,
+    "train_score": {
+      "R2": 0.9777969643465815,
+      "MAE": 0.6679653750678601,
+      "RMSE": 2.2921566647310123
+    },
+    "test_score": {
+      "R2": 0.826776239166517,
+      "MAE": 2.5072118190282504,
+      "RMSE": 6.460818357173565
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 20,
+    "timestamp": "2025-07-14T18:33:46.590729",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 150,
+      "regressor__rf__min_samples_split": 4,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": 0.5,
+      "regressor__rf__max_depth": 15
+    },
+    "outlier_method": "manual_removal",
+    "train_score": {
+      "R2": 0.9303391151964981,
+      "MAE": 1.3858375145103154,
+      "RMSE": 4.060061504251142
+    },
+    "test_score": {
+      "R2": 0.8448133343253277,
+      "MAE": 2.5046532576765217,
+      "RMSE": 6.115204720333496
+    },
+    "note": "Removed soil region"
+  },
+  {
+    "model": "Random Forest",
+    "data_file": "/Users/Administrator/Documents/University/Year 3/2b/Thesis/Bachelor-Thesis/notebooks/models/../../data/aligned/merged_dataset_1_ahn_elevation.csv",
+    "features": 20,
+    "timestamp": "2025-07-14T18:35:26.014825",
+    "hyperparameters": {
+      "regressor__rf__n_estimators": 100,
+      "regressor__rf__min_samples_split": 2,
+      "regressor__rf__min_samples_leaf": 1,
+      "regressor__rf__max_features": "sqrt",
+      "regressor__rf__max_depth": 20
+    },
+    "outlier_method": "manual_removal",
+    "train_score": {
+      "R2": 0.9580628230868515,
+      "MAE": 0.6977566662099062,
+      "RMSE": 1.9775438323248398
+    },
+    "test_score": {
+      "R2": 0.6129623660086922,
+      "MAE": 2.192289122559545,
+      "RMSE": 5.389368599469853
+    },
+    "note": "Removed soil region"
   }
 ]
