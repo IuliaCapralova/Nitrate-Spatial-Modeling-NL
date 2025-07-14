@@ -33,3 +33,61 @@ All package dependencies can be found in the requirements.txt file
 To run code regarding data, please ensure you are in src folder, then run the following:
 
 python data/main.py
+
+
+
+
+---
+
+
+# Project Name
+
+A brief description of your project and its purpose.
+
+---
+
+## ▼ Table of Contents
+
+1. [About The Project](#about-the-project)
+    - [Built With](#built-with)
+2. [Getting Started](#getting-started)
+    - [Dependencies](#dependencies)
+    - [Installation](#installation)
+3. [Usage](#usage)
+4. [Roadmap](#roadmap)
+5. [Contributing](#contributing)
+6. [License](#license)
+7. [Authors](#authors)
+8. [Acknowledgements](#acknowledgements)
+
+---
+
+## About The Project
+
+Describe what your project does and why it exists.
+
+### Built With
+
+- [Tech1](#)
+- [Tech2](#)
+- [Tech3](#)
+
+---
+
+## Getting Started
+
+Simple instructions to get your project up and running.
+
+### Dependencies
+
+- Dependency 1
+- Dependency 2
+
+### Installation
+
+```bash
+# Step 1
+command_to_install
+
+# Step 2
+another_command
