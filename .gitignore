@@ -1,2 +1,4 @@
+.DS_Store
+/src/data/__pycache__/
 /data/
 spatial_env/
