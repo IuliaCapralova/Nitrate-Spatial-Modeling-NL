@@ -40,7 +40,7 @@ The following sections explain how to set up the project and run it locally.
 
 Clone the repo:
 ```bash
-https://github.com/IuliaCapralova/Bachelor-Thesis.git
+https://github.com/IuliaCapralova/Nitrate-Spatial-Modeling-NL.git
 ```
 
 ### Dependencies
@@ -54,7 +54,7 @@ Next, a project environment should be created. Follow the steps:
 1. Navigate to the project root directory:
 
 ```bash
-cd Bachelor-Thesis
+cd Nitrate-Spatial-Modeling-NL
 ```
 
 2. Create a virtual environment:
@@ -76,7 +76,7 @@ This will install all necessary packages for running the spatial modeling and pr
 ### Repository Structure
 
 ```
-Bachelor-Thesis/
+Nitrate-Spatial-Modeling-NL/
 ├── data/                 # Raw, cleaned, and aligned spatial and environmental datasets
 ├── logging/              # Logging configuration and saved logs for pipeline runs
 ├── notebooks/            # Jupyter notebooks for exploratory analysis and model experimentation
@@ -91,7 +91,7 @@ Bachelor-Thesis/
 
 ### Data Folder setup
 
-Next, a `data` folder should be created separately in the root of the repository `Bachelor-Thesis`.
+Next, a `data` folder should be created separately in the root of the repository `Nitrate-Spatial-Modeling-NL`.
 It contains all raw, clean, and aligned input datasets used in the modeling pipeline. The folder
 set up should be as follows:
 
@@ -146,9 +146,9 @@ python3 src/model/main.py
 
 ## Authors
 
-Supervisor: Juan Diego Cárdenas-Cartagena
-
 Student: Iulia Capralova
+
+Supervisor: Juan Diego Cárdenas-Cartagena
 
 
 ## Acknowledgements
